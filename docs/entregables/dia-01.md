@@ -154,10 +154,6 @@ También disponible el archivo [`datos/inventario_materiales.csv`](../../datos/i
 
 
 
-
-
-
-
 ---
 kaizen_dojo: "2026"
 formato: "Entregable diario G2"
@@ -177,103 +173,111 @@ revision_docente: "PENDIENTE"
 
 | Campo obligatorio | Dato |
 |---|---|
-| Fecha y horario de esta sesión | Fecha de elaboración: 2026-10-26. Fecha y horario de la sesión presencial de 180 minutos: pendiente de confirmar. |
-| Nombre / alias del equipo | Tormenta Negra. Alias propuesto para GitHub: `kd26-m01-tormenta-negra`. |
-| Misión / plataforma | M01 · Mini-sumo autónomo. |
-| Objetivo verificable del robot (una frase) | Integrar los motores y sensores de un robot mini-sumo autónomo para lograr que avance, retroceda, gire y detecte a un oponente, comprobando su funcionamiento mediante cinco pruebas de detección y registrando los resultados. |
-| **Dōjō asignado — campus, edificio y sala/taller exactos** | **Tecnológico de Monterrey, Campus León / Laboratorio de Electrónica / Edificio y número de laboratorio pendientes de confirmar.** |
-| Puesto o zona dentro del dōjō | Mesa de trabajo del equipo Tormenta Negra dentro del Laboratorio de Electrónica. Para las pruebas de movimiento se utilizará una zona despejada y delimitada, autorizada por el responsable del laboratorio. |
-| Horario / reserva confirmada | Sesión de 180 minutos. Fecha, horario y autorización de uso pendientes de confirmar con el docente o responsable del laboratorio. |
-| Responsable del espacio y contacto institucional | Docente responsable de Kaizen Dōjō 2026 y encargado del Laboratorio de Electrónica. Nombre y contacto institucional pendientes de confirmar. |
-| Acceso, aforo y ajustes de accesibilidad | Acceso para los integrantes del equipo y personas autorizadas. Se respetará el aforo establecido por el laboratorio, se mantendrán libres los pasillos y se acordarán los apoyos de accesibilidad necesarios sin registrar información personal sensible. |
-| Salidas, botiquín, extintor y punto de reunión | Se identificarán físicamente al ingresar al Laboratorio de Electrónica y se confirmarán con el responsable del espacio antes de comenzar las pruebas. |
-| Zonas segregadas por riesgo | Área de conexiones y programación, área de herramientas y área delimitada para pruebas del mini-sumo. Las pruebas de movimiento se realizarán lejos de los bordes de las mesas y de otros equipos. |
-| Ubicación de materiales y resguardo nocturno | Los componentes se organizarán en una caja identificada con el nombre del equipo. El lugar de resguardo dentro del laboratorio deberá ser autorizado; de lo contrario, los materiales serán retirados al finalizar la sesión. |
-| Plan de sustitución si falla el espacio | Reprogramar las pruebas físicas y solicitar otro laboratorio o área de trabajo autorizada. Mientras tanto, avanzar con programación, diagramas, revisión de componentes y documentación sin energizar el robot. |
-| Instructor o supervisor presente en la sesión | Docente o encargado autorizado del Laboratorio de Electrónica. Identidad pendiente de confirmar. |
+| Fecha y horario de esta sesión | Fecha de elaboración del registro: 2026-10-26. Horario habitual de trabajo: 09:00–13:00 durante la semana. El bloque específico de 180 minutos correspondiente a E1 está pendiente de identificar. |
+| Nombre / alias del equipo | Tormenta Negra · Alias propuesto: `kd26-m01-tormenta-negra` |
+| Misión / plataforma | M01 · Mini-sumo autónomo |
+| Objetivo verificable del robot (una frase) | Construir desde cero e integrar un robot mini-sumo autónomo que pueda avanzar, retroceder, girar y detectar a un oponente, verificando sus movimientos básicos y documentando al menos cinco pruebas de detección, sin exceder las dimensiones y el peso permitidos. |
+| **Dōjō asignado — campus, edificio y sala/taller exactos** | **Tecnológico de Monterrey, Campus León / Edificio CTA / Laboratorio de Electrónica / Número de laboratorio por confirmar.** |
+| Puesto o zona dentro del dōjō | Mesa de trabajo del equipo Tormenta Negra en el Laboratorio de Electrónica. Para las pruebas de movimiento se utilizará una zona despejada y delimitada dentro del espacio autorizado. |
+| Horario / reserva confirmada | Horario de trabajo informado: 09:00–13:00 durante la semana. Falta registrar los días exactos y confirmar la autorización o reserva del laboratorio. |
+| Responsable del espacio y contacto institucional | Profesor Camilo René Duque. Canal de contacto: medio institucional utilizado para la materia; dirección específica por confirmar. |
+| Acceso, aforo y ajustes de accesibilidad | Acceso de acuerdo con las indicaciones del Laboratorio de Electrónica. Se mantendrán despejadas las mesas y zonas de circulación. Los apoyos o ajustes necesarios se acordarán directamente con cada integrante sin registrar información sensible. |
+| Salidas, botiquín, extintor y punto de reunión | Las ubicaciones exactas deberán identificarse físicamente al ingresar al laboratorio y confirmarse con el profesor o encargado antes de comenzar las pruebas. |
+| Zonas segregadas por riesgo | Zona de conexiones electrónicas y programación, zona de herramientas y montaje, y zona delimitada para ensayos del robot. No se realizarán pruebas de movimiento cerca de los bordes de las mesas. |
+| Ubicación de materiales y resguardo nocturno | Actualmente el equipo no cuenta con materiales físicos. Cuando se adquieran, se organizarán en una caja identificada como Tormenta Negra. El resguardo dentro del laboratorio dependerá de la autorización del responsable. |
+| Plan de sustitución si falla el espacio | Solicitar al profesor un espacio alternativo autorizado. Si no está disponible, continuar con programación, diseño CAD, revisión de fichas técnicas y documentación sin realizar pruebas físicas. |
+| Instructor o supervisor presente en la sesión | Profesor Camilo René Duque. Presencia en el bloque específico de E1 pendiente de confirmar. |
 
-> ⛔ **No se permite avanzar a pruebas físicas sin dōjō concreto y autorización del responsable.** El Laboratorio de Electrónica es el espacio previsto, pero todavía debemos confirmar el edificio, número de laboratorio, horario y autorización correspondiente.
+> ⛔ **No se permite avanzar a pruebas físicas sin dōjō concreto y autorización del responsable.** El espacio de trabajo previsto es el Laboratorio de Electrónica del CTA. Antes de iniciar pruebas se confirmarán el número de laboratorio, el horario autorizado y las condiciones de seguridad.
 
 ## 1 · Integrantes, responsabilidades, accesibilidad y decisiones (0–15 min)
 
+El equipo Tormenta Negra está integrado por cuatro estudiantes: Claudio, Sara, Max y Joel.
+
+Los cuatro ya generaron su compromiso individual en Mission Forge C2. Las responsabilidades mostradas a continuación son una propuesta de organización para construir el robot; deberán coincidir con los alcances seleccionados por cada integrante.
+
 | Alias GitHub | Rol inicial | Carta y frontera (D/S/E; F1–F4) | Alcances ID (1–3) | Kit personal (archivo) | Necesidad de apoyo o accesibilidad acordada |
 |---|---|---|---|---|---|
-| Sara Gabriela Díaz Rayas (alias GitHub por confirmar) | Integración de motores y sensores, programación de movimientos y pruebas de detección. | S · SUPERAR / F1 · INTEGRAR / D1 · AUTONOMOUS SYSTEM. | MS03, MS06. | `participantes/sara-gabriela/compromiso.md` | Se trabajará de manera colaborativa y se solicitará apoyo en conexiones o pruebas cuando sea necesario. |
-| Integrante 2 (nombre y alias pendientes) | Diseño mecánico del chasis, distribución de componentes y revisión de dimensiones. | Por definir mediante Mission Forge C2. | Por definir. | Pendiente de crear. | Se acordarán los apoyos necesarios con el integrante. |
-| Integrante 3 (nombre y alias pendientes) | Electrónica, alimentación, conexiones y verificación de compatibilidad. | Por definir mediante Mission Forge C2. | Por definir. | Pendiente de crear. | Se acordarán los apoyos necesarios con el integrante. |
-| Integrante 4 (nombre y alias pendientes) | Programación general, lógica autónoma e integración del sistema. | Por definir mediante Mission Forge C2. | Por definir. | Pendiente de crear. | Se acordarán los apoyos necesarios con el integrante. |
-| Integrante 5, si aplica (nombre y alias pendientes) | Documentación, seguridad, pruebas y verificación del reglamento. | Por definir mediante Mission Forge C2. | Por definir. | Pendiente de crear. | Se acordarán los apoyos necesarios con el integrante. |
+| Claudio (usuario GitHub por registrar) | Propuesta: diseño mecánico, estructura, distribución de componentes y revisión de dimensiones. | Consultar su compromiso original de Mission Forge C2. | Consultar compromiso original. | `participantes/<alias-claudio>/compromiso.md` | Por acordar directamente con Claudio, sin registrar datos sensibles. |
+| Sara Gabriela Díaz Rayas (usuario GitHub por registrar) | Integración de motores, sensores y pruebas de funcionamiento. | Consultar carta y frontera exactas en su compromiso original. | MS03 · Motorización y tracción; MS06 · Detección del oponente. | `participantes/<alias-sara>/compromiso.md` | Apoyo del equipo para revisar conexiones y realizar pruebas de integración cuando sea necesario. |
+| Max (usuario GitHub por registrar) | Propuesta: electrónica, alimentación, conexiones y compatibilidad de componentes. | Consultar su compromiso original de Mission Forge C2. | Consultar compromiso original. | `participantes/<alias-max>/compromiso.md` | Por acordar directamente con Max, sin registrar datos sensibles. |
+| Joel (usuario GitHub por registrar) | Propuesta: programación autónoma, pruebas generales y documentación. | Consultar su compromiso original de Mission Forge C2. | Consultar compromiso original. | `participantes/<alias-joel>/compromiso.md` | Por acordar directamente con Joel, sin registrar datos sensibles. |
 
 **Acuerdo de colaboración:**
 
-Como equipo proponemos dividir el trabajo de acuerdo con los conocimientos y alcances de cada integrante, pero también ayudarnos cuando alguien tenga dificultades con alguna parte del proyecto.
+Como equipo queremos dividir el trabajo para que cada integrante tenga una responsabilidad principal, pero también buscamos apoyarnos cuando sea necesario, ya que todos los sistemas del robot están relacionados.
 
-Las decisiones importantes, como la selección de componentes, cambios en el diseño o modificaciones en la programación, se discutirán entre todos antes de realizarlas.
+Nuestra propuesta es organizar el proyecto en diseño mecánico, electrónica, programación e integración. Aunque cada persona trabaje principalmente en una de estas áreas, todos participaremos en las decisiones importantes y en las pruebas generales.
 
-En caso de que existan diferentes opiniones, compararemos las alternativas considerando su funcionamiento, costo, seguridad y tiempo disponible.
+Cuando tengamos que elegir un componente o modificar alguna parte del diseño, primero revisaremos las opciones y después tomaremos una decisión considerando el costo, la compatibilidad, la seguridad y el tiempo disponible.
 
-También buscaremos que todos participen tanto en el desarrollo como en las pruebas, ya que aunque cada persona tenga una responsabilidad principal, el robot necesita que todos los subsistemas funcionen juntos.
+Si encontramos un problema, intentaremos identificar su causa antes de cambiar componentes o modificar el programa. También aprovecharemos los conocimientos de cada integrante para apoyarnos entre nosotros, siguiendo la idea de colaboración senpai–kōhai.
 
-Si algún integrante tiene más experiencia con una herramienta o componente podrá apoyar a los demás, siguiendo la idea de colaboración senpai–kōhai.
+Durante las sesiones mantendremos organizada nuestra mesa, evitaremos modificar conexiones mientras el sistema esté energizado y realizaremos pausas cuando sean necesarias.
 
-Durante las pruebas físicas mantendremos el área de trabajo organizada, realizaremos pausas cuando sea necesario y evitaremos modificar conexiones mientras el sistema esté energizado.
+Para resolver desacuerdos compararemos las alternativas con base en las restricciones del reglamento y los resultados de las pruebas, buscando que todos puedan participar.
 
 ## 2 · Demostración de la plataforma y seguridad (15–35 min)
 
 | Elemento | Observación directa | Evidencia / vínculo |
 |---|---|---|
-| Plataforma base inspeccionada (estado, modelo, ID inventario) | Pendiente de inspección física. La plataforma seleccionada es M01 mini-sumo autónomo. Debemos confirmar si partiremos de un kit, un chasis existente o componentes individuales. | Fotografía de la plataforma y registro de componentes pendientes. |
-| Funciones existentes y límites comprobados | Todavía no se cuenta con resultados de pruebas documentados. Se revisará si los motores funcionan, si el controlador puede comunicarse con los sensores y qué componentes necesitan integrarse. | Registro diagnóstico V0 pendiente. |
-| Paro de emergencia / desconexión segura ensayados | Pendiente de prueba. Se propone utilizar un interruptor general para desconectar la alimentación y un sistema de inicio y paro mediante control infrarrojo, como establece el reglamento. | Evidencia de prueba del sistema de paro pendiente. |
-| Restricciones de competición o exhibición verificadas | Se revisó el reglamento de Mini Sumo Robolympics 2026. El robot debe medir máximo 10 × 10 cm, pesar máximo 500 g, funcionar de manera autónoma y contar con arranque y paro infrarrojo. | [Reglamento oficial Robolympics 2026](https://profcduquetec.github.io/robolympics/). |
-| Riesgos vistos y medidas activas | Se identificaron riesgos relacionados con conexiones incorrectas, cortocircuitos, movimiento inesperado de motores, baterías y caída del robot desde una mesa. Las medidas preventivas deberán verificarse antes de energizarlo. | `docs/seguridad.md` — pendiente de crear y validar. |
+| Plataforma base inspeccionada (estado, modelo, ID inventario) | La plataforma seleccionada es M01 · Mini-sumo autónomo. El equipo construirá el robot desde cero y actualmente no cuenta con componentes físicos adquiridos. Por lo tanto, todavía no existe una plataforma ensamblada que pueda inspeccionarse. | Registro de condición inicial V0 en este documento. Fotografía del primer conjunto de componentes pendiente. |
+| Funciones existentes y límites comprobados | No hay funciones físicas comprobadas porque todavía no se cuenta con el robot ni con sus componentes. Se plantea desarrollar avance, retroceso, giros, detección del oponente y reconocimiento del borde del Dohyo. | Pruebas de motores y sensores pendientes. |
+| Paro de emergencia / desconexión segura ensayados | No se ha ensayado un paro físico. Se contempla integrar un interruptor general, protección de alimentación y un sistema de inicio y paro infrarrojo compatible con el reglamento. | Procedimiento propuesto en `docs/seguridad.md`. Evidencia de prueba pendiente. |
+| Restricciones de competición o exhibición verificadas | Se identificaron como requisitos de diseño las dimensiones máximas de 10 × 10 cm, el peso máximo de 500 g, el funcionamiento autónomo y el sistema de inicio y paro infrarrojo. La versión aplicable del reglamento deberá corroborarse antes de fabricar. | [Reglamento Robolympics](https://profcduquetec.github.io/robolympics/). |
+| Riesgos vistos y medidas activas | Riesgos previstos: conexiones incorrectas, cortocircuitos, sobrecorriente, movimiento inesperado, daño a la batería y caída del robot. Las medidas están propuestas, pero su implementación física está pendiente. | `docs/seguridad.md` — documento y validación pendientes. |
 
 **Normas específicas según misión:**
 
-- **M01:** utilizar una alimentación compatible con los componentes y proteger las conexiones para evitar cortocircuitos.
-- Desconectar la alimentación antes de modificar cables, motores o sensores.
-- No tocar las ruedas mientras los motores estén funcionando.
-- Realizar las primeras pruebas de giro con las ruedas levantadas de la superficie.
-- Mantener despejada y delimitada el área de pruebas.
+- **M01:** verificar la compatibilidad de la alimentación con motores, driver, sensores y microcontrolador.
+- Utilizar protección eléctrica adecuada y evitar cables expuestos que puedan provocar cortocircuitos.
+- Desconectar la batería antes de modificar conexiones.
+- Realizar las primeras pruebas de motores con las ruedas levantadas de la superficie.
+- No tocar las ruedas mientras estén girando.
+- Mantener el Dohyo o área de pruebas despejada y delimitada.
 - Utilizar un objeto o robot de referencia para las pruebas de detección.
-- Evitar mecanismos que puedan dañar la superficie del Dohyo.
-- Verificar el funcionamiento del sistema de inicio y paro infrarrojo.
-- Revisar que el robot no exceda los 500 gramos ni las dimensiones de 10 × 10 cm.
-- No realizar pruebas físicas sin la autorización del responsable del Laboratorio de Electrónica.
+- Evitar mecanismos que dañen la superficie de la pista.
+- Verificar el sistema de inicio y paro antes de realizar movimientos autónomos.
+- Comprobar las dimensiones y el peso del robot antes de la homologación.
+- No comenzar pruebas físicas sin autorización del responsable del Laboratorio de Electrónica.
 
 ## 3 · Diagnóstico práctico colectivo (35–65 min)
 
 **Condición inicial V0 de la plataforma:**
 
-Nuestra misión consiste en desarrollar un robot mini-sumo autónomo capaz de desplazarse y detectar a su oponente.
+Nuestro equipo construirá el robot mini-sumo autónomo desde cero.
 
-Como punto de partida tenemos definida una propuesta de integración de dos motores DC con reductora, un driver de motores, un microcontrolador, sensores de detección del oponente y sensores inferiores para reconocer el borde de la pista.
+Actualmente no contamos con materiales físicos para comenzar el montaje, por lo que nuestro punto de partida consiste en definir la propuesta técnica, identificar los componentes necesarios y organizar el trabajo entre los integrantes.
 
-Todavía debemos confirmar físicamente qué componentes tenemos disponibles y cuáles necesitamos conseguir.
+La idea es utilizar un sistema de tracción diferencial con dos motores DC con reductora, un driver de motores, un microcontrolador y sensores para detectar al oponente y el borde del Dohyo.
 
-También falta verificar el estado de los motores, la compatibilidad del driver, el funcionamiento de los sensores y la alimentación.
+Proponemos utilizar un ESP32 como controlador principal, aunque tendremos que confirmar que sea compatible con los componentes que seleccionemos.
 
-Por lo tanto, consideramos que la versión V0 corresponde a la etapa inicial de selección y diagnóstico de componentes, sin resultados de funcionamiento documentados.
+También debemos definir las dimensiones del chasis y distribuir los elementos de manera que el robot no exceda los 10 × 10 cm ni los 500 gramos.
+
+Como todavía no tenemos componentes, no podemos afirmar que los motores, sensores o sistema de alimentación funcionen. Por esta razón las primeras pruebas estarán enfocadas en verificar cada subsistema por separado.
 
 | Prueba diagnóstica | Condición y procedimiento | Resultado observado / unidad | Problema / causa probable | Evidencia |
 |---|---|---|---|---|
-| 1. Movimiento de motores | Conectar cada motor al driver compatible, verificar alimentación y realizar comandos breves de avance, retroceso y giro con las ruedas levantadas. | Pendiente de realizar. Se registrará sentido de giro, respuesta y voltaje de alimentación. | Posibles conexiones invertidas, alimentación insuficiente o incompatibilidad entre motor y driver. | Fotografía de conexiones y video de prueba pendientes. |
-| 2. Lectura de sensores | Conectar los sensores al microcontrolador y registrar sus lecturas al acercar y alejar un objeto de referencia. | Pendiente de realizar. Se registrará distancia de detección y lectura de cada sensor. | Posible calibración incorrecta, interferencia de iluminación o conexiones equivocadas. | Registro de lecturas y fotografía del montaje pendientes. |
-| 3. Comportamiento de la misión | Integrar motores y sensores para comprobar si el robot puede buscar, detectar y orientarse hacia un oponente. | Pendiente de realizar. Se evaluará el número de respuestas correctas en cinco pruebas. | Posibles errores de programación, lectura de sensores o coordinación de movimientos. | Video y tabla de resultados pendientes. |
+| 1. Movimiento y control de motores | Conectar dos motores DC a un driver compatible y ejecutar comandos breves para comprobar avance, retroceso y giros. Realizar las primeras pruebas con las ruedas levantadas. | No realizada. Actualmente no contamos con motores ni driver. Se registrarán voltaje, sentido de giro y respuesta de cada motor cuando se realice. | Bloqueante actual: falta de componentes. Riesgos previstos: conexiones incorrectas, alimentación insuficiente o incompatibilidad. | Pendiente de fotografía, código y video. |
+| 2. Lectura de sensores | Conectar los sensores al microcontrolador y registrar sus lecturas al colocar un objeto a diferentes distancias. | No realizada. Actualmente no contamos con sensores. Se registrará distancia de detección en centímetros y número de lecturas correctas. | Bloqueante actual: falta de sensores. Riesgos previstos: interferencia, calibración incorrecta o conexión equivocada. | Pendiente de tabla de lecturas y fotografía. |
+| 3. Comportamiento de la misión | Integrar motores y sensores para comprobar que el robot detecte a un oponente, gire hacia él y avance. Realizar cinco intentos documentados. | No realizada. Todavía no existe una plataforma física integrada. | Depende de adquirir componentes, completar el montaje y validar los subsistemas anteriores. | Pendiente de video y registro de cinco intentos. |
 
 **Capacidades ya disponibles y dependencias:**
 
-Como equipo contamos con conocimientos académicos de programación, electrónica y control de motores que podemos aplicar durante el desarrollo.
+Aunque todavía no contamos con materiales físicos, podemos aprovechar los conocimientos que hemos adquirido en programación, electrónica, sensores y control de motores durante la carrera.
 
-La propuesta contempla utilizar un sistema de tracción diferencial para controlar el movimiento mediante dos motores independientes.
+También tenemos los cuatro compromisos individuales generados mediante Mission Forge C2 y un repositorio de GitHub creado para organizar el proyecto.
 
-Para integrar los sensores necesitamos primero comprobar que el microcontrolador pueda recibir sus señales correctamente.
+Para comenzar la construcción necesitamos seleccionar y conseguir los motores, ruedas, driver, microcontrolador, sensores, batería y materiales del chasis.
 
-La programación de búsqueda y ataque dependerá de que los motores puedan realizar los movimientos básicos y de que los sensores proporcionen información confiable.
+El alcance MS03 dependerá principalmente de los motores, el driver, la alimentación y la estructura mecánica.
 
-Por esta razón consideramos que primero debemos verificar los componentes por separado y después comenzar con la integración.
+El alcance MS06 dependerá de contar con sensores compatibles, un controlador programable y un objeto de referencia para realizar las pruebas.
 
-También necesitamos que el diseño mecánico permita colocar los sensores y motores en posiciones adecuadas sin exceder el peso y las dimensiones permitidas.
+Después de comprobar estos subsistemas por separado podremos integrar la detección con el movimiento del robot.
+
+También necesitamos que la estructura mecánica permita colocar los sensores correctamente y mantener todos los componentes dentro de los límites del reglamento.
 
 ## 4 · Integración de Mission Forge C2 y pacto de alcances (65–100 min)
 
@@ -281,78 +285,83 @@ Cada participante debe colocar el archivo **Markdown original generado por la we
 
 `participantes/<alias>/compromiso.md`
 
-Se conserva íntegro, incluido el frontmatter y la lista de katas. Los nuevos alcances o katas diseñados por el participante quedan claramente marcados como *propuesta propia* y requieren aprobación técnica.
+Se conserva íntegro (incluido el frontmatter y la lista de katas). Los nuevos alcances/katas diseñados por el participante quedan claramente marcados como *propuesta propia* y requieren aprobación técnica.
 
-**Catálogo de referencia:** [Google Sheets C2](https://docs.google.com/spreadsheets/d/1FKxFzoyu9KJb3RlOwB609vliS5hAtmwWFu2G2zG3Ky4/edit) · **Configurador Mission Forge:** [`herramientas/mission-forge-c2.html`](../../herramientas/mission-forge-c2.html).
+**Catálogo de referencia:** [Google Sheets C2](https://docs.google.com/spreadsheets/d/1FKxFzoyu9KJb3RlOwB609vliS5hAtmwWFu2G2zG3Ky4/edit) · **Configurador Mission Forge:** [`herramientas/mission-forge-c2.html`](../../herramientas/mission-forge-c2.html) (descárgalo y ábrelo en el navegador; funciona sin Internet).
+
+Los cuatro integrantes ya generaron sus compromisos individuales. Falta registrar sus rutas exactas dentro del repositorio y comprobar que cada archivo conserve su contenido original.
 
 | Alias | Kit enlazado | Alcance principal | Complementos | Katas elegidos o nuevos | Horas mín.–máx. | Evidencia final esperada | Negociación aprobada |
 |---|---|---|---|---|---|---|---|
-| Sara Gabriela Díaz Rayas | `participantes/sara-gabriela/compromiso.md` | MS03 · Integrar y verificar motorización y tracción. | MS06 · Integrar sensores de detección del oponente. | MS03: montar motor y rueda, probar sentido de giro con comandos breves. MS06: ensayar cinco encuentros y documentar errores de percepción. | 6–8 h. | Video del mini-sumo avanzando, retrocediendo, girando y realizando cinco pruebas de detección del oponente. | Pendiente de validación docente. |
-| Integrante 2 | Pendiente de generar. | Diseño mecánico y estructura, ID por definir. | Integración física de componentes. | Por seleccionar en Mission Forge C2. | Por definir. | Diseño del chasis y evidencia del montaje. | Pendiente. |
-| Integrante 3 | Pendiente de generar. | Electrónica y alimentación, ID por definir. | Conexiones y seguridad eléctrica. | Por seleccionar en Mission Forge C2. | Por definir. | Diagrama de conexiones y pruebas de alimentación. | Pendiente. |
-| Integrante 4 | Pendiente de generar. | Programación autónoma, ID por definir. | Integración del sistema de control. | Por seleccionar en Mission Forge C2. | Por definir. | Código de búsqueda, detección y movimiento. | Pendiente. |
-| Integrante 5, si aplica | Pendiente de generar. | Pruebas y documentación, ID por definir. | Verificación del reglamento. | Por seleccionar en Mission Forge C2. | Por definir. | Registro de pruebas y evidencia de cumplimiento. | Pendiente. |
+| Claudio | `participantes/<alias-claudio>/compromiso.md` | Consultar compromiso original. | Consultar compromiso original. | Consultar katas seleccionados en su kit. | Según compromiso original. | Evidencia correspondiente a sus alcances seleccionados. | Pendiente de registrar aprobación docente. |
+| Sara | `participantes/<alias-sara>/compromiso.md` | MS03 · Integrar y verificar motorización y tracción. | MS06 · Integrar sensores de detección del oponente. | Montar motor y rueda; probar sentido de giro con comandos breves; ensayar cinco encuentros y documentar errores de percepción. | Según compromiso original; estimación inicial de planeación: 6–8 h. | Video de movimientos básicos, código, conexiones y registro de cinco pruebas de detección. | Pendiente de registrar aprobación docente. |
+| Max | `participantes/<alias-max>/compromiso.md` | Consultar compromiso original. | Consultar compromiso original. | Consultar katas seleccionados en su kit. | Según compromiso original. | Evidencia correspondiente a sus alcances seleccionados. | Pendiente de registrar aprobación docente. |
+| Joel | `participantes/<alias-joel>/compromiso.md` | Consultar compromiso original. | Consultar compromiso original. | Consultar katas seleccionados en su kit. | Según compromiso original. | Evidencia correspondiente a sus alcances seleccionados. | Pendiente de registrar aprobación docente. |
 
 **Resultado de negociación grupal:**
 
-La propuesta inicial consiste en dividir el robot en cuatro subsistemas principales: estructura mecánica, alimentación y electrónica, control de motores y detección del oponente.
+Como propuesta inicial queremos organizar el desarrollo del mini-sumo en cuatro áreas principales: diseño mecánico, electrónica y alimentación, programación e integración de motores y sensores.
 
-Sara se enfocará principalmente en la integración de motores y sensores, de acuerdo con los alcances MS03 y MS06 seleccionados en su compromiso individual.
+Sara trabajará principalmente en los alcances MS03 y MS06, enfocados en comprobar el funcionamiento de los motores y la detección del oponente.
 
-Para que esta integración funcione será necesario acordar las conexiones entre el microcontrolador, el driver y los sensores, además de definir los pines que utilizará cada componente.
+Para integrar estos sistemas será necesario acordar el modelo del microcontrolador, los pines utilizados, los voltajes de alimentación y las señales que recibirá el programa.
 
-También debemos establecer las dimensiones disponibles dentro del chasis y revisar que la batería proporcione la alimentación necesaria.
+También debemos definir cómo se distribuirán los componentes dentro del chasis, ya que el espacio y el peso disponibles son limitados.
 
-La prioridad será conseguir que el robot avance, retroceda y gire correctamente. Después integraremos la detección del oponente y realizaremos las cinco pruebas propuestas.
+Consideramos que primero debemos conseguir los componentes básicos y comprobar el funcionamiento de los motores. Después podremos conectar los sensores e integrar la programación.
 
-Si el tiempo resulta insuficiente, daremos prioridad al funcionamiento de motores y sensores antes de agregar mejoras como una pala frontal o estrategias de movimiento más complejas.
+Si tenemos poco tiempo, daremos prioridad a que el robot avance, retroceda, gire y detecte al oponente antes de agregar mejoras adicionales.
 
-Esta distribución es una propuesta inicial y deberá revisarse con los demás integrantes y el docente.
+Los alcances definitivos de Claudio, Max y Joel, así como las interfaces entre sus trabajos, deberán ajustarse a sus compromisos originales.
 
 ## 5 · Inventario exhaustivo y especificación de materiales (obligatorio)
 
 ### 5.1 Inventario maestro del equipo
 
-Completar **cada recurso requerido**: estructura, electrónica, actuadores, sensores, herramientas, consumibles, instrumentos, software, datos, red, espacios de ensayo y elementos de seguridad.
+Completar **cada recurso requerido**: estructura, electrónica, actuadores, sensores, herramientas, consumibles, instrumentos, software, datos, red, espacios de ensayo y elementos de seguridad. Añadir filas sin límite.
 
-Las cantidades indicadas corresponden a lo que proponemos utilizar. La cantidad confirmada se mantiene como pendiente hasta revisar físicamente el inventario del equipo y del Laboratorio de Electrónica.
+Actualmente el equipo no cuenta con materiales físicos propios para construir el robot. Por lo tanto, los componentes que necesitamos adquirir tienen cantidad confirmada igual a cero.
+
+Las herramientas, instrumentos y recursos del Laboratorio de Electrónica todavía deben verificarse con el responsable del espacio.
+
+Las especificaciones de los componentes son preliminares y deberán ajustarse después de seleccionar los modelos definitivos.
 
 | ID | Categoría | Material o recurso (especificación exacta: modelo, medida, versión o característica) | Cantidad requerida + unidad | Cantidad confirmada | Fuente/proveedor o dueño | Ubicación física o ruta digital | Responsable | Estado (disponible/reservado/falta) | Alternativa compatible | Día requerido |
 |---|---|---|---|---|---|---|---|---|---|---|
-| MAT-001 | Robot/plataforma | Robot mini-sumo M01, dimensiones máximas 10 × 10 cm y peso máximo 500 g. | 1 sistema | Por confirmar | Equipo / Laboratorio de Electrónica | Mesa de trabajo asignada | Equipo | Por confirmar | Construcción por subsistemas | D1 |
-| MAT-002 | Mecánica | Chasis compacto de aproximadamente 90 × 90 mm, material ligero y resistente. | 1 ud. | Por confirmar | Equipo / proveedor | Caja de componentes | Diseño mecánico | Por confirmar | Chasis impreso en 3D o estructura ligera compatible | D2 |
-| MAT-003 | Actuadores | Motores DC con reductora, voltaje y corriente por definir según modelo seleccionado. | 2 uds. | Por confirmar | Equipo / laboratorio | Caja de componentes | Sara / electrónica | Por confirmar | Motores equivalentes compatibles con el driver | D1 |
-| MAT-004 | Mecánica | Ruedas con buena adherencia y diámetro compatible con el chasis. | 2 uds. | Por confirmar | Equipo / proveedor | Caja de componentes | Diseño mecánico | Por confirmar | Ruedas de goma compatibles | D2 |
-| MAT-005 | Electrónica | Driver de dos canales para motores DC, compatible con la corriente de arranque y operación de los motores. | 1 ud. | Por confirmar | Equipo / laboratorio | Caja de componentes | Sara / electrónica | Por confirmar | TB6612FNG o equivalente, sujeto a verificación eléctrica | D1 |
-| MAT-006 | Control | ESP32 DevKit, lógica de 3.3 V, con pines suficientes para sensores y motores. | 1 ud. | Por confirmar | Equipo / laboratorio | Caja de componentes | Programación | Por confirmar | Microcontrolador equivalente compatible | D1 |
-| MAT-007 | Sensores | Sensores de proximidad para detectar al oponente, con alcance y voltaje compatibles con el controlador. | 3 uds. | Por confirmar | Equipo / proveedor | Caja de componentes | Sara | Por confirmar | Sensores infrarrojos o de distancia equivalentes | D2 |
-| MAT-008 | Sensores | Sensores reflectivos inferiores para diferenciar la superficie negra y el borde blanco. | 2 uds. | Por confirmar | Equipo / proveedor | Caja de componentes | Sensores / integración | Por confirmar | Sensores reflectivos compatibles | D2 |
-| MAT-009 | Control | Receptor infrarrojo compatible con el sistema de arranque y paro reglamentario. | 1 ud. | Por confirmar | Equipo / proveedor | Caja de componentes | Electrónica | Por confirmar | Receptor IR equivalente | D2 |
-| MAT-010 | Control | Control remoto infrarrojo compatible con el receptor y protocolo de inicio y paro. | 1 ud. | Por confirmar | Equipo / proveedor | Caja de componentes | Electrónica | Por confirmar | Control IR compatible | D2 |
-| MAT-011 | Alimentación | Batería recargable con voltaje, capacidad y corriente adecuados para el sistema. | 1 ud. | Por confirmar | Equipo / proveedor | Contenedor seguro para batería | Electrónica | Por confirmar | Batería equivalente compatible | D2 |
-| MAT-012 | Alimentación | Cargador específico para la química y configuración de la batería seleccionada. | 1 ud. | Por confirmar | Equipo / laboratorio | Área autorizada | Electrónica | Por confirmar | Cargador compatible aprobado | D2 |
-| MAT-013 | Seguridad eléctrica | Interruptor general de alimentación, con capacidad adecuada para la corriente del sistema. | 1 ud. | Por confirmar | Equipo / proveedor | Caja de componentes | Electrónica | Por confirmar | Interruptor equivalente | D2 |
-| MAT-014 | Seguridad eléctrica | Protección contra sobrecorriente adecuada a la batería y conductores seleccionados. | 1 conjunto | Por confirmar | Equipo / proveedor | Caja de componentes | Electrónica | Por confirmar | Fusible o protección equivalente dimensionada | D2 |
-| MAT-015 | Conexiones | Cables de conexión con calibre apropiado para señales y alimentación. | 1 juego | Por confirmar | Equipo / laboratorio | Caja de componentes | Electrónica | Por confirmar | Cableado equivalente | D1 |
-| MAT-016 | Conexiones | Conectores y terminales compatibles con batería, driver, sensores y controlador. | 1 juego | Por confirmar | Equipo / laboratorio | Caja de componentes | Electrónica | Por confirmar | Conectores equivalentes | D2 |
-| MAT-017 | Montaje | Tornillos, tuercas, separadores y soportes para fijar componentes. | 1 juego | Por confirmar | Equipo / laboratorio | Caja de componentes | Diseño mecánico | Por confirmar | Sujetadores mecánicos compatibles | D2 |
-| MAT-018 | Mecánica | Pala frontal fija de material ligero, sin bordes que dañen el Dohyo. | 1 ud. opcional | Por confirmar | Equipo / proveedor | Caja de componentes | Diseño mecánico | Opcional | Diseño sin pala | D3 |
-| MAT-019 | Herramientas | Juego de desarmadores y pinzas para montaje electrónico. | 1 juego | Por confirmar | Laboratorio / equipo | Laboratorio de Electrónica | Equipo | Por confirmar | Herramientas equivalentes autorizadas | D1 |
-| MAT-020 | Herramientas | Cautín, soporte y accesorios de soldadura para conexiones permanentes. | 1 estación | Por confirmar | Laboratorio | Área autorizada de soldadura | Electrónica | Por confirmar | Conectores preensamblados | D2 |
-| MAT-021 | Consumibles | Soldadura, material aislante y consumibles de montaje compatibles. | 1 juego | Por confirmar | Equipo / laboratorio | Área de materiales | Electrónica | Por confirmar | Conectores sin soldadura | D2 |
-| MAT-022 | Medición | Multímetro digital para medir voltaje, continuidad y corriente dentro de sus rangos permitidos. | 1 ud. | Por confirmar | Laboratorio / equipo | Laboratorio de Electrónica | Electrónica | Por confirmar | Multímetro equivalente | D1 |
-| MAT-023 | Medición | Báscula digital con resolución adecuada para verificar el límite de 500 g. | 1 ud. | Por confirmar | Laboratorio / equipo | Área de medición | Documentación | Por confirmar | Báscula equivalente | D3 |
-| MAT-024 | Medición | Regla o calibrador para verificar dimensiones máximas de 10 × 10 cm. | 1 ud. | Por confirmar | Laboratorio / equipo | Área de medición | Diseño mecánico | Por confirmar | Instrumento equivalente | D1 |
-| MAT-025 | Software | Arduino IDE compatible con ESP32, versión instalada por registrar. | 1 instalación | Por confirmar | Equipo | Computadora de programación | Programación | Por confirmar | PlatformIO compatible | D1 |
-| MAT-026 | Software | Controladores USB y paquete de tarjetas ESP32 compatibles con la computadora. | 1 instalación | Por confirmar | Equipo | Computadora de programación | Programación | Por confirmar | Entorno equivalente | D1 |
-| MAT-027 | Software | Git y repositorio GitHub del equipo para control de versiones. | 1 repositorio | Por confirmar | Equipo | Repositorio digital | Documentación | Por confirmar | Registro local temporal y posterior sincronización | D1 |
-| MAT-028 | Software/CAD | Herramienta CAD para diseñar el chasis y comprobar dimensiones. | 1 instalación | Por confirmar | Equipo / laboratorio | Computadora de diseño | Diseño mecánico | Por confirmar | Software CAD equivalente | D2 |
-| MAT-029 | Conectividad | Cable USB de datos compatible con el microcontrolador. | 1 ud. | Por confirmar | Equipo / laboratorio | Caja de componentes | Programación | Por confirmar | Cable USB equivalente | D1 |
-| MAT-030 | Zona de pruebas | Dohyo o pista de ensayo de 75 cm de diámetro con superficie negra y borde blanco de 2.5 cm, según reglamento. | 1 ud. | Por confirmar | Laboratorio / equipo | Zona de pruebas autorizada | Equipo | Por confirmar | Pista de ensayo equivalente para diagnóstico, no homologación | D3 |
-| MAT-031 | Pruebas | Objeto o robot de referencia para ensayar detección del oponente. | 1 ud. | Por confirmar | Equipo / laboratorio | Zona de pruebas | Sara | Por confirmar | Obstáculo de referencia estable | D2 |
-| MAT-032 | Seguridad | Área despejada, delimitación de pruebas y procedimiento de desconexión. | 1 conjunto | Por confirmar | Laboratorio | Laboratorio de Electrónica | Equipo | Por confirmar | Otra zona autorizada | D1 |
-| MAT-033 | Documentación | Computadora o celular para registrar fotografías, videos y resultados. | 1 ud. | Por confirmar | Equipo | Área de trabajo | Documentación | Por confirmar | Equipo de registro equivalente | D1 |
-| MAT-034 | Fabricación | Acceso a impresora 3D y material de impresión, si se selecciona chasis impreso. | 1 servicio | Por confirmar | Laboratorio / proveedor | Área de fabricación autorizada | Diseño mecánico | Por confirmar | Chasis comercial compatible | D2 |
+| MAT-001 | Robot/plataforma | Mini-sumo autónomo M01, construcción desde cero, máximo 10 × 10 cm y 500 g. | 1 sistema | 0 | Equipo | Laboratorio de Electrónica, CTA | Equipo | Falta construir | Integración por subsistemas | D1–D5 |
+| MAT-002 | Mecánica | Chasis compacto de aproximadamente 90 × 90 mm, material ligero y resistente. | 1 ud. | 0 | Por adquirir o fabricar | Laboratorio de Electrónica | Claudio, rol propuesto | Falta | Chasis impreso en 3D o estructura comercial compatible | D2 |
+| MAT-003 | Actuadores | Motor DC con reductora, voltaje, relación de reducción y corriente por seleccionar. | 2 uds. | 0 | Por adquirir | Laboratorio de Electrónica | Sara | Falta | Motores DC equivalentes compatibles | D2 |
+| MAT-004 | Mecánica | Ruedas de buena adherencia compatibles con los ejes de los motores. | 2 uds. | 0 | Por adquirir | Laboratorio de Electrónica | Claudio, rol propuesto | Falta | Ruedas de goma compatibles | D2 |
+| MAT-005 | Electrónica | Driver de dos canales para motores DC, con capacidad suficiente para la corriente de los motores seleccionados. | 1 ud. | 0 | Por adquirir | Laboratorio de Electrónica | Sara / Max, rol propuesto | Falta | TB6612FNG u otro driver compatible tras verificar corriente | D2 |
+| MAT-006 | Control | ESP32 DevKit, lógica de 3.3 V y pines suficientes para controlar motores y leer sensores. | 1 ud. | 0 | Por adquirir | Laboratorio de Electrónica | Programación / Sara | Falta | Microcontrolador equivalente | D2 |
+| MAT-007 | Sensores | Sensores de proximidad para detección frontal y lateral del oponente; alcance y modelo por seleccionar. | 3 uds. | 0 | Por adquirir | Laboratorio de Electrónica | Sara | Falta | Sensores infrarrojos o de distancia compatibles | D2 |
+| MAT-008 | Sensores | Sensores reflectivos inferiores para diferenciar superficie negra y borde blanco. | 2 uds. | 0 | Por adquirir | Laboratorio de Electrónica | Sara / programación | Falta | Módulos reflectivos equivalentes | D2 |
+| MAT-009 | Control | Receptor infrarrojo compatible con el protocolo de inicio y paro requerido. | 1 ud. | 0 | Por adquirir | Laboratorio de Electrónica | Max, rol propuesto | Falta | Receptor IR compatible | D2 |
+| MAT-010 | Control | Control remoto infrarrojo compatible con el receptor y el reglamento. | 1 ud. | 0 | Por adquirir | Laboratorio de Electrónica | Max, rol propuesto | Falta | Sistema IR compatible autorizado | D2 |
+| MAT-011 | Alimentación | Batería recargable, voltaje, capacidad y corriente por definir según motores y electrónica. | 1 ud. | 0 | Por adquirir | Área segura autorizada | Max, rol propuesto | Falta | Batería compatible equivalente | D2 |
+| MAT-012 | Alimentación | Cargador adecuado para la química y configuración de la batería seleccionada. | 1 ud. | 0 | Por adquirir | Área autorizada | Max, rol propuesto | Falta | Cargador compatible aprobado | D2 |
+| MAT-013 | Seguridad eléctrica | Interruptor general de alimentación con capacidad adecuada para el sistema. | 1 ud. | 0 | Por adquirir | Laboratorio de Electrónica | Max, rol propuesto | Falta | Interruptor equivalente | D2 |
+| MAT-014 | Seguridad eléctrica | Protección contra sobrecorriente dimensionada según batería y conductores. | 1 conjunto | 0 | Por adquirir | Laboratorio de Electrónica | Max, rol propuesto | Falta | Fusible o protección equivalente | D2 |
+| MAT-015 | Conexiones | Cables de señal y alimentación de calibre adecuado. | 1 juego | 0 | Por adquirir | Laboratorio de Electrónica | Equipo | Falta | Cableado equivalente | D2 |
+| MAT-016 | Conexiones | Conectores y terminales compatibles con motores, sensores, controlador y batería. | 1 juego | 0 | Por adquirir | Laboratorio de Electrónica | Equipo | Falta | Conectores equivalentes | D2 |
+| MAT-017 | Mecánica | Tornillos, tuercas, separadores y soportes para montaje. | 1 juego | 0 | Por adquirir | Laboratorio de Electrónica | Claudio, rol propuesto | Falta | Sujetadores compatibles | D2 |
+| MAT-018 | Mecánica | Pala frontal fija ligera, con bordes seguros para no dañar el Dohyo. | 1 ud. opcional | 0 | Por adquirir o fabricar | Laboratorio de Electrónica | Claudio, rol propuesto | Opcional | Frente inclinado integrado al chasis | D3 |
+| MAT-019 | Herramientas | Juego de desarmadores y pinzas de montaje. | 1 juego | 0 propios | Laboratorio / equipo | Laboratorio de Electrónica | Equipo | Disponibilidad del laboratorio por verificar | Herramientas equivalentes | D2 |
+| MAT-020 | Herramientas | Cautín, soporte y accesorios de soldadura. | 1 estación | 0 propias | Laboratorio | Área de soldadura por confirmar | Max, rol propuesto | Disponibilidad por verificar | Conectores preensamblados | D2 |
+| MAT-021 | Consumibles | Soldadura y material aislante para conexiones. | 1 juego | 0 | Por adquirir / laboratorio | Laboratorio de Electrónica | Equipo | Falta confirmar suministro | Conectores sin soldadura para pruebas | D2 |
+| MAT-022 | Medición | Multímetro digital para voltaje y continuidad. | 1 ud. | 0 propios | Laboratorio / equipo | Laboratorio de Electrónica | Max, rol propuesto | Disponibilidad por verificar | Multímetro equivalente | D2 |
+| MAT-023 | Medición | Báscula digital con resolución adecuada para verificar peso máximo de 500 g. | 1 ud. | 0 propias | Laboratorio / equipo | Área de medición por confirmar | Equipo | Disponibilidad por verificar | Báscula equivalente | D3 |
+| MAT-024 | Medición | Regla o calibrador para verificar dimensiones. | 1 ud. | 0 propios | Laboratorio / equipo | Área de medición por confirmar | Claudio, rol propuesto | Disponibilidad por verificar | Instrumento equivalente | D2 |
+| MAT-025 | Software | Arduino IDE compatible con ESP32; versión definitiva por registrar. | 1 instalación | No verificada | Software gratuito | Computadora del equipo | Joel, rol propuesto | Instalación por verificar | PlatformIO compatible | D1 |
+| MAT-026 | Software | Paquete de tarjetas ESP32 y controlador USB correspondiente. | 1 instalación | No verificada | Herramientas de desarrollo | Computadora del equipo | Joel, rol propuesto | Instalación por verificar | Entorno compatible equivalente | D1 |
+| MAT-027 | Software | Repositorio GitHub para documentación y código del equipo. | 1 repositorio | 1 creado | Equipo Tormenta Negra | Repositorio existente; enlace pendiente de registrar | Equipo | Disponible, ruta pendiente | Copia local del proyecto | D1 |
+| MAT-028 | Software/CAD | Herramienta CAD para diseño y revisión dimensional del chasis. | 1 instalación | No verificada | Software académico o gratuito | Computadora del equipo | Claudio, rol propuesto | Por verificar | Software CAD equivalente | D1 |
+| MAT-029 | Conectividad | Computadora y cable USB de datos compatible con el microcontrolador. | 1 conjunto | No verificada | Equipo / laboratorio | Laboratorio de Electrónica | Programación | Por verificar | Equipo y cable equivalentes | D2 |
+| MAT-030 | Zona de pruebas | Dohyo circular de 75 cm de diámetro, superficie negra y borde blanco de 2.5 cm, conforme a la configuración de referencia. | 1 ud. | 0 propios | Laboratorio / equipo | Zona de pruebas por confirmar | Equipo | Disponibilidad por verificar | Pista de práctica equivalente para diagnóstico | D3 |
+| MAT-031 | Pruebas | Objeto o robot de referencia para ensayar detección del oponente. | 1 ud. | 0 | Por conseguir | Zona de pruebas | Sara | Falta | Obstáculo estable de referencia | D3 |
+| MAT-032 | Seguridad | Zona delimitada de pruebas, procedimiento de desconexión y superficie de trabajo adecuada. | 1 conjunto | No verificada | Laboratorio de Electrónica | CTA | Equipo | Pendiente de validación | Otra zona autorizada | D1 |
+| MAT-033 | Documentación | Cámara o teléfono para registrar fotos y videos. | 1 ud. | No verificada | Equipo | Área de trabajo | Equipo | Por verificar | Dispositivo equivalente | D1 |
+| MAT-034 | Fabricación | Acceso a impresora 3D y material de impresión, si se selecciona ese método de fabricación. | 1 servicio | No verificado | Laboratorio / proveedor | Área de fabricación por confirmar | Claudio, rol propuesto | Por verificar | Chasis comercial o fabricación alternativa | D2 |
 
 También disponible el archivo [`datos/inventario_materiales.csv`](../../datos/inventario_materiales.csv) para registrar muchos materiales sin agrandar esta tabla.
 
@@ -360,94 +369,102 @@ También disponible el archivo [`datos/inventario_materiales.csv`](../../datos/i
 
 | Misión | Revisar y especificar (marca/modelo/cantidad reales) |
 |---|---|
-| M01 · Mini-sumo autónomo | Chasis compacto de máximo 10 × 10 cm, dos motores DC con reductora, dos ruedas de buena adherencia, un driver de motores de dos canales, un microcontrolador ESP32 o equivalente, tres sensores propuestos de detección del oponente, dos sensores reflectivos inferiores, un receptor y control infrarrojo para inicio y paro, batería y cargador compatibles, protección eléctrica, interruptor general, cableado, conectores, soportes, herramientas de montaje, multímetro, báscula, regla o calibrador, computadora con entorno de programación, repositorio GitHub, Dohyo de pruebas y objeto de referencia. Las marcas y modelos definitivos se registrarán después de revisar el inventario físico. |
+| M01 · Mini-sumo autónomo | Se construirá desde cero. Se requieren un chasis de máximo 10 × 10 cm, dos motores DC con reductora, dos ruedas de buena adherencia, un driver de motores de dos canales, un ESP32 o controlador equivalente, tres sensores propuestos de detección del oponente, dos sensores reflectivos inferiores, receptor y control infrarrojo, batería y cargador compatibles, protección eléctrica, interruptor general, cableado, conectores, tornillería, herramientas, multímetro, báscula, regla o calibrador, computadora con entorno de programación, software CAD, repositorio GitHub, Dohyo de práctica y objeto de referencia. Actualmente no se cuenta con componentes físicos propios; las marcas y modelos definitivos se seleccionarán antes de adquirirlos. |
 
 **Enlaces a fichas técnicas / instrucciones de conexión, fabricación y seguridad:**
 
-- [Reglamento oficial Robolympics 2026](https://profcduquetec.github.io/robolympics/).
-- [Documentación oficial de ESP32](https://docs.espressif.com/projects/esp-idf/en/stable/esp32/).
-- [Arduino IDE](https://docs.arduino.cc/software/ide/).
-- [Catálogo Kaizen Dōjō C2](https://docs.google.com/spreadsheets/d/1FKxFzoyu9KJb3RlOwB609vliS5hAtmwWFu2G2zG3Ky4/edit).
-- `docs/seguridad.md` — pendiente de crear.
-- `docs/conexiones.md` — pendiente de crear.
-- `datos/inventario_materiales.csv` — pendiente de completar.
-- Fichas técnicas de motores, driver, sensores y batería: pendientes de seleccionar según los modelos reales.
+- Reglamento Robolympics: https://profcduquetec.github.io/robolympics/
+- Documentación ESP32: https://docs.espressif.com/projects/esp-idf/en/stable/esp32/
+- Arduino IDE: https://docs.arduino.cc/software/ide/
+- Catálogo Mission Forge C2: https://docs.google.com/spreadsheets/d/1FKxFzoyu9KJb3RlOwB609vliS5hAtmwWFu2G2zG3Ky4/edit
+- Protocolo de seguridad del equipo: `docs/seguridad.md` — pendiente de crear y validar.
+- Diagrama de conexiones: `docs/conexiones.md` — pendiente de crear.
+- Inventario verificable: `datos/inventario_materiales.csv` — pendiente de actualizar.
+- Fichas técnicas de motores, driver, sensores y batería: pendientes de seleccionar los modelos reales.
 
 ### 5.3 Riesgos de recursos y abastecimiento
 
 | Bloqueante | A qué alcance afecta | Solución prevista / fecha y responsable | Impacto si no se resuelve |
 |---|---|---|---|
-| No contar con motores o driver compatibles | MS03 · Motorización y tracción | Revisar inventario en D1 y seleccionar componentes compatibles antes de D2. Responsable: Sara y área de electrónica. | No se podrán realizar pruebas de movimiento. |
-| No contar con sensores adecuados | MS06 · Detección del oponente | Verificar sensores disponibles y seleccionar alternativas compatibles. Responsable: Sara y área de sensores. | No se podrán completar las cinco pruebas de detección. |
-| Alimentación insuficiente o incompatible | MS03 y MS06 | Revisar voltaje, corriente y batería antes de energizar el sistema. Responsable: electrónica. | Riesgo de fallas, reinicios o daño de componentes. |
-| Exceder el peso máximo de 500 g | Integración general | Pesar componentes y revisar distribución antes del montaje definitivo. Responsable: diseño mecánico y documentación. | El robot podría no pasar la homologación. |
-| No contar con control infrarrojo compatible | Integración general y seguridad | Conseguir y verificar un sistema de inicio y paro conforme al reglamento. Responsable: electrónica y programación. | El robot no cumpliría los requisitos de competencia. |
-| Falta de pista o zona de ensayo autorizada | Pruebas de movimiento y detección | Solicitar espacio y materiales de prueba al docente antes de D2. Responsable: equipo. | Las pruebas físicas deberán reprogramarse. |
-| Falta de autorización o identificación exacta del laboratorio | Todas las pruebas físicas | Confirmar edificio, laboratorio, horario y supervisor antes de comenzar. Responsable: equipo y docente. | No se podrán iniciar las pruebas físicas. |
-| Errores de integración entre sensores y motores | MS03 y MS06 | Definir pines, señales y lógica de control; probar subsistemas por separado. Responsable: Sara y programación. | El robot podría moverse incorrectamente o no detectar al oponente. |
+| No contar todavía con motores y driver | MS03 · Motorización y tracción | Seleccionar motores y driver compatibles antes de D2. Responsable propuesto: Sara y apoyo de electrónica. | No podrán realizarse pruebas de movimiento. |
+| No contar con sensores | MS06 · Detección del oponente | Seleccionar sensores compatibles con el controlador y definir cantidades antes de D2. Responsable: Sara. | No podrán realizarse las cinco pruebas de detección. |
+| No contar con batería ni protección eléctrica | MS03 y sistema completo | Definir consumo de motores y electrónica para seleccionar alimentación segura. Responsable propuesto: Max. | No podrá energizarse el robot de manera segura. |
+| No contar con chasis | Integración mecánica | Diseñar una estructura compacta que cumpla las dimensiones permitidas. Responsable propuesto: Claudio. | No podrán montarse los componentes de forma definitiva. |
+| No contar con sistema infrarrojo | Integración general y seguridad | Seleccionar sistema compatible con el reglamento antes de realizar pruebas autónomas completas. Responsable propuesto: Max y Joel. | El robot podría no cumplir los requisitos de competencia. |
+| No contar con pista de práctica | Pruebas de detección y movimiento | Solicitar una pista o espacio autorizado de ensayo. Responsable: equipo. | No podrá verificarse el comportamiento completo dentro del Dohyo. |
+| Disponibilidad de herramientas del laboratorio no verificada | Construcción y medición | Revisar con el profesor Camilo René Duque qué herramientas pueden utilizarse. Responsable: equipo. | Podría retrasarse el montaje o requerirse conseguir herramientas. |
+| No confirmar autorización y condiciones de seguridad | Todos los alcances físicos | Confirmar laboratorio, horario, supervisor y medidas de seguridad antes de energizar. Responsable: equipo y docente. | Las pruebas físicas deberán posponerse. |
+| Exceder peso o dimensiones | Diseño e integración | Verificar dimensiones del CAD y pesar el robot durante el montaje. Responsable propuesto: Claudio y equipo. | El robot podría no pasar homologación. |
+| Errores de comunicación entre sensores y motores | MS03 y MS06 | Definir pines, voltajes y señales; probar cada subsistema por separado. Responsable: Sara y apoyo de programación. | El robot podría realizar movimientos incorrectos. |
 
-**Materiales completos para ejecutar el Día 2:** Por confirmar mediante inventario físico.
+**Materiales completos para ejecutar el Día 2:** **No.** Actualmente no se cuenta con los componentes físicos necesarios.
 
-**Confirmado por:** Pendiente de validación del docente y responsable del equipo.
+**Confirmado por:** Equipo Tormenta Negra respecto a la falta de materiales propios. Disponibilidad del laboratorio pendiente de revisión con el profesor Camilo René Duque.
 
-**Fecha/hora:** Pendiente de confirmación.
+**Fecha/hora:** Registro elaborado el 2026-10-26; hora de validación del inventario pendiente.
 
 ## 6 · Kata 0 — exploración técnica de arranque (100–160 min)
 
 | Integrante/alcance | Pregunta técnica | Mini-prueba o prototipo de exploración | Resultado o error observado | Evidencia enlazada | Acción necesaria antes de D2 |
 |---|---|---|---|---|---|
-| Sara / MS03 | ¿Los motores y el driver permiten avanzar, retroceder y girar correctamente? | Conectar un motor a la vez y ejecutar comandos breves para comprobar el sentido de giro. | Pendiente de realizar. | Video y registro de conexiones pendientes. | Confirmar modelos, voltajes y compatibilidad del driver. |
-| Sara / MS06 | ¿Los sensores pueden detectar al oponente desde diferentes posiciones? | Colocar un objeto de referencia frente y a los lados de los sensores y registrar las lecturas. | Pendiente de realizar. | Tabla de lecturas y fotografías pendientes. | Confirmar modelo de sensores y distancias de detección. |
-| Integrante de diseño mecánico / ID por definir | ¿Todos los componentes caben dentro de 10 × 10 cm? | Realizar una distribución preliminar de componentes y verificar dimensiones. | Pendiente de realizar. | Boceto o CAD pendiente. | Confirmar medidas de motores, batería, sensores y controlador. |
-| Integrante de electrónica / ID por definir | ¿La alimentación es suficiente y segura para motores y controlador? | Revisar fichas técnicas y medir voltajes antes de realizar conexiones definitivas. | Pendiente de realizar. | Diagrama eléctrico y mediciones pendientes. | Seleccionar batería, protección y conexiones adecuadas. |
-| Integrante de programación / ID por definir | ¿Podemos integrar la lectura de sensores con el control de motores? | Desarrollar un programa básico que reciba una señal de sensor y ejecute un movimiento. | Pendiente de realizar. | Código y registro de prueba pendientes. | Definir pines y funciones de control. |
-| Integrante de documentación / ID por definir | ¿La propuesta cumple con los requisitos de la competencia? | Revisar peso, dimensiones, funcionamiento autónomo, inicio y paro infrarrojo y seguridad. | Requisitos documentales identificados; homologación física pendiente. | Reglamento oficial y lista de verificación. | Completar inventario y registrar evidencias. |
+| Claudio / alcance individual por registrar | ¿Cómo podemos distribuir todos los componentes dentro de 10 × 10 cm sin exceder 500 g? | Propuesta: realizar un boceto o modelo CAD del chasis, considerando motores, ruedas, sensores, batería y controlador. | No realizado o no documentado. El equipo todavía no cuenta con componentes físicos para verificar dimensiones reales. | CAD o boceto pendiente de enlazar. | Consultar compromiso de Claudio y definir medidas de los componentes seleccionados. |
+| Sara / MS03 | ¿Podemos lograr que los dos motores avancen, retrocedan y giren correctamente? | Propuesta: conectar los motores al driver y ejecutar comandos breves para comprobar su sentido de giro. | No realizado. Actualmente no se cuenta con motores ni driver. | Código, fotografías y video pendientes. | Conseguir motores, driver, alimentación y cables compatibles. |
+| Sara / MS06 | ¿Podemos detectar al oponente desde diferentes posiciones y utilizar esa información para orientar el robot? | Propuesta: conectar sensores de proximidad, colocar un objeto de referencia y realizar cinco pruebas de detección. | No realizado. Actualmente no se cuenta con sensores. | Tabla de cinco pruebas y video pendientes. | Conseguir sensores y confirmar compatibilidad con el controlador. |
+| Max / alcance individual por registrar | ¿Qué alimentación y conexiones necesitamos para operar motores y microcontrolador de manera segura? | Propuesta: revisar fichas técnicas, elaborar un diagrama eléctrico y calcular las necesidades de alimentación. | No realizado o no documentado. Los modelos definitivos de componentes aún no se han seleccionado. | Diagrama eléctrico pendiente. | Consultar compromiso de Max y seleccionar batería, protección y driver compatibles. |
+| Joel / alcance individual por registrar | ¿Cómo podemos programar los movimientos básicos y después integrar la detección del oponente? | Propuesta: definir funciones de avance, retroceso, giro, espera y paro, además de la lógica de lectura de sensores. | No realizado o no documentado. Todavía no existe un robot físico integrado. | Código y diagrama de estados pendientes. | Consultar compromiso de Joel y acordar controlador, pines e interfaces. |
 
 **Integración entre subequipos:**
 
-Para integrar los diferentes subsistemas necesitamos definir cómo se conectarán los motores, sensores y sistema de alimentación con el microcontrolador.
+Para integrar el robot necesitamos que los subsistemas mecánico, electrónico y de programación sean compatibles.
 
-Proponemos utilizar el ESP32 como unidad principal de control, conectado a un driver de dos canales para manejar los motores de manera independiente.
+La propuesta consiste en utilizar dos motores DC con reductora para generar movimiento mediante tracción diferencial. El driver permitirá controlar ambos motores de manera independiente.
 
-Los sensores de detección enviarán información al microcontrolador para determinar si el oponente se encuentra al frente o hacia alguno de los lados.
+El microcontrolador recibirá las señales de los sensores y decidirá si el robot debe buscar al oponente, girar hacia él, avanzar o evitar el borde del Dohyo.
 
-También se propone utilizar sensores inferiores para identificar el borde blanco del Dohyo y evitar que el robot salga de la pista.
+También necesitamos integrar un sistema de inicio y paro infrarrojo para cumplir con los requisitos de competencia.
 
-La programación deberá dar prioridad a la señal de paro y a la detección del borde antes de ejecutar movimientos de búsqueda o ataque.
+Antes de comenzar el montaje debemos acordar el modelo de los motores, la corriente que necesitan, el voltaje de alimentación, los pines del microcontrolador y el tipo de señal de cada sensor.
 
-Como primera integración queremos lograr que los motores respondan correctamente a comandos básicos. Después conectaremos los sensores y verificaremos que sus lecturas puedan utilizarse para modificar el movimiento.
+La primera prioridad será comprobar el movimiento básico. Después integraremos los sensores y verificaremos que sus lecturas permitan modificar el comportamiento del robot.
 
-Hasta el momento esta arquitectura corresponde a una propuesta de integración y todavía necesita validarse mediante pruebas físicas.
+Por el momento no se ha validado ninguna interfaz física porque todavía no contamos con materiales.
 
 ## 7 · Cierre: contrato técnico y puerta de salida E1 (160–180 min)
 
 - [x] El objetivo colectivo tiene condición de éxito verificable.
-- [ ] Cada estudiante depositó **su kit Markdown original** en `participantes/<alias>/compromiso.md`.
-- [ ] Cada estudiante completó [E1 personal](../../participantes/_plantilla/dias/E1.md) y definió frontera, evidencia y alcance negociado.
-- [ ] El inventario está **completo** y cada recurso indica cantidad, especificación, disponibilidad y responsable.
-- [ ] Se asignó **dōjō específico** con edificio, salón/taller, horarios, supervisión y autorización.
-- [ ] Se inspeccionaron riesgos, paro y condiciones de seguridad de la plataforma.
-- [x] Se identificaron dependencias y posibles bloqueos del Día 2; falta confirmar disponibilidad de recursos y responsables.
-- [ ] El profesor aprobó el alcance y la seguridad, o registró observaciones y una alternativa viable.
+- [ ] Cada estudiante depositó **su kit Markdown original** en `participantes/<alias>/compromiso.md`. Los cuatro compromisos ya fueron generados; falta verificar su ubicación dentro del repositorio.
+- [ ] Cada estudiante completó [E1 personal](../../participantes/_plantilla/dias/E1.md) y definió frontera, evidencia y alcance negociado. Los compromisos existen, pero falta confirmar las evidencias personales y la negociación.
+- [ ] El inventario está **completo** y cada recurso indica cantidad, especificación, disponibilidad y responsable. Se elaboró el inventario preliminar, pero faltan modelos definitivos y verificación de recursos del laboratorio.
+- [ ] Se asignó **dōjō específico** con edificio, salón/taller, horarios, supervisión y autorización. Se identificó el Laboratorio de Electrónica del CTA y el horario de trabajo; falta confirmar número de laboratorio, reserva y autorización.
+- [ ] Se inspeccionaron riesgos, paro y condiciones de seguridad de la plataforma. Se identificaron riesgos previstos, pero todavía no hay plataforma física ni pruebas de seguridad.
+- [x] Se identificaron dependencias y bloqueos del Día 2; se documentó la falta de materiales y las acciones necesarias para resolverla.
+- [ ] El profesor aprobó el alcance y la seguridad, o registró observaciones y una alternativa viable. Pendiente de revisión del profesor Camilo René Duque.
 
-**Estado del gate:** REPLANIFICAR hasta completar las verificaciones obligatorias.
+**Estado del gate:** **REPLANIFICAR**.
 
 **Condiciones, responsables, fecha y próxima decisión:**
 
-Antes de comenzar el Día 2 necesitamos confirmar los integrantes y sus responsabilidades, revisar físicamente los componentes disponibles y verificar que contamos con motores, driver, sensores y alimentación compatibles.
+Para continuar con el desarrollo del robot mini-sumo necesitamos completar la selección y adquisición de materiales.
 
-También debemos confirmar el edificio y número del Laboratorio de Electrónica, el horario autorizado y el responsable que supervisará las actividades.
+Como todavía no contamos con componentes físicos, primero debemos definir los modelos de motores, driver, sensores, microcontrolador y batería, verificando que sean compatibles entre sí.
 
-Sara continuará con la preparación de los alcances MS03 y MS06, enfocándose en las pruebas de motorización y detección del oponente.
+También necesitamos confirmar qué herramientas e instrumentos están disponibles en el Laboratorio de Electrónica del CTA para evitar adquirir recursos que podamos utilizar ahí con autorización.
 
-Los demás integrantes deberán confirmar sus alcances individuales y colocar sus compromisos originales en el repositorio.
+Claudio, Sara, Max y Joel deberán revisar sus compromisos individuales y acordar cómo se relacionan sus alcances para evitar problemas durante la integración.
 
-Una vez que se revise el inventario y se obtenga la autorización correspondiente podremos comenzar con las pruebas físicas y registrar los primeros resultados.
+Sara continuará con la planeación de MS03 y MS06, enfocándose en el control de motores y la detección del oponente.
 
-**Próxima decisión:** Validar con el docente la viabilidad del diseño, la disponibilidad de recursos y las condiciones de seguridad antes de iniciar las pruebas.
+Una vez que tengamos los componentes necesarios podremos realizar las primeras pruebas de movimiento y sensores, documentando los resultados con fotografías, videos, código y tablas.
 
-**Revisor docente:** Pendiente de confirmación.
+Antes de comenzar cualquier prueba física debemos confirmar las condiciones de seguridad, el espacio exacto y la autorización correspondiente.
 
-**Enlace a commit/PR:** Pendiente de agregar después de guardar el archivo en GitHub.
+**Próxima decisión:** Revisar con el profesor Camilo René Duque la selección de componentes, disponibilidad de herramientas, condiciones de seguridad y viabilidad del plan de construcción desde cero.
+
+**Revisor docente:** Camilo René Duque — revisión pendiente.
+
+**Enlace a commit/PR:** Repositorio GitHub creado; enlace al commit o pull request de E1 pendiente de registrar.
 
 **Criterio mínimo E1:** existe un contrato de misión y frontera individual, hay evidencia del punto de partida, un inventario verificable y un espacio de trabajo autorizado. La ausencia de algún material crítico NO debe esconderse.
+
+
+
