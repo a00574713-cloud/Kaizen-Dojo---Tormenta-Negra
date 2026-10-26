@@ -12,7 +12,7 @@ validacion_docente: "PENDIENTE"
 
 # Mi compromiso Kaizen · 2026
 
-> **Mi desafío:** construir un mini sumo sutonomo
+> **Mi desafío:** construir un mini sumo autonomo, trabajando diferentes areas en conjunto para lograr el objetivo
 
 ## 1. Mi misión y mi frontera
 
@@ -28,15 +28,15 @@ Construir un mini sumo desde cero
 
 **Al finalizar Kaizen Dōjō demostraré que puedo:**
 
-construir un mini sumo sutonomo
+construir un mini sumo autonomo
 
 **La evidencia o indicador que utilizaré:**
 
-mostrando el proceso desde el modelado hasta el ensamblado y programación
+Mostrando el proceso desde el modelado hasta el ensamblado y programación
 
 **Mi motivación:**
 
-me motiva a superarme a mi mismo y aprender mucho mas
+Me motiva a superarme a mi mismo y aprender mucho mas
 
 ## 2. Alcances y katas seleccionados
 
