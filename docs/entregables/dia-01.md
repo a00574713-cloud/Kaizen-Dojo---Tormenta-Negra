@@ -175,16 +175,16 @@ revision_docente: "PENDIENTE"
 | Nombre / alias del equipo | Tormenta Negra. |
 | Misión / plataforma | M01 · Mini-sumo autónomo. |
 | Objetivo verificable del robot (una frase) | Construir desde cero un robot mini-sumo autónomo que pueda avanzar, retroceder, girar, detectar a un oponente y reaccionar según las lecturas de sus sensores, comprobando su funcionamiento mediante pruebas documentadas. |
-| **Dōjō asignado — campus, edificio y sala/taller exactos** | Tecnológico de Monterrey, Campus León / Edificio CTA / Laboratorio de Electrónica. Número de laboratorio pendiente de confirmar. |
+| **Dōjō asignado — campus, edificio y sala/taller exactos** | Tecnológico de Monterrey, Campus León / Edificio CTA / Laboratorio de Electrónica. |
 | Puesto o zona dentro del dōjō | Trabajaremos en una mesa del Laboratorio de Electrónica. Para las pruebas de movimiento utilizaremos una zona despejada donde podamos observar el comportamiento del robot sin poner en riesgo a otras personas o equipos. |
 | Horario / reserva confirmada | Nuestro horario de trabajo es de 9:00 a 12:00 durante la semana. La autorización específica del espacio está pendiente de confirmar. |
-| Responsable del espacio y contacto institucional | Profesor Camilo René Duque. El contacto será mediante los canales institucionales de la materia. |
+| Responsable del espacio y contacto institucional | Profesor Camilo René Duque. El contacto será mediante el correo institucional camilo.duque@tec.mx en un horario adecuado. |
 | Acceso, aforo y ajustes de accesibilidad | Seguiremos las indicaciones del laboratorio y mantendremos despejados los pasillos y nuestra mesa de trabajo. Si algún integrante necesita apoyo con alguna actividad, nos organizaremos para ayudarlo. |
 | Salidas, botiquín, extintor y punto de reunión | Antes de comenzar las pruebas físicas identificaremos las salidas, el botiquín, el extintor y el punto de reunión, con apoyo del responsable del laboratorio. |
 | Zonas segregadas por riesgo | Separaremos el área de programación y conexiones del espacio donde realicemos las pruebas de movimiento. También tendremos cuidado con las herramientas y los componentes eléctricos. |
 | Ubicación de materiales y resguardo nocturno | Nos proporcionarán un kit para construir el mini-sumo desde cero. Cuando lo recibamos, revisaremos sus componentes y los organizaremos en un lugar seguro. El sitio de resguardo se acordará con el responsable del laboratorio. |
 | Plan de sustitución si falla el espacio | Si no podemos utilizar el Laboratorio de Electrónica, avanzaremos con el diseño, programación, revisión de componentes y documentación hasta contar con otro espacio autorizado para realizar pruebas físicas. |
-| Instructor o supervisor presente en la sesión | Profesor Camilo René Duque. Presencia en el bloque específico pendiente de confirmar. |
+| Instructor o supervisor presente en la sesión | Profesor Camilo René Duque. |
 
 > ⛔ **No se permite avanzar a pruebas físicas sin dōjō concreto y autorización del responsable.** Aunque ya tenemos identificado el Laboratorio de Electrónica del CTA, antes de comenzar debemos confirmar que podemos utilizarlo y revisar las condiciones de seguridad.
 
