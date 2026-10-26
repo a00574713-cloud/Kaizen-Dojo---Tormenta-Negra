@@ -154,16 +154,6 @@ También disponible el archivo [`datos/inventario_materiales.csv`](../../datos/i
 
 
 
----
-kaizen_dojo: "2026"
-formato: "Entregable diario G2"
-evidencia: "E1"
-dia: 1
-responsable_registro: "equipo"
-estado: "EN PREPARACIÓN"
-fecha: "2026-10-26"
-revision_docente: "PENDIENTE"
----
 
 # E1 · Día 1 — ATREVERSE | Contrato de misión, inventario y dōjō
 
