@@ -4,82 +4,120 @@ formato: "Entregable diario G2"
 evidencia: "E3"
 dia: 3
 responsable_registro: "equipo"
-estado: "PENDIENTE"
-fecha: "AAAA-MM-DD"
+estado: "EN_PROCESO"
+fecha: "2026-10-28"
 revision_docente: "PENDIENTE"
 ---
 
 # E3 · Día 3 — MEDIR Y APRENDER | Kaizen 1: ensayo, hipótesis y mejora
 
-> **Regla:** sustituir los corchetes, registrar lo realmente observado y enlazar a evidencias del repositorio. **No inventar datos ni marcar pruebas no realizadas.** Los archivos del equipo resumen el trabajo compartido; las reflexiones y evidencias personales van en `participantes/<alias>/dias/E3.md`.
+> **Corte de avance del 28 de octubre de 2026, antes del trabajo de fabricación del chasis previsto para esta tarde.** Se documentan los hechos reportados de las pruebas de comunicación, motores y sensores; las mediciones formales y el montaje pendiente no se presentan como realizados. Los datos personales deben ser revisados por cada integrante.
 
 ## 0 · Contexto de investigación de hoy
 
-**Fecha/equipo/misión:** [...] · **Dōjō exacto:** [...] · **Versión de partida:** [commit/etiqueta V1] · **Protocolo E2:** [enlace].
+| Campo | Registro |
+|---|---|
+| Fecha, equipo y misión | 28 de octubre de 2026 · Tormenta Negra · M01, mini-sumo autónomo. |
+| Dōjō de referencia | Tecnológico de Monterrey, Campus León; edificio CTA, Laboratorio de Electrónica. No se ha confirmado en qué mesa o espacio exacto se realizaron las pruebas de hoy. |
+| Continuidad con E2 | El 27 de octubre se conectaron sensores y motores a la placa, pero no se hicieron pruebas funcionales. Consultar [E2](dia-02.md). |
+| Controlador y alimentación identificados en D3 | Tarjeta Azimov Team programada desde Arduino IDE; batería con etiqueta nominal de 7.4 V y capacidad de 500 mAh. El profesor indicó que la tarjeta ya cuenta con regulador; no se documentó medición de tensión, referencia del regulador o verificación de su capacidad. |
+| Versión de partida | **Referencia descriptiva, no versión de firmware validada:** D2-CABLEADO (27-10-2026). Antes de estos ensayos no había V1 funcional medida ni commit de código de prueba en el repositorio. |
+| Protocolo de partida | [Protocolo propuesto en E2](../../pruebas/protocolo.md) y [datos de ensayos](../../datos/ensayos.csv). Este protocolo requiere actualización/validación antes de realizar los ensayos formales de E3. |
 
 ## 1 · Ruta del Día 3 (180 min)
 
-| Actividad | Minutos | Evidencia a registrar |
+Los tiempos son **los bloques de la plantilla**, no tiempos reales registrados. El trabajo de esta mañana y el montaje previsto para esta tarde no se presentan como una sesión cronometrada de 180 minutos.
+
+| Actividad | Minutos previstos | Evidencia y estado al corte |
 |---|---:|---|
-| Analizar un fallo real / demostración | 0–15 | [fallo observado; condiciones] |
-| Diseño del experimento | 15–40 | [hipótesis, variable, controles, riesgo] |
-| Diagnóstico del prototipo V1 | 40–80 | [causa probable y prueba discriminante] |
-| Kaizen 1: cambio técnico | 80–125 | [diff, firmware, CAD, integración] |
-| Reensayo equivalente | 125–160 | [datos crudos V1 vs K1] |
-| Documentar, debatir, reflejar | 160–180 | [conclusión y E3 personal] |
+| Analizar un fallo real / demostración | 0–15 | **Realizado a nivel exploratorio:** los motores no giraban durante la prueba con solamente USB. La comunicación serie sí funcionó. Sin video o mediciones cargadas. |
+| Diseño del experimento | 15–40 | **Propuesta documentada aquí:** contrastar la respuesta a comandos de motor bajo una alimentación adecuada, con condiciones y controles definidos previamente. Aún no se realizaron cinco corridas comparables. |
+| Diagnóstico del prototipo V1 | 40–80 | **Observación exploratoria:** con la batería de 7.4 V los motores sí giraron. Esto apunta a una diferencia de alimentación, pero no determina la causa eléctrica exacta. |
+| Kaizen 1: cambio técnico | 80–125 | **Cambio de configuración realizado:** pasar de una prueba solo por USB a probar con batería. **Pendiente:** identificar y guardar versión reproducible de firmware, condiciones eléctricas y evidencia. |
+| Reensayo equivalente | 125–160 | **Pendiente:** no hay cinco pares V1/K1, tiempos, tensiones ni tasas de éxito registrados. |
+| Documentar, debatir, reflejar | 160–180 | **En proceso:** este E3 colectivo y los registros personales. Falta integrar el trabajo de chasis previsto para la tarde y revisar con el profesor. |
+
+### Avances funcionales exploratorios comunicados hoy
+
+- **Comunicación:** Arduino IDE cargó el programa y el Monitor Serie mostró «Conexion correcta».
+- **Motores:** con solo USB no se observó giro; al utilizar la batería de 7.4 V / 500 mAh se reportó giro de los dos motores.
+- **Sensores de oponente:** se reportó respuesta correcta de los tres JS40F.
+- **Sensores de línea:** se reportó respuesta correcta de los dos QTR-1A.
+- **Integración total:** no se ha demostrado funcionamiento autónomo, reconocimiento del borde durante desplazamiento ni ataque a un oponente. Las pruebas fueron de subsistemas.
+
+Los resultados anteriores son **observaciones cualitativas reportadas**, no ensayos repetidos ni valores crudos almacenados. No hay capturas de lecturas, fotografías de E3 o videos de pruebas cargados a la fecha de este corte.
 
 ## 2 · Problema, hipótesis y trazabilidad
 
-| Campo | Completar |
+| Campo | Registro |
 |---|---|
-| Fallo / oportunidad de mejora observada (con evidencia) | [...] |
-| Dónde se presenta y cuántas veces | [contexto + n, no generalizar] |
-| Diagnóstico: causas alternativas que se consideraron | [...] |
-| Hipótesis contrastable: **si cambio X, espero que Y ocurra porque Z** | [...] |
-| Variable independiente que se modifica | [...] |
-| Métrica de resultado con unidad y criterio de mejora | [...] |
-| Variables que se mantendrán iguales | [...] |
-| Ensayos requeridos y forma de muestreo | [5 o n justificado] |
-| Riesgo de sesgo/confusión y cómo se mitigará | [...] |
-| Parada de seguridad / condición de aborto | [...] |
+| Fallo / oportunidad de mejora observada | Durante la prueba de los motores conectados a la tarjeta, ninguno giraba cuando se usaba únicamente el USB. |
+| Dónde se presenta y cuántas veces | En una prueba inicial reportada el 28-10-2026. **Número de repeticiones no registrado**; no se puede afirmar una tasa de fallo. |
+| Diagnóstico: causas alternativas | Posible falta de energía para la etapa de potencia de los motores, diferencia en la ruta de alimentación, condición de habilitación del controlador o conexión. No se midieron tensión ni corriente para discriminar entre las alternativas. |
+| Hipótesis contrastable | **Si alimentamos el sistema mediante la entrada y la fuente aprobadas para la etapa de motores, manteniendo el comando y el montaje de prueba, esperamos observar respuesta de giro y paro controlado porque la alimentación necesaria estará disponible.** La explicación sobre suficiencia eléctrica debe verificarse, no darse por probada. |
+| Variable independiente | Configuración de alimentación para el ensayo (solo USB frente a alimentación adecuada según diseño del controlador). No volver a energizar entradas de tensión incierta; confirmar esquema y seguridad con el profesor. |
+| Métrica de resultado y criterio de mejora | Por cada orden a cada motor: respuesta correcta/incorrecta (conteo y porcentaje sobre ensayos válidos), sentido observado y parada. Mejora: mayor proporción de órdenes cumplidas sin fallos, con el mismo protocolo. |
+| Variables a mantener iguales | Placa, motores, conexión de control, comandos, firmware, tiempo de orden y soporte seguro con ruedas levantadas. Registrar voltaje real y condiciones antes de cada corrida. Estas condiciones **todavía no fueron verificadas ni registradas**. |
+| Ensayos requeridos y muestreo | **Plan:** cinco pruebas comparables por condición, tras revisión eléctrica; una orden de giro y paro por motor en cada repetición, con resultados separados por motor. Acordar con el profesor si la comparación USB/batería puede ejecutarse en condiciones seguras y si es una línea base válida. |
+| Riesgo de sesgo/confusión | USB y batería pueden alimentar rutas distintas; no se comprobó que la única diferencia entre pruebas fuera la fuente. Un chasis nuevo también alteraría las condiciones. Registrar conexiones, tensión, firmware y sujeción; no comparar pruebas antes/después del chasis como si fueran idénticas. |
+| Parada de seguridad / aborto | Detener, apagar y revisar ante calentamiento, olor, cortocircuito, cable suelto, pérdida de control o movimiento inesperado. No modificar conexiones energizadas. Elevar las ruedas para las pruebas iniciales; usar la alimentación aprobada por el profesor. |
+
+**Pines de referencia del documento de la tarjeta Azimov Team utilizado para las pruebas:** QTR izquierdo A2, derecho A3; JS40F izquierdo D2, central A5, derecho A4; motor izquierdo D5/D6 y derecho D10/D11. Esta correspondencia proviene de la tabla de conexiones del documento proporcionado al equipo, no de mediciones eléctricas registradas en E3.
 
 ## 3 · Colaboración y cambio técnico Kaizen 1
 
-| Alias y alcance | Kata asociado (código o propio) | Qué cambió exactamente | Por qué | Código/CAD/commit y responsable de revisión | Validación de interfaz |
-|---|---|---|---|---|---|
-| [...] | [...] | [...] | [...] | [...] | [...] |
+**Cambio observado:** se pasó de ejecutar la prueba de motores con únicamente el cable USB a utilizar la batería nominal de 7.4 V. Los motores giraron después del cambio. **No se puede atribuir la ejecución física a una persona concreta del equipo sin confirmación individual.**
 
-**Identificador de versión K1:** [...]. **Otras modificaciones involuntarias o perturbaciones:** [...].
+| Alias y alcance | Kata asociado | Qué cambió / qué corresponde documentar | Por qué | Código/CAD/commit y revisión | Validación de interfaz |
+|---|---|---|---|---|---|
+| Equipo (autoría del cambio por confirmar) | Diagnóstico de motorización MS03 | Cambio de la configuración de alimentación durante la prueba; funcionamiento reportado de ambos motores. | Investigar la falta de giro con alimentación solo USB. | Aún no hay firmware de prueba ni commit técnico identificados; revisión con el profesor pendiente. | Respuesta de los motores observada, sin registro cuantitativo ni verificación eléctrica del regulador. |
+| `A00574713` (Joel), MS01/MS06 | Estructura mecánica y ensayos de sensores | Pruebas de los cinco sensores reportadas en la conversación; fabricación del chasis y rangos medidos siguen pendientes. | Verificar entradas antes de la programación autónoma. | [E3 de Joel](../../participantes/A00574713/dias/E3.md); sin archivo de mediciones personales. | Respuesta cualitativa reportada; sin distancias, ángulos ni tasa de aciertos. |
+| `saragdr` (Sara), MS03/MS06 | Montaje/motorización y detección | Participación específica en las pruebas de hoy **pendiente de confirmar**. Su aportación en cableado y soldadura corresponde al E2. | Coordinar el seguimiento de motorización y sensores. | [E3 personal](../../participantes/saragdr/dias/E3.md), por completar. | Pendiente de evidencia individual. |
+| `MaxAmCam` (Max), MS01/MS03 | Chasis y motores | Construcción/adaptación del chasis prevista para esta tarde; no se afirma que ya esté hecha. | Completar fijaciones e integración física. | [E3 personal](../../participantes/MaxAmCam/dias/E3.md), por completar. | Montaje y ensayos posteriores pendientes. |
+| `A00574802` (Claudio), MS03/MS07/MS10 | Motores, control y estrategia | Aporte concreto a las pruebas de hoy **pendiente de confirmar**; programación autónoma no validada. | Integrar las funciones conforme avance el montaje. | [E3 personal](../../participantes/A00574802/dias/E3.md), por completar. | Sin prueba autónoma registrada. |
+
+**Identificadores descriptivos de condiciones (NO versiones de firmware ni commits):**
+- **OBS-D3-USB:** ensayo informal, cable USB sin batería; motores sin giro observado.
+- **OBS-D3-BAT:** ensayo informal, batería de 7.4 V; motores con giro reportado.
+
+**Identificador de versión K1 formal:** pendiente de asignar al guardar el firmware/configuración y la evidencia comparable. **Otras modificaciones o perturbaciones:** no documentadas; podrían haber existido diferencias en el estado de alimentación/control. No se atribuye causalidad exclusiva a la corriente disponible.
 
 ## 4 · Ensayos comparables
 
-**Enlace a datos crudos CSV:** [`../../datos/ensayos.csv`](../../datos/ensayos.csv) · **Protocolo:** [`../../pruebas/protocolo.md`](../../pruebas/protocolo.md).
+**Enlace a datos crudos CSV:** [`../../datos/ensayos.csv`](../../datos/ensayos.csv) · **Protocolo de referencia:** [`../../pruebas/protocolo.md`](../../pruebas/protocolo.md).
+
+**Observación previa, fuera de la tabla de cinco ensayos:** USB → sin giro; batería 7.4 V → motores giran. No existe número de corridas, unidad cuantitativa, medición de voltaje, registro de condiciones ni comprobación de equivalencia para considerarla una prueba emparejada formal.
 
 | Prueba emparejada o bloque | Condición/escenario idéntico | V1, valor + unidad | K1, valor + unidad | Cambio / resultado | Incidencia o desviación |
 |---:|---|---|---|---|---|
-| 1 | [...] | [...] | [...] | [...] | [...] |
-| 2 | [...] | [...] | [...] | [...] | [...] |
-| 3 | [...] | [...] | [...] | [...] | [...] |
-| 4 | [...] | [...] | [...] | [...] | [...] |
-| 5 | [...] | [...] | [...] | [...] | [...] |
+| 1 | Por definir y aprobar | No medido | No medido | Pendiente | No ejecutada |
+| 2 | Por definir y aprobar | No medido | No medido | Pendiente | No ejecutada |
+| 3 | Por definir y aprobar | No medido | No medido | Pendiente | No ejecutada |
+| 4 | Por definir y aprobar | No medido | No medido | Pendiente | No ejecutada |
+| 5 | Por definir y aprobar | No medido | No medido | Pendiente | No ejecutada |
 
-**N válido V1 / K1:** [... / ...]. **Resumen, variabilidad y tasa de éxito:** [...]. **Incertidumbres/limitaciones:** [...].
+**N válido V1 / K1:** 0 / 0 ensayos formales comparables. **Resumen, variabilidad y tasa de éxito:** no calculables (no equivale a 0 %). **Incertidumbres/limitaciones:** no hay medidas crudas o video de E3, variación de alimentación sin medición, ausencia de montaje final y falta de control de otras condiciones.
 
 ## 5 · Interpretación y decisión
 
-- **¿La evidencia respalda, contradice o no permite decidir la hipótesis?** [...]
-- **Si no hubo mejora, qué aprendimos:** [...]
-- **¿Qué riesgo o compromiso generó el cambio?** [...]
-- **Decisión:** [conservar K1 / revertir / revisar / recolectar más datos], con razón: [...]
-- **Siguiente pregunta para Kaizen 2:** [...]
+- **¿La evidencia respalda, contradice o no permite decidir la hipótesis?** La observación es compatible con que la configuración de alimentación influyó en el giro de los motores; no permite concluir cuál fue la causa eléctrica exacta ni cuantificar la mejora.
+- **Si no hubo mejora, qué aprendimos:** No aplica aún como comparación formal. La lección preliminar es que comunicación por USB y funcionamiento de la etapa motriz son verificaciones distintas.
+- **¿Qué riesgo o compromiso generó el cambio?** Debe confirmarse con el docente la ruta de alimentación, la compatibilidad del regulador y el voltaje real. La batería está identificada por su etiqueta, pero la tensión no se midió.
+- **Decisión:** mantener la configuración que funcionó **solo para ensayos autorizados y verificados eléctricamente**; registrar un firmware reproducible y efectuar pruebas controladas antes de calificar el Kaizen.
+- **Siguiente pregunta para Kaizen 2:** una vez instalado el chasis, ¿el robot puede detectar el borde y ejecutar una maniobra de retroceso/giro de forma repetible sin perder la detección de oponente?
+
+### Trabajo previsto para la tarde del 28 de octubre
+
+Adecuar y montar el chasis de acero, fijar placa/motores/batería y orientar sensores, evitando contacto eléctrico entre la PCB y el metal. Comprobar dimensiones, seguridad y libre giro; repetir lectura de sensores y motorización después del montaje. **No registrar como cumplido hasta contar con observación y evidencia.** Guardar fotos de proceso, archivo CAD si se genera y medidas reales.
 
 ## 6 · Puerta de salida E3
 
-- [ ] V1 y K1 tienen identificadores o referencias inequívocas.
-- [ ] La hipótesis está conectada con una medida y un problema diagnosticado.
-- [ ] Se documentó una modificación técnica y su responsable.
-- [ ] Ensayos y resultados mantienen condiciones comparables o exponen diferencias explícitamente.
-- [ ] La conclusión es honesta, incluso si el resultado es negativo.
-- [ ] Cada estudiante registró su [E3 personal](../../participantes/_plantilla/dias/E3.md).
+- [ ] V1 y K1 tienen identificadores o referencias inequívocas de versiones técnicas. **Solo hay etiquetas descriptivas de dos condiciones observadas.**
+- [x] Existe hipótesis conectada a un fallo real y a una métrica propuesta. **Falta ejecutar la medición formal.**
+- [ ] Se documentó una modificación técnica con responsable individual verificado y registro reproducible. **Cambio de alimentación observado; autoría/versión pendiente.**
+- [ ] Ensayos V1 y K1 comparables con datos registrados. **0/5 por condición.**
+- [x] Se declaró honestamente el resultado cualitativo y sus límites.
+- [ ] Cada estudiante completó y validó su [E3 personal](../../participantes/_plantilla/dias/E3.md). **Joel tiene un borrador; los demás requieren su propio registro.**
+- [ ] Chasis montado, evidencia de tarde y autorización docente registrados.
 
-**Gate E3:** [APROBADO / CONDICIONADO]. **Revisor:** [...]. **Enlace a PR/commit:** [...].
+**Gate E3:** **CONDICIONADO (propuesta documental, no aprobación docente).** **Revisor:** profesor Camilo René Duque, pendiente. **Commit/PR de cierre E3:** pendiente; consultar el historial de este archivo para las actualizaciones parciales.
