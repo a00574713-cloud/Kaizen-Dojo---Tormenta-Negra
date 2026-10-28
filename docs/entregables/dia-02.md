@@ -34,7 +34,7 @@ Los intervalos de esta tabla son los **bloques previstos por la plantilla**; el 
 | Microlección aplicada | 15–35 | No se documentó una microlección formal. El reto práctico fue conseguir adaptadores para el cableado y realizar conexiones y soldadura; no hay fuente técnica o ejercicio específico registrado. |
 | Katas de integración | 35–105 | Sara seleccionó componentes y soldó cables; Joel conectó sensores y motores junto con Max, además de apoyar en la soldadura; Max ayudó con la conexión de sensores; Claudio consiguió materiales faltantes. Son actividades preparatorias de sus alcances: ningún kata de montaje y **prueba** quedó validado. |
 | Ensayos iniciales / línea base | 105–145 | **0 pruebas ejecutadas.** No se energizó ni se verificó el funcionamiento en un ensayo reportado. No existen lecturas, medidas de desempeño, observaciones de giro ni línea base numérica. |
-| Consolidación de evidencia | 145–170 | Se registraron las actividades declaradas en este E2 y el estado del protocolo. Joel aportó cuatro fotografías tomadas el 27 de octubre que muestran la placa, el cableado, los motores, la batería y una pieza metálica del montaje. Su descripción está en [el registro fotográfico](../../evidencias/dia-02/README.md). **Aún deben subirse los JPG originales a GitHub**; no hay video, CAD, firmware ni mediciones. |
+| Consolidación de evidencia | 145–170 | Se registraron las actividades declaradas en este E2 y el estado del protocolo. Joel aportó cuatro fotografías tomadas el 27 de octubre que muestran la placa, el cableado, los motores, la batería y una pieza metálica del montaje. Su descripción está en [el registro fotográfico](../../evidencias/dia-02/README.md). **Las cuatro fotos originales ya están en GitHub**, disponibles en [la galería](../../evidencias/dia-02/README.md); no hay video, CAD, firmware ni mediciones. |
 | Gate E2 | 170–180 | No hubo revisión del profesor. Se mantiene **REPLANIFICAR** como propuesta documental del equipo por falta de pruebas y de una función V1 demostrable. Próximo paso: terminar el montaje y verificar componentes de manera segura. |
 
 ## 2 · Microlección e integración por alcances
@@ -43,9 +43,9 @@ Los intervalos de esta tabla son los **bloques previstos por la plantilla**; el 
 
 | Alias | Alcance | Kata seleccionado / relación con D2 | Acción técnica realmente ejecutada | Archivo, commit o plano | Estado (pendiente/probado/bloqueado) | Dependencia de otro integrante |
 |---|---|---|---|---|---|---|
-| `saragdr` (Sara) | MS03 y MS06 | Preparación para montaje y prueba de motores y para ensayos de detección; **katas aún no verificados**. | Seleccionó componentes y realizó principalmente la soldadura de cables. | [Compromiso de Sara](../../participantes/saragdr/compromiso.md); fotos del equipo descritas en [el índice visual](../../evidencias/dia-02/README.md); archivos JPG pendientes de subir. | Conexiones en proceso; funcionamiento **no probado**. | Integración de placa, sensores y motores con Joel y Max; materiales obtenidos con apoyo de Claudio. |
-| `A00574713` (Joel) | MS01 y MS06; apoyo a motorización | Preparación de integración mecánica/sensores; medición del rango y ensayos de detección **pendientes**. | Conectó sensores y motores a la placa junto con Max y apoyó a Sara en la soldadura. | [Compromiso de Joel](../../participantes/A00574713/compromiso.md); fotos tomadas por Joel y descritas en [el índice visual](../../evidencias/dia-02/README.md); archivos JPG pendientes de subir. | Cableado en proceso; funcionamiento **no probado**. | Montaje mecánico con Max y pruebas de sensores con Sara. |
-| `MaxAmCam` (Max) | MS01 y MS03; apoyo a sensores | Preparación de ensamblaje y motorización; montaje completo y maniobras **pendientes**. | Ayudó a conectar sensores a la placa. | [Compromiso de Max](../../participantes/MaxAmCam/compromiso.md); fotos del equipo descritas en [el índice visual](../../evidencias/dia-02/README.md); archivos JPG pendientes de subir. | Conexiones en proceso; funcionamiento **no probado**. | Adaptación de la base y placa gruesa; integración de motores con Joel y Sara. |
+| `saragdr` (Sara) | MS03 y MS06 | Preparación para montaje y prueba de motores y para ensayos de detección; **katas aún no verificados**. | Seleccionó componentes y realizó principalmente la soldadura de cables. | [Compromiso de Sara](../../participantes/saragdr/compromiso.md); fotos del equipo descritas en [el índice visual](../../evidencias/dia-02/README.md); los cuatro JPG ya disponibles en la galería. | Conexiones en proceso; funcionamiento **no probado**. | Integración de placa, sensores y motores con Joel y Max; materiales obtenidos con apoyo de Claudio. |
+| `A00574713` (Joel) | MS01 y MS06; apoyo a motorización | Preparación de integración mecánica/sensores; medición del rango y ensayos de detección **pendientes**. | Conectó sensores y motores a la placa junto con Max y apoyó a Sara en la soldadura. | [Compromiso de Joel](../../participantes/A00574713/compromiso.md); fotos tomadas por Joel y descritas en [el índice visual](../../evidencias/dia-02/README.md); los cuatro JPG ya disponibles en la galería. | Cableado en proceso; funcionamiento **no probado**. | Montaje mecánico con Max y pruebas de sensores con Sara. |
+| `MaxAmCam` (Max) | MS01 y MS03; apoyo a sensores | Preparación de ensamblaje y motorización; montaje completo y maniobras **pendientes**. | Ayudó a conectar sensores a la placa. | [Compromiso de Max](../../participantes/MaxAmCam/compromiso.md); fotos del equipo descritas en [el índice visual](../../evidencias/dia-02/README.md); los cuatro JPG ya disponibles en la galería. | Conexiones en proceso; funcionamiento **no probado**. | Adaptación de la base y placa gruesa; integración de motores con Joel y Sara. |
 | `A00574802` (Claudio) | MS03, MS07 y MS10 | Apoyo de abastecimiento para integrar motorización; las funciones de movimiento y estrategia de ataque **no se han programado ni probado**. | Consiguió principalmente los materiales que necesitaba el equipo y no estaban disponibles. | [Compromiso de Claudio](../../participantes/A00574802/compromiso.md); comprobación del material conseguido pendiente. | Abastecimiento atendido parcialmente; pruebas y software **pendientes**. | Que el equipo finalice cableado/montaje y confirme compatibilidad eléctrica. |
 
 La distribución describe el trabajo real del Día 2, incluso cuando una persona apoyó un subsistema fuera de sus alcances principales. **No se adjudican ensayos ni archivos técnicos que aún no existen en el repositorio.**
@@ -54,7 +54,7 @@ La distribución describe el trabajo real del Día 2, incluso cuando una persona
 
 | Subsistema | Entrada | Salida esperada | Responsable | Prueba de integración y observación | Evidencia |
 |---|---|---|---|---|---|
-| Estructura/mecánica | Base de acero, placa gruesa del montaje y piezas aún por identificar. | Chasis armado y fijaciones compatibles con placa, motores y sensores. | Max y Joel. | Se reportó que la base y la placa gruesa necesitaban adecuación; **montaje incompleto, sin prueba mecánica**. | Descripción en este E2; fotos/CAD pendientes. |
+| Estructura/mecánica | Base de acero, placa gruesa del montaje y piezas aún por identificar. | Chasis armado y fijaciones compatibles con placa, motores y sensores. | Max y Joel. | Se reportó que la base y la placa gruesa necesitaban adecuación; **montaje incompleto, sin prueba mecánica**. | [Foto de la pieza metálica](../../evidencias/dia-02/IMG_3583.jpg); CAD pendiente. |
 | Energía y accionamiento | Motores, conexiones hacia placa de control; alimentación y driver por especificar. | Giro correcto de motores, avance/retroceso y detención controlada. | Sara y Claudio, con apoyo de Joel y Max. | Los motores se conectaron, pero **no se probó** si giran ni se comprobó su sentido de giro o polaridad. | Descripción en este E2; esquema eléctrico y video pendientes. |
 | Sensores/percepción | Sensores y cableado a la placa; tipo y pines por documentar. | Lecturas reconocidas por el controlador para detectar oponente y, si aplica, borde. | Sara y Joel, con apoyo de Max. | Se hicieron conexiones físicas; **no hubo pruebas de lectura ni calibración**. | Descripción en este E2; tabla de lecturas pendiente. |
 | Control/software | Placa controladora con componentes conectados; modelo y firmware por identificar. | Ejecutar comandos de movimiento e interpretar sensores. | Claudio; integración conjunta. | **No se reportó programación ni carga de firmware funcional**. | No hay código funcional de D2 enlazado; [carpeta de código](../../codigo/README.md). |
@@ -65,6 +65,28 @@ La distribución describe el trabajo real del Día 2, incluso cuando una persona
 **Comportamiento que SÍ demuestra esta etapa:** se realizaron conexiones físicas de sensores y actuadores a la placa controladora, además de soldar cables. **Esto no comprueba señales, movimiento ni autonomía.**
 
 **Lo que aún falla o está pendiente:** adaptar las piezas de la estructura, terminar el chasis, identificar conexiones y componentes, comprobar sensores, verificar motores y polaridad/sentido de giro y programar el robot. No se diagnosticó un fallo funcional porque no se hicieron ensayos.
+
+### Evidencia fotográfica del Día 2
+
+Fotos tomadas el 27 de octubre de 2026 durante el montaje en el Laboratorio de Electrónica. Documentan la preparación y conexión de componentes; no prueban que el sistema funcione.
+
+**Fotografía 1. Placa controladora con cableado y un motor con rueda.**
+
+![Placa controladora con cableado y un motor con rueda](../../evidencias/dia-02/IMG_3585.jpg)
+
+**Fotografía 2. Motores, batería, placa y cables durante la integración.**
+
+![Motores, batería, placa y cables durante la integración](../../evidencias/dia-02/IMG_3584.jpg)
+
+**Fotografía 3. Pieza metálica del montaje aún por identificar.**
+
+![Pieza metálica del montaje aún por identificar](../../evidencias/dia-02/IMG_3583.jpg)
+
+**Fotografía 4. Vista cercana de la placa controladora y sus terminales.**
+
+![Vista cercana de la placa controladora y sus terminales](../../evidencias/dia-02/IMG_3580.jpg)
+
+[Ver los archivos originales y sus descripciones](../../evidencias/dia-02/README.md).
 
 ## 4 · Protocolo y línea base del robot (datos observados)
 
@@ -80,7 +102,7 @@ Consultar [protocolo de pruebas](../../pruebas/protocolo.md) y [registro de ensa
 | Condiciones controladas: luz, rival, posición de inicio, etc. | Todavía sin definir o registrar; para ensayos futuros se documentarán iluminación, posición inicial, distancia y orientación del objeto, superficie y alimentación. |
 | Número de corridas planeadas / ejecutadas | **5 / 0** para detección del oponente, de acuerdo con el compromiso de MS06. Se realizaron 0 porque el equipo dedicó la sesión a conectar componentes y el montaje no estaba listo para pruebas. |
 | Procedimiento reproducible, responsable y seguridad/aborto | **Propuesta no ejecutada:** (1) confirmar montaje, voltajes, compatibilidad y autorización; (2) inspeccionar conexiones con el robot desconectado; (3) probar motores con ruedas levantadas y comandos cortos; (4) ubicar objeto a una distancia/ángulo fijados y anotar 5 lecturas; (5) registrar resultados y detener/desconectar ante movimiento inesperado, calentamiento o conexión insegura. Sara y Joel documentarán detección; Claudio y Max apoyarán motorización. Se deben definir los valores exactos antes de ensayar. |
-| Datos sin procesar y video/foto corta | [CSV de ensayos](../../datos/ensayos.csv) **sin filas porque no se hicieron pruebas**. Se recibieron cuatro fotos en la conversación y se documentaron en el [índice fotográfico](../../evidencias/dia-02/README.md); falta subir los archivos originales al repositorio. No hay video ni resultados de pruebas. |
+| Datos sin procesar y video/foto corta | [CSV de ensayos](../../datos/ensayos.csv) **sin filas porque no se hicieron pruebas**. Se recibieron cuatro fotos en la conversación y se documentaron en el [índice fotográfico](../../evidencias/dia-02/README.md); las cuatro fotos originales ya se encuentran en GitHub. No hay video ni resultados de pruebas. |
 
 | Ensayo previsto | Condición inicial | Valor (+ unidad) | Éxito/fallo | Observación relevante / incidencia |
 |---:|---|---|---|---|
@@ -104,7 +126,7 @@ Consultar [protocolo de pruebas](../../pruebas/protocolo.md) y [registro de ensa
 | Gate E1 y seguridad pendientes de autorización/revisión. | La falta de verificaciones impide dar por validada la integración. | Alta | Equipo; revisión del profesor Camilo René Duque. | Verificar seguridad eléctrica, autorización de pruebas y viabilidad de alcances. |
 
 - [ ] Hay prototipo V1, subsistema funcional verificable o fallo reproducible con condiciones registradas. **No: aún no hubo pruebas.**
-- [ ] Existen archivos fuente o evidencia técnica enlazada, además de videos de uso controlado cuando correspondan. **El registro fotográfico describe cuatro fotos, pero aún falta subir los JPG al repositorio, además de código o pruebas.**
+- [ ] Existen archivos fuente o evidencia técnica enlazada, además de videos de uso controlado cuando correspondan. **Las cuatro fotos de conexiones y componentes ya están enlazadas; aún faltan pruebas funcionales y cualquier código/CAD que se desarrolle.**
 - [x] Hay una **justificación explícita** de la ausencia de datos basales y una propuesta de protocolo para cuando el robot esté listo. **No implica que ya exista línea base medida.**
 - [ ] Cada alumno actualizó su E2 personal ([Joel](../../participantes/A00574713/dias/E2.md), [Sara](../../participantes/saragdr/dias/E2.md), [Max](../../participantes/MaxAmCam/dias/E2.md) y [Claudio](../../participantes/A00574802/dias/E2.md)) con contribución propia y límite de capacidad actual. **Se crearon los registros iniciales el 27 de octubre; cada integrante debe revisar su autoría y agregar reflexiones/evidencias personales antes de marcarlo terminado.**
 - [ ] Se mantuvieron límites de seguridad y protección de datos. **No se reportaron ensayos, pero falta verificación y registro formal de seguridad.**
