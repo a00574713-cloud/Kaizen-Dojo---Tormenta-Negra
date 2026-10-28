@@ -7,10 +7,10 @@
 
 | Archivo | Qué muestra | Alcance real de la evidencia |
 |---|---|---|
-| `IMG_3585.jpeg` | Placa de control con cables conectados, motor con rueda y extremos de conductores sueltos sobre la mesa. | Se ve trabajo de conexión; no demuestra movimiento ni funcionamiento. |
-| `IMG_3584.jpeg` | Placa controladora, dos motores con ruedas, batería, conectores y cables para integrar. | Se observan componentes disponibles; no confirma alimentación segura ni que funcionen. |
-| `IMG_3583.jpeg` | Pieza metálica con elemento negro acoplado y cables. | Pieza del montaje; su denominación técnica y función exacta todavía deben confirmarse. |
-| `IMG_3580.jpeg` | Vista cercana de la tarjeta controladora morada, con conector USB-C y bornes de tornillo rotulados para motor izquierdo y derecho. | Identifica visualmente algunos terminales; no confirma modelo, voltaje, pinout completo ni operación. |
+| `IMG_3585.jpg` | Placa de control con cables conectados, motor con rueda y extremos de conductores sueltos sobre la mesa. | Se ve trabajo de conexión; no demuestra movimiento ni funcionamiento. |
+| `IMG_3584.jpg` | Placa controladora, dos motores con ruedas, batería, conectores y cables para integrar. | Se observan componentes disponibles; no confirma alimentación segura ni que funcionen. |
+| `IMG_3583.jpg` | Pieza metálica con elemento negro acoplado y cables. | Pieza del montaje; su denominación técnica y función exacta todavía deben confirmarse. |
+| `IMG_3580.jpg` | Vista cercana de la tarjeta controladora morada, con conector USB-C y bornes de tornillo rotulados para motor izquierdo y derecho. | Identifica visualmente algunos terminales; no confirma modelo, voltaje, pinout completo ni operación. |
 
 **Pendiente de cargar:** `IMG_3585.jpeg`, `IMG_3584.jpeg`, `IMG_3583.jpeg` y `IMG_3580.jpeg`. Al cargar las fotos a esta misma carpeta, sustituir estos nombres por enlaces Markdown relativos a los JPG.
 
