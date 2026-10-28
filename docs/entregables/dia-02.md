@@ -78,7 +78,7 @@ Fotos tomadas el 27 de octubre de 2026 durante el montaje en el Laboratorio de E
 
 ![Motores, batería, placa y cables durante la integración](../../evidencias/dia-02/IMG_3584.jpg)
 
-**Fotografía 3. Pieza metálica del montaje aún por identificar.**
+**Fotografía 3. Base del montaje.**
 
 ![Pieza metálica del montaje aún por identificar](../../evidencias/dia-02/IMG_3583.jpg)
 
