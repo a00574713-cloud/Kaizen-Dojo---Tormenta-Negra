@@ -56,3 +56,16 @@ Datos crudos: [`datos/ensayos.csv`](../datos/ensayos.csv). **Permanece solo con 
 - Conclusión: pendiente.
 
 No inventar resultados ni borrar corridas desfavorables.
+
+## Actualización del 28-10-2026 (E3)
+
+El equipo reportó pruebas exploratorias satisfactorias: comunicación de Arduino, ambos motores funcionando con batería nominal de 7.4 V / 500 mAh, tres sensores de oponente JS40F y dos sensores QTR-1A. Se observó falta de giro con alimentación solo USB. **Son resultados cualitativos, sin número de corridas, mediciones ni valores crudos proporcionados**.
+
+El equipo mostró el robot montado sobre una base metálica; las fotos se describen en [evidencias del Día 3](../evidencias/dia-03/README.md). Esto no reemplaza una prueba autónoma del robot completo.
+
+- **Próximo ensayo de motorización:** repetir cinco veces órdenes breves y seguras de giro/paro por motor con el mismo montaje, firmware, batería y control de tensión; registrar respuesta y sentido.
+- **Próximo ensayo de sensores:** cinco intentos por condición definida, con lecturas crudas, distancia (cm) y ángulo (°), separando los sensores de borde de los de oponente.
+- **Prueba global posterior:** verificar en el dōjō detección de borde y reacción de movimiento autónomo, registrando distancias y resultados de cada corrida.
+- **Antes de energizar el chasis armado:** inspeccionar aislamiento entre PCB y metal, extremos expuestos, cables, sujeción, alimentación, polaridad y seguridad con el responsable del laboratorio.
+
+**Línea base formal de E3:** todavía sin datos suficientes para media, porcentaje de éxito o dispersión. No agregar filas ficticias a `datos/ensayos.csv`.

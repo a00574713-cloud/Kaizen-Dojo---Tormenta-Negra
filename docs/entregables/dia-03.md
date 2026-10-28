@@ -11,7 +11,7 @@ revision_docente: "PENDIENTE"
 
 # E3 · Día 3 — MEDIR Y APRENDER | Kaizen 1: ensayo, hipótesis y mejora
 
-> **Corte de avance del 28 de octubre de 2026, antes del trabajo de fabricación del chasis previsto para esta tarde.** Se documentan los hechos reportados de las pruebas de comunicación, motores y sensores; las mediciones formales y el montaje pendiente no se presentan como realizados. Los datos personales deben ser revisados por cada integrante.
+> **Actualización del 28 de octubre de 2026 después del ensamblaje.** El equipo reporta que terminó de montar el chasis y que las pruebas exploratorias de motores y sensores fueron satisfactorias. Se recibieron cinco fotografías del robot ensamblado. No se han entregado lecturas numéricas, medidas físicas o cinco ensayos comparables. Las fotografías documentan el montaje, no prueban por sí solas el funcionamiento. Las contribuciones de cada integrante requieren confirmación personal.
 
 ## 0 · Contexto de investigación de hoy
 
@@ -26,7 +26,7 @@ revision_docente: "PENDIENTE"
 
 ## 1 · Ruta del Día 3 (180 min)
 
-Los tiempos son **los bloques de la plantilla**, no tiempos reales registrados. El trabajo de esta mañana y el montaje previsto para esta tarde no se presentan como una sesión cronometrada de 180 minutos.
+Los tiempos son **los bloques de la plantilla**, no tiempos reales registrados. El trabajo práctico y el montaje del día no se presentan como una sesión cronometrada de 180 minutos.
 
 | Actividad | Minutos previstos | Evidencia y estado al corte |
 |---|---:|---|
@@ -35,7 +35,7 @@ Los tiempos son **los bloques de la plantilla**, no tiempos reales registrados. 
 | Diagnóstico del prototipo V1 | 40–80 | **Observación exploratoria:** con la batería de 7.4 V los motores sí giraron. Esto apunta a una diferencia de alimentación, pero no determina la causa eléctrica exacta. |
 | Kaizen 1: cambio técnico | 80–125 | **Cambio de configuración realizado:** pasar de una prueba solo por USB a probar con batería. **Pendiente:** identificar y guardar versión reproducible de firmware, condiciones eléctricas y evidencia. |
 | Reensayo equivalente | 125–160 | **Pendiente:** no hay cinco pares V1/K1, tiempos, tensiones ni tasas de éxito registrados. |
-| Documentar, debatir, reflejar | 160–180 | **En proceso:** este E3 colectivo y los registros personales. Falta integrar el trabajo de chasis previsto para la tarde y revisar con el profesor. |
+| Documentar, debatir, reflejar | 160–180 | **Actualizado:** se documentaron las pruebas exploratorias y el chasis ensamblado mostrado en cinco fotos; falta incorporar los JPG originales al repositorio, mediciones comparables, firmware y revisión docente. |
 
 ### Avances funcionales exploratorios comunicados hoy
 
@@ -43,9 +43,10 @@ Los tiempos son **los bloques de la plantilla**, no tiempos reales registrados. 
 - **Motores:** con solo USB no se observó giro; al utilizar la batería de 7.4 V / 500 mAh se reportó giro de los dos motores.
 - **Sensores de oponente:** se reportó respuesta correcta de los tres JS40F.
 - **Sensores de línea:** se reportó respuesta correcta de los dos QTR-1A.
-- **Integración total:** no se ha demostrado funcionamiento autónomo, reconocimiento del borde durante desplazamiento ni ataque a un oponente. Las pruebas fueron de subsistemas.
+- **Estructura:** se completó el montaje físico de un prototipo con base metálica, dos ruedas motrices, placa de control, batería, cables y sensores visibles en las cinco fotografías. No se registraron peso, dimensiones, pruebas de rigidez ni revisión de sujeciones.
+- **Integración total:** no se ha demostrado funcionamiento autónomo, reconocimiento del borde durante desplazamiento ni ataque a un oponente. Las pruebas reportadas fueron de subsistemas.
 
-Los resultados anteriores son **observaciones cualitativas reportadas**, no ensayos repetidos ni valores crudos almacenados. No hay capturas de lecturas, fotografías de E3 o videos de pruebas cargados a la fecha de este corte.
+Los resultados anteriores son **observaciones cualitativas reportadas**, no ensayos repetidos ni valores crudos almacenados. Ahora hay **cinco fotografías del chasis ensamblado** aportadas en esta conversación; su [registro descriptivo](../../evidencias/dia-03/README.md) está preparado y **sus archivos JPG aún no están cargados en GitHub**. No se aportaron videos de pruebas, lecturas crudas ni métricas cuantitativas.
 
 ## 2 · Problema, hipótesis y trazabilidad
 
@@ -71,9 +72,9 @@ Los resultados anteriores son **observaciones cualitativas reportadas**, no ensa
 | Alias y alcance | Kata asociado | Qué cambió / qué corresponde documentar | Por qué | Código/CAD/commit y revisión | Validación de interfaz |
 |---|---|---|---|---|---|
 | Equipo (autoría del cambio por confirmar) | Diagnóstico de motorización MS03 | Cambio de la configuración de alimentación durante la prueba; funcionamiento reportado de ambos motores. | Investigar la falta de giro con alimentación solo USB. | Aún no hay firmware de prueba ni commit técnico identificados; revisión con el profesor pendiente. | Respuesta de los motores observada, sin registro cuantitativo ni verificación eléctrica del regulador. |
-| `A00574713` (Joel), MS01/MS06 | Estructura mecánica y ensayos de sensores | Pruebas de los cinco sensores reportadas en la conversación; fabricación del chasis y rangos medidos siguen pendientes. | Verificar entradas antes de la programación autónoma. | [E3 de Joel](../../participantes/A00574713/dias/E3.md); sin archivo de mediciones personales. | Respuesta cualitativa reportada; sin distancias, ángulos ni tasa de aciertos. |
+| `A00574713` (Joel), MS01/MS06 | Estructura mecánica y ensayos de sensores | Se reportó funcionamiento de los cinco sensores. Las nuevas fotografías muestran el chasis ya ensamblado por el equipo; quién fabricó o fijó cada parte está por confirmar. Rangos cuantitativos pendientes. | Verificar entradas antes de la programación autónoma. | [E3 de Joel](../../participantes/A00574713/dias/E3.md); sin archivo de mediciones personales. | Respuesta cualitativa reportada; sin distancias, ángulos ni tasa de aciertos. |
 | `saragdr` (Sara), MS03/MS06 | Montaje/motorización y detección | Participación específica en las pruebas de hoy **pendiente de confirmar**. Su aportación en cableado y soldadura corresponde al E2. | Coordinar el seguimiento de motorización y sensores. | [E3 personal](../../participantes/saragdr/dias/E3.md), por completar. | Pendiente de evidencia individual. |
-| `MaxAmCam` (Max), MS01/MS03 | Chasis y motores | Construcción/adaptación del chasis prevista para esta tarde; no se afirma que ya esté hecha. | Completar fijaciones e integración física. | [E3 personal](../../participantes/MaxAmCam/dias/E3.md), por completar. | Montaje y ensayos posteriores pendientes. |
+| `MaxAmCam` (Max), MS01/MS03 | Chasis y motores | El chasis ya aparece ensamblado en las fotos. La participación específica de Max en el montaje de hoy queda pendiente de confirmar. | Completar fijaciones e integración física. | [E3 personal](../../participantes/MaxAmCam/dias/E3.md), por completar. | Montaje físico mostrado, sin verificación dimensional ni ensayos repetidos. |
 | `A00574802` (Claudio), MS03/MS07/MS10 | Motores, control y estrategia | Aporte concreto a las pruebas de hoy **pendiente de confirmar**; programación autónoma no validada. | Integrar las funciones conforme avance el montaje. | [E3 personal](../../participantes/A00574802/dias/E3.md), por completar. | Sin prueba autónoma registrada. |
 
 **Identificadores descriptivos de condiciones (NO versiones de firmware ni commits):**
@@ -96,7 +97,7 @@ Los resultados anteriores son **observaciones cualitativas reportadas**, no ensa
 | 4 | Por definir y aprobar | No medido | No medido | Pendiente | No ejecutada |
 | 5 | Por definir y aprobar | No medido | No medido | Pendiente | No ejecutada |
 
-**N válido V1 / K1:** 0 / 0 ensayos formales comparables. **Resumen, variabilidad y tasa de éxito:** no calculables (no equivale a 0 %). **Incertidumbres/limitaciones:** no hay medidas crudas o video de E3, variación de alimentación sin medición, ausencia de montaje final y falta de control de otras condiciones.
+**N válido V1 / K1:** 0 / 0 ensayos formales comparables. **Resumen, variabilidad y tasa de éxito:** no calculables (no equivale a 0 %). **Incertidumbres/limitaciones:** no hay medidas crudas ni video de las pruebas; no se midieron voltajes y falta controlar condiciones. El montaje físico quedó armado, pero no se registraron dimensiones, peso ni prueba repetida sobre el chasis final.
 
 ## 5 · Interpretación y decisión
 
@@ -106,9 +107,20 @@ Los resultados anteriores son **observaciones cualitativas reportadas**, no ensa
 - **Decisión:** mantener la configuración que funcionó **solo para ensayos autorizados y verificados eléctricamente**; registrar un firmware reproducible y efectuar pruebas controladas antes de calificar el Kaizen.
 - **Siguiente pregunta para Kaizen 2:** una vez instalado el chasis, ¿el robot puede detectar el borde y ejecutar una maniobra de retroceso/giro de forma repetible sin perder la detección de oponente?
 
-### Trabajo previsto para la tarde del 28 de octubre
+### Montaje del chasis realizado el 28 de octubre
 
-Adecuar y montar el chasis de acero, fijar placa/motores/batería y orientar sensores, evitando contacto eléctrico entre la PCB y el metal. Comprobar dimensiones, seguridad y libre giro; repetir lectura de sensores y motorización después del montaje. **No registrar como cumplido hasta contar con observación y evidencia.** Guardar fotos de proceso, archivo CAD si se genera y medidas reales.
+El equipo compartió cinco fotografías del robot físicamente ensamblado. Se observa la base metálica, dos ruedas motrices, tarjeta controladora morada, batería azul, cableado agrupado y sensores montados en el robot. La integración física avanzó respecto al Día 2, cuando las piezas estaban separadas.
+
+- **Estado mecánico observado:** existe un prototipo montado; no se ha documentado la medida máxima, el peso, las fijaciones ni el aislamiento entre tarjeta y metal.
+- **Estado eléctrico reportado:** los motores y sensores respondieron en las pruebas exploratorias de hoy. No hay captura de lecturas o ensayo registrado que demuestre una respuesta del sistema completo después del montaje.
+- **Precaución pendiente:** revisar conexiones con alimentación desconectada, fijación de los cables, batería, aislantes y separaciones antes de operar en el dōjō.
+- **Evidencia:** [galería del Día 3](../../evidencias/dia-03/README.md). Son cinco fotos compartidas en el chat y pendientes de cargar como JPG en GitHub.
+
+**Identificador descriptivo del prototipo:** `D3-MONTAJE-28OCT` (no es una etiqueta de firmware ni un commit de CAD). El siguiente paso es etiquetar y guardar el firmware realmente probado y repetir cinco ensayos controlados con el robot armado.
+
+### Registro visual adicional
+
+Las cinco imágenes tomadas el 28 de octubre están inventariadas por nombre en [`evidencias/dia-03/`](../../evidencias/dia-03/README.md). Deben cargarse allí como JPG para que la galería las muestre. No se identifican medidas ni pruebas cuantitativas a partir de fotografías.
 
 ## 6 · Puerta de salida E3
 
@@ -117,7 +129,7 @@ Adecuar y montar el chasis de acero, fijar placa/motores/batería y orientar sen
 - [ ] Se documentó una modificación técnica con responsable individual verificado y registro reproducible. **Cambio de alimentación observado; autoría/versión pendiente.**
 - [ ] Ensayos V1 y K1 comparables con datos registrados. **0/5 por condición.**
 - [x] Se declaró honestamente el resultado cualitativo y sus límites.
-- [ ] Cada estudiante completó y validó su [E3 personal](../../participantes/_plantilla/dias/E3.md). **Joel tiene un borrador; los demás requieren su propio registro.**
-- [ ] Chasis montado, evidencia de tarde y autorización docente registrados.
+- [ ] Cada estudiante completó y validó su [E3 personales](../../participantes/README.md). **Joel tiene un borrador actualizado; los demás deben revisar su propia aportación.**
+- [x] Chasis físico montado y mostrado en cinco fotografías (aún pendientes de subir a GitHub). **No hay validación dimensional ni autorización docente documentada.**
 
-**Gate E3:** **CONDICIONADO (propuesta documental, no aprobación docente).** **Revisor:** profesor Camilo René Duque, pendiente. **Commit/PR de cierre E3:** pendiente; consultar el historial de este archivo para las actualizaciones parciales.
+**Gate E3:** **CONDICIONADO (propuesta documental: montaje y pruebas exploratorias reportados, pero sin mediciones comparables ni revisión docente).** **Revisor:** profesor Camilo René Duque, pendiente. **Commit/PR de cierre E3:** consultar el historial de este archivo; la evidencia fotográfica original y los ensayos comparables siguen pendientes.

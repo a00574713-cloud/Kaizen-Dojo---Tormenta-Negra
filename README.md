@@ -2,7 +2,7 @@
 
 > **Equipo:** Tormenta Negra · **Plataforma:** M01, mini-sumo autónomo · **Dōjō:** CTA, Laboratorio de Electrónica (puesto y autorización por confirmar)
 > **Nuestra misión:** Construir desde cero un mini-sumo autónomo que avance, retroceda, gire, detecte a un oponente y reaccione a las lecturas de sus sensores, con pruebas documentadas.
-> **Estado actual:** Día 2, montaje y conexiones físicas parciales; sin pruebas ni V1 funcional verificada.
+> **Estado actual:** Día 3 (28-10-2026), chasis montado y pruebas exploratorias satisfactorias de motores y sensores; aún sin comparación cuantitativa ni comportamiento autónomo demostrado.
 
 ## Empieza aquí — 4 acciones
 
@@ -52,7 +52,8 @@
 | Estado | Cambio o capacidad | Evidencia | Resultado |
 |---|---|---|---|
 | **Día 2 (antes de V1)** | Sensores y actuadores conectados a la placa; sin ensayos | [E2](docs/entregables/dia-02.md) | V1 funcional pendiente |
-| **Kaizen 1** | `[cambio y prueba comparable]` | `[enlace]` | `[pendiente]` |
+| **Día 3: montaje + pruebas exploratorias** | Chasis físico armado; ambos motores responden con batería de 7.4 V; sensores de línea y oponente reportados funcionales | [E3](docs/entregables/dia-03.md) · [evidencias D3](evidencias/dia-03/README.md) | Funciones básicas observadas, sin mediciones numéricas |
+| **Kaizen 1 formal** | Comparar condiciones y registrar cinco ensayos reproducibles; aún no hay resultados equivalentes | [Protocolo](pruebas/protocolo.md) | Pendiente |
 | **Kaizen 2** | `[segundo cambio y pruebas de robustez]` | `[enlace]` | `[pendiente]` |
 | **Demo** | `[misión y desempeño final]` | `[enlace]` | `[pendiente]` |
 
