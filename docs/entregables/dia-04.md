@@ -106,7 +106,23 @@ El formato original solicita **cinco ensayos bajo condiciones equivalentes**, co
 
 **Qué mejora, qué empeora y qué no sabemos:** el robot ya muestra capacidad de avanzar y realizar maniobras ante el borde; las manchas blancas causan giros inesperados y hubo salidas ocasionales. Todavía no sabemos si reducir la velocidad mejora esos resultados.
 
-## 3A · Tres pruebas de movimiento en el dohyō
+## 3A · Registro de intentos del Día 4
+
+Esta es la tabla de intentos del **E4**, adaptada al formato de cinco filas de la guía. **Solo se llenan las tres pruebas que realmente hicimos el 29 de octubre**. La tabla del E3 sobre los motores permanece en su propio día, porque las fallas por batería y polaridad ocurrieron el 28 de octubre.
+
+| Intento | Condición de prueba | Resultado registrado | Observaciones |
+|---:|---|---|---|
+| 1 | Dohyō, programa de evasión, avance PWM 145; ejecución de 15 s | Se ejecutó hasta el paro por tiempo; **12 avisos de borde** (9 izquierda, 3 derecha) | El resultado del movimiento por intento no se anotó por separado; las manchas blancas y las salidas ocasionales se reportaron para el conjunto de pruebas. |
+| 2 | Mismo programa y velocidad; ejecución de 15 s | Se ejecutó hasta el paro por tiempo; **12 avisos de borde** (5 izquierda, 7 derecha) | No quedó registrado por intento si se salió del dohyō o si giró por una mancha interior. |
+| 3 | Mismo programa y velocidad; ejecución de 15 s | Se ejecutó hasta el paro por tiempo; **12 avisos de borde** (6 izquierda, 6 derecha) | No quedó registrado por intento si se salió del dohyō o si giró por una mancha interior. |
+| 4 | Pendiente de una nueva ejecución | **No realizada** | Propuesta: probar velocidad PWM 105, registrando salidas y giros innecesarios. |
+| 5 | Pendiente de una nueva ejecución | **No realizada** | Repetir la prueba con las mismas condiciones y registrar el resultado. |
+
+**Observación general confirmada por el equipo:** durante estas tres pruebas el robot sí avanzaba y respondía al blanco retrocediendo y girando; las manchas blancas del interior provocaban giros repentinos y en algunas ocasiones el robot llegó a salirse. **No se puede asociar un número específico de salidas o giros innecesarios a cada prueba**, ni afirmar que las tres permanecieron completamente dentro del dohyō. Los **36 avisos** son detecciones emitidas por el programa, no 36 evasiones exitosas.
+
+**Evidencia:** [registro completo del Monitor Serie](../../datos/e4_monitor_serie_29oct.txt) y [análisis de las pruebas](../../datos/observaciones-dia-04.md). Las filas 4 y 5 no son resultados del 29 de octubre y se mantienen pendientes.
+
+### Detalle de las tres ejecuciones en el Monitor Serie
 
 El equipo compartió el registro del Monitor Serie de **tres ejecuciones del programa E4**. Se utilizó la calibración: negro = 1022 (izquierdo) y 821 (derecho); blanco = 956 (izquierdo) y 34 (derecho). Los umbrales calculados fueron **989** y **427**, respectivamente.
 
