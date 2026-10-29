@@ -19,7 +19,20 @@ El 29 de octubre continuamos con el mini-sumo **Tormenta Negra**. Hicimos una ca
 **Lugar:** Laboratorio de Electrónica, CTA, Campus León.  
 **Avance anterior:** en el [E3](dia-03.md) comprobamos los cinco sensores y los dos motores por separado y corregimos la conexión de alimentación y la polaridad de un motor.
 
-## 1 · Actividades del Día 4
+## 1 · Ruta del Día 4 (180 minutos)
+
+La guía propone seis bloques de trabajo. **Los minutos indican la distribución planeada por la actividad, no tiempos cronometrados por el equipo**; registramos únicamente lo que podemos confirmar de la sesión.
+
+| Bloque de la guía | Minutos previstos | Registro del equipo |
+|---|---:|---|
+| Revisión por pares y retroalimentación | 0–20 | **Pendiente de documentar:** quién revisó el robot y qué recomendación dio. |
+| Diseño y ejecución del Kaizen 2 | 20–70 | Organizamos los cables, construimos la carcasa, aseguramos los motores y conectamos el receptor infrarrojo a D12. Integramos el programa para avanzar y reaccionar al borde blanco. |
+| Comparación V1–K1–K2 | 70–115 | Documentamos la evolución desde el montaje inicial y el funcionamiento de sensores y motores por separado hasta la primera prueba integrada. La comparación cuantitativa con la versión de avance lento queda pendiente. |
+| Ensayo de robustez | 115–145 | Realizamos tres pruebas de 15 segundos sobre el dohyō. Las manchas blancas provocaron giros repentinos y hubo salidas ocasionales; el robot sí retrocedía y giraba al detectar blanco. |
+| Preparación de la demostración | 145–165 | Definimos qué se podría mostrar en el Día 5: montaje del robot y evasión del borde. **Falta repartir las intervenciones y acordar un plan por si falla.** |
+| Gate de preparación | 165–180 | Quedaron registrados los avances y pendientes: repetir las pruebas a menor velocidad, confirmar el control remoto, pesar el robot y obtener la revisión docente. |
+
+## 1A · Actividades realizadas en el Día 4
 
 | Actividad | Avance realizado |
 |---|---|
