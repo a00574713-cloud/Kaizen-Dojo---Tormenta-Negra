@@ -2,7 +2,7 @@
 
 **Misión:** M01 · Mini-sumo autónomo.  
 **Fecha de preparación:** 2026-10-27 (Día 2, E2).  
-**Estado:** PROPUESTA, **sin ejecución ni resultados medidos**.  
+**Estado:** protocolo preparado en E2 y actualizado con las pruebas exploratorias de E3; el registro detallado de corridas se realizará en los siguientes ensayos.  
 **Alcances y versión:** MS03 (motorización), MS06 (sensores). **Montaje físico parcial del Día 2; V1 funcional todavía no validada.**  
 **Referencia:** [E2 del equipo](../docs/entregables/dia-02.md).
 
@@ -42,11 +42,12 @@ Datos crudos: [`datos/ensayos.csv`](../datos/ensayos.csv). **Permanece solo con 
 ## Dos ciclos Kaizen
 
 ### Ciclo 1 · Día 3
-- Línea base: pendiente de medir en la primera prueba autorizada y reproducible.
-- Hipótesis: pendiente de plantear a partir de un problema observado durante esa prueba.
-- Cambio: pendiente.
-- Resultados comparables: pendiente.
-- Conclusión: pendiente.
+- Situación inicial: motores sin giro por falta de conexión de batería y uno con sentido de giro invertido.
+- Hipótesis: conectar correctamente la batería y revisar la polaridad permitirá que respondan en el sentido esperado.
+- Cambios: conexión de batería y corrección de polaridad.
+- Pruebas: aproximadamente diez intentos de motores y cinco de sensores, según el equipo.
+- Resultado: funcionamiento correcto reportado de ambos motores y los cinco sensores.
+- Próximo paso: registrar las corridas por separado para obtener una comparación cuantitativa.
 
 ### Ciclo 2 · Día 4
 - Nueva línea base: pendiente.

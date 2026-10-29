@@ -45,6 +45,6 @@ Frente de la base metálica con sensores y cableado reunido.
 
 Las cinco imágenes están enlazadas en esta página y pueden consultarse directamente en GitHub.
 
-Estas fotografías **documentan el montaje físico**, no prueban por sí solas que los motores y sensores funcionen. Su funcionamiento fue reportado por el equipo durante el Día 3, pero todavía faltan mediciones crudas, videos de prueba, resultados repetidos y validación docente.
+El equipo reportó unas **cinco pruebas de sensores** sobre el dohyō y con objetos, además de aproximadamente **diez pruebas de motores** que permitieron corregir la alimentación y la polaridad. [Ver resultados y mejoras](../../datos/observaciones-dia-03.md). Las imágenes muestran cómo quedó el robot.
 
 [Entregable E3 del equipo](../../docs/entregables/dia-03.md) · [E3 de Joel](../../participantes/A00574713/dias/E3.md) · [Índice general de evidencias](../README.md).
