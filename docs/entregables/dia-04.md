@@ -26,7 +26,7 @@ El 29 de octubre continuamos con el mini-sumo **Tormenta Negra**. Hicimos una ca
 | Carcasa y estructura | Fabricamos una carcasa para cubrir cables y componentes del robot. |
 | Organización de componentes | Acomodamos el cableado y terminamos de ordenar el montaje. |
 | Fijación de motores | Aseguramos mejor ambos motores al chasis. |
-| Control remoto | Conectamos el receptor destinado al arranque y paro mediante control remoto. |
+| Control remoto | Conectamos al **pin D12** de la tarjeta el receptor infrarrojo destinado al arranque y paro mediante control remoto. Por ahora, el código de movimiento no utiliza este receptor. |
 | Integración del control | Preparamos un [programa de prueba de movimiento y evasión de borde](../../codigo/mini-sumo/prueba_evasion_borde/prueba_evasion_borde.ino) basado en el pinout de E3. |
 
 ## 2 · Segundo Kaizen: una mejora para proteger el robot en el dohyō
