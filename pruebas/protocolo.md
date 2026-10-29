@@ -46,7 +46,7 @@ Datos crudos: [`datos/ensayos.csv`](../datos/ensayos.csv). **Permanece solo con 
 - Hipótesis: conectar correctamente la batería y revisar la polaridad permitirá que respondan en el sentido esperado.
 - Cambios: conexión de batería y corrección de polaridad.
 - Pruebas: aproximadamente diez intentos de motores y cinco de sensores, según el equipo.
-- Resultado: funcionamiento correcto reportado de ambos motores y los cinco sensores.
+- Resultado: después de las correcciones, todas las pruebas posteriores salieron bien y ambos motores respondieron en el sentido esperado.
 - Próximo paso: registrar las corridas por separado para obtener una comparación cuantitativa.
 
 ### Ciclo 2 · Día 4
@@ -64,7 +64,9 @@ No inventar resultados ni borrar corridas desfavorables.
 
 **Motores:** al inicio no giraban porque la batería no estaba conectada al módulo. Después de conectarla, uno giraba en sentido contrario por la polaridad invertida. El equipo corrigió la conexión y efectuó aproximadamente diez pruebas de motorización, tras las cuales ambos giraron correctamente en el robot ensamblado.
 
-**Kaizen 1:** revisar y conectar la alimentación; corregir la polaridad; repetir las pruebas para confirmar giro correcto.
+**Kaizen 1:** revisar y conectar la alimentación; corregir la polaridad; repetir las pruebas para confirmar giro correcto. El equipo indicó que todas las pruebas realizadas después de corregir los motores salieron bien. Joel y Sara realizaron las pruebas; Sara volvió a soldar conexiones flojas y fijó los motores al chasis, con apoyo de Max y Claudio en la preparación de cables y soldaduras.
+
+**Evidencia disponible:** programas originales de Arduino y fotografías del montaje; no se grabó video de las pruebas.
 
 **Registro de las observaciones:** [datos/observaciones-dia-03.md](../datos/observaciones-dia-03.md) y [E3 del equipo](../docs/entregables/dia-03.md). Las cantidades son estimaciones del equipo, no una serie de ensayos individuales documentados.
 

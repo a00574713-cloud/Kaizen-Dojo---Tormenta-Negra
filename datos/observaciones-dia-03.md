@@ -8,7 +8,9 @@ Este registro resume lo informado por el equipo después de las pruebas con el r
 |---|---:|---|---|---|
 | Sensores QTR-1A | 2 | Superficie negra con bordes blancos del dohyō | Aproximadamente 5 pruebas de sensores en total, compartidas con los JS40F | Respondieron a los cambios entre negro y blanco. |
 | Sensores infrarrojos JS40F | 3 | Acercar y retirar objetos | Incluidas en el total aproximado de 5 pruebas de sensores | Las lecturas digitales cambiaron entre `0` y `1` según la detección de objetos. |
-| Motores DC | 2 | Primero sin batería conectada; después con batería; finalmente polaridad corregida | Aproximadamente 10 pruebas de motorización en total | Al inicio no giraban; posteriormente uno giraba invertido; al terminar las correcciones ambos funcionaron en el sentido esperado. |
+| Motores DC | 2 | Primero sin batería conectada; después con batería; finalmente polaridad corregida | Aproximadamente 10 pruebas de motorización en total | Al inicio no giraban; después uno giraba invertido. Tras las correcciones, todas las pruebas posteriores salieron bien. |
+
+**Evidencia disponible:** cinco fotografías del robot y los programas de Arduino. El equipo confirmó que no grabó video de las pruebas.
 
 **Programas de las pruebas:** [Motores](../codigo/pruebas-dia-03/prueba_motores/prueba_motores.ino) · [Cinco sensores](../codigo/pruebas-dia-03/prueba_sensores/prueba_sensores.ino).
 
@@ -18,7 +20,13 @@ Este registro resume lo informado por el equipo después de las pruebas con el r
 2. **Primera corrección:** conectar la batería nominal de 7.4 V y 500 mAh.
 3. **Segundo problema:** uno de los motores giraba en sentido contrario por polaridad invertida.
 4. **Segunda corrección:** invertir la conexión del motor para conseguir el sentido esperado.
-5. **Resultado:** funcionamiento satisfactorio reportado de ambos motores ya integrados al robot.
+5. **Resultado:** después de los ajustes, todas las pruebas posteriores salieron bien y ambos motores giraron correctamente ya integrados al robot.
+
+## Participación del equipo
+
+- **Joel:** consiguió y cargó los programas de Arduino; probó sensores y motores junto con Sara.
+- **Sara:** participó en las pruebas, resoldó conexiones flojas o desprendidas y colocó los motores en el chasis.
+- **Max y Claudio:** ayudaron a pelar cables y con las tareas de soldadura.
 
 ## Próximo registro cuantitativo
 

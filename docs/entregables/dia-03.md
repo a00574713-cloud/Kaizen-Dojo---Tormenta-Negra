@@ -4,14 +4,14 @@ formato: "Entregable diario G2"
 evidencia: "E3"
 dia: 3
 responsable_registro: "equipo"
-estado: "EN_PROCESO"
+estado: "REGISTRADO"
 fecha: "2026-10-28"
 revision_docente: "PENDIENTE"
 ---
 
 # E3 · Día 3 — MEDIR Y APRENDER | Primer Kaizen del mini-sumo
 
-El 28 de octubre terminamos el montaje físico de nuestro mini-sumo **Tormenta Negra** y realizamos las primeras pruebas con los cinco sensores y los dos motores. Durante las pruebas resolvimos dos problemas de los motores: faltaba conectar la batería a la tarjeta y uno tenía la polaridad invertida. Al corregirlos, conseguimos que ambos giraran correctamente.
+El 28 de octubre terminamos el montaje físico de nuestro mini-sumo **Tormenta Negra** y realizamos las primeras pruebas con los cinco sensores y los dos motores. Durante las pruebas resolvimos dos problemas de los motores: faltaba conectar la batería a la tarjeta y uno tenía la polaridad invertida. Al corregirlos, conseguimos que ambos giraran correctamente. Después de los ajustes, todas las pruebas posteriores que realizamos salieron bien.
 
 ## 0 · Identificación y continuidad
 
@@ -30,11 +30,11 @@ El 28 de octubre terminamos el montaje físico de nuestro mini-sumo **Tormenta N
 | Bloque de la guía | Minutos | Actividad realizada |
 |---|---:|---|
 | Identificar el problema | 0–15 | Durante la prueba inicial notamos que los motores no giraban. |
-| Diseñar y realizar las pruebas | 15–40 | Probamos los cinco sensores con programas de Arduino, utilizando la superficie negra y los bordes blancos del dohyō, y objetos para los infrarrojos. |
-| Revisar el prototipo | 40–80 | Comprobamos la lectura de sensores y revisamos la alimentación de los motores. |
+| Diseñar y realizar las pruebas | 15–40 | Joel consiguió los programas de Arduino y los cargó a la tarjeta. Junto con Sara probó los cinco sensores sobre el dohyō y con objetos para los infrarrojos. |
+| Revisar el prototipo | 40–80 | Joel y Sara realizaron las pruebas de sensores y motores. Sara también revisó y volvió a soldar conexiones flojas o desprendidas. |
 | Kaizen 1: corregir y mejorar | 80–125 | Conectamos la batería que faltaba y corregimos la polaridad de uno de los motores. |
 | Repetir las pruebas | 125–160 | Realizamos alrededor de diez pruebas de motores ya integrados al carrito, hasta comprobar su giro correcto. |
-| Registrar los avances | 160–180 | Completamos el montaje del robot y documentamos el resultado con cinco fotografías. |
+| Registrar los avances | 160–180 | Sara colocó los motores en el chasis; Max y Claudio apoyaron pelando cables y con la soldadura. Documentamos el robot ensamblado con cinco fotografías. |
 
 Los minutos representan la distribución de actividades de la guía, no un cronometraje de la sesión.
 
@@ -46,7 +46,7 @@ Los minutos representan la distribución de actividades de la guía, no un crono
 | 3 sensores infrarrojos JS40F | Acercamos y retiramos objetos y observamos las lecturas digitales `0` y `1` en el programa de prueba. | Incluidas en las aproximadamente 5 pruebas del conjunto de sensores. | Los tres sensores respondieron al detectar objetos. |
 | 2 motores DC | Probamos su giro mediante el programa de Arduino. Después de conectar la batería y corregir la polaridad de uno, repetimos las pruebas con los motores montados en el carrito. | Aproximadamente **10 pruebas de motores en total**. | Al terminar las correcciones, ambos motores giraron correctamente. |
 
-Las cantidades son aproximadas, de acuerdo con el registro del equipo; no corresponden a una tabla individual de diez o cinco corridas cronometradas.
+Las cantidades son aproximadas, de acuerdo con el registro del equipo. **Después de corregir la alimentación y la polaridad, todas las pruebas posteriores de los motores salieron bien.**
 
 **Lecturas observadas:** los QTR distinguieron las dos superficies; los infrarrojos alternaron sus lecturas digitales entre `0` y `1` al interactuar con los objetos. No se asigna aquí un valor fijo a «detectado» porque no se compartió qué lectura correspondía a cada estado.
 
@@ -62,7 +62,7 @@ Las cantidades son aproximadas, de acuerdo con el registro del equipo; no corres
 | Primer cambio | Conectamos la batería al módulo. | Los motores comenzaron a responder. |
 | Segundo problema | Uno de los motores giraba en el sentido contrario al esperado debido a la polaridad de su conexión. | Identificamos la conexión invertida. |
 | Segundo cambio | Corregimos la polaridad del motor. | Ambos motores quedaron girando correctamente. |
-| Comprobación final | Repetimos las pruebas con los motores integrados al carrito. | El resultado reportado fue satisfactorio después de los ajustes. |
+| Comprobación final | Repetimos las pruebas con los motores integrados al carrito. | Todas las pruebas realizadas después de las correcciones salieron bien. |
 
 **Hipótesis de trabajo:** si conectamos correctamente la alimentación y corregimos la polaridad de los motores, ambos podrán responder a las órdenes del programa y girar en el sentido esperado.
 
@@ -74,7 +74,7 @@ Las cantidades son aproximadas, de acuerdo con el registro del equipo; no corres
 
 **Resumen de resultados:** [Observaciones del Día 3](../../datos/observaciones-dia-03.md) · [Protocolo del equipo](../../pruebas/protocolo.md) · [CSV para ensayos medidos](../../datos/ensayos.csv).
 
-Las pruebas nos permitieron confirmar el funcionamiento básico de los componentes. Para comparar el rendimiento de forma cuantitativa en los siguientes ensayos, registraremos cada intento con la misma condición inicial, el comando utilizado, la respuesta y el resultado. Así podremos calcular aciertos y documentar una mejora medible.
+Las pruebas nos permitieron confirmar el funcionamiento básico de los componentes. **No grabamos video de estas pruebas**; nuestras evidencias son las cinco fotografías del robot terminado, los programas de Arduino y este registro de lo que observamos. Para medir el rendimiento más adelante, anotaremos los resultados de cada intento de forma individual.
 
 **Cuidado durante los siguientes ensayos:** revisar con el robot desconectado las conexiones, el aislamiento de la tarjeta respecto a la base metálica, la batería y la sujeción de los cables. Para probar el giro de forma segura, mantener las ruedas separadas del suelo cuando corresponda.
 
@@ -92,9 +92,16 @@ El chasis quedó ensamblado con su base metálica, dos ruedas motrices, batería
 
 **[Ver las cinco fotografías del Día 3](../../evidencias/dia-03/README.md).**
 
-Las actividades de montaje y pruebas fueron realizadas por el equipo. La contribución específica de cada integrante se debe expresar en su propio E3, según lo que efectivamente hizo:
+### Participación de cada integrante
 
-[Joel](../../participantes/A00574713/dias/E3.md) · [Sara](../../participantes/saragdr/dias/E3.md) · [Max](../../participantes/MaxAmCam/dias/E3.md) · [Claudio](../../participantes/A00574802/dias/E3.md).
+| Integrante | Aportación del 28 de octubre |
+|---|---|
+| [Joel](../../participantes/A00574713/dias/E3.md) | Consiguió los programas de Arduino, los cargó a la tarjeta y realizó las pruebas de sensores y motores junto con Sara. |
+| [Sara](../../participantes/saragdr/dias/E3.md) | Realizó las pruebas junto con Joel, volvió a soldar componentes o conexiones flojas o desprendidas y colocó los motores en el chasis. |
+| [Max](../../participantes/MaxAmCam/dias/E3.md) | Apoyó con tareas de preparación, como pelar cables y ayudar en la soldadura. |
+| [Claudio](../../participantes/A00574802/dias/E3.md) | Apoyó con tareas de preparación, como pelar cables y ayudar en la soldadura. |
+
+Cada integrante puede complementar su E3 personal con su aprendizaje y experiencia.
 
 ## 6 · Puerta de salida E3 y siguiente mejora
 
@@ -103,10 +110,11 @@ Las actividades de montaje y pruebas fueron realizadas por el equipo. La contrib
 - [x] Problema, dos correcciones y resultado del Kaizen 1 documentados.
 - [x] Resultados cualitativos y cantidad aproximada de pruebas registrados.
 - [x] Incorporados los dos programas `.ino` originales de sensores y motores.
+- [x] Registradas las tareas de Joel, Sara, Max y Claudio y aclarado que no se grabó video.
 - [ ] Registrar por separado las corridas de una prueba repetible para comparar resultados numéricos.
 - [ ] Completar y revisar los E3 personales de todos los integrantes.
 - [ ] Revisión del profesor Camilo René Duque.
 
-**Gate E3:** avance de montaje y Kaizen 1 registrado; revisión docente pendiente.
+**Gate E3:** actividades, resultados y Kaizen 1 documentados; revisión docente pendiente.
 
 **Siguiente reto, Kaizen 2:** utilizar los sensores y los motores en conjunto para que el robot detecte el borde blanco del dohyō y realice la maniobra programada para evitar salir de la pista.

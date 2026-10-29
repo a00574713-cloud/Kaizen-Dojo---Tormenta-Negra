@@ -45,6 +45,6 @@ Frente de la base metálica con sensores y cableado reunido.
 
 Las cinco imágenes están enlazadas en esta página y pueden consultarse directamente en GitHub.
 
-El equipo reportó unas **cinco pruebas de sensores** sobre el dohyō y con objetos, además de aproximadamente **diez pruebas de motores** que permitieron corregir la alimentación y la polaridad. [Ver resultados y mejoras](../../datos/observaciones-dia-03.md). Las imágenes muestran cómo quedó el robot.
+El equipo realizó unas **cinco pruebas de sensores** sobre el dohyō y con objetos, además de aproximadamente **diez pruebas de motores**. Después de corregir la alimentación y la polaridad, las pruebas posteriores salieron bien. **No se grabó video de las pruebas.** [Ver resultados y mejoras](../../datos/observaciones-dia-03.md). Las imágenes muestran cómo quedó el robot.
 
 [Entregable E3 del equipo](../../docs/entregables/dia-03.md) · [E3 de Joel](../../participantes/A00574713/dias/E3.md) · [Índice general de evidencias](../README.md).
