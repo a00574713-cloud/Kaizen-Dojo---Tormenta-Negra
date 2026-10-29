@@ -2,7 +2,7 @@
 
 > **Equipo:** Tormenta Negra · **Plataforma:** M01, mini-sumo autónomo · **Dōjō:** CTA, Laboratorio de Electrónica (puesto y autorización por confirmar)
 > **Nuestra misión:** Construir desde cero un mini-sumo autónomo que avance, retroceda, gire, detecte a un oponente y reaccione a las lecturas de sus sensores, con pruebas documentadas.
-> **Estado actual:** Día 3 (28-10-2026), chasis montado y pruebas exploratorias satisfactorias de motores y sensores; aún sin comparación cuantitativa ni comportamiento autónomo demostrado.
+> **Estado actual:** Día 3 (28-10-2026), robot de 10 × 10 cm ensamblado, con pruebas satisfactorias de motores y sensores y los dos programas originales de Arduino guardados; peso por medir y control autónomo como siguiente etapa.
 
 ## Empieza aquí — 4 acciones
 

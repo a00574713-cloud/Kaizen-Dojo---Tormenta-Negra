@@ -10,4 +10,10 @@ Sugerencias de estructura concreta (adaptar al hardware real):
 
 Especificar versiones, comandos de ejecución, dependencias y procedimiento de parada segura en un README del proyecto de código.
 
-El repositorio plantilla no contiene software listo para operar hardware. Es una estructura documental, no una validación de control de robots.
+## Programas reales del Día 3
+
+- [Prueba de motores](pruebas-dia-03/prueba_motores/prueba_motores.ino)
+- [Prueba de cinco sensores](pruebas-dia-03/prueba_sensores/prueba_sensores.ino)
+- [Descripción de conexiones y pruebas](pruebas-dia-03/README.md)
+
+Estos sketches se utilizaron para verificar subsistemas por separado; el programa autónomo del mini-sumo se desarrollará en una etapa posterior.

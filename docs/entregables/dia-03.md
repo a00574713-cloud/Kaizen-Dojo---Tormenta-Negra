@@ -22,7 +22,7 @@ El 28 de octubre terminamos el montaje físico de nuestro mini-sumo **Tormenta N
 | Avance desde el Día 2 | El [E2](dia-02.md) documenta el cableado y la preparación de componentes. En el E3 quedó montado el chasis y realizamos pruebas de sensores y motores. |
 | Controlador y alimentación | Tarjeta Azimov Team programada con Arduino IDE; batería nominal de 7.4 V y 500 mAh. |
 | Superficie de prueba | Dohyō de superficie negra con bordes blancos. |
-| Diseño mecánico | El equipo indica que el robot se construyó tomando como referencia las dimensiones máximas permitidas en su competencia de mini-sumo. Las medidas numéricas se agregarán a partir del reglamento y una medición del robot. |
+| Diseño mecánico | El equipo confirmó que las dimensiones del robot son **10 cm de largo × 10 cm de ancho**. El peso todavía no se ha medido. |
 | Identificación del avance | `D3-MONTAJE-28OCT`, prototipo físico ensamblado. |
 
 ## 1 · Actividades del Día 3
@@ -50,7 +50,7 @@ Las cantidades son aproximadas, de acuerdo con el registro del equipo; no corres
 
 **Lecturas observadas:** los QTR distinguieron las dos superficies; los infrarrojos alternaron sus lecturas digitales entre `0` y `1` al interactuar con los objetos. No se asigna aquí un valor fijo a «detectado» porque no se compartió qué lectura correspondía a cada estado.
 
-**Programas utilizados:** dos sketches de prueba de Arduino compartidos anteriormente en la conversación: uno para los cinco sensores y otro para los motores. [Registro de programas y pines](../../codigo/pruebas-dia-03/README.md). Los archivos `.ino` originales todavía deben añadirse para conservar exactamente lo que se ejecutó.
+**Programas utilizados:** los dos sketches originales de Arduino, ahora guardados en el repositorio: [prueba de los cinco sensores](../../codigo/pruebas-dia-03/prueba_sensores/prueba_sensores.ino) y [prueba individual de motores](../../codigo/pruebas-dia-03/prueba_motores/prueba_motores.ino). [Ver conexiones y explicación de las pruebas](../../codigo/pruebas-dia-03/README.md).
 
 ## 3 · Kaizen 1: problema, mejora y resultado
 
@@ -80,7 +80,7 @@ Las pruebas nos permitieron confirmar el funcionamiento básico de los component
 
 ## 5 · Montaje, evidencias y trabajo del equipo
 
-El chasis quedó ensamblado con su base metálica, dos ruedas motrices, batería, tarjeta controladora, cableado y sensores. Las cinco fotografías muestran el avance respecto al Día 2.
+El chasis quedó ensamblado con su base metálica, dos ruedas motrices, batería, tarjeta controladora, cableado y sensores. **Dimensiones confirmadas por el equipo: 10 × 10 cm.** Las cinco fotografías muestran el avance respecto al Día 2.
 
 | Evidencia | Archivo |
 |---|---|
@@ -102,7 +102,7 @@ Las actividades de montaje y pruebas fueron realizadas por el equipo. La contrib
 - [x] Pruebas de los cinco sensores y los dos motores realizadas y descritas.
 - [x] Problema, dos correcciones y resultado del Kaizen 1 documentados.
 - [x] Resultados cualitativos y cantidad aproximada de pruebas registrados.
-- [ ] Incorporar los dos archivos `.ino` exactamente como se utilizaron.
+- [x] Incorporados los dos programas `.ino` originales de sensores y motores.
 - [ ] Registrar por separado las corridas de una prueba repetible para comparar resultados numéricos.
 - [ ] Completar y revisar los E3 personales de todos los integrantes.
 - [ ] Revisión del profesor Camilo René Duque.

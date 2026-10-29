@@ -1,6 +1,6 @@
 # Observaciones de pruebas — Día 3 (28 de octubre de 2026)
 
-**Equipo:** Tormenta Negra · **Prototipo:** `D3-MONTAJE-28OCT`.
+**Equipo:** Tormenta Negra · **Prototipo:** `D3-MONTAJE-28OCT` · **Dimensiones:** 10 × 10 cm de largo y ancho · **Peso:** por medir.
 
 Este registro resume lo informado por el equipo después de las pruebas con el robot montado. Las cantidades son aproximadas y corresponden a **pruebas del conjunto**, no a cinco ensayos por cada sensor ni a diez ensayos por cada motor.
 
@@ -9,6 +9,8 @@ Este registro resume lo informado por el equipo después de las pruebas con el r
 | Sensores QTR-1A | 2 | Superficie negra con bordes blancos del dohyō | Aproximadamente 5 pruebas de sensores en total, compartidas con los JS40F | Respondieron a los cambios entre negro y blanco. |
 | Sensores infrarrojos JS40F | 3 | Acercar y retirar objetos | Incluidas en el total aproximado de 5 pruebas de sensores | Las lecturas digitales cambiaron entre `0` y `1` según la detección de objetos. |
 | Motores DC | 2 | Primero sin batería conectada; después con batería; finalmente polaridad corregida | Aproximadamente 10 pruebas de motorización en total | Al inicio no giraban; posteriormente uno giraba invertido; al terminar las correcciones ambos funcionaron en el sentido esperado. |
+
+**Programas de las pruebas:** [Motores](../codigo/pruebas-dia-03/prueba_motores/prueba_motores.ino) · [Cinco sensores](../codigo/pruebas-dia-03/prueba_sensores/prueba_sensores.ino).
 
 ## Cambio del Kaizen 1
 
