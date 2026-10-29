@@ -42,6 +42,16 @@ La guía propone seis bloques de trabajo. **Los minutos indican la distribución
 | Control remoto | Conectamos al **pin D12** de la tarjeta el receptor infrarrojo destinado al arranque y paro mediante control remoto. Por ahora, el código de movimiento no utiliza este receptor. |
 | Integración del control | Cargamos y ejecutamos el [programa de prueba de movimiento y evasión de borde](../../codigo/mini-sumo/prueba_evasion_borde/prueba_evasion_borde.ino) basado en el pinout de E3. Se registraron **tres pruebas de 15 segundos** en el dohyō. |
 
+## 1B · Revisión por pares y retroalimentación
+
+La guía solicita registrar quién revisó el trabajo del equipo y qué recomendó. **Todavía no tenemos confirmado que haya ocurrido una revisión por pares**; dejamos sus campos pendientes para no inventar observaciones.
+
+| Persona o equipo observador (alias) | Evidencia revisada | Observación útil o pregunta | Respuesta técnica y decisión | Cambio aceptado o descartado |
+|---|---|---|---|---|
+| Pendiente de confirmar | Pendiente | Pendiente | Pendiente | Pendiente |
+
+**Acuerdo de colaboración:** pendiente de registrar cómo escuchamos las observaciones y cómo repartimos las oportunidades para explicar las decisiones.
+
 ## 2 · Segundo Kaizen: una mejora para proteger el robot en el dohyō
 
 El siguiente objetivo es que el robot pueda desplazarse sobre la superficie negra y que, al llegar a un borde blanco, retroceda y gire para permanecer dentro del área de combate.
@@ -56,6 +66,20 @@ El siguiente objetivo es que el robot pueda desplazarse sobre la superficie negr
 | Cómo comprobarlo | Calibrar los QTR, comprobar el sentido de los motores con las ruedas levantadas y probar el comportamiento sobre el dohyō. |
 | Resultado | Realizamos **3 pruebas de 15 s**. El robot avanzó y reaccionó al borde blanco retrocediendo y girando, como buscábamos. En algunos momentos giró repentinamente por manchas blancas dentro de la pista y en algunas ocasiones alcanzó a salirse; todas las pruebas terminaron según el temporizador del programa. |
 
+### Ficha de experimento K2 solicitada por la guía
+
+| Campo requerido | Registro |
+|---|---|
+| Limitación de K1 | En E3 comprobamos sensores y motores por separado; todavía faltaba probarlos integrados y evitar el borde. |
+| Hipótesis K2 y fundamento | Si los QTR detectan blanco mientras el robot avanza, podrá retroceder y girar para regresar a la superficie negra. |
+| Variable modificada | Integramos la lectura de QTR con el movimiento de los motores. Para el siguiente ajuste se preparó una versión con `V_AVANCE = 105` frente a 145, todavía sin probar. |
+| Condiciones y controles | Primeras pruebas sobre el dohyō durante 15 s; hay manchas blancas en la zona negra. Falta igualar las condiciones de las versiones a comparar. |
+| Seguridad antes del cambio | Revisar alimentación, polaridad, motores fijados, carcasa, aislamiento de la tarjeta y acceso al paro. |
+| Personas responsables y alcances | Participación específica de cada integrante en E4: **pendiente de confirmar**. Alcances involucrados: sensores, motores e integración. |
+| Código y versión K2 | [Prueba integrada ejecutada](../../codigo/mini-sumo/prueba_evasion_borde/prueba_evasion_borde.ino) y [segunda versión preparada](../../codigo/mini-sumo/prueba_evasion_borde_lenta/prueba_evasion_borde_lenta.ino). Las versiones se conservan por separado en GitHub. |
+| Referencia de cambio | Archivos anteriores disponibles en el repositorio; asociación de una versión validada a un identificador específico de revisión: pendiente. |
+| Métrica y criterio de éxito | Registrar **cantidad de salidas del dohyō por prueba**, **giros innecesarios por prueba** y si respondió al blanco. Objetivo: disminuir las salidas sin perder la evasión del borde. Todavía no hay conteos por ensayo de esas métricas. |
+
 ## 3 · Comparación de versiones
 
 | Etapa | Estado observable |
@@ -63,6 +87,24 @@ El siguiente objetivo es que el robot pueda desplazarse sobre la superficie negr
 | Día 2: primera integración | Cables y conexiones físicas preparados. |
 | Día 3: primera mejora Kaizen | Motores y sensores probados; batería conectada y polaridad corregida. |
 | Día 4: segundo Kaizen en prueba | Carcasa, montaje y motores asegurados; receptor de control remoto conectado. Se ejecutó el programa de evasión y se registraron tres pruebas de 15 segundos en el dohyō. |
+
+### Tabla de ensayos comparables que pide la guía
+
+El formato original solicita **cinco ensayos bajo condiciones equivalentes**, comparando V1, K1 y K2. Los ensayos anteriores no midieron el mismo comportamiento: V1 fue montaje sin prueba funcional; K1 fueron pruebas individuales de sensores y motores; K2 fue el primer movimiento integrado. Por eso **no hay valores numéricos equivalentes de las tres versiones** y no se deben calcular medias o porcentajes de éxito comparativos todavía.
+
+| Ensayo / misma condición | V1 (valor + unidad) | K1 (valor + unidad) | K2 (valor + unidad) | Incidencias / validez |
+|---|---|---|---|---|
+| 1 | Sin prueba equivalente | Sin prueba equivalente | Primera corrida de 15 s, PWM de avance 145; salidas sin contar | No comparable entre versiones |
+| 2 | Sin prueba equivalente | Sin prueba equivalente | Segunda corrida de 15 s, PWM de avance 145; salidas sin contar | No comparable entre versiones |
+| 3 | Sin prueba equivalente | Sin prueba equivalente | Tercera corrida de 15 s, PWM de avance 145; salidas sin contar | No comparable entre versiones |
+| 4 | Sin dato | Sin dato | Pendiente | No realizado |
+| 5 | Sin dato | Sin dato | Pendiente | No realizado |
+
+**Registros fuente:** [log del Monitor Serie](../../datos/e4_monitor_serie_29oct.txt) · [observaciones](../../datos/observaciones-dia-04.md) · [protocolo](../../pruebas/protocolo.md) · [CSV de ensayos](../../datos/ensayos.csv), que todavía no tiene corridas individuales llenadas.
+
+**Síntesis (n, media/mediana, dispersión y éxito):** n = 3 pruebas integradas de 15 s con PWM de avance 145. No podemos calcular tasas de éxito, media de salidas o mejora porcentual, porque no se registró el número de salidas por prueba ni se ha ensayado la nueva velocidad.
+
+**Qué mejora, qué empeora y qué no sabemos:** el robot ya muestra capacidad de avanzar y realizar maniobras ante el borde; las manchas blancas causan giros inesperados y hubo salidas ocasionales. Todavía no sabemos si reducir la velocidad mejora esos resultados.
 
 ## 3A · Tres pruebas de movimiento en el dohyō
 
@@ -84,6 +126,15 @@ Los avisos de borde son **eventos impresos por el programa**, no el número de v
 
 **Variación observada en las pruebas:** había manchas blancas en la superficie negra del dohyō; el robot las interpretaba como blanco y giraba aunque todavía no estuviera junto al borde. Además, **en algunas ocasiones se salió de la pista**, posiblemente por la velocidad. Esto nos sirve como prueba de robustez para el Kaizen 2: la detección y la maniobra funcionan, pero todavía deben mejorarse para evitar giros innecesarios y salidas.
 
+### Registro del ensayo de robustez o variación de condiciones
+
+| Condición o cambio del entorno | Riesgo y límite seguro | Predicción | Resultado observado / medición | ¿Se mantiene el objetivo? | Evidencia |
+|---|---|---|---|---|---|
+| Manchas blancas dentro de la superficie negra (condición observada, no introducida de forma controlada) | Giros innecesarios y posible salida del borde; supervisión y paro accesible | El robot puede confundir manchas con el borde | Ocurrieron giros repentinos y algunas salidas; sin conteo por cada intento | Parcialmente: sí reaccionó al blanco, pero no siempre permaneció dentro | [Observaciones E4](../../datos/observaciones-dia-04.md) |
+| Superficie sin manchas y avance PWM 105 (prueba propuesta) | Comprobar fuerza de movimiento y permanecer cerca para intervenir | Menos salidas si la velocidad era una causa importante | Pendiente de ejecutar | Pendiente | [Código preparado](../../codigo/mini-sumo/prueba_evasion_borde_lenta/prueba_evasion_borde_lenta.ino) |
+
+**Límites de inferencia:** tenemos tres ejecuciones del programa original, pero las manchas no se introdujeron como una perturbación controlada y no se registraron salidas ni giros innecesarios por intento. La nueva versión todavía no tiene resultados; para aislar la velocidad habrá que mantener la misma pista, batería y condiciones de ensayo.
+
 **Próxima mejora propuesta:** revisar o limpiar la superficie de prueba, repetir la calibración de los QTR y probar primero con una velocidad de avance más baja, manteniendo los demás ajustes iguales. Registrar salidas y giros innecesarios en cada intento. Si siguen ocurriendo salidas, revisar la posición de los QTR y los tiempos de retroceso y giro.
 
 **Versión preparada para comparar:** [prueba_evasion_borde_lenta.ino](../../codigo/mini-sumo/prueba_evasion_borde_lenta/prueba_evasion_borde_lenta.ino), con velocidad de avance PWM **105** (antes 145). Se conserva [la versión original de las tres pruebas](../../codigo/mini-sumo/prueba_evasion_borde/prueba_evasion_borde.ino), sin modificarla. Esta nueva versión aún no tiene resultados de prueba.
@@ -98,9 +149,34 @@ Antes de probar el robot en movimiento, revisar que la carcasa no toque ni provo
 
 La demostración prevista consistirá en enseñar el robot montado, explicar los sensores y motores, y hacer que se desplace sobre el área negra evitando el borde blanco. Una vez comprobado eso, se integrará el arranque y paro remoto y el comportamiento de búsqueda del rival.
 
+### Ensayo general de demostración (20–60 segundos por segmento)
+
+| Segmento | Qué se demostrará | Integrante responsable | Versión o código | Material requerido | Plan B ante fallo |
+|---|---|---|---|---|---|
+| Inicio / contexto | Mostrar el robot armado, la carcasa y el objetivo de evitar el borde | Pendiente de asignar | Prototipo E4 | Robot ensamblado | Mostrar fotos y explicar el montaje |
+| Prueba principal | Avanzar sobre negro y reaccionar al borde blanco | Pendiente de asignar | [Prueba integrada E4](../../codigo/mini-sumo/prueba_evasion_borde/prueba_evasion_borde.ino); cambio a 105 por validar | Dohyō, batería, computadora y cable de prueba | Mostrar registros del Monitor Serie si no es seguro probar en movimiento |
+| Evidencia de mejora | Explicar la evolución V1–K1–K2 y los resultados de las tres pruebas | Pendiente de asignar | [Resultados E4](../../datos/observaciones-dia-04.md) | Tabla y registro de pruebas | Explicar limitaciones sin inventar un porcentaje de mejora |
+| Defensa de fronteras | Cada integrante explica su aportación y aprendizaje | Pendiente de confirmar aportaciones E4 | Documentos individuales | Bitácoras E4 personales | Explicar qué falta validar |
+
+**¿RoboLympics es un evento externo posterior?** Por confirmar. No se registra ninguna participación en una competencia externa como realizada. La demostración prevista para D5 es interna.
+
+**Responsables, tiempos y ensayo general:** propuesta de guion documentada; quedan pendientes la asignación y la ejecución real.
+
 **Evidencias disponibles:** [fotografías del E3](../../evidencias/dia-03/README.md), [código de prueba E4](../../codigo/mini-sumo/prueba_evasion_borde/prueba_evasion_borde.ino), [registro de las tres pruebas](../../datos/e4_monitor_serie_29oct.txt) y [resumen de resultados](../../datos/observaciones-dia-04.md). Las fotografías del nuevo montaje de E4 se añadirán cuando estén disponibles.
 
-## 6 · Estado de E4
+## 6 · Gate de preparación E4
+
+Esta lista conserva los cinco criterios de cierre del entregable original:
+
+- [x] **K2 explícito:** problema, hipótesis, modificación y datos iniciales registrados; falta validar la segunda velocidad con ensayos comparables.
+- [x] **Versiones conservadas:** las conexiones iniciales, el primer Kaizen y los dos programas de evasión se documentan en el repositorio. La comparación cuantitativa V1–K1–K2 no está cerrada.
+- [x] **Robustez documentada:** variación observada por manchas blancas y salidas ocasionales; faltan ensayos con condiciones controladas.
+- [ ] **Demostración D5:** guion propuesto, pero faltan responsables, contingencia acordada y ensayo.
+- [ ] **E4 personales:** faltan los registros individuales de los integrantes.
+
+**Decisión de preparación:** CON RESTRICCIONES. **Pendientes y responsables:** resultados de la versión 105, revisión por pares, reparto de demostración, aportaciones individuales, peso y prueba de control remoto; responsables por asignar. **Revisor:** profesor Camilo René Duque, revisión pendiente.
+
+## 7 · Estado de E4
 
 - [x] Carcasa construida y cableado acomodado, según el equipo.
 - [x] Motores mejor fijados al chasis.
