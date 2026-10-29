@@ -18,7 +18,7 @@ Este programa es una **propuesta para la primera prueba combinada** de motores y
 
 ## Control remoto infrarrojo
 
-El receptor de arranque y paro se conectó en E4, pero **todavía no se conoce el pin de señal de ese receptor ni los códigos del control**, así que este sketch utiliza comandos del Monitor Serie para las primeras pruebas seguras. **No sustituye al arrancador/paro infrarrojo exigido por el reglamento de RoboLympics.** No declarar que el control remoto ya funciona sin probarlo y añadir su código.
+El receptor de arranque y paro quedó conectado al **pin D12** de la tarjeta en E4. Todavía no se han incorporado las señales ni los botones del control remoto al programa, por lo que este sketch continúa utilizando comandos del Monitor Serie para las primeras pruebas seguras. **No sustituye al arrancador/paro infrarrojo exigido por el reglamento de RoboLympics.** No declarar que el control remoto ya funciona sin probarlo y añadir su código.
 
 ## Estado de la prueba
 
