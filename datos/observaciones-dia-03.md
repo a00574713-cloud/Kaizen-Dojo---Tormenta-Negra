@@ -42,6 +42,12 @@ Este registro no es una tabla de cinco ensayos V1–K1 comparables. Como el tota
 - **Max y Claudio:** ayudaron a pelar cables y con las tareas de soldadura.
 - **Todo el equipo:** verificó las conexiones y las pruebas realizadas.
 
+## Qué no se midió en E3 y dónde se documentó después
+
+El Día 3 (**28 de octubre**) solo se comprobó cualitativamente el funcionamiento de los sensores y de los motores. **No se anotaron lecturas ADC de negro/blanco, umbrales de calibración de los QTR ni resultados por intento en una tabla de ensayos.** Tampoco se hizo una calibración formal sobre el dohyō.
+
+Las **mediciones de los QTR y las pruebas de evasión con el robot completo** comenzaron el **29 de octubre (E4)**. El [E4 colectivo](../docs/entregables/dia-04.md) contiene el experimento, y las [pruebas adicionales con PWM 105](e4_pruebas_pwm105_29oct.md) registran la nueva calibración y tres ejecuciones sin salidas de la pista según la observación del equipo. Esos resultados no pertenecen al E3 ni sustituyen la comparación V1–K1 solicitada para el Día 3.
+
 ## Próximo registro cuantitativo
 
 Usar [`ensayos.csv`](ensayos.csv) para registrar **cada nueva corrida**, con fecha, versión del montaje, condición, resultado sí/no y observaciones. Los primeros dos fallos se conocen por recuerdo posterior, mientras que las aproximadamente cinco y diez pruebas mencionadas aquí son un resumen del equipo; **no se desglosan retrospectivamente en filas individuales que no fueron registradas**.
