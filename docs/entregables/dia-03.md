@@ -106,6 +106,10 @@ La guía solicita registrar el alcance, la kata, el cambio concreto, el responsa
 
 ## 4 · Ensayos comparables V1–K1
 
+**Aclaración del registro experimental:** el 28 de octubre (E3) se hicieron pruebas funcionales de sensores y motores, pero no se anotaron mediciones numéricas ni se realizó una calibración formal de los QTR con valores negro/blanco. Las lecturas analógicas de calibración, los umbrales y las primeras pruebas integradas en el dohyō se registraron al día siguiente, el **29 de octubre (E4)**. Su evidencia está en el [E4 del equipo](dia-04.md) y el [registro de tres ensayos a PWM 105](../../datos/e4_pruebas_pwm105_29oct.md), durante los cuales el equipo observó que el robot permaneció dentro de la pista. **Esas pruebas de E4 no reemplazan los cinco pares V1–K1 que solicita el E3.**
+
+
+
 **Datos crudos requeridos:** [ensayos.csv](../../datos/ensayos.csv) · **Protocolo:** [protocolo.md](../../pruebas/protocolo.md) · **Observaciones realmente registradas:** [Día 3](../../datos/observaciones-dia-03.md).
 
 La plantilla original incluye **cinco pruebas emparejadas** bajo las mismas condiciones y valores por versión. No contamos con esos datos: el Día 2 no tuvo ensayos funcionales y las pruebas del Día 3 fueron exploratorias, con correcciones efectuadas durante la sesión. Aunque las pruebas se podían registrar simplemente como **sí/no funcionaron** y **sentido correcto/incorrecto**, **no anotamos un resultado por corrida durante la actividad**.
