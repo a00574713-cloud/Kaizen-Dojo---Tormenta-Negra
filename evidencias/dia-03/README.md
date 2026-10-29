@@ -1,7 +1,7 @@
 # Registro fotográfico E3 — 28 de octubre de 2026
 
 **Equipo:** Tormenta Negra · **Misión:** mini-sumo autónomo M01.  
-**Estado:** se recibieron estas cinco fotografías en la conversación el 28 de octubre de 2026; **los archivos binarios todavía deben cargarse aquí**. El documento deja preparadas las rutas JPG exactas para que aparezcan automáticamente al subirlos.
+**Estado:** las cinco fotografías tomadas el 28 de octubre de 2026 ya están disponibles en esta carpeta con extensión `.jpg`.
 
 | Archivo | Vista | Qué demuestra |
 |---|---|---|
@@ -43,7 +43,7 @@ Distribución de batería, placa, sensores, ruedas y frente metálico.
 
 Frente de la base metálica con sensores y cableado reunido.
 
-Si aún no aparecen las imágenes en GitHub, faltan los archivos JPG correspondientes. Subirlos con los nombres indicados, dentro de `evidencias/dia-03/`, sin modificar esta página.
+Las cinco imágenes están enlazadas en esta página y pueden consultarse directamente en GitHub.
 
 Estas fotografías **documentan el montaje físico**, no prueban por sí solas que los motores y sensores funcionen. Su funcionamiento fue reportado por el equipo durante el Día 3, pero todavía faltan mediciones crudas, videos de prueba, resultados repetidos y validación docente.
 

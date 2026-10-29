@@ -35,7 +35,7 @@ Los tiempos son **los bloques de la plantilla**, no tiempos reales registrados. 
 | Diagnóstico del prototipo V1 | 40–80 | **Observación exploratoria:** con la batería de 7.4 V los motores sí giraron. Esto apunta a una diferencia de alimentación, pero no determina la causa eléctrica exacta. |
 | Kaizen 1: cambio técnico | 80–125 | **Cambio de configuración realizado:** pasar de una prueba solo por USB a probar con batería. **Pendiente:** identificar y guardar versión reproducible de firmware, condiciones eléctricas y evidencia. |
 | Reensayo equivalente | 125–160 | **Pendiente:** no hay cinco pares V1/K1, tiempos, tensiones ni tasas de éxito registrados. |
-| Documentar, debatir, reflejar | 160–180 | **Actualizado:** se documentaron las pruebas exploratorias y el chasis ensamblado mostrado en cinco fotos; falta incorporar los JPG originales al repositorio, mediciones comparables, firmware y revisión docente. |
+| Documentar, debatir, reflejar | 160–180 | **Actualizado:** se documentaron las pruebas exploratorias y el chasis ensamblado mostrado en cinco fotos; las fotografías están en el repositorio; siguen en preparación las mediciones comparables, el firmware y la revisión docente. |
 
 ### Avances funcionales exploratorios comunicados hoy
 
@@ -46,7 +46,7 @@ Los tiempos son **los bloques de la plantilla**, no tiempos reales registrados. 
 - **Estructura:** se completó el montaje físico de un prototipo con base metálica, dos ruedas motrices, placa de control, batería, cables y sensores visibles en las cinco fotografías. No se registraron peso, dimensiones, pruebas de rigidez ni revisión de sujeciones.
 - **Integración total:** no se ha demostrado funcionamiento autónomo, reconocimiento del borde durante desplazamiento ni ataque a un oponente. Las pruebas reportadas fueron de subsistemas.
 
-Los resultados anteriores son **observaciones cualitativas reportadas**, no ensayos repetidos ni valores crudos almacenados. Ahora hay **cinco fotografías del chasis ensamblado** aportadas en esta conversación; su [registro descriptivo](../../evidencias/dia-03/README.md) está preparado y **sus archivos JPG aún no están cargados en GitHub**. No se aportaron videos de pruebas, lecturas crudas ni métricas cuantitativas.
+Los resultados anteriores son **observaciones cualitativas reportadas**, no ensayos repetidos ni valores crudos almacenados. Ahora hay **cinco fotografías del chasis ensamblado** aportadas en esta conversación; sus fotografías JPG están disponibles en la [galería del Día 3](../../evidencias/dia-03/README.md). No se aportaron videos de pruebas, lecturas crudas ni métricas cuantitativas.
 
 ## 2 · Problema, hipótesis y trazabilidad
 
@@ -114,13 +114,13 @@ El equipo compartió cinco fotografías del robot físicamente ensamblado. Se ob
 - **Estado mecánico observado:** existe un prototipo montado; no se ha documentado la medida máxima, el peso, las fijaciones ni el aislamiento entre tarjeta y metal.
 - **Estado eléctrico reportado:** los motores y sensores respondieron en las pruebas exploratorias de hoy. No hay captura de lecturas o ensayo registrado que demuestre una respuesta del sistema completo después del montaje.
 - **Precaución pendiente:** revisar conexiones con alimentación desconectada, fijación de los cables, batería, aislantes y separaciones antes de operar en el dōjō.
-- **Evidencia:** [galería del Día 3](../../evidencias/dia-03/README.md). Son cinco fotos compartidas en el chat y pendientes de cargar como JPG en GitHub.
+- **Evidencia:** [galería del Día 3](../../evidencias/dia-03/README.md). Los cinco archivos JPG ya se encuentran en GitHub.
 
 **Identificador descriptivo del prototipo:** `D3-MONTAJE-28OCT` (no es una etiqueta de firmware ni un commit de CAD). El siguiente paso es etiquetar y guardar el firmware realmente probado y repetir cinco ensayos controlados con el robot armado.
 
 ### Registro visual adicional
 
-Las cinco imágenes tomadas el 28 de octubre están inventariadas por nombre en [`evidencias/dia-03/`](../../evidencias/dia-03/README.md). Deben cargarse allí como JPG para que la galería las muestre. No se identifican medidas ni pruebas cuantitativas a partir de fotografías.
+Las cinco imágenes tomadas el 28 de octubre están inventariadas por nombre en [`evidencias/dia-03/`](../../evidencias/dia-03/README.md). Ya se encuentran en esa carpeta como JPG y se muestran en la galería. No se identifican medidas ni pruebas cuantitativas a partir de fotografías.
 
 ## 6 · Puerta de salida E3
 
@@ -130,6 +130,6 @@ Las cinco imágenes tomadas el 28 de octubre están inventariadas por nombre en 
 - [ ] Ensayos V1 y K1 comparables con datos registrados. **0/5 por condición.**
 - [x] Se declaró honestamente el resultado cualitativo y sus límites.
 - [ ] Cada estudiante completó y validó su [E3 personales](../../participantes/README.md). **Joel tiene un borrador actualizado; los demás deben revisar su propia aportación.**
-- [x] Chasis físico montado y mostrado en cinco fotografías (aún pendientes de subir a GitHub). **No hay validación dimensional ni autorización docente documentada.**
+- [x] Chasis físico montado y mostrado en cinco fotografías (imágenes enlazadas en GitHub). **No hay validación dimensional ni autorización docente documentada.**
 
-**Gate E3:** **CONDICIONADO (propuesta documental: montaje y pruebas exploratorias reportados, pero sin mediciones comparables ni revisión docente).** **Revisor:** profesor Camilo René Duque, pendiente. **Commit/PR de cierre E3:** consultar el historial de este archivo; la evidencia fotográfica original y los ensayos comparables siguen pendientes.
+**Gate E3:** **CONDICIONADO (propuesta documental: montaje y pruebas exploratorias reportados, pero sin mediciones comparables ni revisión docente).** **Revisor:** profesor Camilo René Duque, pendiente. Las fotografías del montaje están incorporadas. La evaluación docente y el registro de ensayos comparables continúan como próximos pasos.
