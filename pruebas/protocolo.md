@@ -79,3 +79,9 @@ No inventar resultados ni borrar corridas desfavorables.
 - Revisar fijaciones, conexiones, batería y aislamiento de la tarjeta antes de energizar el chasis.
 
 **Kaizen 2:** probar la respuesta automática del robot al borde del dohyō usando los sensores y motores juntos.
+
+## Ejecuciones del 29-10-2026 (E4)
+
+El equipo ejecutó tres veces el programa de movimiento y detección del borde en el dohyō; las tres terminaron por su temporizador de 15 segundos. El Monitor Serie registra múltiples avisos de borde y la calibración QTR usada. [Resultados y diagnóstico](../datos/observaciones-dia-04.md) · [log completo](../datos/e4_monitor_serie_29oct.txt).
+
+**Para validar la robustez del Kaizen 2**, falta verificar observando el robot si cada evento de borde realmente provocó retroceso y giro dentro del dohyō, sin salirse, y si hubo detecciones falsas. El contraste del QTR izquierdo merece revisión antes de la siguiente tanda.

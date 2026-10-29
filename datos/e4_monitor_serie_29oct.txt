@@ -1,0 +1,122 @@
+=== TORMENTA NEGRA / E4 ===
+n = calibrar negro
+b = calibrar blanco
+s = iniciar
+p = detener
+NEGRO - Izq: 1022 Der: 821
+BLANCO - Izq: 956 Der: 34
+Umbral izquierdo: 989
+Umbral derecho: 427
+Calibrado. Envia s para iniciar.
+INICIO DE PRUEBA
+QTR Izq: 1022 | Der: 809 | IR: 1,0,0
+BORDE: IZQUIERDA
+QTR Izq: 1021 | Der: 773 | IR: 1,0,0
+BORDE: IZQUIERDA
+QTR Izq: 1021 | Der: 803 | IR: 1,0,0
+QTR Izq: 1021 | Der: 790 | IR: 1,0,0
+QTR Izq: 1022 | Der: 818 | IR: 1,0,0
+BORDE: IZQUIERDA
+QTR Izq: 1021 | Der: 784 | IR: 1,0,0
+QTR Izq: 1021 | Der: 792 | IR: 1,0,0
+BORDE: IZQUIERDA
+QTR Izq: 985 | Der: 824 | IR: 1,0,0
+BORDE: IZQUIERDA
+QTR Izq: 1022 | Der: 684 | IR: 1,0,1
+BORDE: DERECHA
+QTR Izq: 1022 | Der: 807 | IR: 1,0,0
+QTR Izq: 1022 | Der: 791 | IR: 1,0,0
+BORDE: DERECHA
+QTR Izq: 1022 | Der: 801 | IR: 1,0,0
+QTR Izq: 1022 | Der: 788 | IR: 1,1,0
+BORDE: IZQUIERDA
+QTR Izq: 1018 | Der: 1003 | IR: 1,1,0
+QTR Izq: 1020 | Der: 1005 | IR: 1,1,0
+BORDE: IZQUIERDA
+QTR Izq: 1022 | Der: 800 | IR: 1,0,0
+BORDE: DERECHA
+QTR Izq: 1022 | Der: 816 | IR: 1,0,0
+QTR Izq: 1022 | Der: 836 | IR: 1,0,0
+BORDE: IZQUIERDA
+QTR Izq: 1022 | Der: 816 | IR: 1,1,0
+QTR Izq: 1022 | Der: 816 | IR: 1,1,0
+BORDE: IZQUIERDA
+QTR Izq: 1022 | Der: 816 | IR: 1,0,0
+QTR Izq: 1022 | Der: 791 | IR: 1,0,0
+FIN DE PRUEBA
+INICIO DE PRUEBA
+QTR Izq: 1022 | Der: 807 | IR: 1,0,0
+QTR Izq: 1022 | Der: 814 | IR: 1,0,0
+BORDE: DERECHA
+QTR Izq: 1022 | Der: 833 | IR: 1,0,0
+BORDE: DERECHA
+QTR Izq: 1022 | Der: 838 | IR: 1,0,0
+BORDE: DERECHA
+QTR Izq: 1021 | Der: 800 | IR: 1,0,0
+BORDE: DERECHA
+QTR Izq: 1022 | Der: 810 | IR: 1,0,0
+QTR Izq: 1022 | Der: 736 | IR: 1,0,0
+QTR Izq: 1022 | Der: 761 | IR: 1,0,0
+BORDE: DERECHA
+QTR Izq: 1022 | Der: 810 | IR: 1,0,0
+BORDE: DERECHA
+QTR Izq: 1022 | Der: 813 | IR: 1,1,0
+QTR Izq: 1022 | Der: 679 | IR: 1,1,0
+QTR Izq: 1022 | Der: 789 | IR: 1,1,0
+BORDE: IZQUIERDA
+QTR Izq: 829 | Der: 729 | IR: 1,1,0
+BORDE: IZQUIERDA
+QTR Izq: 972 | Der: 749 | IR: 1,1,0
+BORDE: IZQUIERDA
+QTR Izq: 1022 | Der: 752 | IR: 1,0,1
+QTR Izq: 1022 | Der: 799 | IR: 1,0,0
+QTR Izq: 1022 | Der: 819 | IR: 1,0,0
+QTR Izq: 1022 | Der: 830 | IR: 1,0,0
+BORDE: DERECHA
+QTR Izq: 1022 | Der: 816 | IR: 1,0,0
+QTR Izq: 1022 | Der: 802 | IR: 1,0,0
+QTR Izq: 1021 | Der: 794 | IR: 1,1,0
+BORDE: IZQUIERDA
+QTR Izq: 1019 | Der: 1005 | IR: 0,1,0
+BORDE: IZQUIERDA
+FIN DE PRUEBA
+INICIO DE PRUEBA
+QTR Izq: 1022 | Der: 802 | IR: 1,0,0
+QTR Izq: 1022 | Der: 793 | IR: 1,0,0
+BORDE: IZQUIERDA
+QTR Izq: 819 | Der: 998 | IR: 1,1,1
+BORDE: IZQUIERDA
+QTR Izq: 1022 | Der: 775 | IR: 1,0,0
+QTR Izq: 1022 | Der: 803 | IR: 1,0,0
+QTR Izq: 1022 | Der: 61 | IR: 1,0,0
+BORDE: DERECHA
+QTR Izq: 1022 | Der: 793 | IR: 1,0,0
+QTR Izq: 1022 | Der: 755 | IR: 1,0,0
+QTR Izq: 1022 | Der: 787 | IR: 1,1,0
+BORDE: DERECHA
+QTR Izq: 1019 | Der: 1004 | IR: 1,1,0
+BORDE: IZQUIERDA
+QTR Izq: 1022 | Der: 791 | IR: 1,0,0
+QTR Izq: 1022 | Der: 800 | IR: 1,0,0
+QTR Izq: 1022 | Der: 802 | IR: 1,0,0
+BORDE: IZQUIERDA
+QTR Izq: 1022 | Der: 784 | IR: 1,0,0
+BORDE: DERECHA
+QTR Izq: 1022 | Der: 820 | IR: 1,0,0
+QTR Izq: 1022 | Der: 808 | IR: 1,0,0
+QTR Izq: 1022 | Der: 816 | IR: 1,1,0
+BORDE: IZQUIERDA
+QTR Izq: 964 | Der: 34 | IR: 1,1,1
+BORDE: IZQUIERDA
+QTR Izq: 1021 | Der: 792 | IR: 1,0,0
+QTR Izq: 1022 | Der: 802 | IR: 1,0,0
+QTR Izq: 1022 | Der: 771 | IR: 1,0,0
+QTR Izq: 1022 | Der: 773 | IR: 1,0,0
+BORDE: DERECHA
+QTR Izq: 1022 | Der: 780 | IR: 1,0,0
+QTR Izq: 1022 | Der: 791 | IR: 1,0,0
+QTR Izq: 1022 | Der: 788 | IR: 1,0,0
+BORDE: DERECHA
+QTR Izq: 1022 | Der: 797 | IR: 1,0,0
+BORDE: DERECHA
+FIN DE PRUEBA
