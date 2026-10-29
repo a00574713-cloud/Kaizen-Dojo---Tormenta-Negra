@@ -84,4 +84,6 @@ No inventar resultados ni borrar corridas desfavorables.
 
 El equipo ejecutó tres veces el programa de movimiento y detección del borde en el dohyō; las tres terminaron por su temporizador de 15 segundos. El Monitor Serie registra múltiples avisos de borde y la calibración QTR usada. [Resultados y diagnóstico](../datos/observaciones-dia-04.md) · [log completo](../datos/e4_monitor_serie_29oct.txt).
 
-**Para validar la robustez del Kaizen 2**, falta verificar observando el robot si cada evento de borde realmente provocó retroceso y giro dentro del dohyō, sin salirse, y si hubo detecciones falsas. El contraste del QTR izquierdo merece revisión antes de la siguiente tanda.
+**Resultado observado en E4:** el equipo confirmó que el robot sí avanzaba y respondía al blanco retrocediendo y girando. Las manchas blancas dentro del área negra provocaron algunos giros inesperados y en ciertas ocasiones el robot salió del dohyō; la velocidad es una causa posible, todavía sin verificar. Fuera de estas situaciones no reportaron otros fallos.
+
+**Siguiente comparación de robustez:** probar con una superficie negra sin manchas y con menor velocidad de avance, cambiando una variable a la vez. Registrar por intento los giros innecesarios y si el robot permaneció dentro del dohyō. El contraste del QTR izquierdo merece revisión antes de la siguiente tanda.

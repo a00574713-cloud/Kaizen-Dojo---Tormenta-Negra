@@ -22,16 +22,23 @@ El sensor izquierdo presenta menor separación de lectura entre los dos colores 
 | 3 | 6 | 6 | 26 | `FIN DE PRUEBA` |
 | **Total** | **20** | **16** | **70** | **3/3 ejecuciones terminadas** |
 
-Esos conteos se refieren a mensajes producidos por el programa, **no a salidas evitadas ni a maniobras exitosas comprobadas físicamente**.
+Esos conteos se refieren a mensajes producidos por el programa, **no a salidas evitadas**. El equipo confirmó mediante observación directa que el robot sí avanzó, retrocedió y giró ante el blanco, pero hubo giros innecesarios por manchas blancas en el interior de la pista y algunas salidas del dohyō.
 
 Los mensajes de lectura se imprimen cada 300 ms, pero las lecturas utilizadas para detectar un borde se evalúan con mayor frecuencia. Por ello, un mensaje `BORDE` puede aparecer junto a una lectura QTR aparentemente normal y corresponder a una lectura diferente tomada entre dos impresiones.
+
+## Resultado observado sobre la pista
+
+El robot sí ejecutó el movimiento y las maniobras de evasión. La superficie negra del dohyō tenía algunas **manchas blancas**, que también activaban los QTR y provocaban giros repentinos fuera del borde. En algunas ocasiones el robot llegó a **salirse de la pista**; el equipo considera que la velocidad pudo influir, aunque aún no se aisló esa causa. Fuera de estas situaciones, el equipo no observó otros fallos.
+
+El registro tiene tres ejecuciones de 15 segundos, pero no permite calcular una tasa de éxito de permanencia en el dohyō: no se anotó cuántas salidas ocurrieron en cada prueba ni cuántos avisos correspondían a manchas interiores.
 
 ## Próximo ajuste recomendado
 
 1. Revisar altura, orientación y sujeción de ambos QTR, en especial el izquierdo.
 2. Repetir la calibración con los dos QTR en negro y luego en blanco, siempre con la misma altura respecto al suelo y con la batería y el montaje final.
-3. Probar con supervisión cercana y observar si realmente retrocede, gira y permanece en la zona negra.
-4. Registrar para cada prueba: ¿detectó blanco?, ¿retrocedió?, ¿giró?, ¿se mantuvo dentro?, ¿hubo avisos innecesarios?
-5. Conservar el [sketch original](../codigo/mini-sumo/prueba_evasion_borde/prueba_evasion_borde.ino) hasta comprobar esos puntos antes de modificar umbrales o tiempos.
+3. Repetir el ensayo en una zona negra sin manchas blancas, bajo supervisión, y comparar con la superficie anterior.
+4. Bajar inicialmente la velocidad de avance para comprobar si se reducen las salidas; no modificar velocidad y tiempos de giro simultáneamente.
+5. Registrar para cada prueba: ¿detectó blanco?, ¿retrocedió?, ¿giró?, ¿se mantuvo dentro?, ¿hubo avisos innecesarios?
+6. Conservar el [sketch original](../codigo/mini-sumo/prueba_evasion_borde/prueba_evasion_borde.ino) hasta comprobar esos puntos antes de modificar umbrales o tiempos.
 
 **Log completo:** [e4_monitor_serie_29oct.txt](e4_monitor_serie_29oct.txt).

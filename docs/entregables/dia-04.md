@@ -41,7 +41,7 @@ El siguiente objetivo es que el robot pueda desplazarse sobre la superficie negr
 | Cambio de programa propuesto | Leer A2 y A3, calibrar negro y blanco, y dar prioridad a la maniobra de evasión antes de continuar avanzando. |
 | Código | [Prueba integrada E4](../../codigo/mini-sumo/prueba_evasion_borde/prueba_evasion_borde.ino) · [instrucciones](../../codigo/mini-sumo/prueba_evasion_borde/README.md). |
 | Cómo comprobarlo | Calibrar los QTR, comprobar el sentido de los motores con las ruedas levantadas y probar el comportamiento sobre el dohyō. |
-| Resultado | Se ejecutaron **3 pruebas de 15 s**. El Monitor Serie mostró detecciones del borde derecho e izquierdo y las tres terminaron con `FIN DE PRUEBA`. Falta confirmar mediante observación directa que el robot retrocedió, giró y se mantuvo dentro del dohyō en cada ocasión. |
+| Resultado | Realizamos **3 pruebas de 15 s**. El robot avanzó y reaccionó al borde blanco retrocediendo y girando, como buscábamos. En algunos momentos giró repentinamente por manchas blancas dentro de la pista y en algunas ocasiones alcanzó a salirse; todas las pruebas terminaron según el temporizador del programa. |
 
 ## 3 · Comparación de versiones
 
@@ -61,13 +61,17 @@ El equipo compartió el registro del Monitor Serie de **tres ejecuciones del pro
 | 2 | 15 s | 5 | 7 | `FIN DE PRUEBA` |
 | 3 | 15 s | 6 | 6 | `FIN DE PRUEBA` |
 
-Los avisos de borde son **eventos impresos por el programa**, no el número de veces que el robot llegó realmente al perímetro. El log registra un mensaje cada vez que el controlador entra a la maniobra de evasión; sin video u observación de la trayectoria no podemos asegurar cuántas fueron detecciones correctas ni si el robot permaneció dentro del dohyō.
+Los avisos de borde son **eventos impresos por el programa**, no el número de veces que el robot llegó realmente al perímetro. El equipo observó que **sí retrocedía y giraba para evitar el borde**, aunque algunas **manchas blancas dentro de la zona negra** provocaron cambios de dirección repentinos. También hubo **algunas salidas del dohyō** durante el movimiento; sospechamos que la velocidad hizo que el robot no alcanzara a reaccionar a tiempo, pero todavía debemos comprobarlo. Las tres pruebas terminaron por tiempo, no significa que las tres hayan evitado por completo salir de la pista.
 
-**Observación importante para mejorar:** el sensor izquierdo tiene poco contraste entre negro y blanco (**1022 vs. 956**, diferencia 66), mientras que el derecho muestra una separación mucho mayor (**821 vs. 34**, diferencia 787). Conviene revisar la altura, orientación y ubicación del QTR izquierdo, y repetir la calibración sobre el borde blanco real del dohyō antes de una nueva prueba. No se cambió el código original de prueba.
+**Observación importante para mejorar:** el sensor izquierdo tiene poco contraste entre negro y blanco (**1022 vs. 956**, diferencia 66), mientras que el derecho muestra una separación mucho mayor (**821 vs. 34**, diferencia 787). Las manchas blancas explican parte de las detecciones repentinas; aún conviene revisar la altura y calibración de ambos QTR. Para evitar que el robot se salga, la siguiente prueba deberá hacerse a menor velocidad, observando si retrocede y gira con suficiente anticipación. **El código de las tres pruebas se conserva sin modificaciones.**
 
 **Evidencia del Día 4:** [log completo del Monitor Serie](../../datos/e4_monitor_serie_29oct.txt) · [análisis de resultados](../../datos/observaciones-dia-04.md) · [código ejecutado](../../codigo/mini-sumo/prueba_evasion_borde/prueba_evasion_borde.ino).
 
 ## 4 · Robustez y seguridad
+
+**Variación observada en las pruebas:** había manchas blancas en la superficie negra del dohyō; el robot las interpretaba como blanco y giraba aunque todavía no estuviera junto al borde. Además, **en algunas ocasiones se salió de la pista**, posiblemente por la velocidad. Esto nos sirve como prueba de robustez para el Kaizen 2: la detección y la maniobra funcionan, pero todavía deben mejorarse para evitar giros innecesarios y salidas.
+
+**Próxima mejora propuesta:** revisar o limpiar la superficie de prueba, repetir la calibración de los QTR y probar primero con una velocidad de avance más baja, manteniendo los demás ajustes iguales. Registrar salidas y giros innecesarios en cada intento. Si siguen ocurriendo salidas, revisar la posición de los QTR y los tiempos de retroceso y giro.
 
 Antes de probar el robot en movimiento, revisar que la carcasa no toque ni provoque cortocircuitos en la placa, que los motores estén bien sujetos y que la batería esté segura. Hacer primero la prueba con ruedas levantadas y mantener despejado el dohyō. El programa de prueba tiene parada automática a los 15 segundos.
 
@@ -88,9 +92,11 @@ La demostración prevista consistirá en enseñar el robot montado, explicar los
 - [x] Receptor para el control remoto conectado.
 - [x] Programa de prueba conjunta cargado y ejecutado en el dohyō.
 - [x] Registradas tres ejecuciones y las lecturas de los QTR e infrarrojos en el Monitor Serie.
-- [ ] Confirmar la maniobra real de retroceso/giro y si permaneció dentro del dohyō.
+- [x] Confirmado visualmente que el robot retrocede y gira al detectar blanco.
+- [x] Identificadas las manchas blancas como causa de giros repentinos y registradas algunas salidas del dohyō.
+- [ ] Ajustar y repetir las pruebas para evitar salidas y giros innecesarios.
 - [ ] Verificar arranque y paro mediante el control remoto.
 - [ ] Documentar pruebas de robustez y completar E4 personales.
 - [ ] Pesar el robot y recibir revisión del profesor.
 
-**Estado E4:** en proceso; montaje mejorado y tres pruebas de detección de borde registradas.
+**Estado E4:** en proceso; montaje mejorado y tres pruebas integradas registradas, con evasión de borde funcional pero todavía mejorable por manchas blancas y salidas ocasionales.

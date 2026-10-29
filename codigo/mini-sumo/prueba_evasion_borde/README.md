@@ -4,7 +4,7 @@
 
 [**Abrir código Arduino**](prueba_evasion_borde.ino)
 
-Este programa es una **propuesta para la primera prueba combinada** de motores y sensores, no un ensayo ya validado en el robot. Usa el pinout comprobado durante E3: motores D5/D6/D10/D11, QTR A2/A3 y tres infrarrojos JS40F en D2/A5/A4. Los sensores de oponente se muestran en el Monitor Serie, pero todavía no controlan la búsqueda o el ataque.
+Este programa es el **sketch usado en las tres primeras pruebas integradas** de motores y sensores sobre el dohyō (29 de octubre). Usa el pinout comprobado durante E3: motores D5/D6/D10/D11, QTR A2/A3 y tres infrarrojos JS40F en D2/A5/A4. Los sensores de oponente se muestran en el Monitor Serie, pero todavía no controlan la búsqueda o el ataque.
 
 ## Prueba en laboratorio
 
@@ -23,5 +23,9 @@ El receptor de arranque y paro quedó conectado al **pin D12** de la tarjeta en 
 ## Estado de la prueba
 
 - **Montaje físico reportado:** carcasa para cubrir cables y componentes, cableado ordenado, motores fijados al chasis, receptor IR de control remoto conectado.
-- **Funcionalidad del sketch:** preparada para probar; resultado real del comportamiento automático por confirmar.
-- **Pendiente:** medir peso total del robot (máximo 500 g), probar arranque y paro remoto, probar respuesta al borde e integrar detección del rival.
+- **Resultado de las tres pruebas:** el robot sí avanzó, retrocedió y giró cuando detectó blanco. Algunas manchas blancas en la zona negra provocaron giros repentinos; en algunas ocasiones el robot se salió de la pista, posiblemente por la velocidad. La respuesta al borde necesita ajustes.
+- **Pendiente:** medir peso total del robot (máximo 500 g), integrar y probar arranque/paro remoto, mejorar la permanencia dentro del dohyō e integrar detección del rival.
+
+## Recomendación después de las pruebas
+
+Antes de modificar este sketch, revisar el sensor QTR izquierdo (calibración con poco contraste entre negro y blanco), limpiar o seleccionar una zona sin manchas blancas y repetir los ensayos. Para estudiar la influencia de la velocidad, crear una copia de prueba y bajar `V_AVANCE` de 145 a un valor inicial de alrededor de 105, verificando que ambos motores aún muevan el robot correctamente. Mantener inicialmente sin cambios los tiempos de retroceso (400 ms) y giro (450 ms) y anotar salidas y giros innecesarios. No interpretar la terminación automática de 15 segundos como éxito en la evasión de borde.
