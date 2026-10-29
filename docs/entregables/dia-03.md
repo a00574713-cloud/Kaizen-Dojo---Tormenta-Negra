@@ -63,7 +63,7 @@ Los minutos representan la distribución de actividades de la guía, no un crono
 | 3 sensores infrarrojos JS40F | Acercamos y retiramos objetos y observamos las lecturas digitales `0` y `1` en el programa de prueba. | Incluidas en las aproximadamente 5 pruebas del conjunto de sensores. | Los tres sensores respondieron al detectar objetos. |
 | 2 motores DC | Probamos su giro mediante el programa de Arduino. Después de conectar la batería y corregir la polaridad de uno, repetimos las pruebas con los motores montados en el carrito. | Aproximadamente **10 pruebas de motores en total**. | Al terminar las correcciones, ambos motores giraron correctamente. |
 
-Las cantidades son aproximadas, de acuerdo con el registro del equipo. **Después de corregir la alimentación y la polaridad, todas las pruebas posteriores de los motores salieron bien.**
+Las cantidades son aproximadas, de acuerdo con el registro del equipo. **Después de corregir la alimentación y la polaridad, todas las pruebas posteriores de los motores salieron bien.** En el E3 solo verificamos la **respuesta funcional**: no registramos valores ADC de calibración, umbrales negro/blanco, velocidades medidas ni ensayos individuales. Las mediciones y la calibración formal de los QTR se iniciaron en el E4.
 
 **Lecturas observadas:** los QTR distinguieron las dos superficies; los infrarrojos alternaron sus lecturas digitales entre `0` y `1` al interactuar con los objetos. No se asigna aquí un valor fijo a «detectado» porque no se compartió qué lectura correspondía a cada estado.
 
@@ -143,7 +143,7 @@ Esta tabla **no sustituye los cinco ensayos emparejados** requeridos: contiene �
 
 **Resumen de resultados:** [Observaciones del Día 3](../../datos/observaciones-dia-03.md) · [Protocolo del equipo](../../pruebas/protocolo.md) · [CSV para ensayos medidos](../../datos/ensayos.csv).
 
-Las pruebas nos permitieron confirmar el funcionamiento básico de los componentes. **No grabamos video de estas pruebas**; nuestras evidencias son las cinco fotografías del robot terminado, los programas de Arduino y este registro de lo que observamos. Para medir el rendimiento más adelante, anotaremos los resultados de cada intento de forma individual.
+Las pruebas nos permitieron confirmar el funcionamiento básico de los componentes. **No grabamos video de estas pruebas ni hicimos calibración formal de los QTR el Día 3**; nuestras evidencias son las cinco fotografías del robot terminado, los programas de Arduino y el registro cualitativo de lo observado. Las mediciones de negro/blanco y la evasión integrada con sus registros pertenecen al [Día 4](dia-04.md). No se asignan retrospectivamente esas lecturas al E3.
 
 **Cuidado durante los siguientes ensayos:** revisar con el robot desconectado las conexiones, el aislamiento de la tarjeta respecto a la base metálica, la batería y la sujeción de los cables. Para probar el giro de forma segura, mantener las ruedas separadas del suelo cuando corresponda.
 
@@ -209,6 +209,6 @@ Cada integrante puede complementar su E3 personal con su aprendizaje y experienc
 - [ ] Completar y revisar los E3 personales de todos los integrantes.
 - [ ] Revisión del profesor Camilo René Duque.
 
-**Estado del registro E3:** actividades, resultados y primer Kaizen documentados; criterios formales pendientes indicados arriba.
+**Estado del registro E3:** documentación del Día 3 cerrada **con las evidencias reales disponibles**: ruta de 180 minutos, diagnóstico, Kaizen 1, cinco fotografías, códigos, aportaciones de los cuatro integrantes y límites de la medición. **Gate formal condicionado** por no contar con cinco pares V1–K1 ni resultados medidos por intento, faltar los E3 individuales restantes y desconocerse la aprobación docente. Los ensayos y calibraciones posteriores se documentan únicamente en [E4](dia-04.md). No se eliminaron apartados de la plantilla.
 
 **Siguiente reto, Kaizen 2:** utilizar los sensores y los motores en conjunto para que el robot detecte el borde blanco del dohyō y realice la maniobra programada para evitar salir de la pista.
