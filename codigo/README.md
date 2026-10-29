@@ -17,3 +17,10 @@ Especificar versiones, comandos de ejecución, dependencias y procedimiento de p
 - [Descripción de conexiones y pruebas](pruebas-dia-03/README.md)
 
 Estos sketches se utilizaron para verificar subsistemas por separado; el programa autónomo del mini-sumo se desarrollará en una etapa posterior.
+
+## Prueba de movimiento y borde E4
+
+- [Código integrado de motores y evasión del borde](mini-sumo/prueba_evasion_borde/prueba_evasion_borde.ino)
+- [Guía de calibración y prueba](mini-sumo/prueba_evasion_borde/README.md)
+
+**Estado:** código preparado para probar el 29 de octubre; arranque mediante Monitor Serie en esta versión. La conexión del receptor de control remoto debe integrarse después de confirmar pin y códigos.
