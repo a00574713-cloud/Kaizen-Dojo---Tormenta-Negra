@@ -59,13 +59,20 @@ No inventar resultados ni borrar corridas desfavorables.
 
 ## Actualización del 28-10-2026 (E3)
 
-El equipo reportó pruebas exploratorias satisfactorias: comunicación de Arduino, ambos motores funcionando con batería nominal de 7.4 V / 500 mAh, tres sensores de oponente JS40F y dos sensores QTR-1A. Se observó falta de giro con alimentación solo USB. **Son resultados cualitativos, sin número de corridas, mediciones ni valores crudos proporcionados**.
+**Sensores:** el equipo probó los dos QTR-1A sobre una superficie negra con bordes blancos y observó respuesta al cambio de color. Los tres JS40F se probaron acercando y retirando objetos; sus lecturas cambiaron entre `0` y `1`. Se reportaron aproximadamente cinco pruebas de sensores en conjunto.
 
-El equipo mostró el robot montado sobre una base metálica; las fotos se describen en [evidencias del Día 3](../evidencias/dia-03/README.md). Esto no reemplaza una prueba autónoma del robot completo.
+**Motores:** al inicio no giraban porque la batería no estaba conectada al módulo. Después de conectarla, uno giraba en sentido contrario por la polaridad invertida. El equipo corrigió la conexión y efectuó aproximadamente diez pruebas de motorización, tras las cuales ambos giraron correctamente en el robot ensamblado.
 
-- **Próximo ensayo de motorización:** repetir cinco veces órdenes breves y seguras de giro/paro por motor con el mismo montaje, firmware, batería y control de tensión; registrar respuesta y sentido.
-- **Próximo ensayo de sensores:** cinco intentos por condición definida, con lecturas crudas, distancia (cm) y ángulo (°), separando los sensores de borde de los de oponente.
-- **Prueba global posterior:** verificar en el dōjō detección de borde y reacción de movimiento autónomo, registrando distancias y resultados de cada corrida.
-- **Antes de energizar el chasis armado:** inspeccionar aislamiento entre PCB y metal, extremos expuestos, cables, sujeción, alimentación, polaridad y seguridad con el responsable del laboratorio.
+**Kaizen 1:** revisar y conectar la alimentación; corregir la polaridad; repetir las pruebas para confirmar giro correcto.
 
-**Línea base formal de E3:** todavía sin datos suficientes para media, porcentaje de éxito o dispersión. No agregar filas ficticias a `datos/ensayos.csv`.
+**Registro de las observaciones:** [datos/observaciones-dia-03.md](../datos/observaciones-dia-03.md) y [E3 del equipo](../docs/entregables/dia-03.md). Las cantidades son estimaciones del equipo, no una serie de ensayos individuales documentados.
+
+### Próxima prueba reproducible
+
+- Probar cada motor con el mismo comando, batería y montaje, registrando por intento si responde, su sentido y su parada.
+- Para los QTR, fijar las posiciones sobre negro y blanco y anotar lecturas por separado.
+- Para los JS40F, fijar posiciones del objeto y registrar la lectura y el estado observado de detección.
+- Repetir cada condición siguiendo el acuerdo del profesor y guardar los resultados individuales en [ensayos.csv](../datos/ensayos.csv).
+- Revisar fijaciones, conexiones, batería y aislamiento de la tarjeta antes de energizar el chasis.
+
+**Kaizen 2:** probar la respuesta automática del robot al borde del dohyō usando los sensores y motores juntos.
