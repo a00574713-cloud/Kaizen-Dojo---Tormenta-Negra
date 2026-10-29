@@ -73,6 +73,8 @@ Los avisos de borde son **eventos impresos por el programa**, no el número de v
 
 **Próxima mejora propuesta:** revisar o limpiar la superficie de prueba, repetir la calibración de los QTR y probar primero con una velocidad de avance más baja, manteniendo los demás ajustes iguales. Registrar salidas y giros innecesarios en cada intento. Si siguen ocurriendo salidas, revisar la posición de los QTR y los tiempos de retroceso y giro.
 
+**Versión preparada para comparar:** [prueba_evasion_borde_lenta.ino](../../codigo/mini-sumo/prueba_evasion_borde_lenta/prueba_evasion_borde_lenta.ino), con velocidad de avance PWM **105** (antes 145). Se conserva [la versión original de las tres pruebas](../../codigo/mini-sumo/prueba_evasion_borde/prueba_evasion_borde.ino), sin modificarla. Esta nueva versión aún no tiene resultados de prueba.
+
 Antes de probar el robot en movimiento, revisar que la carcasa no toque ni provoque cortocircuitos en la placa, que los motores estén bien sujetos y que la batería esté segura. Hacer primero la prueba con ruedas levantadas y mantener despejado el dohyō. El programa de prueba tiene parada automática a los 15 segundos.
 
 **Dimensiones reportadas:** 10 × 10 cm.  

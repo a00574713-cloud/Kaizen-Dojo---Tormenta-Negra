@@ -29,3 +29,13 @@ El receptor de arranque y paro quedó conectado al **pin D12** de la tarjeta en 
 ## Recomendación después de las pruebas
 
 Antes de modificar este sketch, revisar el sensor QTR izquierdo (calibración con poco contraste entre negro y blanco), limpiar o seleccionar una zona sin manchas blancas y repetir los ensayos. Para estudiar la influencia de la velocidad, crear una copia de prueba y bajar `V_AVANCE` de 145 a un valor inicial de alrededor de 105, verificando que ambos motores aún muevan el robot correctamente. Mantener inicialmente sin cambios los tiempos de retroceso (400 ms) y giro (450 ms) y anotar salidas y giros innecesarios. No interpretar la terminación automática de 15 segundos como éxito en la evasión de borde.
+
+## Segunda versión de prueba: avance más lento
+
+Después de las tres pruebas iniciales del 29 de octubre, el equipo observó que el robot sí retrocedía y giraba ante el blanco, pero algunas manchas blancas de la pista producían giros repentinos y en ocasiones se salió del dohyō. Para comprobar la influencia de la velocidad, se preparó una **segunda versión** del mismo programa, que cambia **solo** `V_AVANCE` de **145 a 105** (PWM). El retroceso, el giro, la calibración y la parada automática de 15 segundos permanecen iguales.
+
+- [**Descargar/ver prueba_evasion_borde_lenta.ino**](../prueba_evasion_borde_lenta/prueba_evasion_borde_lenta.ino)
+- **Estado:** preparado para probar; todavía sin resultados experimentales de la nueva velocidad.
+- **Receptor de control remoto (D12):** no incluido en esta versión, como acordó el equipo.
+
+Calibrar de nuevo con `n` y `b` después de cargar el programa, hacer primero la prueba con ruedas levantadas y comparar si se reducen las salidas. Si a 105 los motores no vencen la fricción, probar 115 o 120 manteniendo todo lo demás igual.
