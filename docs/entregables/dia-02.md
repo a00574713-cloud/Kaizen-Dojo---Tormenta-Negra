@@ -107,4 +107,3 @@ Las pruebas comenzaron el **28 de octubre**, como se registra en el [E3](dia-03.
 
 **Gate E2:** REPLANIFICAR, según el estado registrado al cierre de la jornada. **Revisión docente:** pendiente.  
 **Siguiente avance:** [E3 · Día 3 — Montaje y pruebas iniciales](dia-03.md).  
-**Historial:** [Cambios de E2](https://github.com/a00574713-cloud/Kaizen-Dojo---Tormenta-Negra/commits/main/docs/entregables/dia-02.md).
