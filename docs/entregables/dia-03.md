@@ -22,7 +22,7 @@ El 28 de octubre terminamos el montaje físico de nuestro mini-sumo **Tormenta N
 | Avance desde el Día 2 | El [E2](dia-02.md) documenta el cableado y la preparación de componentes. En el E3 quedó montado el chasis y realizamos pruebas de sensores y motores. |
 | Controlador y alimentación | Tarjeta Azimov Team programada con Arduino IDE; batería nominal de 7.4 V y 500 mAh. |
 | Superficie de prueba | Dohyō de superficie negra con bordes blancos. |
-| Diseño mecánico | El equipo confirmó que las dimensiones del robot son **10 cm de largo × 10 cm de ancho**. El peso todavía no se ha medido. |
+| Diseño mecánico | **Dimensiones medidas físicamente por el equipo: 10 cm de largo × 10 cm de ancho.** El peso todavía no se ha medido. |
 | Identificación del avance | `D3-MONTAJE-28OCT`, prototipo físico ensamblado. |
 | Versión de partida V1 | Cableado y conexiones documentadas en E2, sin ensayos funcionales registrados ni una versión de firmware V1 validada. |
 | Protocolo de partida | [Protocolo de pruebas preparado desde E2](../../pruebas/protocolo.md); [E2 del equipo](dia-02.md). |
@@ -36,7 +36,7 @@ El 28 de octubre terminamos el montaje físico de nuestro mini-sumo **Tormenta N
 | Diagnóstico del prototipo V1 | 40–80 | Joel y Sara revisaron las conexiones a la placa y el código para descartar problemas, además de probar sensores y motores. Sara también volvió a soldar conexiones flojas o desprendidas. |
 | Kaizen 1: cambio técnico | 80–125 | Joel y Sara corrigieron juntos la falta de conexión de la batería y la polaridad de uno de los motores. |
 | Reensayo equivalente | 125–160 | En alrededor de diez intentos de motores en total, el primero presentó falta de alimentación, el segundo un sentido de giro incorrecto y los posteriores funcionaron. No se anotaron resultados por intento ni se hicieron cinco pares comparables V1–K1. |
-| Documentar, debatir, reflejar | 160–180 | Sara colocó los motores en el chasis; Max y Claudio apoyaron pelando cables y con la soldadura. Documentamos el robot ensamblado con cinco fotografías. Las reflexiones personales de los demás integrantes siguen pendientes. |
+| Documentar, debatir, reflejar | 160–180 | Sara colocó los motores en el chasis; Max y Claudio apoyaron pelando cables y con la soldadura. Documentamos el robot ensamblado con cinco fotografías y **sin grabar video ese día**. Los E3 personales de Joel, Sara y Max ya tienen respuestas; Claudio conserva su plantilla sin contestar. |
 
 Los minutos representan la distribución de actividades de la guía, no un cronometraje de la sesión.
 
@@ -82,7 +82,7 @@ La guía solicita registrar el alcance, la kata, el cambio concreto, el responsa
 
 **Identificador de la etapa K1:** `D3-CORREGIDO`, utilizado para identificar el estado físico después de conectar la batería y corregir la polaridad; **no es una etiqueta formal de firmware ni reemplaza un identificador de revisión del repositorio**.
 
-**Verificación interna:** los cuatro integrantes revisaron entre todos las conexiones y las pruebas. Esta comprobación del equipo **no equivale a una aprobación formal del profesor**; se desconoce si el E3 ya fue revisado o aceptado por el docente.
+**Verificación interna:** los cuatro integrantes revisaron entre todos las conexiones y las pruebas. Esta comprobación del equipo **no equivale a una aprobación formal del profesor**; la revisión y eventual aprobación docente se realizan después de entregar el E3; no se ha obtenido todavía esa aprobación.
 
 **Otras modificaciones o perturbaciones:** durante el Día 3 se terminó de montar el chasis, se colocaron motores y se resoldaron conexiones. No se registró cuáles de esos cambios se mantuvieron constantes entre todos los intentos.
 
@@ -159,7 +159,7 @@ Las pruebas nos permitieron confirmar el funcionamiento básico de los component
 
 ## 5A · Montaje, evidencias y trabajo del equipo
 
-El chasis quedó ensamblado con su base metálica, dos ruedas motrices, batería, tarjeta controladora, cableado y sensores. **Dimensiones confirmadas por el equipo: 10 × 10 cm.** Las cinco fotografías muestran el avance respecto al Día 2.
+El chasis quedó ensamblado con su base metálica, dos ruedas motrices, batería, tarjeta controladora, cableado y sensores. **Dimensiones medidas por el equipo: 10 × 10 cm.** Las cinco fotografías muestran el avance respecto al Día 2.
 
 | Evidencia | Archivo |
 |---|---|
@@ -180,7 +180,7 @@ El chasis quedó ensamblado con su base metálica, dos ruedas motrices, batería
 | [Max](../../participantes/MaxAmCam/dias/E3.md) | Apoyó con tareas de preparación, como pelar cables y ayudar en la soldadura. |
 | [Claudio](../../participantes/A00574802/dias/E3.md) | Apoyó con tareas de preparación, como pelar cables y ayudar en la soldadura. |
 
-**Revisión interna conjunta:** Joel, Sara, Max y Claudio verificaron entre todos las conexiones y pruebas. **No hay confirmación de revisión o aceptación del profesor.**
+**Revisión interna conjunta:** Joel, Sara, Max y Claudio verificaron entre todos las conexiones y pruebas. **La revisión y eventual aprobación del profesor quedan pendientes hasta después de la entrega.**
 
 Cada integrante puede complementar su E3 personal con su aprendizaje y experiencia.
 
@@ -195,7 +195,7 @@ Cada integrante puede complementar su E3 personal con su aprendizaje y experienc
 - [x] **Conclusión honesta, incluso si existen resultados negativos:** se conservan los fallos iniciales y los límites de los datos.
 - [ ] **E3 personal de cada estudiante:** el [E3 de Joel](../../participantes/A00574713/dias/E3.md) tiene actividades registradas; los archivos individuales de [Sara](../../participantes/saragdr/dias/E3.md), [Max](../../participantes/MaxAmCam/dias/E3.md) y [Claudio](../../participantes/A00574802/dias/E3.md) necesitan revisión y completar sus reflexiones personales.
 
-**Gate E3:** **CONDICIONADO**. **Revisor docente:** sin información de revisión o aceptación; por confirmar. **Revisión interna:** los cuatro integrantes verificaron conexiones y pruebas. **Enlace a PR/commit del experimento:** no identificado en la sesión; se conservan los [sketches de sensores](../../codigo/pruebas-dia-03/prueba_sensores/prueba_sensores.ino) y [motores](../../codigo/pruebas-dia-03/prueba_motores/prueba_motores.ino) en el repositorio.
+**Gate E3:** **CONDICIONADO**. **Revisor docente:** revisión y eventual aprobación pendientes hasta después de la entrega. **Revisión interna:** los cuatro integrantes verificaron conexiones y pruebas. **Enlace a PR/commit del experimento:** no identificado en la sesión; se conservan los [sketches de sensores](../../codigo/pruebas-dia-03/prueba_sensores/prueba_sensores.ino) y [motores](../../codigo/pruebas-dia-03/prueba_motores/prueba_motores.ino) en el repositorio.
 
 ### Avances adicionales comprobados
 
@@ -206,9 +206,9 @@ Cada integrante puede complementar su E3 personal con su aprendizaje y experienc
 - [x] Incorporados los dos programas `.ino` originales de sensores y motores.
 - [x] Registradas las tareas de Joel, Sara, Max y Claudio, incluida la corrección conjunta de Joel y Sara y la revisión interna de todo el equipo; se aclaró que no se grabó video.
 - [ ] Registrar por separado las corridas de una prueba repetible para comparar resultados numéricos.
-- [ ] Completar y revisar los E3 personales de todos los integrantes.
+- [ ] Claudio debe completar su E3 personal; Joel, Sara y Max ya tienen sus registros. La revisión docente se hará después de la entrega.
 - [ ] Revisión del profesor Camilo René Duque.
 
-**Estado del registro E3:** documentación del Día 3 cerrada **con las evidencias reales disponibles**: ruta de 180 minutos, diagnóstico, Kaizen 1, cinco fotografías, códigos, aportaciones de los cuatro integrantes y límites de la medición. **Gate formal condicionado** por no contar con cinco pares V1–K1 ni resultados medidos por intento, faltar los E3 individuales restantes y desconocerse la aprobación docente. Los ensayos y calibraciones posteriores se documentan únicamente en [E4](dia-04.md). No se eliminaron apartados de la plantilla.
+**Estado del registro E3:** documentación del Día 3 cerrada **con las evidencias reales disponibles**: ruta de 180 minutos, diagnóstico, Kaizen 1, cinco fotografías, códigos, aportaciones de los cuatro integrantes y límites de la medición. **Gate formal condicionado** por no contar con cinco pares V1–K1 ni resultados medidos por intento, faltar el E3 individual de Claudio y estar pendiente la revisión docente posterior a la entrega. Los ensayos y calibraciones posteriores se documentan únicamente en [E4](dia-04.md). No se eliminaron apartados de la plantilla.
 
 **Siguiente reto, Kaizen 2:** utilizar los sensores y los motores en conjunto para que el robot detecte el borde blanco del dohyō y realice la maniobra programada para evitar salir de la pista.
