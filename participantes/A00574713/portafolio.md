@@ -13,11 +13,11 @@
 
 ## Mis cinco evidencias personales
 
-- [Día 1 — E1 · Diagnóstico y frontera](dias/E1.md) — datos iniciales; reflexión personal por completar
+- [Día 1 — E1 · Diagnóstico y frontera](dias/E1.md) — diagnóstico y pacto personal por completar
 - [Día 2 — E2 · Primera integración](dias/E2.md) — actividades reportadas, sin pruebas funcionales
-- [Día 3 — E3 · Kaizen 1](dias/E3.md) — plantilla pendiente
-- [Día 4 — E4 · Kaizen 2](dias/E4.md) — plantilla pendiente
-- [Día 5 — E5 · Demostración](dias/E5.md) — plantilla pendiente
+- [Día 3 — E3 · Kaizen 1](dias/E3.md) — actividades y resultados registrados
+- [Día 4 — E4 · Kaizen 2](dias/E4.md) — actividades y resultados registrados
+- [Día 5 — E5 · Demostración](dias/E5.md) — actividades y resultados registrados
 
 ## Mis evidencias técnicas
 
@@ -26,4 +26,3 @@
 | MS01 | Pendiente de enlazar | Según [compromiso personal](compromiso.md) | Sin validación funcional |
 | MS06 | Pendiente de enlazar | Según [compromiso personal](compromiso.md) | Sin validación funcional |
 
-**Regla:** escribir las evidencias propias en primera persona y enlazar pruebas/archivos reales. No marcar katas por solo haber realizado conexiones.
