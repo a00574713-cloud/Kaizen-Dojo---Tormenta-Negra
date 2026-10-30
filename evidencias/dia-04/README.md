@@ -21,7 +21,8 @@ Las dos vistas se comparten como capturas CAD **optimizadas a WebP para su visua
 - **Navaja:** Sara, con apoyo de Max, la pegó al chasis. Falta enlazar una foto del resultado físico.
 - **Pruebas de evasión:** tres ejecuciones a PWM 145 y tres a PWM 105. [Comparación y calibración](../../datos/e4_pruebas_pwm105_29oct.md).
 - **Prueba de ataque:** el robot detectó y empujó un teléfono fuera del dohyō **al primer intento**, manteniéndose en la parte negra; se trata de una prueba con objeto, no combate oficial.
-- **Dos videos:** uno del desplazamiento y otro de la expulsión del teléfono; el equipo los tiene y **falta recibir sus enlaces de Drive**.
+- **Video 1 — [Tormenta Negra funcionando](https://drive.google.com/file/d/1a6mugpORP3xKJwx6JwA79JXIj8vCLtsT/view?usp=drivesdk):** evidencia audiovisual del movimiento del robot en la pista (archivo original alojado en Drive).
+- **Video 2 — [Tormenta Negra tirando iPhone](https://drive.google.com/file/d/1iSG-wS0bjlPaMLpgNtAW83iZ4RGNMvs3/view?usp=drivesdk):** evidencia audiovisual de la prueba de búsqueda y expulsión de un teléfono (archivo original alojado en Drive; no es un combate oficial).
 - **Código cargado en la tarjeta de reemplazo:** [Tormenta_Negra_Final.ino](../../codigo/mini-sumo/tormenta_negra_final/Tormenta_Negra_Final.ino), sin control remoto.
 
 [Volver al E4 colectivo](../../docs/entregables/dia-04.md) · [E4 personal de Joel](../../participantes/A00574713/dias/E4.md).
