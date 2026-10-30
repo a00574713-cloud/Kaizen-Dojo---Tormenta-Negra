@@ -36,7 +36,7 @@ No probar hasta que el docente o responsable autorice el espacio y estén identi
 
 ## Registro y línea base
 
-Datos crudos: [`datos/ensayos.csv`](../datos/ensayos.csv). **Permanece solo con encabezados por ausencia de pruebas en D2.**  
+Datos crudos: [`datos/ensayos.csv`](../datos/ensayos.csv). **En D2 no hubo ensayos funcionales**; posteriormente se incorporaron **siete registros de E4** (seis de evasión y uno de ataque). Las **cinco ejecuciones E5** están documentadas en un [CSV independiente](../datos/e5_ensayos_30oct.csv).  
 **Línea base E2:** n = 0 corridas ejecutadas. Sin valores, sin tasa de éxito calculable y sin ensayos descartados. No registrar una tasa de éxito del 0 %: no se midió.
 
 ## Dos ciclos Kaizen
@@ -89,3 +89,9 @@ El equipo ejecutó tres veces el programa de movimiento y detección del borde e
 **Actualización posterior del 29-10-2026:** el equipo volvió a calibrar los QTR y ensayó tres veces con PWM 105. La diferencia negro/blanco izquierda pasó de 66 a 718 unidades ADC; **ninguna de las tres ejecuciones nuevas presentó salidas observadas**. Después, con una tarjeta de reemplazo y código de ataque, el robot detectó y expulsó un teléfono en el primer intento sin salirse. Ver [resultados completos](../datos/e4_pruebas_pwm105_29oct.md), [CSV de siete registros](../datos/ensayos.csv) y [sketch](../codigo/mini-sumo/tormenta_negra_final/Tormenta_Negra_Final.ino).
 
 **Siguiente comparación de robustez:** conservar idénticas pista, batería y calibración para aislar el efecto de la velocidad, registrar giros innecesarios por intento y probar con un oponente robótico, bajo condiciones seguras y un medio físico de apagado.
+
+## Actualización del 30-10-2026 (E5)
+
+Se registraron **cinco intentos contra el mini-sumo del equipo de Marian**: **tres pruebas previas con E5 V1** (13 s, rival expulsado; 5 s, rival salió al ser esquivado; 5 s, Tormenta Negra salió tras una detección lateral deficiente) y **dos peleas de salón con E5 V2** (victoria de 10 s por contragolpe lateral y derrota de 5 s tras un giro desfavorable). Los cinco videos y sus resultados están en [evidencias del Día 5](../evidencias/dia-05/README.md), y las observaciones por intento en [CSV E5](../datos/e5_ensayos_30oct.csv).
+
+**Condiciones que limitan la comparación:** las tres pruebas y las dos peleas no son cinco repeticiones equivalentes, porque se utilizó E5 V1 para las pruebas y E5 V2 para las peleas. No se documentó un cronometraje técnico cuadro a cuadro ni ensayos controlados de fuerza de empuje. El equipo confirmó que no hizo cambios físicos adicionales entre las tandas; sí cambió el firmware. **El control MicroStart quedó con el botón 1 para START, 2 para STOP y 3 sin respuesta**. El botón 2 detenía los motores, pero no hubo protocolo formal de emergencia; esto debe corregirse antes de RoboLympics del 21 de noviembre de 2026. El profesor Camilo revisará los E1–E5 cuando se entregue el repositorio, sin calificación anticipada.
