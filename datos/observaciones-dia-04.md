@@ -42,3 +42,11 @@ El registro tiene tres ejecuciones de 15 segundos, pero no permite calcular una 
 6. Conservar el [sketch original](../codigo/mini-sumo/prueba_evasion_borde/prueba_evasion_borde.ino) hasta comprobar esos puntos antes de modificar umbrales o tiempos.
 
 **Log completo:** [e4_monitor_serie_29oct.txt](e4_monitor_serie_29oct.txt).
+
+## Actualización del mismo Día 4: velocidad 105 y prueba de ataque
+
+El contenido anterior describe **la primera tanda histórica a PWM 145**. El equipo realizó después **tres pruebas adicionales de 15 segundos con PWM 105**, tras recalibrar los QTR. Sus mensajes de borde fueron 11, 13 y 11, respectivamente. **No se observaron salidas del dohyō** en esas tres ejecuciones. [Ver calibración y datos de PWM 105](e4_pruebas_pwm105_29oct.md) y [CSV consolidado de siete ensayos](ensayos.csv).
+
+Después, al sustituir la tarjeta dañada, **Joel cargó el [sketch completo de búsqueda/ataque](../codigo/mini-sumo/tormenta_negra_final/Tormenta_Negra_Final.ino)** y el equipo reportó que **al primer intento detectó y expulsó un teléfono fuera del dohyō sin salir de la zona negra**. Los dos videos existen pero sus enlaces institucionales aún no han sido entregados. Este ensayo es una prueba con objeto, no un combate oficial ni una validación estadística.
+
+**Caveat:** las tandas PWM 145 y 105 no mantienen idéntica calibración, por lo que la diferencia de desempeño observada no debe atribuirse exclusivamente a la velocidad. La tarjeta anterior se dañó; su causa eléctrica exacta no fue comprobada.
