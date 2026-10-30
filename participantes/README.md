@@ -2,12 +2,12 @@
 
 Cada integrante tiene su carpeta `participantes/<alias>/` con su compromiso, portafolio y bitácoras diarias. Los E2–E5 reúnen las actividades y reflexiones personales del proyecto.
 
-| Integrante | Compromiso original | Portafolio | E1 · Día 1 | E2 · Día 2 |
-|---|---|---|---|---|
-| Joel Alejandro Soto Muñoz | [Compromiso](A00574713/compromiso.md) | [Portafolio](A00574713/portafolio.md) | [E1](A00574713/dias/E1.md) | [E2](A00574713/dias/E2.md) |
-| Sara Gabriela Díaz Rayas | [Compromiso](saragdr/compromiso.md) | [Portafolio](saragdr/portafolio.md) | [E1](saragdr/dias/E1.md) | [E2](saragdr/dias/E2.md) |
-| Max Emiliano Amezcua Camacho | [Compromiso](MaxAmCam/compromiso.md) | [Portafolio](MaxAmCam/portafolio.md) | [E1](MaxAmCam/dias/E1.md) | [E2](MaxAmCam/dias/E2.md) |
-| Claudio Gómez | [Compromiso](A00574802/compromiso.md) | [Portafolio](A00574802/portafolio.md) | [E1](A00574802/dias/E1.md) | [E2](A00574802/dias/E2.md) |
+| Integrante | Compromiso | Portafolio | E1 | E2 | E3 | E4 | E5 |
+|---|---|---|---|---|---|---|---|
+| Joel | [Kit](A00574713/compromiso.md) | [Portafolio](A00574713/portafolio.md) | [E1](A00574713/dias/E1.md) | [E2](A00574713/dias/E2.md) | [E3](A00574713/dias/E3.md) | [E4](A00574713/dias/E4.md) | [E5](A00574713/dias/E5.md) |
+| Sara | [Kit](saragdr/compromiso.md) | [Portafolio](saragdr/portafolio.md) | [E1](saragdr/dias/E1.md) | [E2](saragdr/dias/E2.md) | [E3](saragdr/dias/E3.md) | [E4](saragdr/dias/E4.md) | [E5](saragdr/dias/E5.md) |
+| Max | [Kit](MaxAmCam/compromiso.md) | [Portafolio](MaxAmCam/portafolio.md) | [E1](MaxAmCam/dias/E1.md) | [E2](MaxAmCam/dias/E2.md) | [E3](MaxAmCam/dias/E3.md) | [E4](MaxAmCam/dias/E4.md) | [E5](MaxAmCam/dias/E5.md) |
+| Claudio | [Kit](A00574802/compromiso.md) | [Portafolio](A00574802/portafolio.md) | [E1](A00574802/dias/E1.md) | [E2](A00574802/dias/E2.md) | [E3](A00574802/dias/E3.md) | [E4](A00574802/dias/E4.md) | [E5](A00574802/dias/E5.md) |
 
 Los registros individuales de E3, E4 y E5 están enlazados desde cada portafolio.
 

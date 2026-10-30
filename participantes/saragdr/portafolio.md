@@ -23,7 +23,5 @@
 
 | ID alcance | Archivo/código/CAD/experimento enlazado | Criterio de aceptación | Estado |
 |---|---|---|---|
-| MS03 | [Código de motores](../../codigo/pruebas-dia-03/prueba_motores/prueba_motores.ino) · [Pruebas del Día 4](../../datos/e4_pruebas_pwm105_29oct.md) · [Videos del Día 5](../../evidencias/dia-05/README.md) | Según [compromiso personal](compromiso.md) | Funcionamiento comprobado durante las pruebas y combates. Kata completado. |
-| MS06 | [Código de sensores](../../codigo/pruebas-dia-03/prueba_sensores/prueba_sensores.ino) · [Evidencias del Día 3](../../evidencias/dia-03/README.md) · [Videos del Día 5](../../evidencias/dia-05/README.md) | Según [compromiso personal](compromiso.md) | Sensores integrados y probados. Pendiente documentar los cinco encuentros individuales del kata. |
-
-**Regla:** escribir las evidencias propias en primera persona y enlazar pruebas/archivos reales. No marcar katas por solo haber realizado conexiones.
+| MS03 | [Prueba de motores E3](../../codigo/pruebas-dia-03/prueba_motores/prueba_motores.ino) · [E3 colectivo](../../docs/entregables/dia-03.md) · [ajustes E5](dias/E5.md) · [videos E5](../../evidencias/dia-05/README.md) | [Compromiso original](compromiso.md): montaje y sentido de giro | Montaje y motorización comprobados; ajustes de altura y fijación de motores registrados en E5. |
+| MS06 | [Prueba de sensores E3](../../codigo/pruebas-dia-03/prueba_sensores/prueba_sensores.ino) · [E5 personal](dias/E5.md) · [cinco registros E5](../../evidencias/dia-05/README.md) | [Compromiso original](compromiso.md): ensayar cinco encuentros y documentar percepción | Participé en conexión y pruebas de sensores. Faltan mediciones individuales de errores de percepción durante los encuentros. |

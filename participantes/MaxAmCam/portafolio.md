@@ -13,17 +13,15 @@
 
 ## Mis cinco evidencias personales
 
-- [Día 1 — E1 · Diagnóstico y frontera](dias/E1.md) — datos iniciales; reflexión personal por completar
+- [Día 1 — E1 · Diagnóstico y frontera](dias/E1.md) — diagnóstico inicial y pacto registrados, con datos por verificar
 - [Día 2 — E2 · Primera integración](dias/E2.md) — actividades reportadas, sin pruebas funcionales
-- [Día 3 — E3 · Kaizen 1](dias/E3.md) — plantilla pendiente
-- [Día 4 — E4 · Kaizen 2](dias/E4.md) — plantilla pendiente
-- [Día 5 — E5 · Demostración](dias/E5.md) — plantilla pendiente
+- [Día 3 — E3 · Kaizen 1](dias/E3.md) — actividades y resultados registrados
+- [Día 4 — E4 · Kaizen 2](dias/E4.md) — actividades y resultados registrados
+- [Día 5 — E5 · Demostración](dias/E5.md) — actividades y resultados registrados
 
 ## Mis evidencias técnicas
 
 | ID alcance | Archivo/código/CAD/experimento enlazado | Criterio de aceptación | Estado |
 |---|---|---|---|
-| MS01 | Pendiente de enlazar | Según [compromiso personal](compromiso.md) | Sin validación funcional |
-| MS03 | Pendiente de enlazar | Según [compromiso personal](compromiso.md) | Sin validación funcional |
-
-**Regla:** escribir las evidencias propias en primera persona y enlazar pruebas/archivos reales. No marcar katas por solo haber realizado conexiones.
+| MS01 | [Fotografías del montaje E3](../../evidencias/dia-03/README.md) · [carcasa montada E5](../../evidencias/dia-05/README.md) · [E5 personal](dias/E5.md) | [Compromiso original](compromiso.md): medir y ensamblar la estructura | Participé en montaje y colocación de la carcasa; sin CAD personal ni evaluación de rigidez documentados. |
+| MS03 | [Prueba de motores E3](../../codigo/pruebas-dia-03/prueba_motores/prueba_motores.ino) · [E4 personal](dias/E4.md) · [E5 personal](dias/E5.md) | [Compromiso original](compromiso.md): verificar giro y comparar tres maniobras | Apoyé en cableado, pruebas y ajustes. Sin tabla individual de tres maniobras equivalentes y deslizamiento. |
