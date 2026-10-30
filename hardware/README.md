@@ -1,17 +1,19 @@
-# Mecánica y electrónica
+# Mecánica y electrónica — Tormenta Negra
 
-Guardar aquí archivos fuente CAD, esquemas, pinout y listas de materiales **cuando correspondan a los alcances elegidos**.
+**Plataforma:** M01, mini-sumo autónomo. **Último montaje documentado:** 30 de octubre de 2026.
 
-- `modelo/`: piezas CAD editables y planos (evitar exportar binarios enormes innecesariamente).
-- `electrica/`: diagramas y conexiones verificadas.
-- `bom.md`: inventario de componentes, cantidades y decisiones.
+## Documentación disponible
 
-No exigir CAD en equipos cuyo desafío sea exclusivamente de software. Documentar revisiones que alteren pruebas o montaje.
+- [Asignación de pines del código E5 V2](conexiones-e5.md).
+- [Inventario de 32 recursos del E1](../datos/inventario_materiales.csv). Es una fotografía de la planificación inicial, no un inventario final de elementos recibidos/devueltos.
+- [CAD de la carcasa — dos vistas](../evidencias/dia-04/README.md). Claudio diseñó la carcasa el Día 4 y el equipo colocó las piezas impresas el Día 5.
+- [Fotografías del robot ensamblado E3](../evidencias/dia-03/README.md) y [fotografías finales E5](../evidencias/dia-05/README.md).
+- [E5 del equipo](../docs/entregables/dia-05.md), con ajustes de motores, llantas y carcasa.
 
-## Avance físico — 28 de octubre de 2026
+## Estado físico al terminar E5
 
-El equipo reportó que ensambló el primer prototipo del mini-sumo. Las fotografías muestran una base metálica, dos motores con ruedas, tarjeta controladora, batería y módulos de sensores conectados mediante cables. [Registro visual de Día 3](../evidencias/dia-03/README.md).
+Robot mini-sumo ensamblado, con motores, sensores de borde, tres sensores de oponente, batería, carcasa impresa en 3D y frente metálico. El equipo reportó **10 × 10 cm** de planta. No hay medición final de masa ni prueba instrumentada de rigidez. La carcasa se conserva en fotografías y vistas CAD; **no se ha subido un archivo CAD nativo editable**.
 
-**Identificador descriptivo:** `D3-MONTAJE-28OCT`. **Medidas reales confirmadas por el equipo: 10 cm de largo × 10 cm de ancho.** El peso todavía no se ha medido. Como siguiente revisión de montaje se comprobarán la fijación de los componentes y el aislamiento entre la tarjeta y la base metálica.
+Durante las peleas E5 el robot funcionó, pero mostró limitaciones en giros laterales. La lógica de control remoto también requiere corrección antes de una nueva competencia: el botón 1 arrancaba, el 2 detenía y el 3 no respondía. No se documentó un procedimiento completo de contingencia, por lo que no corresponde declarar validada la seguridad final.
 
-La apariencia del montaje no valida funcionamiento autónomo ni seguridad eléctrica.
+**Resguardo al cierre:** Claudio se llevó el robot y la batería; la devolución posterior no está documentada en el repositorio.
