@@ -59,7 +59,9 @@ const unsigned long GIRO_MINIMO_BORDE_MS = 110UL;
 const unsigned long GIRO_MAXIMO_BORDE_MS = 380UL;
 const unsigned long MEMORIA_LATERAL_MS = 170UL;
 const unsigned long BUSQUEDA_CAMBIO_MS = 950UL;
-const unsigned long DEBOUNCE_START_MS = 350UL;
+// Senal estable requerida. Antes: 350 ms, ahora 120 ms.
+// No quitar la confirmacion de LOW inicial ni la prioridad del STOP.
+const unsigned long DEBOUNCE_START_MS = 120UL;
 
 enum Estado { PARADO, BUSCANDO, GIRANDO_IZQ, GIRANDO_DER,
               ATACANDO, BORDE_RETROCEDER, BORDE_GIRAR };
@@ -112,6 +114,7 @@ void cambiarEstado(Estado nuevo, unsigned long ahora) {
 }
 
 void detenerPorControl() {
+  Serial.println(F("MICROSTART: STOP recibido en D12, PARO ENCLAVADO"));
   combateActivo = false;
   paroEnclavado = true;
   estado = PARADO;
@@ -136,6 +139,7 @@ void revisarControl(unsigned long ahora) {
   if (!combateActivo) {
     if (desdeAlto == 0) desdeAlto = ahora;
     if (ahora - desdeAlto >= DEBOUNCE_START_MS) {
+      Serial.println(F("MICROSTART: START confirmado en D12"));
       combateActivo = true;
       vistoRivalEn = 0;
       ultimoLado = 1;
@@ -177,6 +181,9 @@ void setup() {
   pinMode(JS40F_CENTRO, INPUT);
   pinMode(JS40F_DER, INPUT);
   pinMode(START_D12, INPUT); // Modulo digital activo, nunca INPUT_PULLUP
+  // Indicador de la SENAL REAL D12, util cuando se usa bateria sin USB.
+  pinMode(LED_BUILTIN, OUTPUT);
+  digitalWrite(LED_BUILTIN, LOW);
 
   Serial.begin(9600);
   Serial.println(F("TORMENTA NEGRA E5 V2 - LATERALES"));
@@ -184,11 +191,15 @@ void setup() {
     Serial.println(F("DIAGNOSTICO: motores detenidos"));
   } else {
     Serial.println(F("ESPERANDO START REMOTO EN D12"));
+    Serial.println(F("LED DE LA TARJETA (D13): OFF=0 STOP, ON=1 START"));
   }
 }
 
 void loop() {
   unsigned long ahora = millis();
+  // LED integrado de Arduino: apagado = D12 LOW, encendido = D12 HIGH.
+  // No son los LEDs rojo/azul del receptor MicroStart.
+  digitalWrite(LED_BUILTIN, digitalRead(START_D12));
   revisarControl(ahora);
   if (MODO_DIAGNOSTICO) {
     diagnostico(ahora);
