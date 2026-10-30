@@ -44,6 +44,23 @@ Las fotografías compartidas por el equipo coinciden con el [dibujo del Steren R
 
 **No conectar una salida lógica de 7.4 V a D12**: D12 requiere nivel permitido por la placa (normalmente 5 V para ATmega328P). La batería de 7.4 V va a la entrada eléctrica prevista por la PCB, no al pin de señal.
 
+## Diagnóstico del problema detectado en salón: botón 1 mueve y botón 2 para
+
+Durante una prueba el equipo informó que el botón 1 movía los motores y el botón 2 los paraba, **aunque los LEDs del MicroStart indican rojo con 1 y azul con 2**. Esto **no es el comportamiento correcto y aún no se identificó su causa**. No invertir alimentación/masa ni invertir en software el sentido HIGH/LOW sin medir la señal: el STOP podría dejar de funcionar.
+
+**Prueba nueva sin movimiento:** cargar [Diagnostico_D12_LED/Diagnostico_D12_LED.ino](Diagnostico_D12_LED/Diagnostico_D12_LED.ino) con la batería desconectada y USB solamente. Desconectar el USB; conectar batería correctamente y observar el **LED incorporado de la tarjeta Arduino (LED_BUILTIN, normalmente D13), no los LED del MicroStart**. El diagnóstico mantiene los cuatro pines de motor en LOW. Reiniciar alimentación antes de la secuencia de botones.
+
+| Momento | Estado esperado del LED en la TARJETA |
+|---|---|
+| Enciende, sin presionar botones | APAGADO (= D12 LOW) |
+| Presiona 1 (desbloquear) | APAGADO (= D12 LOW) |
+| Presiona 2 (arranque) | ENCENDIDO fijo (= D12 HIGH) |
+| Presiona 3 (paro) | APAGADO (= D12 LOW) |
+
+Si el LED integrado de la tarjeta **se enciende con 1 y se apaga con 2**, entonces D12 realmente está recibiendo la señal equivocada: verificar que el conductor vaya al pad rotulado **SIGNAL** del MicroStart, no a un LED ni a otro pad, y que haya GND común. Identificar el orden real de las tres conexiones antes de manipularlas, siempre con alimentación desconectada. Si la señal en D12 **sí coincide con la tabla**, revisar que se esté cargando el firmware E5 correcto y comprobar sus pines y comportamiento.
+
+La actualización del firmware E5 filtra una subida de D12 durante **500 ms** en lugar de 70 ms para minimizar falsos START, y mantiene STOP inmediato y enclavado. **No sustituye comprobar el cableado ni resuelve una inversión física de señales**. No probar el combate mientras el STOP no se comporte correctamente.
+
 ## Pasos para cargar la versión de competencia hoy
 
 1. Abrir [Tormenta_Negra_E5_Competencia.ino](Tormenta_Negra_E5_Competencia.ino) en Arduino IDE. Si pregunta si puede moverlo a una carpeta con el mismo nombre que el sketch, **aceptar**. Seleccionar la tarjeta y puerto COM correctos.
