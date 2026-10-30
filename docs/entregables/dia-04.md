@@ -73,10 +73,10 @@ El siguiente objetivo es que el robot pueda desplazarse sobre la superficie negr
 | Limitación de K1 | En E3 comprobamos sensores y motores por separado; todavía faltaba probarlos integrados y evitar el borde. |
 | Hipótesis K2 y fundamento | Si los QTR detectan blanco mientras el robot avanza, podrá retroceder y girar para regresar a la superficie negra. |
 | Variable modificada | Integramos QTR y motores; después redujimos `V_AVANCE` de 145 a **105** y realizamos otras tres pruebas. También se recalibraron ambos QTR, por lo que no se aisló exclusivamente el efecto de la velocidad. |
-| Condiciones y controles | Primeras pruebas sobre el dohyō durante 15 s; hay manchas blancas en la zona negra. Falta igualar las condiciones de las versiones a comparar. |
+| Condiciones y controles | Dos tandas de tres ejecuciones de 15 s sobre el dohyō. Las versiones diferían en PWM de avance y calibración de QTR; no se verificó igualdad exacta de las condiciones de la pista. |
 | Seguridad antes del cambio | Revisar alimentación, polaridad, motores fijados, carcasa, aislamiento de la tarjeta y acceso al paro. |
 | Personas responsables y alcances | Participación específica de cada integrante en E4: **pendiente de confirmar**. Alcances involucrados: sensores, motores e integración. |
-| Código y versión K2 | [Prueba integrada ejecutada](../../codigo/mini-sumo/prueba_evasion_borde/prueba_evasion_borde.ino) y [segunda versión preparada](../../codigo/mini-sumo/prueba_evasion_borde_lenta/prueba_evasion_borde_lenta.ino). Las versiones se conservan por separado en GitHub. |
+| Código y versión K2 | [Programa PWM 145 ejecutado](../../codigo/mini-sumo/prueba_evasion_borde/prueba_evasion_borde.ino) y [versión PWM 105 ejecutada](../../codigo/mini-sumo/prueba_evasion_borde_lenta/prueba_evasion_borde_lenta.ino), conservados por separado. El programa posterior de búsqueda y ataque probado contra teléfono todavía no está en GitHub. |
 | Referencia de cambio | Archivos anteriores disponibles en el repositorio; asociación de una versión validada a un identificador específico de revisión: pendiente. |
 | Métrica y criterio de éxito | Permanencia en la pista por prueba (sí/no), avisos impresos por el programa y detección del borde. En la tanda PWM 105 hubo **0 salidas observadas en 3 pruebas**; en la tanda PWM 145 hubo algunas salidas sin desglose exacto. La prueba adicional de ataque consiguió expulsar un teléfono sin salida del robot; los giros innecesarios siguen sin contarse individualmente. |
 
@@ -171,19 +171,19 @@ La tarjeta anterior **se dañó** y fue reemplazada. No hay diagnóstico confirm
 | Condición o cambio del entorno | Riesgo y límite seguro | Predicción | Resultado observado / medición | ¿Se mantiene el objetivo? | Evidencia |
 |---|---|---|---|---|---|
 | Manchas blancas dentro de la superficie negra (condición observada, no introducida de forma controlada) | Giros innecesarios y posible salida del borde; supervisión y paro accesible | El robot puede confundir manchas con el borde | Ocurrieron giros repentinos y algunas salidas; sin conteo por cada intento | Parcialmente: sí reaccionó al blanco, pero no siempre permaneció dentro | [Observaciones E4](../../datos/observaciones-dia-04.md) |
-| Superficie sin manchas y avance PWM 105 (prueba propuesta) | Comprobar fuerza de movimiento y permanecer cerca para intervenir | Menos salidas si la velocidad era una causa importante | Pendiente de ejecutar | Pendiente | [Código preparado](../../codigo/mini-sumo/prueba_evasion_borde_lenta/prueba_evasion_borde_lenta.ino) |
+| Avance PWM 105 y QTR recalibrados (prueba realizada) | Conservar acceso a apagado y supervisar dohyō | Menos salidas | Tres pruebas de 15 s: ninguna salida observada | Sí, durante esas tres ejecuciones | [Datos reales PWM 105](../../datos/e4_pruebas_pwm105_29oct.md) |
 
-**Límites de inferencia:** tenemos tres ejecuciones del programa original, pero las manchas no se introdujeron como una perturbación controlada y no se registraron salidas ni giros innecesarios por intento. La nueva versión todavía no tiene resultados; para aislar la velocidad habrá que mantener la misma pista, batería y condiciones de ensayo.
+**Límites de inferencia:** tenemos seis ejecuciones del E4. En las tres originales hubo algunas salidas sin conteo por intento y en las tres con PWM 105 ninguna salida observada. Sin embargo, las manchas no fueron una perturbación controlada y también se recalibraron los QTR. Para aislar la velocidad habrá que mantener la misma pista, batería y calibración; el número de giros innecesarios sigue sin medirse.
 
-**Próxima mejora propuesta:** revisar o limpiar la superficie de prueba, repetir la calibración de los QTR y probar primero con una velocidad de avance más baja, manteniendo los demás ajustes iguales. Registrar salidas y giros innecesarios en cada intento. Si siguen ocurriendo salidas, revisar la posición de los QTR y los tiempos de retroceso y giro.
+**Próximo control recomendado:** ya se probó la velocidad menor. Conviene repetir los ensayos con calibración y superficie constantes, registrar salidas y giros innecesarios por intento y comprobar la respuesta frente a otro mini-sumo; el ataque contra un teléfono no sustituye un combate.
 
-**Versión preparada para comparar:** [prueba_evasion_borde_lenta.ino](../../codigo/mini-sumo/prueba_evasion_borde_lenta/prueba_evasion_borde_lenta.ino), con velocidad de avance PWM **105** (antes 145). Se conserva [la versión original de las tres pruebas](../../codigo/mini-sumo/prueba_evasion_borde/prueba_evasion_borde.ino), sin modificarla. Esta nueva versión aún no tiene resultados de prueba.
+**Versión probada:** [prueba_evasion_borde_lenta.ino](../../codigo/mini-sumo/prueba_evasion_borde_lenta/prueba_evasion_borde_lenta.ino), con velocidad de avance PWM **105** (antes 145). Se conserva la [versión original](../../codigo/mini-sumo/prueba_evasion_borde/prueba_evasion_borde.ino) y el [registro de las tres pruebas nuevas](../../datos/e4_pruebas_pwm105_29oct.md).
 
-Antes de probar el robot en movimiento, revisar que la carcasa no toque ni provoque cortocircuitos en la placa, que los motores estén bien sujetos y que la batería esté segura. Hacer primero la prueba con ruedas levantadas y mantener despejado el dohyō. El programa de prueba tiene parada automática a los 15 segundos.
+Antes de probar el robot en movimiento, revisar que la carcasa no toque ni provoque cortocircuitos en la placa, que los motores estén bien sujetos y que la batería esté segura. Hacer primero la prueba con ruedas levantadas y mantener despejado el dohyō. **Los programas de prueba E4 se detenían a los 15 s; el programa posterior de competencia arranca automáticamente tras una espera de 5 s y no tiene ese paro por tiempo.** Debe comprobarse su seguridad y compatibilidad con el reglamento antes de competir.
 
 **Dimensiones reportadas:** 10 × 10 cm.  
 **Peso:** por medir; el reglamento limita el conjunto a 500 g.  
-**Arranque y paro remoto:** receptor conectado; falta confirmar su funcionamiento y su integración al programa.
+**Arranque y paro remoto:** receptor conectado a D12, **no integrado al programa de competencia**. El código cargado actualmente arranca solo tras unos 5 s con la batería; revisar si la competencia exige control remoto u otro tipo de autorización de inicio.
 
 ## 5 · Preparación de la demostración
 
@@ -194,15 +194,15 @@ La demostración prevista consistirá en enseñar el robot montado, explicar los
 | Segmento | Qué se demostrará | Integrante responsable | Versión o código | Material requerido | Plan B ante fallo |
 |---|---|---|---|---|---|
 | Inicio / contexto | Mostrar el robot armado, la carcasa y el objetivo de evitar el borde | Pendiente de asignar | Prototipo E4 | Robot ensamblado | Mostrar fotos y explicar el montaje |
-| Prueba principal | Avanzar sobre negro y reaccionar al borde blanco | Pendiente de asignar | [Prueba integrada E4](../../codigo/mini-sumo/prueba_evasion_borde/prueba_evasion_borde.ino); cambio a 105 por validar | Dohyō, batería, computadora y cable de prueba | Mostrar registros del Monitor Serie si no es seguro probar en movimiento |
-| Evidencia de mejora | Explicar la evolución V1–K1–K2 y los resultados de las tres pruebas | Pendiente de asignar | [Resultados E4](../../datos/observaciones-dia-04.md) | Tabla y registro de pruebas | Explicar limitaciones sin inventar un porcentaje de mejora |
+| Prueba principal | Avanzar sobre negro, evadir el blanco y demostrar ataque sobre un objeto | Pendiente de asignar | [PWM 105 probado](../../codigo/mini-sumo/prueba_evasion_borde_lenta/prueba_evasion_borde_lenta.ino) y código de competencia cargado en tarjeta de reemplazo (archivo por incorporar) | Dohyō, batería y objeto de prueba seguro; supervisión | Mostrar registros del Monitor Serie si no es seguro moverlo |
+| Evidencia de mejora | Explicar V1–K1–K2 y las seis pruebas de evasión, más la expulsión de un teléfono | Pendiente de asignar | [Comparación del E4](../../datos/e4_pruebas_pwm105_29oct.md) | Tabla y registros | Explicar limitaciones sin inventar un porcentaje de mejora |
 | Defensa de fronteras | Cada integrante explica su aportación y aprendizaje | Pendiente de confirmar aportaciones E4 | Documentos individuales | Bitácoras E4 personales | Explicar qué falta validar |
 
 **¿RoboLympics es un evento externo posterior?** Por confirmar. No se registra ninguna participación en una competencia externa como realizada. La demostración prevista para D5 es interna.
 
 **Responsables, tiempos y ensayo general:** propuesta de guion documentada; quedan pendientes la asignación y la ejecución real.
 
-**Evidencias disponibles:** [fotografías del E3](../../evidencias/dia-03/README.md), [código de prueba E4](../../codigo/mini-sumo/prueba_evasion_borde/prueba_evasion_borde.ino), [registro de las tres pruebas](../../datos/e4_monitor_serie_29oct.txt) y [resumen de resultados](../../datos/observaciones-dia-04.md). Las fotografías del nuevo montaje de E4 se añadirán cuando estén disponibles.
+**Evidencias disponibles:** [fotografías del E3](../../evidencias/dia-03/README.md), [PWM 145](../../codigo/mini-sumo/prueba_evasion_borde/prueba_evasion_borde.ino), [PWM 105](../../codigo/mini-sumo/prueba_evasion_borde_lenta/prueba_evasion_borde_lenta.ino), [log de la primera tanda](../../datos/e4_monitor_serie_29oct.txt) y [comparación de las seis pruebas](../../datos/e4_pruebas_pwm105_29oct.md). La prueba de ataque contra un teléfono está confirmada por el equipo, **pero aún no tiene fotografía o video enlazado**. Las fotografías del montaje E4 también están pendientes.
 
 ## 6 · Gate de preparación E4
 
