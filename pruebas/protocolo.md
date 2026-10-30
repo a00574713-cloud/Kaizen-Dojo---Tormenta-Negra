@@ -2,7 +2,7 @@
 
 **Misión:** M01 · Mini-sumo autónomo.  
 **Fecha de preparación:** 2026-10-27 (Día 2, E2).  
-**Estado:** protocolo preparado en E2 y actualizado con las pruebas exploratorias de E3; el registro detallado de corridas se realizará en los siguientes ensayos.  
+**Estado:** protocolo preparado en E2, actualizado con pruebas funcionales de E3 y con los **7 registros de E4** (6 ejecuciones de evasión y 1 prueba de ataque), incorporados posteriormente desde logs y observaciones del equipo.  
 **Alcances y versión:** MS03 (motorización), MS06 (sensores). **Montaje físico parcial del Día 2; V1 funcional todavía no validada.**  
 **Referencia:** [E2 del equipo](../docs/entregables/dia-02.md).
 
@@ -50,11 +50,11 @@ Datos crudos: [`datos/ensayos.csv`](../datos/ensayos.csv). **Permanece solo con 
 - Próximo paso: registrar las corridas por separado para obtener una comparación cuantitativa.
 
 ### Ciclo 2 · Día 4
-- Nueva línea base: pendiente.
-- Hipótesis: pendiente.
-- Cambio: pendiente.
-- Resultados comparables: pendiente.
-- Conclusión: pendiente.
+- Nueva línea base: primer programa integrado de evasión PWM 145; se observaron salidas ocasionales.
+- Hipótesis: disminuir avance permitiría reaccionar al blanco con más tiempo y permanecer dentro del dohyō.
+- Cambio: **Joel propuso PWM de avance 145 → 105**; los QTR también se recalibraron, de modo que **no se aisló una sola variable**.
+- Resultados: 3 ejecuciones de 15 s a PWM 145 (12 avisos cada una; salidas sin desglose por intento) y 3 a PWM 105 (11, 13 y 11 avisos; **cero salidas observadas**). Un intento adicional de búsqueda y ataque expulsó un teléfono sin que el robot saliera.
+- Conclusión: K2 mostró una mejora funcional observada, pero no se puede calcular una tasa de mejora exacta ni extender el resultado a combates con robots. [Datos K2](../datos/e4_pruebas_pwm105_29oct.md) y [CSV consolidado](../datos/ensayos.csv).
 
 No inventar resultados ni borrar corridas desfavorables.
 
@@ -86,4 +86,6 @@ El equipo ejecutó tres veces el programa de movimiento y detección del borde e
 
 **Resultado observado en E4:** el equipo confirmó que el robot sí avanzaba y respondía al blanco retrocediendo y girando. Las manchas blancas dentro del área negra provocaron algunos giros inesperados y en ciertas ocasiones el robot salió del dohyō; la velocidad es una causa posible, todavía sin verificar. Fuera de estas situaciones no reportaron otros fallos.
 
-**Siguiente comparación de robustez:** probar con una superficie negra sin manchas y con menor velocidad de avance, cambiando una variable a la vez. Registrar por intento los giros innecesarios y si el robot permaneció dentro del dohyō. El contraste del QTR izquierdo merece revisión antes de la siguiente tanda.
+**Actualización posterior del 29-10-2026:** el equipo volvió a calibrar los QTR y ensayó tres veces con PWM 105. La diferencia negro/blanco izquierda pasó de 66 a 718 unidades ADC; **ninguna de las tres ejecuciones nuevas presentó salidas observadas**. Después, con una tarjeta de reemplazo y código de ataque, el robot detectó y expulsó un teléfono en el primer intento sin salirse. Ver [resultados completos](../datos/e4_pruebas_pwm105_29oct.md), [CSV de siete registros](../datos/ensayos.csv) y [sketch](../codigo/mini-sumo/tormenta_negra_final/Tormenta_Negra_Final.ino).
+
+**Siguiente comparación de robustez:** conservar idénticas pista, batería y calibración para aislar el efecto de la velocidad, registrar giros innecesarios por intento y probar con un oponente robótico, bajo condiciones seguras y un medio físico de apagado.
