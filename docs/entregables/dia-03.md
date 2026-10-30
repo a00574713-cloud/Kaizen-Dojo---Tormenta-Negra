@@ -112,15 +112,17 @@ La guía solicita registrar el alcance, la kata, el cambio concreto, el responsa
 
 **Datos crudos requeridos:** [ensayos.csv](../../datos/ensayos.csv) · **Protocolo:** [protocolo.md](../../pruebas/protocolo.md) · **Observaciones realmente registradas:** [Día 3](../../datos/observaciones-dia-03.md).
 
-La plantilla original incluye **cinco pruebas emparejadas** bajo las mismas condiciones y valores por versión. No contamos con esos datos: el Día 2 no tuvo ensayos funcionales y las pruebas del Día 3 fueron exploratorias, con correcciones efectuadas durante la sesión. Aunque las pruebas se podían registrar simplemente como **sí/no funcionaron** y **sentido correcto/incorrecto**, **no anotamos un resultado por corrida durante la actividad**.
+La plantilla original solicita **cinco pruebas emparejadas del mismo escenario** para comparar V1 y K1. Como el equipo **no realizó cinco pares controlados**, se completan las cinco filas originales con **las observaciones reales disponibles** de motores y sensores. **Estas filas son cinco aspectos del diagnóstico, no cinco repeticiones de un mismo ensayo**. Para facilitar la lectura, solo en las dos primeras se usa una escala cualitativa: **0 = funcionamiento incorrecto; 1 = funcionamiento correcto**. Es una codificación retrospectiva de lo observado, no una medición numérica registrada en el momento.
 
 | Prueba emparejada | Condición / escenario idéntico | V1, valor + unidad | K1, valor + unidad | Cambio / resultado | Incidencia o desviación |
 |---:|---|---|---|---|---|
-| 1 | Por documentar | Sin medición emparejada | Sin medición emparejada | Pendiente | No se registró un par V1–K1 |
-| 2 | Por documentar | Sin medición emparejada | Sin medición emparejada | Pendiente | No se registró un par V1–K1 |
-| 3 | Por documentar | Sin medición emparejada | Sin medición emparejada | Pendiente | No se registró un par V1–K1 |
-| 4 | Por documentar | Sin medición emparejada | Sin medición emparejada | Pendiente | No se registró un par V1–K1 |
-| 5 | Por documentar | Sin medición emparejada | Sin medición emparejada | Pendiente | No se registró un par V1–K1 |
+| 1 | **Respuesta de motores** al programa: antes y después de conectar la batería y corregir el motor | **0** (incorrecto): en el primer intento no giraban | **1** (correcto): después de las correcciones giraron ambos motores | Pasó de no responder a girar correctamente | **No es un par idéntico**: cambió la conexión de la batería y posteriormente la polaridad |
+| 2 | **Sentido de giro** al probar los motores: antes y después de corregir la polaridad | **0** (incorrecto): un motor giró al revés en el segundo intento | **1** (correcto): tras corregir la polaridad ambos giraron como se esperaba | Se corrigió el sentido de giro | Comparación **cualitativa**, sin velocidad medida ni repetición emparejada |
+| 3 | **Sensor QTR izquierdo** sobre las superficies negra y blanca | **No evaluado en V1** | Respondió al cambio entre negro y blanco (**sí/no**) | Se comprobó su respuesta funcional durante K1 | No hay lectura ADC de E3 ni prueba anterior equivalente |
+| 4 | **Sensor QTR derecho** sobre las superficies negra y blanca | **No evaluado en V1** | Respondió al cambio entre negro y blanco (**sí/no**) | Se comprobó su respuesta funcional durante K1 | No hay lectura ADC de E3 ni prueba anterior equivalente |
+| 5 | **Tres sensores infrarrojos JS40F** al acercar y retirar objetos | **No evaluados en V1** | Respondieron al objeto (**3 sensores**; lecturas digitales `0` y `1`) | Se comprobó detección funcional del conjunto de sensores | Los aproximadamente cinco ensayos de sensores fueron **del conjunto**, sin registro por sensor ni pares V1–K1 |
+
+**Resultado de esta tabla:** los motores mejoraron funcionalmente tras las dos correcciones y los cinco sensores respondieron en E3. **Número de ensayos verdaderamente emparejados V1–K1: 0.** No se calcula porcentaje de mejora con esta tabla porque no se midieron cinco pares bajo condiciones iguales.
 
 ### Secuencia observada, reconstruida después de la sesión
 
