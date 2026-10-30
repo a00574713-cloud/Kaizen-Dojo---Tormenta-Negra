@@ -51,7 +51,7 @@ Los minutos representan la distribución de actividades de la guía, no un crono
 | Variable independiente | Estado de conexión de la batería y polaridad del motor; fueron dos correcciones sucesivas, no una única variable aislada. |
 | Métrica de resultado, unidad y criterio de mejora | **Respuesta de los motores al comando** (funciona/no funciona por intento) y **sentido de giro correcto** (sí/no por intento). El criterio es que ambos respondan y giren en el sentido solicitado. Como no anotamos esos resultados mientras hacíamos las pruebas, solo contamos con el recuerdo de los primeros dos problemas y de que los intentos posteriores fueron correctos; no hay mediciones de velocidad ni tiempos de respuesta. |
 | Variables que se mantendrán iguales | Para futuros ensayos comparables: mismo controlador, código, motores, montaje, alimentación y comando por intento. No se registró control riguroso de todas esas condiciones en las pruebas exploratorias de E3. |
-| Ensayos requeridos y muestreo | La guía solicita **cinco ensayos comparables** V1–K1 (o justificar otro n). En E3 hubo aproximadamente diez intentos de motores: **1.º sin respuesta por batería, 2.º con un motor girando al revés y los demás correctos**. Se realizaron aproximadamente cinco pruebas del conjunto de sensores, todas satisfactorias. **No anotamos los intentos en una tabla ni hicimos cinco pares V1–K1 con condiciones iguales**, aunque el resultado observado era de tipo sí/no. |
+| Ensayos requeridos y muestreo | Para la comparación V1–K1 se requieren **cinco ensayos comparables** (o justificar otra cantidad). En E3 hubo aproximadamente diez intentos de motores: **1.º sin respuesta por batería, 2.º con un motor girando al revés y los demás correctos**. Se realizaron aproximadamente cinco pruebas del conjunto de sensores, todas satisfactorias. **No anotamos los intentos en una tabla ni hicimos cinco pares V1–K1 con condiciones iguales**, aunque el resultado observado era de tipo sí/no. |
 | Riesgo de sesgo o confusión y mitigación | Cambiaron la alimentación y la polaridad durante el diagnóstico; por tanto, no podemos asignar cuantitativamente la mejora a una sola corrección. Para futuras comparaciones, mantener condiciones constantes y cambiar una variable a la vez. |
 | Parada de seguridad / condición de aborto | Desenergizar para cambiar conexiones; detener ante calentamiento, olor, chispas, movimiento inesperado o cables sueltos. Inspeccionar aislamiento entre la tarjeta y el chasis metálico antes de ensayar. |
 
@@ -132,8 +132,8 @@ La siguiente tabla recoge la secuencia que recordamos; no medimos cada intento p
 |---|---|---|---|
 | 1.º intento de motor | No funcionó | La batería no estaba conectada al módulo | Joel y Sara conectaron la batería |
 | 2.º intento de motor | No correcto: un motor giró al revés | Polaridad invertida | Joel y Sara corrigieron la conexión |
-| Intentos posteriores (cantidad exacta no documentada) | Funcionaron correctamente, según el equipo | Sin nuevos problemas reportados | Los cuatro integrantes revisaron las conexiones y el resultado |
-| Pruebas de sensores (aproximadamente 5 en total) | Todas satisfactorias, según el equipo | Sin fallas reportadas | Joel y Sara hicieron las pruebas; el equipo las verificó |
+| Intentos posteriores (cantidad exacta no documentada) | Funcionaron correctamente en los intentos que recordamos | Sin nuevos problemas reportados | Los cuatro integrantes revisaron las conexiones y el resultado |
+| Pruebas de sensores (aproximadamente 5 en total) | Todas respondieron correctamente en las pruebas que hicimos | Sin fallas reportadas | Joel y Sara hicieron las pruebas; el equipo las verificó |
 
 **Ensayos emparejados V1/K1:** 0. Sí hicimos pruebas funcionales, pero no repetimos condiciones equivalentes entre versiones.
 
@@ -195,7 +195,7 @@ El chasis quedó ensamblado con su base metálica, dos ruedas motrices, batería
 - [x] **Se documentó una modificación técnica y quién participó:** Joel y Sara corrigieron conjuntamente la batería y la polaridad. Los cuatro integrantes revisaron conexiones y pruebas; todavía falta confirmar revisión docente.
 - [x] **Ensayos comparables o diferencias expuestas explícitamente:** registramos que no tuvimos cinco pares equivalentes y que las observaciones se reconstruyeron después de la sesión.
 - [x] **Conclusión honesta, incluso si existen resultados negativos:** se conservan los fallos iniciales y los límites de los datos.
-- [ ] **E3 personal de cada estudiante:** [Joel](../../participantes/A00574713/dias/E3.md) · [Sara](../../participantes/saragdr/dias/E3.md) · [Max](../../participantes/MaxAmCam/dias/E3.md) · [Claudio](../../participantes/A00574802/dias/E3.md).
+- [x] **E3 personal de cada estudiante:** [Joel](../../participantes/A00574713/dias/E3.md) · [Sara](../../participantes/saragdr/dias/E3.md) · [Max](../../participantes/MaxAmCam/dias/E3.md) · [Claudio](../../participantes/A00574802/dias/E3.md).
 
 **Gate E3:** **CONDICIONADO**. **Revisor docente:** revisión y eventual aprobación pendientes hasta después de la entrega. **Revisión interna:** los cuatro integrantes verificaron conexiones y pruebas. **Enlace a PR/commit del experimento:** no identificado en la sesión; se conservan los [sketches de sensores](../../codigo/pruebas-dia-03/prueba_sensores/prueba_sensores.ino) y [motores](../../codigo/pruebas-dia-03/prueba_motores/prueba_motores.ino) en el repositorio.
 
@@ -208,7 +208,6 @@ El chasis quedó ensamblado con su base metálica, dos ruedas motrices, batería
 - [x] Incorporados los dos programas `.ino` originales de sensores y motores.
 - [x] Registradas las tareas de Joel, Sara, Max y Claudio, incluida la corrección conjunta de Joel y Sara y la revisión interna de todo el equipo; se aclaró que no se grabó video.
 - [ ] Registrar por separado las corridas de una prueba repetible para comparar resultados numéricos.
-- [ ] Revisión y aprobación del profesor después de la entrega.
 - [ ] Revisión del profesor Camilo René Duque.
 
 **Estado E3:** terminamos el montaje y comprobamos motores y sensores. La comparación V1–K1 quedó limitada porque no medimos cinco pares equivalentes. Las primeras calibraciones numéricas se encuentran en [E4](dia-04.md). **Revisión docente:** pendiente.
