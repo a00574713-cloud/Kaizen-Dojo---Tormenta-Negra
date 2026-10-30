@@ -11,7 +11,7 @@
 3. **Abre tu carpeta individual.** Las cuatro carpetas ya están en `participantes/<tu-alias>/`, con el compromiso original, el portafolio y las bitácoras `dias/E1.md` a `E5.md`. Completa tus evidencias y reflexión personal en tu carpeta.
 4. **Documenta en equipo.** Cada día completen juntos un entregable en `docs/entregables/dia-0X.md`; enlacen códigos, pruebas, fotos y diseños que estén en el repositorio o en almacenamiento institucional con acceso apropiado.
 
-**Importante:** las plantillas están vacías y contienen campos `[por completar]`. Nadie debe inventar datos o copiar como propios los de un compañero. El objetivo no es un robot perfecto: es demostrar qué aprendió y mejoró cada integrante.
+**Importante:** las plantillas originales de entregables se conservaron sin cambiar su estructura. Los E2–E5 colectivos están documentados con resultados y límites; la revisión del profesor sigue pendiente hasta entregar GitHub. Los E5 personales de Joel y Sara están contestados; los de Max y Claudio siguen pendientes. Nadie debe inventar datos o copiar como propias las reflexiones de otro integrante.
 
 ## Nuestra misión y personas
 
