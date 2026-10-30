@@ -13,7 +13,7 @@
 
 ## Mis cinco evidencias personales
 
-- [Día 1 — E1 · Diagnóstico y frontera](dias/E1.md) — diagnóstico y pacto personal por completar
+- [Día 1 — E1 · Diagnóstico y frontera](dias/E1.md) — diagnóstico inicial, exploración y pacto Kaizen registrados
 - [Día 2 — E2 · Primera integración](dias/E2.md) — actividades reportadas, sin pruebas funcionales
 - [Día 3 — E3 · Kaizen 1](dias/E3.md) — actividades y resultados registrados
 - [Día 4 — E4 · Kaizen 2](dias/E4.md) — actividades y resultados registrados
