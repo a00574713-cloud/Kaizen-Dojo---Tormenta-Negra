@@ -4,252 +4,108 @@ formato: "Entregable diario G2"
 evidencia: "E4"
 dia: 4
 responsable_registro: "equipo"
-estado: "EN_PROCESO"
+estado: "REGISTRADO_CON_RESTRICCIONES"
 fecha: "2026-10-29"
 revision_docente: "PENDIENTE"
 ---
 
-# E4 · Día 4 — ITERAR | Mejoras al montaje y preparación de prueba integrada
+# E4 · Día 4 — ITERAR | Kaizen 2, robustez y preparación de demostración
 
-El 29 de octubre continuamos con el mini-sumo **Tormenta Negra**. Claudio diseñó la carcasa en CAD y **la mandó a imprimir**; **el 29 de octubre todavía no se había ensamblado ni colocado en el robot**. El equipo compartió dos imágenes del diseño CAD como evidencia. Sara, con ayuda de Max, **pegó la navaja al chasis** y continuamos acomodando el montaje. El receptor del control remoto sigue conectado a D12, pero aún no se utiliza en el programa. Probamos la evasión del borde con PWM 145 y 105; más tarde, tras sustituir una tarjeta que se dañó, Joel se encargó del código y cargó el programa de búsqueda y ataque en la tarjeta nueva. **En el primer intento el robot detectó un teléfono, lo empujó fuera del dohyō y permaneció en la zona negra.** El equipo tiene dos videos de E4, todavía sin enlaces en el repositorio. Fue una prueba con un objeto, no un combate oficial.
+> **Regla:** sustituir los corchetes, registrar lo realmente observado y enlazar a evidencias del repositorio. **No inventar datos ni marcar pruebas no realizadas.** Los archivos del equipo resumen el trabajo compartido; las reflexiones y evidencias personales van en `participantes/<alias>/dias/E4.md`.
 
 ## 0 · Contexto
 
-**Equipo y misión:** Tormenta Negra · M01, mini-sumo autónomo.  
-**Lugar:** Laboratorio de Electrónica, CTA, Campus León.  
-**Avance anterior:** en el [E3](dia-03.md) comprobamos los cinco sensores y los dos motores por separado y corregimos la conexión de alimentación y la polaridad de un motor.
+**Fecha y dōjō:** 29 de octubre de 2026 · Laboratorio de Electrónica, CTA, Campus León. **Equipo/misión:** Tormenta Negra · M01, mini-sumo autónomo.
 
-## 1 · Ruta del Día 4 (180 minutos)
+**Versiones trazables:** **V1** (Día 2: conexiones y primer montaje, sin función integrada probada) · **K1** (Día 3, estado `D3-CORREGIDO`: sensores y motores funcionales después de conectar la batería y corregir la polaridad; no equivale a una versión de firmware ensayada sobre la pista) · **K2** (Día 4: [evasión con PWM 145](../../codigo/mini-sumo/prueba_evasion_borde/prueba_evasion_borde.ino), [evasión con PWM 105](../../codigo/mini-sumo/prueba_evasion_borde_lenta/prueba_evasion_borde_lenta.ino) y [código posterior de búsqueda y ataque](../../codigo/mini-sumo/tormenta_negra_final/Tormenta_Negra_Final.ino)). Estas denominaciones identifican las etapas; no se atribuyen a V1 y K1 mediciones que no tuvieron.
 
-La guía propone seis bloques de trabajo. **Los minutos indican la distribución planeada por la actividad, no tiempos cronometrados por el equipo**; registramos únicamente lo que podemos confirmar de la sesión.
+**Resultado destacado:** en K2 se realizaron **seis pruebas de evasión de 15 s**, tres a PWM 145 con salidas ocasionales y tres a PWM 105 **sin salidas observadas**. Después de sustituir la tarjeta dañada, se cargó el código de búsqueda y ataque; **al primer intento el robot detectó y expulsó un teléfono del dohyō sin salirse del negro**, según el equipo. Esta última prueba con un objeto no constituye un combate oficial.
 
-| Bloque de la guía | Minutos previstos | Registro del equipo |
+**Montaje:** **Sara pegó la navaja al chasis con ayuda de Max**. **Claudio diseñó la carcasa CAD y la mandó a imprimir, pero NO se ensambló en el robot durante E4.** Las [dos vistas CAD ya están en la galería del Día 4](../../evidencias/dia-04/README.md). **Joel** hizo el código y, con **Max y Claudio**, cambió conexiones y componentes a la tarjeta de reemplazo. La causa del daño de la tarjeta anterior no se diagnosticó formalmente. El receptor infrarrojo D12 continúa sin integrarse al firmware.
+
+## 1 · Ruta de actividades del Día 4 (180 min)
+
+Los minutos son **bloques de la guía**, no un cronometraje de lo que duró cada actividad.
+
+| Actividad | Minutos | Registro requerido |
 |---|---:|---|
-| Revisión por pares y retroalimentación | 0–20 | Compañeros del **equipo Artemis** aconsejaron **utilizar motores de mayor rendimiento** y **agregar sensores de detección de rivales** para identificarlos más rápido. Son propuestas para evaluar; no se cambiaron motores ni se instalaron sensores extra durante E4. |
-| Diseño y ejecución del Kaizen 2 | 20–70 | **Claudio diseñó y mandó a imprimir la carcasa** (sin ensamblarla en E4); **Sara pegó la navaja al chasis con ayuda de Max**. Joel programó el movimiento y evasión, y Joel, Sara y Max realizaron pruebas. Receptor D12 conectado sin integrar al código. |
-| Comparación V1–K1–K2 | 70–115 | Documentamos las etapas V1 (montaje), K1 (componentes funcionales) y K2 (evasión). En K2 se realizaron tres pruebas con PWM 145 y tres con PWM 105; falta comparación estricta con las etapas V1 y K1, que no midieron lo mismo. |
-| Ensayo de robustez | 115–145 | Realizamos seis ejecuciones de 15 s: tres con PWM 145 (salidas ocasionales) y tres con PWM 105 (**ninguna salida observada**, según el equipo). Después se probó la búsqueda y ataque contra un teléfono, que salió de la pista mientras el robot se mantuvo dentro. |
-| Preparación de la demostración | 145–165 | Hay **dos videos** pendientes de enlazar. Se preparó una **distribución de cuatro intervenciones para D5**: Claudio (contexto y CAD), Joel (código y demostración), Max (comparación de pruebas) y Sara (navaja, aprendizaje y límites). **Todavía falta ensayar realmente la presentación.** |
-| Gate de preparación | 165–180 | Se registraron **dos recomendaciones de Artemis**, el pegado de la navaja, las pruebas PWM 105 y el ataque exitoso. Ya hay **roles propuestos para D5**, sin ensayo realizado. Pendientes: enlaces a dos videos, peso (sin báscula), carcasa impresa por ensamblar, código final en GitHub, E4 individuales restantes y revisión docente. |
+| Revisión por pares y retroalimentación | 0–20 | Algunos integrantes del **equipo Artemis** revisaron el mini-sumo y recomendaron motores de mayor rendimiento y más sensores para reconocer al rival antes. No se implementaron esas sugerencias durante E4. |
+| Diseño/ejecución Kaizen 2 | 20–70 | Joel se encargó del código y **propuso disminuir avance PWM de 145 a 105** después de observar salidas. Sara y Max pegaron la navaja; Claudio diseñó y mandó a imprimir la carcasa, aún sin instalar. |
+| Comparación V1–K1–K2 | 70–115 | Se documentó V1 montaje, K1 prueba de componentes y K2 movimiento integrado. K2 produjo tres ejecuciones a 145 y tres a 105. **No existen ensayos emparejados equivalentes de las tres etapas**, como exige la guía. |
+| Ensayo de robustez | 115–145 | Con 145 hubo giros por manchas blancas y salidas ocasionales. Se recalibraron QTR y se ensayó PWM 105 tres veces sin salidas. Una prueba posterior con teléfono verificó expulsión sin salida del robot. |
+| Preparación de demo | 145–165 | Guion de cuatro intervenciones y contingencia preparado: Claudio (CAD/contexto), Joel (código/ataque), Max (pruebas/comparación), Sara (navaja/cierre). El ensayo real de la exposición todavía no está confirmado. |
+| Gate de preparación | 165–180 | Se documentaron avances y limitaciones: sin báscula para pesar el robot, videos pendientes de enlazar, E4 personales de algunos integrantes incompletos y revisión docente pendiente. |
 
-## 1A · Actividades realizadas en el Día 4
+## 2 · Revisión por pares
 
-| Actividad | Avance realizado |
-|---|---|
-| Carcasa y estructura | **Claudio diseñó la carcasa en CAD y la mandó a imprimir.** El equipo compartió **dos vistas del modelo**. **No se instaló ni ensambló con el robot durante E4**; falta recibir la pieza impresa y documentar su montaje posterior. |
-| Organización de componentes | Se continuó organizando el cableado y **Joel, Max y Claudio trasladaron las conexiones y componentes a una tarjeta de reemplazo**, después de que la anterior se dañó. No se conoce la causa exacta de la avería. |
-| Fijación de motores | Se mantuvo la fijación de los motores. **Sara, con ayuda de Max, logró pegar la navaja al chasis**. El pegado quedó realizado, aunque no se registró una prueba cuantitativa de resistencia de la unión. |
-| Control remoto | Conectamos al **pin D12** de la tarjeta el receptor infrarrojo destinado al arranque y paro mediante control remoto. Por ahora, el código de movimiento no utiliza este receptor. |
-| Integración del control | **Joel se encargó de todo el código**. Las pruebas de evasión las realizaron Joel, Max y Sara: tres ejecuciones a PWM 145 y tres a PWM 105 ([registro](../../datos/e4_pruebas_pwm105_29oct.md)). Joel propuso **reducir la velocidad** porque el robot se salía. Tras cambiar de tarjeta con Max y Claudio, Joel cargó el programa de ataque sin control remoto: **al primer intento detectó y sacó un teléfono del dohyō sin salir**. Falta subir ese último sketch y enlazar los videos. |
-
-## 1B · Revisión por pares y retroalimentación
-
-La guía solicita registrar quién revisó el trabajo del equipo y qué recomendó. Compañeros del **equipo Artemis** observaron el mini-sumo y recomendaron **motores más potentes** y **sensores adicionales de detección de oponentes** para identificarlos con mayor rapidez. Se registran como recomendaciones recibidas, no como modificaciones realizadas. Los nombres de quienes las dieron aún no están documentados.
-
-| Persona o equipo observador (alias) | Evidencia revisada | Observación útil o pregunta | Respuesta técnica y decisión | Cambio aceptado o descartado |
+| Persona o equipo observador (alias) | Evidencia revisada | Observación útil / pregunta | Respuesta técnica y decisión | Cambio aceptado o descartado |
 |---|---|---|---|---|
-| Compañeros del **equipo Artemis** (nombres/alias pendientes) | Robot físico y su desempeño en las pruebas | **Cambiar por motores mejores para la competencia** y **agregar sensores para detectar rivales más rápidamente** | Registrar ambas ideas para revisar su factibilidad y compatibilidad con el diseño actual | **No se implementaron en E4**; evaluación para futuras iteraciones pendiente |
+| Compañeros del **equipo Artemis**; nombres específicos no registrados | Robot mini-sumo Tormenta Negra y su funcionamiento | **Recomendación 1:** cambiar por motores mejores para la competencia. **Recomendación 2:** agregar más sensores para detectar rivales con mayor rapidez. | Se tomaron como propuestas para evaluar factibilidad, cableado, consumo y compatibilidad en futuras iteraciones. **Joel propuso por separado reducir PWM de 145 a 105** debido a las salidas; no se atribuye esa decisión a Artemis. | **No implementadas en E4**: no se cambiaron motores ni se añadieron sensores. Evaluación pendiente para competencia. |
 
-**Acuerdo de colaboración:** recibimos las sugerencias de Artemis y las dejamos para evaluación posterior, pues no se hicieron esos cambios durante E4. **Joel propuso por iniciativa propia reducir la velocidad PWM 145 → 105** al observar que el robot se salía; no se atribuye esa decisión a Artemis.
+**Acuerdo de colaboración:** escuchamos los consejos de Artemis y distinguimos las recomendaciones externas de la decisión de velocidad que tomó Joel. El equipo se repartió las labores técnicas: **Joel** (código y pruebas con Sara/Max), **Sara** (navaja y pruebas), **Max** (navaja, pruebas y traslado a placa nueva), **Claudio** (carcasa CAD y traslado a placa nueva). Faltan los nombres de los compañeros de Artemis, si el docente los solicita.
 
-## 2 · Segundo Kaizen: una mejora para proteger el robot en el dohyō
+## 3 · Segundo ciclo Kaizen (K2)
 
-El siguiente objetivo es que el robot pueda desplazarse sobre la superficie negra y que, al llegar a un borde blanco, retroceda y gire para permanecer dentro del área de combate.
-
-| Campo | Registro |
+| Campo experimental | Completar |
 |---|---|
-| Situación inicial | En E3 funcionaban los sensores y motores por separado. |
-| Mejoras físicas de E4 | Claudio diseñó y mandó a imprimir la carcasa (sin colocarla en E4); **Sara y Max pegaron la navaja al chasis**. Joel, Max y Claudio trasladaron conexiones y componentes a una nueva tarjeta tras dañarse la anterior. El receptor D12 permanece conectado, pero no se utiliza en el programa. |
-| Hipótesis de control | Si el programa vigila los QTR y reduce la velocidad de avance de 145 a 105, habrá más oportunidad para retroceder y girar antes de salir de la pista. **Joel propuso la reducción de velocidad** al observar las salidas. La calibración también se cambió, así que las pruebas no aíslan una sola causa. |
-| Cambio de programa propuesto | Leer A2/A3, recalibrar negro/blanco, priorizar evasión y cambiar `V_AVANCE` de 145 a **105**; la reducción de velocidad fue propuesta por Joel. Posteriormente incorporó búsqueda y ataque en un sketch de competencia aún por enlazar en GitHub. |
-| Código | [Prueba integrada E4](../../codigo/mini-sumo/prueba_evasion_borde/prueba_evasion_borde.ino) · [instrucciones](../../codigo/mini-sumo/prueba_evasion_borde/README.md). |
-| Cómo comprobarlo | Calibrar los QTR, comprobar el sentido de los motores con las ruedas levantadas y probar el comportamiento sobre el dohyō. |
-| Resultado | Realizamos **seis pruebas de 15 s**. Con PWM 145 hubo giros inesperados y algunas salidas. Con PWM 105 **ninguna de las tres pruebas registró salidas observadas** y los QTR se recalibraron. En una prueba adicional de la versión de competencia, el robot sacó un teléfono del dohyō mientras permaneció dentro de la zona negra. No se midió duración de ese intento. |
+| Limitación o nueva oportunidad detectada en K1 | En el Día 3 los motores y los cinco sensores funcionaron **por separado**, pero aún no se habían probado como sistema integrado sobre la pista. Las primeras pruebas integradas del Día 4 a PWM 145 mostraron giros inesperados por manchas blancas y salidas ocasionales. |
+| Hipótesis K2 y fundamento | Si se da prioridad a los QTR para retroceder y girar ante blanco y se reduce el avance de **PWM 145 a 105**, el robot podrá reaccionar antes de salirse del dohyō. Esta reducción fue propuesta por **Joel**. También se recalibraron sensores, así que no es una comparación de una sola variable. |
+| Variable modificada y controles | Cambio de PWM de avance **145 → 105** y **nueva calibración** de QTR. Primera tanda: negro/ blanco izquierda **1022/956**, derecha **821/34**, umbrales **989/427**. Segunda tanda: izquierda **749/31**, derecha **873/39**, umbrales **390/456**. Se utilizó el dohyō, con 3 ejecuciones de 15 s por tanda. La calibración y las condiciones de superficie no quedaron idénticas entre tandas. |
+| Requisitos de seguridad antes del cambio | Verificar polaridad, batería y compatibilidad de alimentación de la tarjeta antes de energizar; no conectar USB y batería simultáneamente sin confirmar que la placa lo permite. Desconectar alimentación antes de mover cables, comprobar fijación de navaja y motores, mantener acceso a paro físico. La placa anterior se dañó; **no está confirmada la causa exacta**. |
+| Personas responsables y alcances implicados | **Joel:** programación completa, propuesta de velocidad y pruebas con Sara y Max. **Sara:** pegado de navaja con ayuda de Max y pruebas. **Max:** apoyo en navaja, pruebas y sustitución de placa. **Claudio:** diseño/envío a impresión de carcasa y sustitución de placa. **Joel, Max y Claudio** trasladaron conexiones a la nueva tarjeta. |
+| Cambio exacto de código/CAD/configuración | Lectura QTR **A2/A3**, sensores de oponente **D2/A5/A4**, motores **D5/D6 y D10/D11**. El avance PWM pasó de 145 a 105; QTR recalibrados. **Claudio** diseñó la [carcasa CAD](../../evidencias/dia-04/README.md), enviada a impresión sin instalar en E4. **Sara y Max** pegaron la navaja al chasis. Luego Joel cargó en la placa de reemplazo el [sketch exacto de competencia sin control remoto](../../codigo/mini-sumo/tormenta_negra_final/Tormenta_Negra_Final.ino). |
+| Enlace a commit, PR y versión K2 | [Sketch inicial PWM 145](../../codigo/mini-sumo/prueba_evasion_borde/prueba_evasion_borde.ino) · [K2 PWM 105](../../codigo/mini-sumo/prueba_evasion_borde_lenta/prueba_evasion_borde_lenta.ino) · [Código completo de búsqueda y ataque](../../codigo/mini-sumo/tormenta_negra_final/Tormenta_Negra_Final.ino) · [Commit que incorporó el código final](https://github.com/a00574713-cloud/Kaizen-Dojo---Tormenta-Negra/commit/812f1852cab7ee89aefb691d6fb77f1ce4155aa2) · [vistas CAD](../../evidencias/dia-04/README.md). No se documentó PR ni etiqueta formal de versión durante la sesión. |
+| Métrica, unidad y criterio para declarar éxito | **Permanencia dentro del dohyō** (sí/no por ejecución), conteos de mensajes `BORDE` por programa, y ataque al objeto (expulsión sí/no). Objetivo: reaccionar al blanco, permanecer dentro y empujar al rival. Con PWM 105 se reportaron **0 salidas en tres pruebas**. Los avisos `BORDE` no son un conteo de evasiones exitosas. |
 
-### Ficha de experimento K2 solicitada por la guía
+## 4 · Comparación de evolución
 
-| Campo requerido | Registro |
-|---|---|
-| Limitación de K1 | En E3 comprobamos sensores y motores por separado; todavía faltaba probarlos integrados y evitar el borde. |
-| Hipótesis K2 y fundamento | Si los QTR detectan blanco mientras el robot avanza, podrá retroceder y girar para regresar a la superficie negra. |
-| Variable modificada | Integramos QTR y motores; después redujimos `V_AVANCE` de 145 a **105** y realizamos otras tres pruebas. También se recalibraron ambos QTR, por lo que no se aisló exclusivamente el efecto de la velocidad. |
-| Condiciones y controles | Dos tandas de tres ejecuciones de 15 s sobre el dohyō. Las versiones diferían en PWM de avance y calibración de QTR; no se verificó igualdad exacta de las condiciones de la pista. |
-| Seguridad antes del cambio | Revisar alimentación, polaridad, motores fijados, carcasa, aislamiento de la tarjeta y acceso al paro. |
-| Personas responsables y alcances | **Joel:** todo el código, propuesta PWM 105, pruebas con Sara y Max, cambio de placa con Max y Claudio. **Sara:** pegó la navaja al chasis con ayuda de Max y participó en las pruebas. **Max:** ayudó a pegar la navaja, otras tareas, pruebas y cambio de placa. **Claudio:** diseñó y mandó a imprimir la carcasa (aún no ensamblada) y ayudó con la nueva placa. |
-| Código y versión K2 | [Programa PWM 145 ejecutado](../../codigo/mini-sumo/prueba_evasion_borde/prueba_evasion_borde.ino) y [versión PWM 105 ejecutada](../../codigo/mini-sumo/prueba_evasion_borde_lenta/prueba_evasion_borde_lenta.ino), conservados por separado. El programa posterior de búsqueda y ataque probado contra teléfono todavía no está en GitHub. |
-| Referencia de cambio | Archivos anteriores disponibles en el repositorio; asociación de una versión validada a un identificador específico de revisión: pendiente. |
-| Métrica y criterio de éxito | Permanencia en la pista por prueba (sí/no), avisos impresos por el programa y detección del borde. En la tanda PWM 105 hubo **0 salidas observadas en 3 pruebas**; en la tanda PWM 145 hubo algunas salidas sin desglose exacto. La prueba adicional de ataque consiguió expulsar un teléfono sin salida del robot; los giros innecesarios siguen sin contarse individualmente. |
+Se conservan las **cinco filas exigidas**. No son cinco ensayos emparejados de V1, K1 y K2: **V1 no tuvo funcionamiento comprobado, K1 solo tuvo pruebas individuales y K2 tuvo pruebas integradas.** Presentar resultados numéricos de V1 o K1 como si hubieran ocurrido sería inventarlos.
 
-### Participación confirmada del equipo en el Día 4
+| Ensayo/condición equivalente | V1 (valor + unidad) | K1 (valor + unidad) | K2 (valor + unidad) | Incidencias o validez |
+|---:|---|---|---|---|
+| 1 | Sin prueba de evasión | Sin prueba de evasión integrada | PWM 145, 15 s; 9 avisos izq. + 3 der.; **12 total** | Hubo algunas salidas en la tanda de 145; sin conteo por intento. No comparable con V1/K1. |
+| 2 | Sin prueba equivalente | Sin prueba equivalente | PWM 145, 15 s; 5 izq. + 7 der.; **12 total** | Salidas por intento sin desglose; no comparable. |
+| 3 | Sin prueba equivalente | Sin prueba equivalente | PWM 145, 15 s; 6 izq. + 6 der.; **12 total** | Salidas por intento sin desglose; no comparable. |
+| 4 | Sin prueba equivalente | Sin prueba equivalente | PWM 105, 15 s; 7 izq. + 4 der.; **11 total** | **0 salidas observadas**; QTR recalibrados. |
+| 5 | Sin prueba equivalente | Sin prueba equivalente | PWM 105, 15 s; 8 izq. + 5 der.; **13 total** | **0 salidas observadas**; QTR recalibrados. |
 
-| Integrante | Aportación específica |
-|---|---|
-| [Joel](../../participantes/A00574713/dias/E4.md) | Se encargó de **todo el código**, propuso bajar la velocidad PWM 145 → 105 porque el robot se salía, realizó pruebas junto con Sara y Max y ayudó con Max y Claudio a trasladar componentes a la nueva tarjeta. |
-| [Sara](../../participantes/saragdr/dias/E4.md) | **Pegó la navaja al chasis con apoyo de Max** y participó en las pruebas del robot. |
-| [Max](../../participantes/MaxAmCam/dias/E4.md) | **Ayudó a Sara a pegar la navaja**, apoyó en otras tareas, participó en las pruebas y ayudó a trasladar componentes a la tarjeta nueva. |
-| [Claudio](../../participantes/A00574802/dias/E4.md) | **Diseñó la carcasa y la mandó a imprimir**, y participó con Joel y Max en la sustitución de la tarjeta. |
+**Sexta ejecución adicional de K2 (también real, no omitida de los resultados):** PWM 105, 15 s, **9 avisos de izquierda + 2 de derecha = 11**, sin salidas observadas. En total: **K2 PWM 145, n = 3, 36 avisos de borde (20 izq., 16 der.)**; **K2 PWM 105, n = 3, 35 avisos (24 izq., 11 der.)**. Las seis pruebas terminan el periodo de 15 segundos de su respectivo programa. El equipo observó salidas ocasionales en la primera tanda y **ninguna salida en la segunda tanda**, sin que podamos calcular una diferencia porcentual de salidas entre versiones por falta de conteo exacto de la primera.
 
-**Equipo externo observador:** Artemis. Recomendó motores de mayor rendimiento y sensores adicionales para detectar oponentes con más rapidez. **Son mejoras sugeridas, pendientes de evaluar; no se realizaron en E4.**
+**Registros fuente:** [datos/ensayos.csv](../../datos/ensayos.csv) (CSV original permanece sin filas; no fue llenado durante la sesión) · [registro original PWM 145](../../datos/e4_monitor_serie_29oct.txt) · [observaciones PWM 145](../../datos/observaciones-dia-04.md) · [registro y comparación PWM 105](../../datos/e4_pruebas_pwm105_29oct.md) · [protocolo](../../pruebas/protocolo.md). Los registros consolidados de E4 están en los documentos enlazados, no se inventan filas retrospectivas del CSV.
 
-**Evidencia audiovisual disponible (pendiente de enlazar):** 1) video del mini-sumo desplazándose en el dohyō; 2) video de la prueba en la que detectó y expulsó un teléfono **al primer intento** sin salirse. El archivo o URL de cada video aún no se ha recibido.
+**Síntesis (método, n, media/mediana, dispersión y éxito cuando proceda):** el método fue observar el movimiento en el dohyō durante tres ejecuciones a cada velocidad. En la tanda PWM 105, **3/3 ejecuciones sin salidas observadas**. Los avisos por ejecución fueron **11, 13, 11** (media = **11,67**, mediana = **11**, rango = **11 a 13**, en unidades de mensajes impresos), frente a **12, 12, 12** con PWM 145 (media y mediana = **12**, rango = **12 a 12**). Esta estadística de mensajes **no mide directamente la tasa de evasión** y no prueba mejora porcentual. No hubo cinco ensayos estrictamente equivalentes V1–K1–K2 ni se calculan tasas ficticias de esas etapas.
 
-**Peso:** pendiente de medir porque el equipo **no contó con una báscula**. El límite del reglamento citado en E4 es de 500 g; no se afirma cumplimiento hasta pesar el robot.
+**¿Qué mejora, qué empeora y qué no podemos concluir?** K2 consiguió detección del blanco, evasión y búsqueda/ataque. Al reducir la velocidad y recalibrar los QTR, el robot permaneció en la pista en tres pruebas, y posteriormente **expulsó un teléfono al primer intento sin salirse**. No sabemos qué proporción de la mejora provino de la velocidad versus la calibración; tampoco si se mantendrá contra otro mini-sumo o en otras superficies. El primer PCB se dañó y debió reemplazarse, sin diagnóstico confirmado de la causa.
 
-## 3 · Comparación de versiones
+## 5 · Ensayo de robustez o variación de condiciones
 
-| Etapa | Estado observable |
-|---|---|
-| Día 2: primera integración | Cables y conexiones físicas preparados. |
-| Día 3: primera mejora Kaizen | Motores y sensores probados; batería conectada y polaridad corregida. |
-| Día 4: segundo Kaizen en prueba | **Carcasa diseñada y enviada a impresión, no ensamblada en E4**; **navaja pegada al chasis por Sara con apoyo de Max** y tarjeta reemplazada; receptor D12 no programado. Seis pruebas de evasión (3 a PWM 145 y 3 a 105, sin salidas en la segunda tanda). Ataque a teléfono exitoso al primer intento. |
-
-### Tabla de ensayos comparables que pide la guía
-
-El formato original solicita **cinco ensayos bajo condiciones equivalentes**, comparando V1, K1 y K2. V1 solo tenía el montaje; K1 comprobó motores y sensores por separado, mientras que K2 ya cuenta con **seis ejecuciones integradas**, tres a PWM 145 y tres a PWM 105. Se conserva la tabla exigida, pero **no existen mediciones equivalentes de V1 y K1**. Las dos tandas K2 también difieren en calibración, por lo que su comparación no aísla únicamente la velocidad.
-
-| Ensayo / misma condición | V1 (valor + unidad) | K1 (valor + unidad) | K2 (valor + unidad) | Incidencias / validez |
-|---|---|---|---|---|
-| 1 | Sin prueba equivalente | Sin prueba equivalente | Primera corrida de 15 s, PWM de avance 145; salidas sin contar | No comparable entre versiones |
-| 2 | Sin prueba equivalente | Sin prueba equivalente | Segunda corrida de 15 s, PWM de avance 145; salidas sin contar | No comparable entre versiones |
-| 3 | Sin prueba equivalente | Sin prueba equivalente | Tercera corrida de 15 s, PWM de avance 145; salidas sin contar | No comparable entre versiones |
-| 4 | Sin prueba equivalente | Sin prueba equivalente | Primera corrida de 15 s con PWM 105: 11 avisos, 0 salidas observadas | No comparable con V1/K1; QTR recalibrados |
-| 5 | Sin prueba equivalente | Sin prueba equivalente | Segunda corrida de 15 s con PWM 105: 13 avisos, 0 salidas observadas | No comparable con V1/K1; tercera corrida adicional abajo |
-
-**Registros fuente:** [log original PWM 145](../../datos/e4_monitor_serie_29oct.txt) · [observaciones PWM 145](../../datos/observaciones-dia-04.md) · [pruebas y comparación PWM 105](../../datos/e4_pruebas_pwm105_29oct.md) · [protocolo](../../pruebas/protocolo.md). Las mediciones de E4 se conservan por separado de las pruebas cualitativas de E3.
-
-**Síntesis (n, media/mediana, dispersión y éxito):** n = **6 pruebas de evasión**, tres a PWM 145 y tres a PWM 105, todas programadas a 15 s. La versión 105 consiguió **3 de 3 pruebas sin salidas observadas**; la versión 145 tuvo algunas salidas sin conteo. Los avisos de borde fueron 36 y 35, respectivamente, pero no son éxitos de evasión. No corresponde una tasa comparativa de mejora entre versiones ni una media de salidas de la primera tanda.
-
-**Qué mejora, qué empeora y qué no sabemos:** la tanda PWM 105 no presentó salidas observadas, mejoró la diferencia de lecturas negro/blanco y posteriormente la versión de competencia expulsó un teléfono. No sabemos qué parte de la mejora se debió a velocidad, calibración o condiciones de pista; tampoco se ha probado contra otro mini-sumo.
-
-## 3A · Registro de intentos del Día 4
-
-Esta tabla conserva el formato de **cinco filas** solicitado por la guía y contiene **cinco de las seis pruebas reales del 29 de octubre**. La sexta se registra después. Las fallas de batería y polaridad son del E3 y no se trasladan como datos numéricos a E4.
-
-| Intento | Condición de prueba | Resultado registrado | Observaciones |
-|---:|---|---|---|
-| 1 | Dohyō, programa de evasión, avance PWM 145; ejecución de 15 s | Se ejecutó hasta el paro por tiempo; **12 avisos de borde** (9 izquierda, 3 derecha) | El resultado del movimiento por intento no se anotó por separado; las manchas blancas y las salidas ocasionales se reportaron para el conjunto de pruebas. |
-| 2 | Mismo programa y velocidad; ejecución de 15 s | Se ejecutó hasta el paro por tiempo; **12 avisos de borde** (5 izquierda, 7 derecha) | No quedó registrado por intento si se salió del dohyō o si giró por una mancha interior. |
-| 3 | Mismo programa y velocidad; ejecución de 15 s | Se ejecutó hasta el paro por tiempo; **12 avisos de borde** (6 izquierda, 6 derecha) | No quedó registrado por intento si se salió del dohyō o si giró por una mancha interior. |
-| 4 | Avance PWM 105, nueva calibración QTR, 15 s | **11 avisos** (7 izquierda, 4 derecha); **sin salida** | Primera ejecución de la nueva versión, según el [registro](../../datos/e4_pruebas_pwm105_29oct.md). |
-| 5 | Avance PWM 105, nueva calibración QTR, 15 s | **13 avisos** (8 izquierda, 5 derecha); **sin salida** | Segunda ejecución de la nueva versión. Tercera ejecución adicional: 11 avisos y sin salida. |
-
-**Observación general confirmada por el equipo:** durante estas tres pruebas el robot sí avanzaba y respondía al blanco retrocediendo y girando; las manchas blancas del interior provocaban giros repentinos y en algunas ocasiones el robot llegó a salirse. **No se puede asociar un número específico de salidas o giros innecesarios a cada prueba**, ni afirmar que las tres permanecieron completamente dentro del dohyō. Los **36 avisos** son detecciones emitidas por el programa, no 36 evasiones exitosas.
-
-**Evidencia:** [registro del Monitor Serie PWM 145](../../datos/e4_monitor_serie_29oct.txt), [análisis de la primera tanda](../../datos/observaciones-dia-04.md) y [resultados PWM 105](../../datos/e4_pruebas_pwm105_29oct.md). Las filas 4 y 5 corresponden a pruebas realmente ejecutadas.
-
-### Detalle de las tres ejecuciones en el Monitor Serie
-
-El equipo compartió el registro del Monitor Serie de **tres ejecuciones del programa E4**. Se utilizó la calibración: negro = 1022 (izquierdo) y 821 (derecho); blanco = 956 (izquierdo) y 34 (derecho). Los umbrales calculados fueron **989** y **427**, respectivamente.
-
-| Prueba | Duración programada | Avisos de borde izquierdo | Avisos de borde derecho | Terminación |
-|---|---:|---:|---:|---|
-| 1 | 15 s | 9 | 3 | `FIN DE PRUEBA` |
-| 2 | 15 s | 5 | 7 | `FIN DE PRUEBA` |
-| 3 | 15 s | 6 | 6 | `FIN DE PRUEBA` |
-
-Los avisos de borde son **eventos impresos por el programa**, no el número de veces que el robot llegó realmente al perímetro. El equipo observó que **sí retrocedía y giraba para evitar el borde**, aunque algunas **manchas blancas dentro de la zona negra** provocaron cambios de dirección repentinos. También hubo **algunas salidas del dohyō** durante el movimiento; sospechamos que la velocidad hizo que el robot no alcanzara a reaccionar a tiempo, pero todavía debemos comprobarlo. Las tres pruebas terminaron por tiempo, no significa que las tres hayan evitado por completo salir de la pista.
-
-**Observación importante para mejorar:** el sensor izquierdo tiene poco contraste entre negro y blanco (**1022 vs. 956**, diferencia 66), mientras que el derecho muestra una separación mucho mayor (**821 vs. 34**, diferencia 787). Las manchas blancas explican parte de las detecciones repentinas; aún conviene revisar la altura y calibración de ambos QTR. Para evitar que el robot se salga, la siguiente prueba deberá hacerse a menor velocidad, observando si retrocede y gira con suficiente anticipación. **El código de las tres pruebas se conserva sin modificaciones.**
-
-**Evidencia del Día 4:** [log completo del Monitor Serie](../../datos/e4_monitor_serie_29oct.txt) · [análisis de resultados](../../datos/observaciones-dia-04.md) · [código ejecutado](../../codigo/mini-sumo/prueba_evasion_borde/prueba_evasion_borde.ino).
-
-### Comparación de las seis pruebas de evasión del Día 4
-
-| Ejecución | PWM avance | Avisos izquierda | Avisos derecha | Total de avisos | Salidas observadas |
-|---:|---:|---:|---:|---:|---|
-| 1 | 145 | 9 | 3 | 12 | La tanda presentó salidas; sin conteo por ejecución |
-| 2 | 145 | 5 | 7 | 12 | Sin desglose por ejecución |
-| 3 | 145 | 6 | 6 | 12 | Sin desglose por ejecución |
-| 4 | 105 | 7 | 4 | 11 | 0 |
-| 5 | 105 | 8 | 5 | 13 | 0 |
-| 6 | 105 | 9 | 2 | 11 | 0 |
-
-Las tres pruebas de **PWM 105 terminaron por tiempo y no presentaron salidas del dohyō**, según la observación del equipo. El robot siguió reaccionando ante blanco. Hubo **35 avisos de borde** (24 izquierda y 11 derecha); estos mensajes no son un conteo de salidas evitadas.
-
-| Calibración de QTR | Negro izquierdo | Blanco izquierdo | Umbral izquierdo | Negro derecho | Blanco derecho | Umbral derecho |
-|---|---:|---:|---:|---:|---:|---:|
-| Primera tanda, PWM 145 | 1022 | 956 | 989 | 821 | 34 | 427 |
-| Segunda tanda, PWM 105 | 749 | 31 | 390 | 873 | 39 | 456 |
-
-### Prueba adicional de ataque con teléfono
-
-Después de cargar el programa de competencia sin control remoto en **una tarjeta de reemplazo**, Joel y el equipo probaron un teléfono dentro del dohyō. **Resultado observado:** en el **primer intento**, Tormenta Negra detectó y empujó el teléfono fuera, permaneciendo dentro de la superficie negra. No se informó el tiempo medido. El equipo tiene **dos videos**, uno del robot moviéndose sobre la pista y otro de esta prueba de ataque; todavía falta subirlos o proporcionar sus enlaces. **No se considera combate oficial**, pues el objeto no era otro robot; sirve como comprobación inicial del comportamiento de búsqueda y ataque. El archivo exacto de ese programa está pendiente de incorporarse al repositorio.
-
-La tarjeta anterior **se dañó** y fue reemplazada. No hay diagnóstico confirmado de la causa de la avería. Antes de alimentar de nuevo una placa, verificar polaridad, voltaje y compatibilidad entre USB y batería; no conectar ambas fuentes simultáneamente sin confirmar que el diseño lo permite.
-
-## 4 · Robustez y seguridad
-
-**Variación observada en las pruebas:** había manchas blancas en la superficie negra del dohyō; el robot las interpretaba como blanco y giraba aunque todavía no estuviera junto al borde. Además, **en algunas ocasiones se salió de la pista**, posiblemente por la velocidad. Esto nos sirve como prueba de robustez para el Kaizen 2: la detección y la maniobra funcionan, pero todavía deben mejorarse para evitar giros innecesarios y salidas.
-
-### Registro del ensayo de robustez o variación de condiciones
-
-| Condición o cambio del entorno | Riesgo y límite seguro | Predicción | Resultado observado / medición | ¿Se mantiene el objetivo? | Evidencia |
+| Cambio controlado de entorno (luz, suelo, batería, posición, rival, obstáculo o carga) | Riesgo y límite seguro | Predicción | Resultado / unidad / éxitos | ¿Se mantiene el objetivo? | Evidencia |
 |---|---|---|---|---|---|
-| Manchas blancas dentro de la superficie negra (condición observada, no introducida de forma controlada) | Giros innecesarios y posible salida del borde; supervisión y paro accesible | El robot puede confundir manchas con el borde | Ocurrieron giros repentinos y algunas salidas; sin conteo por cada intento | Parcialmente: sí reaccionó al blanco, pero no siempre permaneció dentro | [Observaciones E4](../../datos/observaciones-dia-04.md) |
-| Avance PWM 105 y QTR recalibrados (prueba realizada) | Conservar acceso a apagado y supervisar dohyō | Menos salidas | Tres pruebas de 15 s: ninguna salida observada | Sí, durante esas tres ejecuciones | [Datos reales PWM 105](../../datos/e4_pruebas_pwm105_29oct.md) |
+| **Manchas blancas internas sobre la superficie negra** (condición observada, **no perturbación controlada**) | Giros innecesarios y salidas; probar bajo supervisión y detener ante riesgo | El robot puede interpretar manchas como borde | Tanda PWM 145: se observaron giros repentinos y algunas salidas; cantidad por intento no registrada | **Parcialmente**: reaccionó al blanco pero algunas veces abandonó la pista | [Observaciones iniciales](../../datos/observaciones-dia-04.md) |
+| **Reducir PWM de 145 a 105 con nueva calibración QTR** (cambiaron dos condiciones, **no se aisló una variable**) | Evitar colisiones involuntarias y mantener interruptor/apagado accesible | Reaccionará al borde sin salir | Tres ejecuciones de 15 s: **0 salidas observadas** en las tres | **Sí, para estas 3 ejecuciones**; no se prueba robustez universal | [Resultados PWM 105](../../datos/e4_pruebas_pwm105_29oct.md) |
+| **Teléfono como objeto de ataque en el dohyō**, con código de búsqueda y ataque en tarjeta nueva | Riesgo para el teléfono, el robot y el borde; no usar objetos frágiles en repetición y tener apagado accesible | Detectará y empujará el objeto sin salirse | **Primer intento: detectó y sacó el teléfono; robot dentro del negro**. Sin tiempo medido. | **Sí, en una prueba**, no combate oficial | [Código que se probó](../../codigo/mini-sumo/tormenta_negra_final/Tormenta_Negra_Final.ino); video pendiente de enlazar |
 
-**Límites de inferencia:** tenemos seis ejecuciones del E4. En las tres originales hubo algunas salidas sin conteo por intento y en las tres con PWM 105 ninguna salida observada. Sin embargo, las manchas no fueron una perturbación controlada y también se recalibraron los QTR. Para aislar la velocidad habrá que mantener la misma pista, batería y calibración; el número de giros innecesarios sigue sin medirse.
+**Límites de inferencia:** seis pruebas de evasión (3+3) y un intento adicional exitoso con teléfono. No se variaron de forma aislada luz, suelo, velocidad, calibración ni batería; tampoco se registraron los giros innecesarios por intento. Falta una prueba controlada bajo condiciones equivalentes y ensayo contra otro mini-sumo. **La robustez observada se documenta con esas limitaciones**, sin afirmar resultados no medidos. El equipo dispone de **dos videos** (movimiento y expulsión del teléfono) pero sus enlaces todavía no han sido proporcionados. [Galería CAD E4](../../evidencias/dia-04/README.md).
 
-**Próximo control recomendado:** ya se probó la velocidad menor. Conviene repetir los ensayos con calibración y superficie constantes, registrar salidas y giros innecesarios por intento y comprobar la respuesta frente a otro mini-sumo; el ataque contra un teléfono no sustituye un combate.
+## 6 · Ensayo general de demostración
 
-**Versión probada:** [prueba_evasion_borde_lenta.ino](../../codigo/mini-sumo/prueba_evasion_borde_lenta/prueba_evasion_borde_lenta.ino), con velocidad de avance PWM **105** (antes 145). Se conserva la [versión original](../../codigo/mini-sumo/prueba_evasion_borde/prueba_evasion_borde.ino) y el [registro de las tres pruebas nuevas](../../datos/e4_pruebas_pwm105_29oct.md).
+Se preparó el guion y se asignaron responsables de **cada segmento**, con plan alternativo. **No se afirma que ya se haya realizado el ensayo general real**; está pendiente para D5.
 
-Antes de probar el robot en movimiento, revisar que la carcasa no toque ni provoque cortocircuitos en la placa, que los motores estén bien sujetos y que la batería esté segura. Hacer primero la prueba con ruedas levantadas y mantener despejado el dohyō. **Los programas de prueba E4 se detenían a los 15 s; el programa posterior de competencia arranca automáticamente tras una espera de 5 s y no tiene ese paro por tiempo.** Debe comprobarse su seguridad y compatibilidad con el reglamento antes de competir.
-
-**Dimensiones reportadas:** 10 × 10 cm.  
-**Peso:** no medido: **no había báscula disponible**. El reglamento citado limita el conjunto a 500 g; falta comprobar que el montaje final cumpla.  
-**Arranque y paro remoto:** receptor conectado a D12, **no integrado al programa de competencia**. El código cargado actualmente arranca solo tras unos 5 s con la batería; revisar si la competencia exige control remoto u otro tipo de autorización de inicio.
-
-## 5 · Preparación de la demostración
-
-La demostración prevista consistirá en enseñar el robot montado, explicar cómo detecta el blanco y mostrar la búsqueda y el ataque. **La búsqueda y el ataque ya funcionaron en una prueba con teléfono**: lo expulsó sin salir de la zona negra. Todavía no hay un ensayo general registrado con roles asignados. **El control remoto no forma parte del código actual** y solo se incorporará después de comprobar los requisitos del reglamento.
-
-### Ensayo general de demostración (20–60 segundos por segmento)
-
-| Segmento | Qué se demostrará | Integrante responsable | Versión o código | Material requerido | Plan B ante fallo |
+| Segmento | Qué se demostrará en 20–60 s | Integrante responsable | Versión/código usado | Material requerido | Plan B ante fallo |
 |---|---|---|---|---|---|
-| Inicio / contexto | **30–40 s:** explicar el objetivo del mini-sumo, mostrar el diseño CAD de la carcasa enviado a impresión y aclarar que no se ensambló en E4 | **Claudio** (propuesta de reparto para D5) | CAD de carcasa y prototipo E4 | Dos capturas CAD y robot | Mostrar las capturas CAD si aún no está montada la pieza |
-| Prueba principal | **45–60 s:** explicar el control de los QTR e infrarrojos, el arranque, la evasión y la búsqueda/ataque; mostrar el movimiento y la expulsión del teléfono | **Joel** (propuesta de reparto para D5) | [Evasión PWM 105](../../codigo/mini-sumo/prueba_evasion_borde_lenta/prueba_evasion_borde_lenta.ino) y sketch de competencia por subir | Robot, dohyō y batería con alimentación verificada; espacio despejado y acceso a apagado | Reproducir el video del robot en pista o el ataque al teléfono; no forzar una prueba insegura |
-| Evidencia de mejora | **35–45 s:** comparar las tres pruebas PWM 145 (salidas ocasionales) con las tres PWM 105 (sin salidas observadas), mencionar la recalibración y el cambio de tarjeta | **Max** (propuesta de reparto para D5) | [Comparación de pruebas E4](../../datos/e4_pruebas_pwm105_29oct.md) | Tabla, logs y video de movimiento | Explicar los resultados documentados si no se puede repetir la prueba |
-| Defensa de fronteras | **30–45 s:** explicar el pegado de la navaja con Max, su función al empujar objetos, lo aprendido y lo que falta validar. **En preguntas, cada integrante defiende su propia aportación** | **Sara** (propuesta de reparto para D5; preguntas para los cuatro) | [E4 de Joel](../../participantes/A00574713/dias/E4.md) y E4 personales por completar | Robot con navaja, bitácoras personales | Mostrar el montaje y explicar el pegado sin requerir una nueva prueba |
+| Inicio / contexto | **30–40 s:** misión M01, dimensiones 10 × 10 cm y diseño CAD de la carcasa; aclarar que no se instaló durante E4 | **Claudio** | [Carcasa CAD diseñada por Claudio](../../evidencias/dia-04/README.md) y prototipo E4 | Dos imágenes del CAD y robot | Mostrar las capturas CAD y explicar el montaje si la pieza no está lista |
+| Prueba principal | **45–60 s:** programación por Joel, detección de blanco con QTR, búsqueda del rival con IR y movimiento de ataque | **Joel** | [Sketch final de búsqueda/ataque sin control remoto](../../codigo/mini-sumo/tormenta_negra_final/Tormenta_Negra_Final.ino) | Robot, dohyō, batería con conexión revisada y apagado accesible | Reproducir video de movimiento o de expulsión del teléfono; no repetir maniobras riesgosas |
+| Evidencia de mejora | **35–45 s:** explicar pruebas PWM 145/105, recalibración, cambio de placa y resultado 0/3 salidas en segunda tanda | **Max** | [Comparación PWM 145/105](../../datos/e4_pruebas_pwm105_29oct.md) | Tablas, logs y videos | Explicar resultados ya registrados si no puede repetirse la prueba |
+| Defensa de fronteras | **30–45 s:** explicar cómo Sara y Max pegaron la navaja, función mecánica y lo pendiente antes de competir; todos responden por su alcance | **Sara** | Montaje físico y [E4 del equipo](dia-04.md) | Navaja pegada al chasis, bitácoras personales | Mostrar el robot y explicar el montaje sin necesidad de encenderlo |
 
-**¿RoboLympics es un evento externo posterior?** Por confirmar. No se registra ninguna participación en una competencia externa como realizada. La demostración prevista para D5 es interna.
+**¿Robolympics es el evento externo posterior?** **Por confirmar.** No se registra la participación en un torneo externo como realizada; D5 tiene demostración interna según la guía. **Duración prevista del guion:** aproximadamente 2 min 20 s a 3 min 10 s, sin contar preguntas ni maniobras adicionales. La propuesta de reparto deberá ser aceptada por el equipo y practicada.
 
-**Responsables y tiempos propuestos para D5:** **Claudio** (30–40 s: contexto y carcasa CAD), **Joel** (45–60 s: programación y demostración), **Max** (35–45 s: resultados y comparación PWM) y **Sara** (30–45 s: navaja, aprendizaje y cierre). **Los cuatro responderán preguntas sobre su parte.** Este reparto se organizó a solicitud del equipo, **no es un ensayo realizado**; falta confirmarlo entre los integrantes y practicarlo.
+## 7 · Gate E4
 
-**Evidencias disponibles en GitHub:** [fotografías del E3](../../evidencias/dia-03/README.md), [código PWM 145](../../codigo/mini-sumo/prueba_evasion_borde/prueba_evasion_borde.ino), [código PWM 105](../../codigo/mini-sumo/prueba_evasion_borde_lenta/prueba_evasion_borde_lenta.ino), [log de la primera tanda](../../datos/e4_monitor_serie_29oct.txt) y [comparación de las seis pruebas](../../datos/e4_pruebas_pwm105_29oct.md). **El equipo confirmó que tiene dos videos del E4** (movimiento en la pista y expulsión del teléfono), pero faltan sus enlaces o archivos. **Ya se recibieron dos capturas del modelo CAD de la carcasa**, pero aún deben incorporarse a la carpeta de evidencias del repositorio o a Drive. **No son fotografías de la pieza impresa ni instalada**, porque todavía no se había montado. Falta evidencia de la navaja.
+- [x] Existe un ciclo K2 explícito, con hipótesis, modificación y datos: cambio de avance, calibración QTR, seis pruebas y ataque con teléfono documentados.
+- [x] Se conservan V1, K1, K2 y, en su caso, reversiones para reproducibilidad: [E2/V1](dia-02.md), [E3/K1](dia-03.md), [K2 inicial PWM 145](../../codigo/mini-sumo/prueba_evasion_borde/prueba_evasion_borde.ino), [K2 PWM 105](../../codigo/mini-sumo/prueba_evasion_borde_lenta/prueba_evasion_borde_lenta.ino), [competencia sin remoto](../../codigo/mini-sumo/tormenta_negra_final/Tormenta_Negra_Final.ino).
+- [x] Se efectuó una prueba de robustez documentada o se justificó por qué no era segura/factible: registro de manchas, nuevas pruebas PWM 105 sin salidas y ataque contra teléfono; **no fueron ensayos plenamente controlados**, lo cual se reconoce.
+- [x] El equipo tiene guion, responsabilidades y plan de contingencia para D5: cuatro segmentos asignados a Claudio, Joel, Max y Sara, con plan B. **El ensayo práctico aún no se ha realizado.**
+- [ ] Cada participante actualizó [E4 personal](../../participantes/_plantilla/dias/E4.md): [Joel](../../participantes/A00574713/dias/E4.md) documentado; [Max](../../participantes/MaxAmCam/dias/E4.md) tiene su registro; [Sara](../../participantes/saragdr/dias/E4.md) tiene un borrador que aún no refleja todas sus aportaciones; [Claudio](../../participantes/A00574802/dias/E4.md) mantiene su plantilla sin responder.
 
-## 6 · Gate de preparación E4
-
-Esta lista conserva los cinco criterios de cierre del entregable original:
-
-- [x] **K2 explícito:** problema, hipótesis, cambio y datos documentados, incluyendo tres ejecuciones a PWM 145 y tres a PWM 105, estas últimas sin salidas observadas. Falta aislar velocidad frente a calibración para una comparación controlada.
-- [x] **Versiones conservadas:** las conexiones iniciales, el primer Kaizen y los dos programas de evasión se documentan en el repositorio. La comparación cuantitativa V1–K1–K2 no está cerrada.
-- [x] **Robustez documentada:** manchas blancas y salidas en la primera tanda, tres pruebas a velocidad 105 sin salidas y prueba adicional de expulsión de un teléfono; faltan ensayos con condiciones controladas y con otro mini-sumo.
-- [ ] **Demostración D5:** hay **cuatro responsables propuestos y un plan B por segmento**; falta que el equipo confirme el reparto, ensaye la exposición y ejecute la demostración.
-- [ ] **E4 personales:** [Joel ya tiene su E4 personal redactado](../../participantes/A00574713/dias/E4.md). Faltan completar y revisar los de Sara, Max y Claudio.
-
-**Decisión de preparación:** CON RESTRICCIONES. **Verificado por el equipo:** seis pruebas de evasión, tres a PWM 105 sin salidas, ataque que expulsó el teléfono al **primer intento**, **navaja ya pegada** y consejos de Artemis sobre motores y sensores adicionales. **Demostración:** reparto de cuatro roles y plan B preparados; ensayo real pendiente. **Otros pendientes:** E4 personales de Sara/Max/Claudio, **peso (sin báscula)**, enlaces a los **dos videos**, evidencia de navaja y diseño CAD por archivar, ensamblaje futuro de carcasa, sketch exacto de competencia en GitHub y validación docente. **Control remoto:** aún no integrado; comprobar si lo exige el reglamento.
-
-## 7 · Estado de E4
-
-- [x] **Claudio diseñó y mandó a imprimir la carcasa; no se montó en el mini-sumo durante E4.** El equipo aportó dos imágenes del CAD; el cableado se reacomodó al sustituir la placa.
-- [ ] **Recibir la carcasa impresa, ensamblarla en el robot y fotografiarla**; confirmado que esto todavía no ocurrió durante E4.
-- [x] **Sara y Max pegaron la navaja al chasis** y se mantuvo la fijación de los motores.
-- [x] Receptor para el control remoto conectado.
-- [x] Programa de prueba conjunta cargado y ejecutado en el dohyō.
-- [x] Registradas **seis ejecuciones** de evasión, en dos tandas de 15 s, con lecturas de QTR, IR y avisos de borde.
-- [x] Confirmado visualmente que el robot retrocede y gira al detectar blanco.
-- [x] Identificadas las manchas blancas como causa de giros repentinos y registradas algunas salidas del dohyō.
-- [x] Reducir velocidad de avance a PWM 105 y repetir tres pruebas: **cero salidas observadas**.
-- [ ] Medir giros innecesarios y realizar pruebas controladas con idéntica calibración.
-- [ ] Verificar arranque y paro mediante el control remoto.
-- [x] Documentar robustez observada y la prueba adicional que expulsó un teléfono sin salida del robot.
-- [x] Recibir observaciones de algunos compañeros del **equipo Artemis**.
-- [x] Registrar las recomendaciones concretas de Artemis: **mejores motores y más sensores de detección**.
-- [ ] Evaluar si se implementarán esas mejoras en una iteración futura; no se realizaron en E4.
-- [ ] Completar E4 personales de Sara, Max y Claudio.
-- [ ] Pesar el robot cuando haya báscula y recibir revisión del profesor.
-- [ ] Enlazar los dos videos y el código de competencia cargado en la tarjeta de reemplazo.
-
-**Estado E4:** documentación técnica y de colaboración avanzada: seis ensayos de evasión, tres con PWM 105 sin salidas, teléfono expulsado al primer intento, **navaja ya pegada por Sara y Max**, carcasa CAD diseñada por Claudio y enviada a impresión (no ensamblada), cambio de tarjeta con Joel/Max/Claudio y recomendaciones de Artemis registradas. El **reparto de la demostración está propuesto para los cuatro**. Quedan pendientes videos por enlazar, peso, código final por archivar, E4 individuales restantes, ensayo real y revisión docente.
+**Estado de preparación:** **CON RESTRICCIONES**. **Pendientes y responsables:** **Sara y Claudio**, completar sus E4 personales con sus propias palabras y evidencias (Max debe validar si su archivo refleja la navaja y ensayos); **Joel**, compartir enlaces de los dos videos de E4 y garantizar trazabilidad de códigos/evidencias; **equipo**, confirmar y ensayar el guion, verificar estado físico y **pesar el robot cuando haya báscula** (no hubo báscula el Día 4), verificar reglas de inicio/paro y compatibilidad de alimentación antes de competir. **Ensayos V1–K1–K2:** no se dispone de 5 pares comparables; se documentó esta limitación y debe confirmarse con el docente si se acepta el registro alternativo. **Carcasa:** diseñada y enviada a impresión en E4, **no instalada ese día**; su ensamblaje corresponde a una jornada posterior. **Revisor:** profesor Camilo René Duque, **aprobación colectiva no confirmada**. [Galería de imágenes CAD E4](../../evidencias/dia-04/README.md).
