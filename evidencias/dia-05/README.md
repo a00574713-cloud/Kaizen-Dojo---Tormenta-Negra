@@ -3,6 +3,17 @@
 **Fecha:** 30 de octubre de 2026 · **Modalidad:** tres pruebas previas en el dohyō y dos peleas de minicompetencia del salón.  
 **Procedencia:** duraciones, observaciones y resultados relatados por el equipo. La existencia y nombre de los cinco archivos MP4 se verificó en Google Drive, **pero su contenido visual no fue analizado directamente**. Los enlaces son los compartidos por el equipo; el acceso del profesor no se ha verificado.
 
+## Fotografías del robot terminado
+
+**Estado final del montaje — 30 de octubre de 2026.** Fotografías originales proporcionadas por el equipo después de la minicompetencia. Muestran la **carcasa gris impresa en 3D ya montada**, decoración frontal con ojos azules, **navaja/rampa metálica frontal**, receptor en la parte superior y conexiones exteriores visibles. Las imágenes acreditan el aspecto físico final, no mediciones de potencia o resultados adicionales.
+
+| Fotografía | Vista | Evidencia |
+|---|---|---|
+| [![Tormenta Negra terminado, vista frontal](Tormenta_Negra_E5_final_frente.png)](Tormenta_Negra_E5_final_frente.png) | Frente del mini-sumo con carcasa 3D, ojos decorativos y navaja | [Abrir foto 1 — original](Tormenta_Negra_E5_final_frente.png) |
+| [![Tormenta Negra terminado, vista frontal lateral](Tormenta_Negra_E5_final_lateral.png)](Tormenta_Negra_E5_final_lateral.png) | Vista frontal lateral y cables de alimentación visibles | [Abrir foto 2 — original](Tormenta_Negra_E5_final_lateral.png) |
+
+## Videos de pruebas y combates
+
 | Intento | Tipo | Código reportado | Duración | Resultado reportado | Archivo de video |
 |---:|---|---|---:|---|---|
 | 1 | Prueba previa | [E5 V1](../../codigo/mini-sumo/tormenta_negra_e5_competencia/Tormenta_Negra_E5_Competencia.ino) | 13 s | Expulsó al robot del equipo de Marian; Tormenta Negra permaneció dentro | [Prueba 1.mp4](https://drive.google.com/file/d/156-m4t9S7BHtS6NTZN-u2_YC-Cp1xZfZ/view?usp=sharing) |
