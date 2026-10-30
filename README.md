@@ -1,17 +1,17 @@
 # KAIZEN DŌJŌ 2026 · Nuestro repositorio de misión
 
-> **Equipo:** Tormenta Negra · **Plataforma:** M01, mini-sumo autónomo · **Dōjō:** CTA, Laboratorio de Electrónica (Laboratorio de Electrónica, CTA)
+> **Equipo:** Tormenta Negra · **Plataforma:** M01, mini-sumo autónomo · **Dōjō:** Laboratorio de Electrónica, CTA, Campus León
 > **Nuestra misión:** Construir desde cero un mini-sumo autónomo que avance, retroceda, gire, detecte a un oponente y reaccione a las lecturas de sus sensores, con pruebas documentadas.
 > **Estado actual:** Día 5 (30-10-2026), mini-sumo autónomo funcional en el laboratorio de electrónica del CTA. Se realizaron tres pruebas previas (dos favorables y una desfavorable) y dos peleas del salón (una victoria, una derrota), registradas en [E5](docs/entregables/dia-05.md). E5 V2 fue el último código instalado; peso sin medir y revisión docente de E1-E5 pendiente.
 
-## Empieza aquí — 4 acciones
+## Documentación del proyecto
 
-1. **Selecciona la máquina.** El equipo elige una sola plataforma: **M01 mini-sumo autónomo, M03 seguidor de línea, M04 Tello con Python o M05 AMR con ROS 2**. No hay mini-sumo RC.
-2. **Configura tu frontera.** Descarga y abre [Mission Forge C2](herramientas/mission-forge-c2.html) en tu computadora para elegir **1–3 alcances**, katas existentes o propios y generar tu kit `.md`. El [catálogo en Google Sheets](https://docs.google.com/spreadsheets/d/1FKxFzoyu9KJb3RlOwB609vliS5hAtmwWFu2G2zG3Ky4/edit) permite consultar las 48 opciones y 144 katas.
-3. **Abre tu carpeta individual.** Las cuatro carpetas ya están en `participantes/<tu-alias>/`, con el compromiso original, el portafolio y las bitácoras `dias/E1.md` a `E5.md`. Completa tus evidencias y reflexión personal en tu carpeta.
-4. **Documenta en equipo.** Cada día completen juntos un entregable en `docs/entregables/dia-0X.md`; enlacen códigos, pruebas, fotos y diseños que estén en el repositorio o en almacenamiento institucional con acceso apropiado.
+- [Entregables colectivos E1–E5](docs/entregables/README.md) y [20 registros personales](participantes/README.md).
+- [Códigos de Arduino E3–E5](codigo/README.md), incluidos los programas utilizados en las dos peleas.
+- [Videos y fotografías finales](evidencias/dia-05/README.md), [registros de ensayos](datos/README.md) e [inventario original de 32 recursos](datos/inventario_materiales.csv).
+- [Configurador Mission Forge C2](herramientas/mission-forge-c2.html), utilizado para generar los compromisos individuales.
 
-**Entregables E2–E5:** [registros colectivos](docs/entregables/README.md) y [portafolios personales](participantes/README.md). La revisión del profesor está prevista después de la entrega.
+El profesor Camilo revisará los entregables después de recibir el repositorio.
 
 ## Nuestra misión y personas
 
@@ -36,12 +36,12 @@
 | **4 · Iterar** | [E4: experimento Kaizen 2](docs/entregables/dia-04.md) | [E4 personales](participantes/README.md) | Comparación V1–K1–K2 y robustez |
 | **5 · Demostrar** | [E5: reto final y reflexión](docs/entregables/dia-05.md) | [E5 personales](participantes/README.md) | Demostración de capacidad y contribución individual |
 
-[Ver instrucciones cortas de los cinco entregables](docs/entregables/README.md) · [Cómo organizar el portafolio](participantes/README.md)
+[Índice de entregables](docs/entregables/README.md) · [Portafolios individuales](participantes/README.md)
 
 ## Carpeta técnica del equipo
 
 - [Misión, arquitectura e interfaces](docs/mision-y-arquitectura.md)
-- [Alcances y katas](alcances/README.md) · Se crean carpetas solo para los alcances realmente elegidos.
+- [Alcances y katas](alcances/README.md) · [Compromisos individuales](participantes/README.md).
 - [Código](codigo/README.md) · [Hardware y CAD](hardware/README.md)
 - [Protocolo de pruebas](pruebas/protocolo.md) · [Datos y registros](datos/README.md) · [Evidencias](evidencias/README.md)
 - [Demostración final](docs/demo-final.md)
@@ -51,7 +51,7 @@
 
 | Estado | Cambio o capacidad | Evidencia | Resultado |
 |---|---|---|---|
-| **Día 2 (antes de V1)** | Sensores y actuadores conectados a la placa; sin ensayos | [E2](docs/entregables/dia-02.md) | V1 funcional pendiente |
+| **Día 2 (antes de V1)** | Sensores y actuadores conectados a la placa; sin ensayos funcionales | [E2](docs/entregables/dia-02.md) | Primera integración, pruebas en E3 |
 | **Día 3: montaje + pruebas exploratorias** | Chasis físico armado; ambos motores responden con batería de 7.4 V; sensores de línea y oponente reportados funcionales | [E3](docs/entregables/dia-03.md) · [evidencias D3](evidencias/dia-03/README.md) | Funciones básicas observadas, sin mediciones numéricas |
 | **Kaizen 1 (E3)** | Corrección de alimentación y polaridad de motores; pruebas de subsistemas sin cinco ensayos emparejados | [E3](docs/entregables/dia-03.md) | Mejora funcional, comparación cuantitativa limitada |
 | **Kaizen 2 (E4)** | PWM 145 a 105 y nueva calibración de QTR, tres pruebas por condición | [E4](docs/entregables/dia-04.md) | Cero salidas observadas en tres pruebas a PWM 105 |
