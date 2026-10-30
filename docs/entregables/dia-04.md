@@ -187,7 +187,7 @@ Antes de probar el robot en movimiento, revisar que la carcasa no toque ni provo
 
 ## 5 · Preparación de la demostración
 
-La demostración prevista consistirá en enseñar el robot montado, explicar los sensores y motores, y hacer que se desplace sobre el área negra evitando el borde blanco. Una vez comprobado eso, se integrará el arranque y paro remoto y el comportamiento de búsqueda del rival.
+La demostración prevista consistirá en enseñar el robot montado, explicar cómo detecta el blanco y mostrar la búsqueda y el ataque. **La búsqueda y el ataque ya funcionaron en una prueba con teléfono**: lo expulsó sin salir de la zona negra. Todavía no hay un ensayo general registrado con roles asignados. **El control remoto no forma parte del código actual** y solo se incorporará después de comprobar los requisitos del reglamento.
 
 ### Ensayo general de demostración (20–60 segundos por segmento)
 
@@ -208,13 +208,13 @@ La demostración prevista consistirá en enseñar el robot montado, explicar los
 
 Esta lista conserva los cinco criterios de cierre del entregable original:
 
-- [x] **K2 explícito:** problema, hipótesis, modificación y datos iniciales registrados; falta validar la segunda velocidad con ensayos comparables.
+- [x] **K2 explícito:** problema, hipótesis, cambio y datos documentados, incluyendo tres ejecuciones a PWM 145 y tres a PWM 105, estas últimas sin salidas observadas. Falta aislar velocidad frente a calibración para una comparación controlada.
 - [x] **Versiones conservadas:** las conexiones iniciales, el primer Kaizen y los dos programas de evasión se documentan en el repositorio. La comparación cuantitativa V1–K1–K2 no está cerrada.
-- [x] **Robustez documentada:** variación observada por manchas blancas y salidas ocasionales; faltan ensayos con condiciones controladas.
+- [x] **Robustez documentada:** manchas blancas y salidas en la primera tanda, tres pruebas a velocidad 105 sin salidas y prueba adicional de expulsión de un teléfono; faltan ensayos con condiciones controladas y con otro mini-sumo.
 - [ ] **Demostración D5:** guion propuesto, pero faltan responsables, contingencia acordada y ensayo.
-- [ ] **E4 personales:** faltan los registros individuales de los integrantes.
+- [ ] **E4 personales:** [Joel ya tiene su E4 personal redactado](../../participantes/A00574713/dias/E4.md). Faltan completar y revisar los de Sara, Max y Claudio.
 
-**Decisión de preparación:** CON RESTRICCIONES. **Pendientes y responsables:** resultados de la versión 105, revisión por pares, reparto de demostración, aportaciones individuales, peso y prueba de control remoto; responsables por asignar. **Revisor:** profesor Camilo René Duque, revisión pendiente.
+**Decisión de preparación:** CON RESTRICCIONES. **Verificado por el equipo:** seis pruebas de evasión, tres a PWM 105 sin salidas, y una prueba adicional de ataque con teléfono sin salida del robot. **Pendientes:** revisión por pares, roles y ensayo de demostración, aportaciones personales de Sara/Max/Claudio, peso, evidencia fotográfica del montaje E4, incorporar código final al repositorio y validación docente. **Control remoto:** todavía no integrado; comprobar si se exige para competencia. **Revisión docente:** sin aceptación confirmada.
 
 ## 7 · Estado de E4
 
@@ -222,12 +222,14 @@ Esta lista conserva los cinco criterios de cierre del entregable original:
 - [x] Motores mejor fijados al chasis.
 - [x] Receptor para el control remoto conectado.
 - [x] Programa de prueba conjunta cargado y ejecutado en el dohyō.
-- [x] Registradas tres ejecuciones y las lecturas de los QTR e infrarrojos en el Monitor Serie.
+- [x] Registradas **seis ejecuciones** de evasión, en dos tandas de 15 s, con lecturas de QTR, IR y avisos de borde.
 - [x] Confirmado visualmente que el robot retrocede y gira al detectar blanco.
 - [x] Identificadas las manchas blancas como causa de giros repentinos y registradas algunas salidas del dohyō.
-- [ ] Ajustar y repetir las pruebas para evitar salidas y giros innecesarios.
+- [x] Reducir velocidad de avance a PWM 105 y repetir tres pruebas: **cero salidas observadas**.
+- [ ] Medir giros innecesarios y realizar pruebas controladas con idéntica calibración.
 - [ ] Verificar arranque y paro mediante el control remoto.
-- [ ] Documentar pruebas de robustez y completar E4 personales.
+- [x] Documentar robustez observada y la prueba adicional que expulsó un teléfono sin salida del robot.
+- [ ] Completar E4 personales de Sara, Max y Claudio y registrar revisión por pares.
 - [ ] Pesar el robot y recibir revisión del profesor.
 
-**Estado E4:** en proceso; montaje mejorado y tres pruebas integradas registradas, con evasión de borde funcional pero todavía mejorable por manchas blancas y salidas ocasionales.
+**Estado E4:** en proceso. Montaje mejorado, seis pruebas integradas de evasión registradas (tres a PWM 105 sin salidas) y prueba inicial de ataque exitosa con teléfono. Quedan pendientes evidencias, aportaciones individuales, ensayo general y revisión docente.
