@@ -11,7 +11,7 @@ revision_docente: "PENDIENTE"
 
 # E4 · Día 4 — ITERAR | Mejoras al montaje y preparación de prueba integrada
 
-El 29 de octubre continuamos con el mini-sumo **Tormenta Negra**. Claudio diseñó la carcasa y **la mandó a imprimir** (su colocación definitiva todavía no está confirmada). Sara hizo ajustes para fijar la navaja al chasis, con apoyo de Max, y continuamos acomodando el montaje. El receptor del control remoto sigue conectado a D12, pero aún no se utiliza en el programa. Probamos la evasión del borde con PWM 145 y 105; más tarde, tras sustituir una tarjeta que se dañó, Joel se encargó del código y cargó el programa de búsqueda y ataque en la tarjeta nueva. **En el primer intento el robot detectó un teléfono, lo empujó fuera del dohyō y permaneció en la zona negra.** El equipo tiene dos videos de E4, todavía sin enlaces en el repositorio. Fue una prueba con un objeto, no un combate oficial.
+El 29 de octubre continuamos con el mini-sumo **Tormenta Negra**. Claudio diseñó la carcasa en CAD y **la mandó a imprimir**; **el 29 de octubre todavía no se había ensamblado ni colocado en el robot**. El equipo compartió dos imágenes del diseño CAD como evidencia. Sara hizo ajustes para fijar la navaja al chasis, con apoyo de Max, y continuamos acomodando el montaje. El receptor del control remoto sigue conectado a D12, pero aún no se utiliza en el programa. Probamos la evasión del borde con PWM 145 y 105; más tarde, tras sustituir una tarjeta que se dañó, Joel se encargó del código y cargó el programa de búsqueda y ataque en la tarjeta nueva. **En el primer intento el robot detectó un teléfono, lo empujó fuera del dohyō y permaneció en la zona negra.** El equipo tiene dos videos de E4, todavía sin enlaces en el repositorio. Fue una prueba con un objeto, no un combate oficial.
 
 ## 0 · Contexto
 
@@ -30,13 +30,13 @@ La guía propone seis bloques de trabajo. **Los minutos indican la distribución
 | Comparación V1–K1–K2 | 70–115 | Documentamos las etapas V1 (montaje), K1 (componentes funcionales) y K2 (evasión). En K2 se realizaron tres pruebas con PWM 145 y tres con PWM 105; falta comparación estricta con las etapas V1 y K1, que no midieron lo mismo. |
 | Ensayo de robustez | 115–145 | Realizamos seis ejecuciones de 15 s: tres con PWM 145 (salidas ocasionales) y tres con PWM 105 (**ninguna salida observada**, según el equipo). Después se probó la búsqueda y ataque contra un teléfono, que salió de la pista mientras el robot se mantuvo dentro. |
 | Preparación de la demostración | 145–165 | El equipo cuenta con **dos videos**: uno del robot desplazándose sobre el dohyō y otro de la expulsión del teléfono. **Falta subir los videos, asignar quién presenta cada parte y realizar el ensayo general.** |
-| Gate de preparación | 165–180 | Se confirmó la revisión informal de Artemis, la mejora a PWM 105 y el primer intento de ataque exitoso. Quedan pendientes los **consejos específicos de Artemis**, enlaces a dos videos, peso (no hubo báscula), instalación final de carcasa por confirmar, código final en GitHub, roles de demostración y revisión docente. |
+| Gate de preparación | 165–180 | Se confirmó la revisión informal de Artemis, la mejora a PWM 105 y el primer intento de ataque exitoso. Quedan pendientes los **consejos específicos de Artemis**, enlaces a dos videos, peso (no hubo báscula), ensamblaje de la carcasa pendiente (no realizado en E4), código final en GitHub, roles de demostración y revisión docente. |
 
 ## 1A · Actividades realizadas en el Día 4
 
 | Actividad | Avance realizado |
 |---|---|
-| Carcasa y estructura | **Claudio diseñó y mandó a imprimir la carcasa.** No se confirmó aún si quedó instalada. |
+| Carcasa y estructura | **Claudio diseñó la carcasa en CAD y la mandó a imprimir.** El equipo compartió **dos vistas del modelo**. **No se instaló ni ensambló con el robot durante E4**; falta recibir la pieza impresa y documentar su montaje posterior. |
 | Organización de componentes | Se continuó organizando el cableado y **Joel, Max y Claudio trasladaron las conexiones y componentes a una tarjeta de reemplazo**, después de que la anterior se dañó. No se conoce la causa exacta de la avería. |
 | Fijación de motores | Se mantuvo el trabajo de fijación de motores y **Sara realizó ajustes para pegar la navaja al chasis, con ayuda de Max**. No se registró una medición de fuerza de adhesión. |
 | Control remoto | Conectamos al **pin D12** de la tarjeta el receptor infrarrojo destinado al arranque y paro mediante control remoto. Por ahora, el código de movimiento no utiliza este receptor. |
@@ -101,7 +101,7 @@ El siguiente objetivo es que el robot pueda desplazarse sobre la superficie negr
 |---|---|
 | Día 2: primera integración | Cables y conexiones físicas preparados. |
 | Día 3: primera mejora Kaizen | Motores y sensores probados; batería conectada y polaridad corregida. |
-| Día 4: segundo Kaizen en prueba | Carcasa, montaje y motores asegurados; receptor D12 conectado pero no programado. **Seis pruebas de evasión**: tres a PWM 145 y tres a PWM 105, estas últimas sin salidas observadas. Luego, con tarjeta de reemplazo y código de búsqueda/ataque, una prueba con teléfono resultó exitosa. |
+| Día 4: segundo Kaizen en prueba | **Carcasa diseñada y enviada a impresión, no ensamblada en E4**; trabajo en fijación de la navaja y cambio de tarjeta; receptor D12 conectado pero no programado. **Seis pruebas de evasión**: tres a PWM 145 y tres a PWM 105, estas últimas sin salidas observadas. Luego, con tarjeta de reemplazo y código de búsqueda/ataque, una prueba con teléfono resultó exitosa. |
 
 ### Tabla de ensayos comparables que pide la guía
 
@@ -208,7 +208,7 @@ La demostración prevista consistirá en enseñar el robot montado, explicar có
 
 | Segmento | Qué se demostrará | Integrante responsable | Versión o código | Material requerido | Plan B ante fallo |
 |---|---|---|---|---|---|
-| Inicio / contexto | Mostrar el montaje, el diseño de la carcasa enviado a impresión por Claudio y la navaja ajustada por Sara y Max | Pendiente de asignar | Prototipo E4 | Robot y evidencia del diseño; instalación final de carcasa por confirmar | Mostrar fotos o diseño si no está listo el montaje |
+| Inicio / contexto | Mostrar el montaje, el diseño de la carcasa enviado a impresión por Claudio y la navaja ajustada por Sara y Max | Pendiente de asignar | Prototipo E4 | Robot y evidencia del diseño; ensamblaje de la carcasa pendiente (no realizado en E4) | Mostrar fotos o diseño si no está listo el montaje |
 | Prueba principal | Avanzar sobre negro, evadir el blanco y demostrar ataque sobre un objeto | Pendiente de asignar | [PWM 105 probado](../../codigo/mini-sumo/prueba_evasion_borde_lenta/prueba_evasion_borde_lenta.ino) y código de competencia cargado en tarjeta de reemplazo (archivo por incorporar) | Dohyō, batería y objeto de prueba seguro; supervisión | Mostrar registros del Monitor Serie si no es seguro moverlo |
 | Evidencia de mejora | Explicar V1–K1–K2 y las seis pruebas de evasión, más la expulsión de un teléfono | Pendiente de asignar | [Comparación del E4](../../datos/e4_pruebas_pwm105_29oct.md) | Tabla y registros | Explicar limitaciones sin inventar un porcentaje de mejora |
 | Defensa de fronteras | Cada integrante explica su aportación: Joel (código/pruebas), Sara y Max (navaja/pruebas) y Claudio (carcasa) | Pendiente de asignar quién presenta cada parte | [E4 de Joel](../../participantes/A00574713/dias/E4.md) y E4 individuales por completar | Bitácoras y evidencias del equipo | Explicar qué falta validar |
@@ -217,7 +217,7 @@ La demostración prevista consistirá en enseñar el robot montado, explicar có
 
 **Responsables, tiempos y ensayo general:** propuesta de guion documentada; quedan pendientes la asignación y la ejecución real.
 
-**Evidencias disponibles en GitHub:** [fotografías del E3](../../evidencias/dia-03/README.md), [código PWM 145](../../codigo/mini-sumo/prueba_evasion_borde/prueba_evasion_borde.ino), [código PWM 105](../../codigo/mini-sumo/prueba_evasion_borde_lenta/prueba_evasion_borde_lenta.ino), [log de la primera tanda](../../datos/e4_monitor_serie_29oct.txt) y [comparación de las seis pruebas](../../datos/e4_pruebas_pwm105_29oct.md). **El equipo confirmó que tiene dos videos del E4** (movimiento en la pista y expulsión del teléfono), pero faltan sus enlaces o archivos. Tampoco se han compartido fotografías de la navaja y la carcasa.
+**Evidencias disponibles en GitHub:** [fotografías del E3](../../evidencias/dia-03/README.md), [código PWM 145](../../codigo/mini-sumo/prueba_evasion_borde/prueba_evasion_borde.ino), [código PWM 105](../../codigo/mini-sumo/prueba_evasion_borde_lenta/prueba_evasion_borde_lenta.ino), [log de la primera tanda](../../datos/e4_monitor_serie_29oct.txt) y [comparación de las seis pruebas](../../datos/e4_pruebas_pwm105_29oct.md). **El equipo confirmó que tiene dos videos del E4** (movimiento en la pista y expulsión del teléfono), pero faltan sus enlaces o archivos. **Ya se recibieron dos capturas del modelo CAD de la carcasa**, pero aún deben incorporarse a la carpeta de evidencias del repositorio o a Drive. **No son fotografías de la pieza impresa ni instalada**, porque todavía no se había montado. Falta evidencia de la navaja.
 
 ## 6 · Gate de preparación E4
 
@@ -233,8 +233,8 @@ Esta lista conserva los cinco criterios de cierre del entregable original:
 
 ## 7 · Estado de E4
 
-- [x] **Claudio diseñó y mandó a imprimir la carcasa**; el cableado se reacomodó al sustituir la placa.
-- [ ] Confirmar que la carcasa ya está instalada.
+- [x] **Claudio diseñó y mandó a imprimir la carcasa; no se montó en el mini-sumo durante E4.** El equipo aportó dos imágenes del CAD; el cableado se reacomodó al sustituir la placa.
+- [ ] **Recibir la carcasa impresa, ensamblarla en el robot y fotografiarla**; confirmado que esto todavía no ocurrió durante E4.
 - [x] Se trabajó en la fijación de los motores y **Sara y Max ajustaron la navaja para pegarla al chasis**.
 - [x] Receptor para el control remoto conectado.
 - [x] Programa de prueba conjunta cargado y ejecutado en el dohyō.
