@@ -19,6 +19,8 @@
 | Rival perdido | Sigue girando hacia última dirección | Recuerdo corto de dirección y barrido en ambos sentidos |
 | Control IR | No había | Opción de módulo START digital u opción NEC con TinyIRReceiver |
 
+**Código E5 para la minicompetencia del salón:** el módulo MicroStart queda programado 1=desbloquear, 2=START y 3=STOP. **El firmware enclava STOP:** tras presionar 3 no puede volver a moverse hasta cortar y restaurar la alimentación. El botón 1 no mueve el robot: solo desbloquea el MicroStart. **El archivo E4 original no se modificó**.
+
 **No interpretar PWM 165 como fuerza medida ni como garantía de ganar.** Las tres pruebas a PWM 105 son la base que funcionó ayer; los PWM mayores son nuevos. Un golpe prolongado con motores bloqueados puede dañar el driver o los motores.
 
 ## Confirmación visual: Steren RM-260 y módulo tipo MicroStart
@@ -41,6 +43,16 @@ Las fotografías compartidas por el equipo coinciden con el [dibujo del Steren R
 **B) Receptor infrarrojo demodulado (tres pines tipo TSOP, SIN decodificador de arranque):** conectar la señal a **D12** y alimentación adecuada. En ambos programas cambiar `#define TIPO_CONTROL 2`. Instalar la biblioteca **IRremote de Arduino-IRremote** desde el Gestor de bibliotecas. Se usa `TinyIRReceiver.hpp` porque funciona sin un temporizador dedicado y no interfiere con PWM D11 de motores; **acepta controles NEC**. Primero cargar `Prueba_Control_E5.ino`, pulsar los botones, anotar por Serial `DIRECCION_NEC`, `COMANDO_ARRANQUE_NEC`, `COMANDO_PARO_NEC`. Introducir los tres valores exactos en el firmware E5. **Mientras sean 0xFFFF/0xFF no arrancará por seguridad.** Si el control no manda NEC (por ejemplo SONY), este modo NO es compatible; se requiere un módulo decodificador apropiado o implementar recepción sin conflictos de temporizadores.
 
 **No conectar una salida lógica de 7.4 V a D12**: D12 requiere nivel permitido por la placa (normalmente 5 V para ATmega328P). La batería de 7.4 V va a la entrada eléctrica prevista por la PCB, no al pin de señal.
+
+## Pasos para cargar la versión de competencia hoy
+
+1. Abrir [Tormenta_Negra_E5_Competencia.ino](Tormenta_Negra_E5_Competencia.ino) en Arduino IDE. Si pregunta si puede moverlo a una carpeta con el mismo nombre que el sketch, **aceptar**. Seleccionar la tarjeta y puerto COM correctos.
+2. Cargar el sketch con **batería desconectada y USB conectado**. No hace falta instalar bibliotecas externas porque `TIPO_CONTROL` ya está configurado en **1 (MicroStart)**.
+3. Desconectar USB y conectar la batería a la entrada correcta de la PCB. Verificar que el MicroStart tenga señal estable y las ruedas no giren antes de recibir START.
+4. Probar **con ruedas elevadas**: botón 1 (desbloquear), botón 2 (arrancar), botón 3 (paro). **Después de STOP, no debe reactivarse aunque el módulo cambie de estado**; apagar y volver a encender la alimentación para repetir.
+5. Verificar sensores y dirección de giro con el robot en el dohyō bajo supervisión. Probar el ataque gradualmente empezando con valores PWM validados antes de intentar 165.
+
+**D12 es la salida lógica START/STOP del MicroStart, no el receptor infrarrojo sin procesar.** Si al desconectar USB el módulo responde correctamente pero el robot no arranca, verificar que D12 realmente cambia de LOW a HIGH con el botón 2 y que no hay sensores QTR detectando blanco por error.
 
 ## 2. Probar antes de competir (en este orden)
 
