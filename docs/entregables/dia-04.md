@@ -98,7 +98,7 @@ Se preparó el guion y se asignaron responsables de **cada segmento**, con plan 
 | Evidencia de mejora | **35–45 s:** explicar pruebas PWM 145/105, recalibración, cambio de placa y resultado 0/3 salidas en segunda tanda | **Max** | [Comparación PWM 145/105](../../datos/e4_pruebas_pwm105_29oct.md) | Tablas, logs y videos | Explicar resultados ya registrados si no puede repetirse la prueba |
 | Defensa de fronteras | **30–45 s:** explicar cómo Sara y Max pegaron la navaja, función mecánica y lo pendiente antes de competir; todos responden por su alcance | **Sara** | Montaje físico y [E4 del equipo](dia-04.md) | Navaja pegada al chasis, bitácoras personales | Mostrar el robot y explicar el montaje sin necesidad de encenderlo |
 
-**¿Robolympics es el evento externo posterior?** **Por confirmar.** No se registra la participación en un torneo externo como realizada; D5 tiene demostración interna según la guía. **Duración prevista del guion:** aproximadamente 2 min 20 s a 3 min 10 s, sin contar preguntas ni maniobras adicionales. La propuesta de reparto deberá ser aceptada por el equipo y practicada.
+**¿Robolympics es el evento externo posterior?** **Sí. RoboLympics es la competencia de mini-sumos para la que se prepara Tormenta Negra.** En E4 se documentan el desarrollo y las pruebas previas; **todavía no se registra participación en la competencia como realizada**. El Día 5 corresponde a la demostración y preparación indicada en la guía. **Duración prevista del guion:** aproximadamente 2 min 20 s a 3 min 10 s, sin contar preguntas ni maniobras adicionales. La propuesta de reparto deberá ser aceptada por el equipo y practicada.
 
 ## 7 · Gate E4
 
