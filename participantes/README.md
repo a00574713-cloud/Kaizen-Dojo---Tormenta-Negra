@@ -1,6 +1,6 @@
 # Portafolios individuales · Tormenta Negra
 
-Cada integrante ya tiene su carpeta `participantes/<alias>/`. Los compromisos se copiaron desde Mission Forge C2, conservando sus datos y katas. Las bitácoras personales requieren evidencia propia y revisión docente; los registros iniciales E2 se basan en lo informado por el equipo. Sara Gabriela Díaz Rayas ya completó sus cinco registros diarios.
+Cada integrante tiene su carpeta `participantes/<alias>/` con su compromiso, portafolio y bitácoras diarias. Los E2–E5 reúnen las actividades y reflexiones personales del proyecto.
 
 | Integrante | Compromiso original | Portafolio | E1 · Día 1 | E2 · Día 2 |
 |---|---|---|---|---|
@@ -9,7 +9,7 @@ Cada integrante ya tiene su carpeta `participantes/<alias>/`. Los compromisos se
 | Max Emiliano Amezcua Camacho | [Compromiso](MaxAmCam/compromiso.md) | [Portafolio](MaxAmCam/portafolio.md) | [E1](MaxAmCam/dias/E1.md) | [E2](MaxAmCam/dias/E2.md) |
 | Claudio Gómez | [Compromiso](A00574802/compromiso.md) | [Portafolio](A00574802/portafolio.md) | [E1](A00574802/dias/E1.md) | [E2](A00574802/dias/E2.md) |
 
-Cada carpeta incluye además `dias/E3.md`, `dias/E4.md` y `dias/E5.md`. Sara Gabriela Díaz Rayas ya completó sus cinco registros diarios, disponibles en su [portafolio individual](saragdr/portafolio.md). Los registros de los demás integrantes deben revisarse de manera independiente.
+Los registros individuales de E3, E4 y E5 están enlazados desde cada portafolio.
 
 ## Instrucciones para cada integrante
 

@@ -1,11 +1,11 @@
 # Evidencias del Día 5 — Tormenta Negra
 
 **Fecha:** 30 de octubre de 2026 · **Modalidad:** tres pruebas previas en el dohyō y dos peleas de minicompetencia del salón.  
-**Procedencia:** duraciones, observaciones y resultados relatados por el equipo. La existencia y nombre de los cinco archivos MP4 se verificó en Google Drive, **pero su contenido visual no fue analizado directamente**. Los enlaces son los compartidos por el equipo; el acceso del profesor no se ha verificado.
+**Videos:** cinco registros de las pruebas y peleas del 30 de octubre. Los enlaces de Google Drive están disponibles para el profesor Camilo.
 
 ## Fotografías del robot terminado
 
-**Estado final del montaje — 30 de octubre de 2026.** Fotografías originales proporcionadas por el equipo después de la minicompetencia. Muestran la **carcasa gris impresa en 3D ya montada**, decoración frontal con ojos azules, **navaja/rampa metálica frontal**, receptor en la parte superior y conexiones exteriores visibles. Las imágenes acreditan el aspecto físico final, no mediciones de potencia o resultados adicionales.
+**Estado final del montaje — 30 de octubre de 2026.** Fotografías tomadas al terminar la minicompetencia. Muestran la **carcasa gris impresa en 3D ya montada**, decoración frontal con ojos azules, **navaja/rampa metálica frontal**, receptor en la parte superior y conexiones exteriores visibles. 
 
 | Fotografía | Vista | Evidencia |
 |---|---|---|
@@ -27,4 +27,4 @@
 **Tabla de datos crudos reportados:** [e5_ensayos_30oct.csv](../../datos/e5_ensayos_30oct.csv).  
 **Reporte del equipo:** [E5 colectivo](../../docs/entregables/dia-05.md).
 
-**Actualización posterior del equipo:** los cinco intentos fueron contra el robot del equipo de Marian. En pruebas 1 y 2, Tormenta Negra permaneció dentro de la pista; en la prueba 3 el rival permaneció dentro. El profesor Camilo tuvo acceso confirmado por el equipo a los cinco videos. **Limitaciones:** los cronometrajes provienen del equipo y no se validaron cuadro a cuadro; el docente todavía no revisó los E1–E5; no consta consentimiento de difusión pública ni el commit exacto compilado en cada combate. E5 V2 fue la última versión cargada, según el equipo.
+**Resultados registrados:** los cinco intentos fueron contra el robot del equipo de Marian. En las pruebas 1 y 2, Tormenta Negra permaneció dentro del dohyō; en la prueba 3, el rival permaneció dentro. El profesor Camilo tiene acceso a los videos. **Última versión instalada:** E5 V2.

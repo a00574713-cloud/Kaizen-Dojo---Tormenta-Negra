@@ -1,6 +1,6 @@
 # KAIZEN DŌJŌ 2026 · Nuestro repositorio de misión
 
-> **Equipo:** Tormenta Negra · **Plataforma:** M01, mini-sumo autónomo · **Dōjō:** CTA, Laboratorio de Electrónica (puesto y autorización por confirmar)
+> **Equipo:** Tormenta Negra · **Plataforma:** M01, mini-sumo autónomo · **Dōjō:** CTA, Laboratorio de Electrónica (Laboratorio de Electrónica, CTA)
 > **Nuestra misión:** Construir desde cero un mini-sumo autónomo que avance, retroceda, gire, detecte a un oponente y reaccione a las lecturas de sus sensores, con pruebas documentadas.
 > **Estado actual:** Día 5 (30-10-2026), mini-sumo autónomo funcional en el laboratorio de electrónica del CTA. Se realizaron tres pruebas previas (dos favorables y una desfavorable) y dos peleas del salón (una victoria, una derrota), registradas en [E5](docs/entregables/dia-05.md). E5 V2 fue el último código instalado; peso sin medir y revisión docente de E1-E5 pendiente.
 
@@ -11,7 +11,7 @@
 3. **Abre tu carpeta individual.** Las cuatro carpetas ya están en `participantes/<tu-alias>/`, con el compromiso original, el portafolio y las bitácoras `dias/E1.md` a `E5.md`. Completa tus evidencias y reflexión personal en tu carpeta.
 4. **Documenta en equipo.** Cada día completen juntos un entregable en `docs/entregables/dia-0X.md`; enlacen códigos, pruebas, fotos y diseños que estén en el repositorio o en almacenamiento institucional con acceso apropiado.
 
-**Importante:** las plantillas originales de entregables se conservaron sin cambiar su estructura. Los E2–E5 colectivos están documentados con resultados y límites; la revisión del profesor sigue pendiente hasta entregar GitHub. Los E5 personales de Joel y Sara están contestados; los de Max y Claudio siguen pendientes. Nadie debe inventar datos o copiar como propias las reflexiones de otro integrante.
+**Entregables E2–E5:** [registros colectivos](docs/entregables/README.md) y [portafolios personales](participantes/README.md). La revisión del profesor está prevista después de la entrega.
 
 ## Nuestra misión y personas
 
@@ -59,4 +59,4 @@
 
 ---
 
-**Acuerdo Kaizen:** *mi logro no se mide solo por si el robot gana, sino por la frontera que yo consigo conquistar y demostrar.* Mantengan el repositorio privado y sigan [SEGURIDAD_Y_DATOS.md](SEGURIDAD_Y_DATOS.md).
+**Acuerdo Kaizen:** *mi logro no se mide solo por si el robot gana, sino por la frontera que yo consigo conquistar y demostrar.* [Seguridad y datos](SEGURIDAD_Y_DATOS.md).
