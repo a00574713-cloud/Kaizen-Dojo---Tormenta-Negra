@@ -11,7 +11,7 @@ revision_docente: "PENDIENTE"
 
 # E4 · Día 4 — ITERAR | Mejoras al montaje y preparación de prueba integrada
 
-El 29 de octubre continuamos con el mini-sumo **Tormenta Negra**. Hicimos una carcasa para cubrir y proteger los cables, acomodamos los componentes y dejamos el robot armado y ordenado. También conectamos el receptor destinado al control remoto (todavía sin utilizar en el programa) y fijamos mejor los motores al chasis. Probamos la evasión del borde con PWM 145 y 105; más tarde, tras sustituir una tarjeta que se dañó, Joel cargó un programa de búsqueda y ataque en la nueva tarjeta. El robot logró sacar un teléfono del dohyō sin abandonar la zona negra. Fue una prueba con un objeto, no un combate oficial.
+El 29 de octubre continuamos con el mini-sumo **Tormenta Negra**. Claudio diseñó la carcasa y **la mandó a imprimir** (su colocación definitiva todavía no está confirmada). Sara hizo ajustes para fijar la navaja al chasis, con apoyo de Max, y continuamos acomodando el montaje. El receptor del control remoto sigue conectado a D12, pero aún no se utiliza en el programa. Probamos la evasión del borde con PWM 145 y 105; más tarde, tras sustituir una tarjeta que se dañó, Joel se encargó del código y cargó el programa de búsqueda y ataque en la tarjeta nueva. **En el primer intento el robot detectó un teléfono, lo empujó fuera del dohyō y permaneció en la zona negra.** El equipo tiene dos videos de E4, todavía sin enlaces en el repositorio. Fue una prueba con un objeto, no un combate oficial.
 
 ## 0 · Contexto
 
@@ -25,22 +25,22 @@ La guía propone seis bloques de trabajo. **Los minutos indican la distribución
 
 | Bloque de la guía | Minutos previstos | Registro del equipo |
 |---|---:|---|
-| Revisión por pares y retroalimentación | 0–20 | **Pendiente de documentar:** quién revisó el robot y qué recomendación dio. |
-| Diseño y ejecución del Kaizen 2 | 20–70 | Organizamos los cables, construimos la carcasa, aseguramos los motores y conectamos el receptor infrarrojo a D12. Integramos el programa para avanzar y reaccionar al borde blanco. |
+| Revisión por pares y retroalimentación | 0–20 | Algunos compañeros del **equipo Artemis** vieron nuestro mini-sumo y nos dieron consejos. Se confirmó que hubo retroalimentación; **falta anotar los consejos concretos**, qué cambio aceptamos y si se aplicó. |
+| Diseño y ejecución del Kaizen 2 | 20–70 | **Claudio diseñó y mandó a imprimir la carcasa**; Sara trabajó en fijar la navaja al chasis con ayuda de Max. Joel programó el movimiento y evasión, y Joel, Sara y Max realizaron pruebas. Receptor D12 conectado sin integrar al código. |
 | Comparación V1–K1–K2 | 70–115 | Documentamos las etapas V1 (montaje), K1 (componentes funcionales) y K2 (evasión). En K2 se realizaron tres pruebas con PWM 145 y tres con PWM 105; falta comparación estricta con las etapas V1 y K1, que no midieron lo mismo. |
 | Ensayo de robustez | 115–145 | Realizamos seis ejecuciones de 15 s: tres con PWM 145 (salidas ocasionales) y tres con PWM 105 (**ninguna salida observada**, según el equipo). Después se probó la búsqueda y ataque contra un teléfono, que salió de la pista mientras el robot se mantuvo dentro. |
-| Preparación de la demostración | 145–165 | Definimos qué se podría mostrar en el Día 5: montaje del robot y evasión del borde. **Falta repartir las intervenciones y acordar un plan por si falla.** |
-| Gate de preparación | 165–180 | Se registraron la mejora a PWM 105 y una prueba de ataque con teléfono. Quedan pendientes: revisión entre pares, evidencia fotográfica de E4, peso, control remoto si lo exige el reglamento, ensayos con otro robot, asignación de exposición y revisión docente. |
+| Preparación de la demostración | 145–165 | El equipo cuenta con **dos videos**: uno del robot desplazándose sobre el dohyō y otro de la expulsión del teléfono. **Falta subir los videos, asignar quién presenta cada parte y realizar el ensayo general.** |
+| Gate de preparación | 165–180 | Se confirmó la revisión informal de Artemis, la mejora a PWM 105 y el primer intento de ataque exitoso. Quedan pendientes los **consejos específicos de Artemis**, enlaces a dos videos, peso (no hubo báscula), instalación final de carcasa por confirmar, código final en GitHub, roles de demostración y revisión docente. |
 
 ## 1A · Actividades realizadas en el Día 4
 
 | Actividad | Avance realizado |
 |---|---|
-| Carcasa y estructura | Fabricamos una carcasa para cubrir cables y componentes del robot. |
-| Organización de componentes | Acomodamos el cableado y terminamos de ordenar el montaje. |
-| Fijación de motores | Aseguramos mejor ambos motores al chasis. |
+| Carcasa y estructura | **Claudio diseñó y mandó a imprimir la carcasa.** No se confirmó aún si quedó instalada. |
+| Organización de componentes | Se continuó organizando el cableado y **Joel, Max y Claudio trasladaron las conexiones y componentes a una tarjeta de reemplazo**, después de que la anterior se dañó. No se conoce la causa exacta de la avería. |
+| Fijación de motores | Se mantuvo el trabajo de fijación de motores y **Sara realizó ajustes para pegar la navaja al chasis, con ayuda de Max**. No se registró una medición de fuerza de adhesión. |
 | Control remoto | Conectamos al **pin D12** de la tarjeta el receptor infrarrojo destinado al arranque y paro mediante control remoto. Por ahora, el código de movimiento no utiliza este receptor. |
-| Integración del control | Ejecutamos el [programa original de evasión](../../codigo/mini-sumo/prueba_evasion_borde/prueba_evasion_borde.ino) y la [versión PWM 105](../../codigo/mini-sumo/prueba_evasion_borde_lenta/prueba_evasion_borde_lenta.ino): **tres pruebas de 15 s con cada versión**. Posteriormente Joel cargó un programa de competencia sin control remoto en una tarjeta de reemplazo, que ya logró empujar un teléfono fuera de la pista sin salirse. Ese último archivo está pendiente de incorporar al repositorio. |
+| Integración del control | **Joel se encargó de todo el código**. Las pruebas de evasión las realizaron Joel, Max y Sara: tres ejecuciones a PWM 145 y tres a PWM 105 ([registro](../../datos/e4_pruebas_pwm105_29oct.md)). Joel propuso **reducir la velocidad** porque el robot se salía. Tras cambiar de tarjeta con Max y Claudio, Joel cargó el programa de ataque sin control remoto: **al primer intento detectó y sacó un teléfono del dohyō sin salir**. Falta subir ese último sketch y enlazar los videos. |
 
 ## 1B · Revisión por pares y retroalimentación
 
