@@ -10,6 +10,23 @@
 - Los pines **no cambian**: izquierdo D2, central A5, derecho A4, QTR A2/A3 y MicroStart D12. `HIGH` detecta rival, conforme a [JSumo](https://blog.jsumo.com/xs1-micro-sumo-arduino-code-explanation-of-the-robot-code/).
 - **No se puede asegurar que esta fuera la causa única**: los sensores pueden trabajar con USB y fallar bajo batería, tener poco alcance para la superficie del rival o estar apuntando fuera de la pista; los QTR pueden disparar falsas evasiones por recalibración.
 
+## Corrección de arranque remoto aplicada a la V2
+
+**La V2 siempre conservó el control MicroStart D12**, pero exigía una señal LOW de 350 ms seguida de HIGH otros 350 ms. Se redujo el filtro a **120 ms** para mejorar la respuesta, sin permitir arranque con HIGH al encender ni quitar STOP enclavado.
+
+La **LED integrada de la placa Arduino (normalmente D13 / LED_BUILTIN)** ahora muestra el estado de **D12**, aun cuando el robot use únicamente batería:
+
+| Situación | LED de la TARJETA, no el rojo/azul del MicroStart |
+|---|---|
+| Encendido y todavía sin START | Apagado: D12 LOW |
+| Botón 1 (desbloquear) | Debe seguir apagado: D12 LOW |
+| Botón 2 (START) | Debe quedar encendido fijo: D12 HIGH |
+| Botón 3 (STOP) | Debe apagarse: D12 LOW |
+
+**Si el LED integrado prende con el botón 1** y se apaga con 2, el cable o señal de D12 no está comportándose como `SIGNAL` del MicroStart. Corregir primero la conexión y comprobar GND común **con la alimentación desconectada**. No invertir `HIGH/LOW` por software, porque quitaría el STOP de competencia. Si el LED se enciende correctamente con 2 y el robot sigue inmóvil, revisar QTR, sentido de giro, batería y si el programa realmente salió de `PARADO`.
+
+**Para repetir una ronda después de STOP**, cortar y restaurar la alimentación del MicroStart. No es necesario reprogramar los tres botones. No competir mientras el botón STOP no corte los motores de manera fiable.
+
 ## Cómo hacer la prueba
 
 1. **Desconectar batería**, cargar [Tormenta_Negra_E5_V2_Laterales.ino](Tormenta_Negra_E5_V2_Laterales.ino) por USB. **No mezclar USB y batería** sin verificar placa.
