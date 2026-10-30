@@ -208,14 +208,14 @@ La demostración prevista consistirá en enseñar el robot montado, explicar có
 
 | Segmento | Qué se demostrará | Integrante responsable | Versión o código | Material requerido | Plan B ante fallo |
 |---|---|---|---|---|---|
-| Inicio / contexto | Mostrar el montaje, el diseño de la carcasa enviado a impresión por Claudio y la navaja ajustada por Sara y Max | Pendiente de asignar | Prototipo E4 | Robot y evidencia del diseño; ensamblaje de la carcasa pendiente (no realizado en E4) | Mostrar fotos o diseño si no está listo el montaje |
-| Prueba principal | Avanzar sobre negro, evadir el blanco y demostrar ataque sobre un objeto | Pendiente de asignar | [PWM 105 probado](../../codigo/mini-sumo/prueba_evasion_borde_lenta/prueba_evasion_borde_lenta.ino) y código de competencia cargado en tarjeta de reemplazo (archivo por incorporar) | Dohyō, batería y objeto de prueba seguro; supervisión | Mostrar registros del Monitor Serie si no es seguro moverlo |
-| Evidencia de mejora | Explicar V1–K1–K2 y las seis pruebas de evasión, más la expulsión de un teléfono | Pendiente de asignar | [Comparación del E4](../../datos/e4_pruebas_pwm105_29oct.md) | Tabla y registros | Explicar limitaciones sin inventar un porcentaje de mejora |
-| Defensa de fronteras | Cada integrante explica su aportación: Joel (código/pruebas), Sara y Max (navaja/pruebas) y Claudio (carcasa) | Pendiente de asignar quién presenta cada parte | [E4 de Joel](../../participantes/A00574713/dias/E4.md) y E4 individuales por completar | Bitácoras y evidencias del equipo | Explicar qué falta validar |
+| Inicio / contexto | **30–40 s:** explicar el objetivo del mini-sumo, mostrar el diseño CAD de la carcasa enviado a impresión y aclarar que no se ensambló en E4 | **Claudio** (propuesta de reparto para D5) | CAD de carcasa y prototipo E4 | Dos capturas CAD y robot | Mostrar las capturas CAD si aún no está montada la pieza |
+| Prueba principal | **45–60 s:** explicar el control de los QTR e infrarrojos, el arranque, la evasión y la búsqueda/ataque; mostrar el movimiento y la expulsión del teléfono | **Joel** (propuesta de reparto para D5) | [Evasión PWM 105](../../codigo/mini-sumo/prueba_evasion_borde_lenta/prueba_evasion_borde_lenta.ino) y sketch de competencia por subir | Robot, dohyō y batería con alimentación verificada; espacio despejado y acceso a apagado | Reproducir el video del robot en pista o el ataque al teléfono; no forzar una prueba insegura |
+| Evidencia de mejora | **35–45 s:** comparar las tres pruebas PWM 145 (salidas ocasionales) con las tres PWM 105 (sin salidas observadas), mencionar la recalibración y el cambio de tarjeta | **Max** (propuesta de reparto para D5) | [Comparación de pruebas E4](../../datos/e4_pruebas_pwm105_29oct.md) | Tabla, logs y video de movimiento | Explicar los resultados documentados si no se puede repetir la prueba |
+| Defensa de fronteras | **30–45 s:** explicar el pegado de la navaja con Max, su función al empujar objetos, lo aprendido y lo que falta validar. **En preguntas, cada integrante defiende su propia aportación** | **Sara** (propuesta de reparto para D5; preguntas para los cuatro) | [E4 de Joel](../../participantes/A00574713/dias/E4.md) y E4 personales por completar | Robot con navaja, bitácoras personales | Mostrar el montaje y explicar el pegado sin requerir una nueva prueba |
 
 **¿RoboLympics es un evento externo posterior?** Por confirmar. No se registra ninguna participación en una competencia externa como realizada. La demostración prevista para D5 es interna.
 
-**Responsables, tiempos y ensayo general:** propuesta de guion documentada; quedan pendientes la asignación y la ejecución real.
+**Responsables y tiempos propuestos para D5:** **Claudio** (30–40 s: contexto y carcasa CAD), **Joel** (45–60 s: programación y demostración), **Max** (35–45 s: resultados y comparación PWM) y **Sara** (30–45 s: navaja, aprendizaje y cierre). **Los cuatro responderán preguntas sobre su parte.** Este reparto se organizó a solicitud del equipo, **no es un ensayo realizado**; falta confirmarlo entre los integrantes y practicarlo.
 
 **Evidencias disponibles en GitHub:** [fotografías del E3](../../evidencias/dia-03/README.md), [código PWM 145](../../codigo/mini-sumo/prueba_evasion_borde/prueba_evasion_borde.ino), [código PWM 105](../../codigo/mini-sumo/prueba_evasion_borde_lenta/prueba_evasion_borde_lenta.ino), [log de la primera tanda](../../datos/e4_monitor_serie_29oct.txt) y [comparación de las seis pruebas](../../datos/e4_pruebas_pwm105_29oct.md). **El equipo confirmó que tiene dos videos del E4** (movimiento en la pista y expulsión del teléfono), pero faltan sus enlaces o archivos. **Ya se recibieron dos capturas del modelo CAD de la carcasa**, pero aún deben incorporarse a la carpeta de evidencias del repositorio o a Drive. **No son fotografías de la pieza impresa ni instalada**, porque todavía no se había montado. Falta evidencia de la navaja.
 
@@ -226,16 +226,16 @@ Esta lista conserva los cinco criterios de cierre del entregable original:
 - [x] **K2 explícito:** problema, hipótesis, cambio y datos documentados, incluyendo tres ejecuciones a PWM 145 y tres a PWM 105, estas últimas sin salidas observadas. Falta aislar velocidad frente a calibración para una comparación controlada.
 - [x] **Versiones conservadas:** las conexiones iniciales, el primer Kaizen y los dos programas de evasión se documentan en el repositorio. La comparación cuantitativa V1–K1–K2 no está cerrada.
 - [x] **Robustez documentada:** manchas blancas y salidas en la primera tanda, tres pruebas a velocidad 105 sin salidas y prueba adicional de expulsión de un teléfono; faltan ensayos con condiciones controladas y con otro mini-sumo.
-- [ ] **Demostración D5:** guion propuesto, pero faltan responsables, contingencia acordada y ensayo.
+- [ ] **Demostración D5:** hay **cuatro responsables propuestos y un plan B por segmento**; falta que el equipo confirme el reparto, ensaye la exposición y ejecute la demostración.
 - [ ] **E4 personales:** [Joel ya tiene su E4 personal redactado](../../participantes/A00574713/dias/E4.md). Faltan completar y revisar los de Sara, Max y Claudio.
 
-**Decisión de preparación:** CON RESTRICCIONES. **Verificado por el equipo:** seis pruebas de evasión, tres a PWM 105 sin salidas, expulsión del teléfono al **primer intento**, distribución de tareas y revisión informal de Artemis. **Pendientes:** contenido específico de los consejos de Artemis, asignación de intervenciones y ensayo general de demostración, E4 personales de Sara/Max/Claudio, **peso (sin báscula)**, enlaces a los **dos videos**, evidencia del montaje E4, instalación final de la carcasa por confirmar, archivo exacto del código final en GitHub y validación docente. **Control remoto:** aún no integrado; comprobar si lo exige el reglamento. **Revisión docente:** sin aceptación confirmada.
+**Decisión de preparación:** CON RESTRICCIONES. **Verificado por el equipo:** seis pruebas de evasión, tres a PWM 105 sin salidas, ataque que expulsó el teléfono al **primer intento**, **navaja ya pegada** y consejos de Artemis sobre motores y sensores adicionales. **Demostración:** reparto de cuatro roles y plan B preparados; ensayo real pendiente. **Otros pendientes:** E4 personales de Sara/Max/Claudio, **peso (sin báscula)**, enlaces a los **dos videos**, evidencia de navaja y diseño CAD por archivar, ensamblaje futuro de carcasa, sketch exacto de competencia en GitHub y validación docente. **Control remoto:** aún no integrado; comprobar si lo exige el reglamento.
 
 ## 7 · Estado de E4
 
 - [x] **Claudio diseñó y mandó a imprimir la carcasa; no se montó en el mini-sumo durante E4.** El equipo aportó dos imágenes del CAD; el cableado se reacomodó al sustituir la placa.
 - [ ] **Recibir la carcasa impresa, ensamblarla en el robot y fotografiarla**; confirmado que esto todavía no ocurrió durante E4.
-- [x] Se trabajó en la fijación de los motores y **Sara y Max ajustaron la navaja para pegarla al chasis**.
+- [x] **Sara y Max pegaron la navaja al chasis** y se mantuvo la fijación de los motores.
 - [x] Receptor para el control remoto conectado.
 - [x] Programa de prueba conjunta cargado y ejecutado en el dohyō.
 - [x] Registradas **seis ejecuciones** de evasión, en dos tandas de 15 s, con lecturas de QTR, IR y avisos de borde.
@@ -246,9 +246,10 @@ Esta lista conserva los cinco criterios de cierre del entregable original:
 - [ ] Verificar arranque y paro mediante el control remoto.
 - [x] Documentar robustez observada y la prueba adicional que expulsó un teléfono sin salida del robot.
 - [x] Recibir observaciones de algunos compañeros del **equipo Artemis**.
-- [ ] Anotar las recomendaciones concretas de Artemis y la decisión tomada.
+- [x] Registrar las recomendaciones concretas de Artemis: **mejores motores y más sensores de detección**.
+- [ ] Evaluar si se implementarán esas mejoras en una iteración futura; no se realizaron en E4.
 - [ ] Completar E4 personales de Sara, Max y Claudio.
 - [ ] Pesar el robot cuando haya báscula y recibir revisión del profesor.
 - [ ] Enlazar los dos videos y el código de competencia cargado en la tarjeta de reemplazo.
 
-**Estado E4:** documentación técnica y de colaboración avanzada. Se registraron seis ejecuciones de evasión (tres a PWM 105 sin salidas), la prueba de ataque exitosa **en el primer intento**, la propuesta de Joel para bajar la velocidad, el trabajo de Sara y Max en la navaja, el diseño de carcasa de Claudio, la sustitución de tarjeta entre Joel/Max/Claudio y la revisión informal de Artemis. Se mantienen pendientes los dos videos por enlazar, el peso, los E4 individuales restantes, el ensayo general y la revisión docente.
+**Estado E4:** documentación técnica y de colaboración avanzada: seis ensayos de evasión, tres con PWM 105 sin salidas, teléfono expulsado al primer intento, **navaja ya pegada por Sara y Max**, carcasa CAD diseñada por Claudio y enviada a impresión (no ensamblada), cambio de tarjeta con Joel/Max/Claudio y recomendaciones de Artemis registradas. El **reparto de la demostración está propuesto para los cuatro**. Quedan pendientes videos por enlazar, peso, código final por archivar, E4 individuales restantes, ensayo real y revisión docente.
