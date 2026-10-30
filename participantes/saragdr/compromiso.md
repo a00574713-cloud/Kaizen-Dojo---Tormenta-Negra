@@ -58,7 +58,7 @@ Esta es mi propuesta individual dentro de una misión colaborativa. Cada alcance
 
 **Mi evidencia final:** Durante la semana participé en las conexiones, soldaduras y montaje de los motores. Realizamos pruebas para comprobar su funcionamiento y corregimos problemas de alimentación, polaridad y posición. El último día volvimos a fijar los motores y los colocamos más abajo para que las llantas tocaran correctamente el piso. Finalmente, el mini-sumo logró desplazarse y participar en combates contra otro robot.
 
-**Enlaces a código/CAD/pruebas:** [Código de prueba de motores](../../../codigo/pruebas-dia-03/prueba_motores/prueba_motores.ino) · [Pruebas de movimiento del Día 4](../../../datos/e4_pruebas_pwm105_29oct.md) · [Videos del Día 5](../../../evidencias/dia-05/README.md)
+**Enlaces a código/CAD/pruebas:** [Código de prueba de motores](../../codigo/pruebas-dia-03/prueba_motores/prueba_motores.ino) · [Pruebas de movimiento del Día 4](../../datos/e4_pruebas_pwm105_29oct.md) · [Videos del Día 5](../../evidencias/dia-05/README.md)
 
 ### 2. MS06 · Integrar sensores de detección del oponente
 
@@ -76,7 +76,7 @@ Esta es mi propuesta individual dentro de una misión colaborativa. Cada alcance
 
 **Mi evidencia final:** Participé en las conexiones y pruebas de los sensores de detección del oponente. Durante las pruebas utilizamos objetos frente a los sensores infrarrojos para comprobar que respondieran correctamente. Posteriormente, integramos la programación y el mini-sumo logró participar en combates contra otro robot. Aunque comprobamos su funcionamiento, quedó pendiente documentar individualmente los cinco encuentros y los errores de percepción solicitados en este kata.
 
-**Enlaces a código/CAD/pruebas:** [Código de prueba de sensores](../../../codigo/pruebas-dia-03/prueba_sensores/prueba_sensores.ino) · [Evidencias del Día 3](../../../evidencias/dia-03/README.md) · [Videos del Día 5](../../../evidencias/dia-05/README.md)
+**Enlaces a código/CAD/pruebas:** [Código de prueba de sensores](../../codigo/pruebas-dia-03/prueba_sensores/prueba_sensores.ino) · [Evidencias del Día 3](../../evidencias/dia-03/README.md) · [Videos del Día 5](../../evidencias/dia-05/README.md)
 
 ## 3. Planeación y viabilidad
 
@@ -126,4 +126,4 @@ Esta es mi propuesta individual dentro de una misión colaborativa. Cada alcance
 
 _Documento generado localmente con el configurador Kaizen Dōjō 2026 · catálogo C2. El estudiante debe revisar y acordar con el profesor los alcances y condiciones de seguridad antes de operar robots físicos._
 
-**Fuente de catálogo:** [https://docs.google.com/spreadsheets/d/1FKxFzoyu9KJb3RlOwB609vliS5hAtmwWFu2G2zG3Ky4/edit](https://docs.google.com/spreadsheets/d/1FKxFzoyu9KJb3RlOwB609vliS5hAtmwWFu2G2zG3Ky4/edit)
+**Fuente de catálogo:** [Catálogo Mission Forge C2](https://docs.google.com/spreadsheets/d/1FKxFzoyu9KJb3RlOwB609vliS5hAtmwWFu2G2zG3Ky4/edit)
