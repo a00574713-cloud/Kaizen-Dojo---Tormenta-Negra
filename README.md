@@ -15,8 +15,8 @@
 
 ## Nuestra misión y personas
 
-**Reto observable:** Movimiento autónomo y detección del oponente, por verificar mediante ensayos reproducibles.  
-**Dōjō utilizado:** CTA, Laboratorio de Electrónica, de 9:00 a 12:00; autorización y puesto exacto no registrados.  
+**Reto observable:** Movimiento autónomo y detección de rivales demostrados en [cinco intentos de E5](evidencias/dia-05/README.md); queda mejorar seguimiento lateral y control antes de RoboLympics.  
+**Dōjō utilizado:** CTA, Laboratorio de Electrónica, de 9:00 a 12:00. El profesor Camilo autorizó las pruebas del 30 de octubre; puesto exacto no registrado.  
 **Seguridad:** consultar [requisitos generales](SEGURIDAD_Y_DATOS.md) y [plan del equipo](docs/seguridad.md).
 
 | Alias GitHub | Frontera personal | Carta | Alcances seleccionados | Portafolio individual |
@@ -53,9 +53,9 @@
 |---|---|---|---|
 | **Día 2 (antes de V1)** | Sensores y actuadores conectados a la placa; sin ensayos | [E2](docs/entregables/dia-02.md) | V1 funcional pendiente |
 | **Día 3: montaje + pruebas exploratorias** | Chasis físico armado; ambos motores responden con batería de 7.4 V; sensores de línea y oponente reportados funcionales | [E3](docs/entregables/dia-03.md) · [evidencias D3](evidencias/dia-03/README.md) | Funciones básicas observadas, sin mediciones numéricas |
-| **Kaizen 1 formal** | Comparar condiciones y registrar cinco ensayos reproducibles; aún no hay resultados equivalentes | [Protocolo](pruebas/protocolo.md) | Pendiente |
-| **Kaizen 2** | `[segundo cambio y pruebas de robustez]` | `[enlace]` | `[pendiente]` |
-| **Demo** | `[misión y desempeño final]` | `[enlace]` | `[pendiente]` |
+| **Kaizen 1 (E3)** | Corrección de alimentación y polaridad de motores; pruebas de subsistemas sin cinco ensayos emparejados | [E3](docs/entregables/dia-03.md) | Mejora funcional, comparación cuantitativa limitada |
+| **Kaizen 2 (E4)** | PWM 145 a 105 y nueva calibración de QTR, tres pruebas por condición | [E4](docs/entregables/dia-04.md) | Cero salidas observadas en tres pruebas a PWM 105 |
+| **Demostración E5** | Tres pruebas previas con E5 V1 y dos peleas de salón con E5 V2 | [E5 colectivo](docs/entregables/dia-05.md) · [videos](evidencias/dia-05/README.md) | Una victoria y una derrota en peleas; revisión docente pendiente |
 
 ---
 
