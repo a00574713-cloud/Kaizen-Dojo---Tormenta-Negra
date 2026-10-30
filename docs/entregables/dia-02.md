@@ -35,7 +35,7 @@ Durante el segundo día pasamos de la planeación a las conexiones físicas del 
 | Consolidación de evidencia | 145–170 | Registramos las actividades y tomamos cuatro fotografías del proceso, disponibles en [evidencias del Día 2](../../evidencias/dia-02/README.md). |
 | Gate E2 | 170–180 | Acordamos continuar con las adaptaciones del chasis, las conexiones y las primeras pruebas durante el siguiente día de trabajo. |
 
-Los intervalos corresponden a la distribución de actividades de la guía del entregable.
+Los intervalos organizan las actividades del día.
 
 ## 2 · Integración por alcances
 
@@ -54,7 +54,7 @@ El principal reto de la sesión fue adaptar los conectores a la placa y preparar
 |---|---|---|---|
 | Estructura mecánica | Contábamos con la base metálica y las piezas del montaje; quedaban ajustes para armar el chasis. | Max y Joel | [Pieza metálica](../../evidencias/dia-02/IMG_3583.jpg) |
 | Motores y accionamiento | Preparamos y conectamos el cableado de los motores a la placa. | Sara, Joel y Max; Claudio apoyó con materiales | [Motores y tarjeta](../../evidencias/dia-02/IMG_3584.jpg) |
-| Sensores | Se realizaron conexiones de los sensores a la placa controladora. | Joel, Max y Sara | [Cableado](../../evidencias/dia-02/IMG_3585.jpg) |
+| Sensores | Conectamos los sensores a la placa controladora. | Joel, Max y Sara | [Cableado](../../evidencias/dia-02/IMG_3585.jpg) |
 | Control | Trabajamos con la placa que controlará el robot y sus conectores. | Equipo | [Placa controladora](../../evidencias/dia-02/IMG_3580.jpg) |
 | Integración del robot | Terminamos la jornada con los componentes conectados y el montaje en preparación. | Equipo | [Galería del E2](../../evidencias/dia-02/README.md) |
 
@@ -105,5 +105,5 @@ Las pruebas comenzaron el **28 de octubre**, como se registra en el [E3](dia-03.
 - [x] Se enlazó el protocolo y la continuación del trabajo en E3.
 - [ ] Revisión del profesor Camilo René Duque.
 
-**Gate E2:** decisión formal del equipo no registrada; el trabajo continuó en E3. **Revisión docente:** pendiente hasta después de la entrega.  
+**Gate E2:** continuamos el montaje y las pruebas en E3. **Revisión docente:** pendiente.
 **Siguiente avance:** [E3 · Día 3 — Montaje y pruebas iniciales](dia-03.md).  
