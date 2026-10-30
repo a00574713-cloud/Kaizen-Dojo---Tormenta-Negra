@@ -1,10 +1,10 @@
 # Tormenta Negra E5 V2 — corrección de seguimiento lateral
 
-**Estado: candidato de prueba, NO VALIDADO físicamente.** Esta versión es independiente de [E5 anterior](../tormenta_negra_e5_competencia/Tormenta_Negra_E5_Competencia.ino) y de [E4 funcional](../tormenta_negra_final/Tormenta_Negra_Final.ino). Ningún formato obligatorio del profesor se modificó.
+**Estado posterior al Día 5:** versión E5 V2 utilizada en las dos peleas de la minicompetencia del 30 de octubre. [Pelea 1: victoria en 10 s; pelea 2: derrota en 5 s](../../../evidencias/dia-05/README.md). Quedó como último programa instalado. Se documentó funcionamiento en combate, pero aún requiere corregir START/STOP y mejorar el giro lateral.
 
 ## Qué se encontró y corrigió
 
-- En E5 inicial, si **solo el JS40F izquierdo** detectaba el rival se ordenaba una curva `(78, 150)`; con **solo el derecho**, `(150, 78)`. Esto puede tardar en reorientar un mini-sumo pequeño. **V2 gira sobre el eje**: izquierda `(-125, +125)` y derecha `(+125, -125)`, hasta que detecte el objetivo con el JS40F frontal. **El sentido debe verificarse con las ruedas levantadas**.
+- En E5 inicial, si **solo el JS40F izquierdo** detectaba el rival se ordenaba una curva `(78, 150)`; con **solo el derecho**, `(150, 78)`. Esto puede tardar en reorientar un mini-sumo pequeño. **V2 gira sobre el eje**: izquierda `(-125, +125)` y derecha `(+125, -125)`, hasta que detecte el objetivo con el JS40F frontal. Antes de futuros ensayos se debe verificar el sentido con las ruedas levantadas.
 - Antes, durante `RETROCEDIENDO` (350 ms) y `GIRANDO` (380 ms) se ignoraban los sensores de oponente. Ahora sigue dando prioridad al borde, pero **puede salir del giro después de 110 ms si ambos QTR ven negro y algún JS40F detecta rival**. Mantiene retroceso 350 ms sin interrupciones. Con blancos persistentes, continúa priorizando la seguridad del borde.
 - Al perder una lectura lateral, V2 recuerda la dirección durante **170 ms**, y después alterna el barrido.
 - Los pines **no cambian**: izquierdo D2, central A5, derecho A4, QTR A2/A3 y MicroStart D12. `HIGH` detecta rival, conforme a [JSumo](https://blog.jsumo.com/xs1-micro-sumo-arduino-code-explanation-of-the-robot-code/).
@@ -25,7 +25,7 @@ La **LED integrada de la placa Arduino (normalmente D13 / LED_BUILTIN)** ahora m
 
 **Si el LED integrado prende con el botón 1** y se apaga con 2, el cable o señal de D12 no está comportándose como `SIGNAL` del MicroStart. Corregir primero la conexión y comprobar GND común **con la alimentación desconectada**. No invertir `HIGH/LOW` por software, porque quitaría el STOP de competencia. Si el LED se enciende correctamente con 2 y el robot sigue inmóvil, revisar QTR, sentido de giro, batería y si el programa realmente salió de `PARADO`.
 
-**Para repetir una ronda después de STOP**, cortar y restaurar la alimentación del MicroStart. No es necesario reprogramar los tres botones. No competir mientras el botón STOP no corte los motores de manera fiable.
+**Para repetir una ronda después de STOP**, cortar y restaurar la alimentación del MicroStart siguiendo las instrucciones del módulo. En la sesión E5 observamos que el botón 1 arrancaba, el 2 detenía y el 3 no respondía. Antes de RoboLympics debemos corregir y verificar el paro, y disponer de un medio seguro de desconexión física.
 
 ## Cómo hacer la prueba
 
@@ -45,4 +45,4 @@ Mantiene pulsos de ataque de 125, 165 y 140 PWM como **valores propuestos, no va
 - Si el sensor lateral tiene LED encendido pero Arduino marca `0`, revisar señal y GND; si Arduino marca `1` pero gira hacia el lado equivocado, revisar orientaciones de motor.
 - Si gira continuamente y no persigue al rival, revisar calibración QTR y orientación de JS40F.
 
-Los resultados del día y cualquier mejora observada deben anotarse después de realizar las pruebas. No afirmar que esta versión ganó ni que se confirmó su funcionamiento hasta tener evidencia.
+**Resultados de E5 V2:** dos peleas registradas en [videos y tabla de resultados](../../../evidencias/dia-05/README.md): una victoria (10 s) y una derrota (5 s). La mejora lateral no fue consistente y el paro remoto requiere revisión.

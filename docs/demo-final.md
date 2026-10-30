@@ -2,7 +2,7 @@
 
 **Plataforma:** M01 · Mini-sumo autónomo Tormenta Negra  
 **Objetivo técnico de la demostración:** detectar a un mini-sumo rival, buscarlo, atacarlo y tratar de sacarlo del dohyō sin salir de la pista. Registrar también las fallas y la respuesta a rivales laterales.  
-**Versión candidata:** [E5 V2 — último programa instalado](../codigo/mini-sumo/tormenta_negra_e5_v2_laterales/Tormenta_Negra_E5_V2_Laterales.ino), según el equipo. No se registró el hash de la compilación efectivamente cargada. Antes se realizaron tres pruebas con [E5 V1](../codigo/mini-sumo/tormenta_negra_e5_competencia/Tormenta_Negra_E5_Competencia.ino).
+**Última versión instalada:** [E5 V2 — último programa instalado](../codigo/mini-sumo/tormenta_negra_e5_v2_laterales/Tormenta_Negra_E5_V2_Laterales.ino), con dos peleas documentadas en E5. No se registró el hash de la compilación efectivamente cargada. Antes se realizaron tres pruebas con [E5 V1](../codigo/mini-sumo/tormenta_negra_e5_competencia/Tormenta_Negra_E5_Competencia.ino).
 
 ## Guion de 90 segundos por estudiante
 1. Al llegar, yo todavía no podía…

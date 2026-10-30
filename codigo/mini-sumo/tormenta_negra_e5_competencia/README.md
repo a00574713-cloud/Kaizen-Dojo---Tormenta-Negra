@@ -1,6 +1,6 @@
 # Tormenta Negra — E5: firmware experimental de competencia
 
-**Estado: candidato NO VALIDADO físicamente.** Este trabajo se preparó para probarlo el 30/10/2026. No sustituye automáticamente el [programa E4](../tormenta_negra_final/Tormenta_Negra_Final.ino), que permanece intacto. **Identificación visual del 30/10:** el control coincide con el **Steren RM-260**, y la placa roja con botón y receptor coincide con el diseño **JSumo MicroStart**. La marca/modelo físico de la placa no puede certificarse sin revisar sus inscripciones; **verificar su pinout y salida digital antes de alimentar**.
+**Estado posterior al Día 5:** código E5 V1 utilizado en las tres pruebas previas del 30 de octubre; obtuvo dos resultados favorables (13 y 5 s) y una prueba desfavorable por detección lateral (5 s). [Registros y videos](../../../evidencias/dia-05/README.md). El E5 V2 se utilizó posteriormente en las dos peleas. La asignación real de botones fue 1=arranque, 2=paro, 3=sin respuesta; queda pendiente corregirla.
 
 ## Archivos
 
@@ -19,7 +19,7 @@
 | Rival perdido | Sigue girando hacia última dirección | Recuerdo corto de dirección y barrido en ambos sentidos |
 | Control IR | No había | Opción de módulo START digital u opción NEC con TinyIRReceiver |
 
-**Código E5 para la minicompetencia del salón:** el módulo MicroStart queda programado 1=desbloquear, 2=START y 3=STOP. **El firmware enclava STOP:** tras presionar 3 no puede volver a moverse hasta cortar y restaurar la alimentación. El botón 1 no mueve el robot: solo desbloquea el MicroStart. **El archivo E4 original no se modificó**.
+**Asignación programada para MicroStart:** 1=desbloquear, 2=START y 3=STOP, con paro enclavado. **Comportamiento observado el 30 de octubre:** 1 arrancaba, 2 detenía y 3 no respondía. Antes de otra competencia debemos identificar y corregir esta diferencia y verificar el paro con las ruedas levantadas. El archivo E4 original se conserva.
 
 **No interpretar PWM 165 como fuerza medida ni como garantía de ganar.** Las tres pruebas a PWM 105 son la base que funcionó ayer; los PWM mayores son nuevos. Un golpe prolongado con motores bloqueados puede dañar el driver o los motores.
 
@@ -95,4 +95,4 @@ El programa no tiene sensor de corriente ni protección térmica automática: us
 - [ATLAS Sumo Robot — búsqueda, persecución y ataque por estados](https://leonardoward.github.io/sumo.html).
 - [FDJ Robotics — rampa baja, tracción y par](https://fdjrobotics.com/comunidad/entrada/tutorial-arma-tu-primer-robot-mini-sumo).
 
-**Registro E5 colectivo y E5 personales: no se editaron**. Se documentarán únicamente cuando se hayan realizado las pruebas de hoy.
+**Resultados posteriores a la preparación de este firmware:** [E5 colectivo](../../../docs/entregables/dia-05.md) · [evidencias de cinco pruebas y peleas](../../../evidencias/dia-05/README.md) · [E5 V2](../tormenta_negra_e5_v2_laterales/README.md).

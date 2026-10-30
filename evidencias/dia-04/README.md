@@ -4,7 +4,7 @@
 
 ## Diseño CAD de la carcasa
 
-**Responsable:** Claudio (`A00574802`). El Día 4 **diseñó y mandó a imprimir** la carcasa del mini-sumo. **No se instaló ni ensambló en el robot durante la sesión documentada**. La impresión se solicitó, pero no se ha confirmado su estado; el montaje es trabajo posterior.
+**Responsable:** Claudio (`A00574802`). El Día 4 **diseñó y mandó a imprimir** la carcasa del mini-sumo. **No se instaló ni ensambló en el robot durante la sesión documentada**. Las piezas se instalaron el 30 de octubre, como muestran las [fotografías del robot terminado en E5](../dia-05/README.md).
 
 Las dos vistas se comparten como capturas CAD **optimizadas a WebP para su visualización** (archivos originales conservados por el equipo). Son evidencia del **diseño**, no fotografías de una pieza física.
 
@@ -18,7 +18,7 @@ Las dos vistas se comparten como capturas CAD **optimizadas a WebP para su visua
 
 ## Más evidencias de la jornada
 
-- **Navaja:** Sara, con apoyo de Max, la pegó al chasis. Falta enlazar una foto del resultado físico.
+- **Navaja:** Sara, con apoyo de Max, la pegó al chasis. La navaja instalada aparece en las [fotografías del robot terminado, Día 5](../dia-05/README.md).
 - **Pruebas de evasión:** tres ejecuciones a PWM 145 y tres a PWM 105. [Comparación y calibración](../../datos/e4_pruebas_pwm105_29oct.md).
 - **Prueba de ataque:** el robot detectó y empujó un teléfono fuera del dohyō **al primer intento**, manteniéndose en la parte negra; se trata de una prueba con objeto, no combate oficial.
 - **Video 1 — [Tormenta Negra funcionando](https://drive.google.com/file/d/1a6mugpORP3xKJwx6JwA79JXIj8vCLtsT/view?usp=drivesdk):** evidencia audiovisual del movimiento del robot en la pista (archivo original alojado en Drive).

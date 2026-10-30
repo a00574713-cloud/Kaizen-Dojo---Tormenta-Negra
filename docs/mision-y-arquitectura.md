@@ -2,22 +2,22 @@
 
 **Plataforma:** M01 · Mini-sumo autónomo  
 **Dōjō:** Laboratorio de Electrónica, CTA, Campus León  
-**Estado de referencia:** 28 de octubre de 2026; [entregable E3](entregables/dia-03.md).
+**Estado de referencia:** montaje y funcionamiento final al 30 de octubre de 2026. [E5](entregables/dia-05.md) y [fotografías del robot terminado](../evidencias/dia-05/README.md).
 
 ## Objetivo verificable
 
-Construir un robot mini-sumo autónomo que pueda desplazarse, detectar al oponente, identificar el borde blanco del dōjō y reaccionar de forma segura. Las pruebas exploratorias de motores y sensores se reportaron correctas; el comportamiento autónomo integrado no se ha ensayado todavía.
+Construimos un mini-sumo autónomo capaz de desplazarse, reaccionar al borde y detectar un rival. En E5 realizamos tres pruebas y dos peleas contra otro mini-sumo; obtuvimos una victoria y una derrota en las peleas. Continúa pendiente mejorar la detección lateral y el control de parada.
 
 ## Arquitectura observada y prevista
 
 | Subsistema | Función | Entradas | Salidas | Responsable / alcance |
 |---|---|---|---|---|
-| Mecánica | Sostener y ubicar los componentes en la base metálica | Base, soportes, ruedas, motores, placa y batería | Estructura físicamente montada; dimensiones/peso por validar | Max y Joel · MS01 |
+| Mecánica | Sostener y ubicar los componentes en la base metálica | Base, soportes, ruedas, motores, placa y batería | Estructura y carcasa 3D montadas; dimensiones 10 × 10 cm; peso sin medir | Max y Joel · MS01 |
 | Alimentación | Suministrar energía al control y a los motores | Batería etiquetada 7.4 V / 500 mAh, USB para programación | Alimentación reportada funcional con batería; especificaciones eléctricas por confirmar | Equipo · MS03 |
-| Sensores de oponente | Detectar objetos frente y a los lados | Tres sensores JS40F reportados | Señales hacia el controlador; respuesta cualitativa reportada | Sara y Joel · MS06 |
-| Sensores de borde | Detectar cambios de reflectancia sobre la pista | Dos sensores QTR-1A reportados | Lectura analógica al controlador; respuesta cualitativa reportada | Equipo; asignación detallada pendiente |
-| Control | Leer sensores y producir órdenes para los motores | Señales de sensores, programa cargado desde Arduino IDE | Comandos de motor; estrategia autónoma aún pendiente | Claudio · MS07 y MS10 |
-| Motorización | Mover el robot | Driver/controlador y batería | Giro observado de dos motores con batería; maniobras sobre pista por medir | Claudio, Sara y Max · MS03 |
+| Sensores de oponente | Detectar objetos frente y a los lados | Tres sensores JS40F reportados | JS40F integrados en V1/V2; detección lateral con fallas en algunas pruebas | Sara y Joel · MS06 |
+| Sensores de borde | Detectar cambios de reflectancia sobre la pista | Dos sensores QTR-1A reportados | QTR integrados, calibración y evasión probadas en E4 | Equipo · control de borde |
+| Control | Leer sensores y producir órdenes para los motores | Señales de sensores, programa cargado desde Arduino IDE | Programación autónoma de búsqueda y ataque E5 desarrollada por Joel | Joel (programación); equipo (integración) |
+| Motorización | Mover el robot | Driver/controlador y batería | Motores y maniobras funcionales; respuesta ante rival documentada en E5 | Claudio, Sara y Max · MS03 |
 
 ## Flujo de señales (esquema funcional)
 
@@ -31,7 +31,7 @@ flowchart TD
   M --> R["Motor y rueda derecha"]
 ```
 
-**Nota:** el diagrama es funcional, no un esquema eléctrico ni un pinout validado. Los pines exactos, el regulador y las rutas de alimentación deben confirmarse con documentación de la tarjeta y mediciones.
+**Alcance del diagrama:** es funcional, no sustituye un esquema eléctrico ni la comprobación de voltajes. Los pines de la lógica E5 están documentados en sus archivos de código; la compatibilidad eléctrica debe confirmarse antes de nuevos ensayos.
 
 ## Dependencias y próximos pasos
 
@@ -41,4 +41,4 @@ flowchart TD
 - Validar inicio/paro, reacción al borde y búsqueda/ataque en dōjō con autorización.
 - Conservar evidencia fotográfica en [Día 3](../evidencias/dia-03/README.md).
 
-La atribución precisa del montaje del Día 3 a cada integrante sigue pendiente de su bitácora personal.
+**Participación y resultados:** [E2](entregables/dia-02.md), [E3](entregables/dia-03.md), [E4](entregables/dia-04.md) y [E5](entregables/dia-05.md) describen el trabajo del equipo y enlazan las bitácoras personales.

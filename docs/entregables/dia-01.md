@@ -1,6 +1,6 @@
 # E1 · Día 1 — ATREVERSE | Contrato de misión, inventario y dōjō
 
-> **Regla:** sustituir los corchetes, registrar lo realmente observado y enlazar a evidencias del repositorio. **No inventar datos ni marcar pruebas no realizadas.** Los archivos del equipo resumen el trabajo compartido; las reflexiones y evidencias personales van en `participantes/<alias>/dias/E1.md`.
+
 
 ## 0 · Identificación, equipo y logística del dōjō
 
@@ -336,4 +336,4 @@ Antes de energizar el robot confirmaremos la autorización del laboratorio, las 
 **Criterio mínimo E1:** existe un contrato de misión y frontera individual, hay evidencia del punto de partida, un inventario verificable y un espacio de trabajo autorizado. La ausencia de algún material crítico NO debe esconderse.
 
 
-> **Actualización de organización del repositorio (27 de octubre de 2026):** los cuatro compromisos individuales se trasladaron a `participantes/<alias>/compromiso.md` y se corrigieron los enlaces de esta página. Esta actualización administrativa no cambia las observaciones, casillas ni el gate original del Día 1.
+**Archivo del Día 1:** esta bitácora conserva el estado de planeación del 26 de octubre. Los compromisos de los cuatro integrantes están enlazados; el montaje y las pruebas posteriores se registran en [E2](dia-02.md), [E3](dia-03.md), [E4](dia-04.md) y [E5](dia-05.md).
