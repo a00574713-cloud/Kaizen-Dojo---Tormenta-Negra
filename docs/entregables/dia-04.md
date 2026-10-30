@@ -90,37 +90,37 @@ El siguiente objetivo es que el robot pueda desplazarse sobre la superficie negr
 
 ### Tabla de ensayos comparables que pide la guía
 
-El formato original solicita **cinco ensayos bajo condiciones equivalentes**, comparando V1, K1 y K2. Los ensayos anteriores no midieron el mismo comportamiento: V1 fue montaje sin prueba funcional; K1 fueron pruebas individuales de sensores y motores; K2 fue el primer movimiento integrado. Por eso **no hay valores numéricos equivalentes de las tres versiones** y no se deben calcular medias o porcentajes de éxito comparativos todavía.
+El formato original solicita **cinco ensayos bajo condiciones equivalentes**, comparando V1, K1 y K2. V1 solo tenía el montaje; K1 comprobó motores y sensores por separado, mientras que K2 ya cuenta con **seis ejecuciones integradas**, tres a PWM 145 y tres a PWM 105. Se conserva la tabla exigida, pero **no existen mediciones equivalentes de V1 y K1**. Las dos tandas K2 también difieren en calibración, por lo que su comparación no aísla únicamente la velocidad.
 
 | Ensayo / misma condición | V1 (valor + unidad) | K1 (valor + unidad) | K2 (valor + unidad) | Incidencias / validez |
 |---|---|---|---|---|
 | 1 | Sin prueba equivalente | Sin prueba equivalente | Primera corrida de 15 s, PWM de avance 145; salidas sin contar | No comparable entre versiones |
 | 2 | Sin prueba equivalente | Sin prueba equivalente | Segunda corrida de 15 s, PWM de avance 145; salidas sin contar | No comparable entre versiones |
 | 3 | Sin prueba equivalente | Sin prueba equivalente | Tercera corrida de 15 s, PWM de avance 145; salidas sin contar | No comparable entre versiones |
-| 4 | Sin dato | Sin dato | Pendiente | No realizado |
-| 5 | Sin dato | Sin dato | Pendiente | No realizado |
+| 4 | Sin prueba equivalente | Sin prueba equivalente | Primera corrida de 15 s con PWM 105: 11 avisos, 0 salidas observadas | No comparable con V1/K1; QTR recalibrados |
+| 5 | Sin prueba equivalente | Sin prueba equivalente | Segunda corrida de 15 s con PWM 105: 13 avisos, 0 salidas observadas | No comparable con V1/K1; tercera corrida adicional abajo |
 
-**Registros fuente:** [log del Monitor Serie](../../datos/e4_monitor_serie_29oct.txt) · [observaciones](../../datos/observaciones-dia-04.md) · [protocolo](../../pruebas/protocolo.md) · [CSV de ensayos](../../datos/ensayos.csv), que todavía no tiene corridas individuales llenadas.
+**Registros fuente:** [log original PWM 145](../../datos/e4_monitor_serie_29oct.txt) · [observaciones PWM 145](../../datos/observaciones-dia-04.md) · [pruebas y comparación PWM 105](../../datos/e4_pruebas_pwm105_29oct.md) · [protocolo](../../pruebas/protocolo.md). Las mediciones de E4 se conservan por separado de las pruebas cualitativas de E3.
 
-**Síntesis (n, media/mediana, dispersión y éxito):** n = 3 pruebas integradas de 15 s con PWM de avance 145. No podemos calcular tasas de éxito, media de salidas o mejora porcentual, porque no se registró el número de salidas por prueba ni se ha ensayado la nueva velocidad.
+**Síntesis (n, media/mediana, dispersión y éxito):** n = **6 pruebas de evasión**, tres a PWM 145 y tres a PWM 105, todas programadas a 15 s. La versión 105 consiguió **3 de 3 pruebas sin salidas observadas**; la versión 145 tuvo algunas salidas sin conteo. Los avisos de borde fueron 36 y 35, respectivamente, pero no son éxitos de evasión. No corresponde una tasa comparativa de mejora entre versiones ni una media de salidas de la primera tanda.
 
-**Qué mejora, qué empeora y qué no sabemos:** el robot ya muestra capacidad de avanzar y realizar maniobras ante el borde; las manchas blancas causan giros inesperados y hubo salidas ocasionales. Todavía no sabemos si reducir la velocidad mejora esos resultados.
+**Qué mejora, qué empeora y qué no sabemos:** la tanda PWM 105 no presentó salidas observadas, mejoró la diferencia de lecturas negro/blanco y posteriormente la versión de competencia expulsó un teléfono. No sabemos qué parte de la mejora se debió a velocidad, calibración o condiciones de pista; tampoco se ha probado contra otro mini-sumo.
 
 ## 3A · Registro de intentos del Día 4
 
-Esta es la tabla de intentos del **E4**, adaptada al formato de cinco filas de la guía. **Solo se llenan las tres pruebas que realmente hicimos el 29 de octubre**. La tabla del E3 sobre los motores permanece en su propio día, porque las fallas por batería y polaridad ocurrieron el 28 de octubre.
+Esta tabla conserva el formato de **cinco filas** solicitado por la guía y contiene **cinco de las seis pruebas reales del 29 de octubre**. La sexta se registra después. Las fallas de batería y polaridad son del E3 y no se trasladan como datos numéricos a E4.
 
 | Intento | Condición de prueba | Resultado registrado | Observaciones |
 |---:|---|---|---|
 | 1 | Dohyō, programa de evasión, avance PWM 145; ejecución de 15 s | Se ejecutó hasta el paro por tiempo; **12 avisos de borde** (9 izquierda, 3 derecha) | El resultado del movimiento por intento no se anotó por separado; las manchas blancas y las salidas ocasionales se reportaron para el conjunto de pruebas. |
 | 2 | Mismo programa y velocidad; ejecución de 15 s | Se ejecutó hasta el paro por tiempo; **12 avisos de borde** (5 izquierda, 7 derecha) | No quedó registrado por intento si se salió del dohyō o si giró por una mancha interior. |
 | 3 | Mismo programa y velocidad; ejecución de 15 s | Se ejecutó hasta el paro por tiempo; **12 avisos de borde** (6 izquierda, 6 derecha) | No quedó registrado por intento si se salió del dohyō o si giró por una mancha interior. |
-| 4 | Pendiente de una nueva ejecución | **No realizada** | Propuesta: probar velocidad PWM 105, registrando salidas y giros innecesarios. |
-| 5 | Pendiente de una nueva ejecución | **No realizada** | Repetir la prueba con las mismas condiciones y registrar el resultado. |
+| 4 | Avance PWM 105, nueva calibración QTR, 15 s | **11 avisos** (7 izquierda, 4 derecha); **sin salida** | Primera ejecución de la nueva versión, según el [registro](../../datos/e4_pruebas_pwm105_29oct.md). |
+| 5 | Avance PWM 105, nueva calibración QTR, 15 s | **13 avisos** (8 izquierda, 5 derecha); **sin salida** | Segunda ejecución de la nueva versión. Tercera ejecución adicional: 11 avisos y sin salida. |
 
 **Observación general confirmada por el equipo:** durante estas tres pruebas el robot sí avanzaba y respondía al blanco retrocediendo y girando; las manchas blancas del interior provocaban giros repentinos y en algunas ocasiones el robot llegó a salirse. **No se puede asociar un número específico de salidas o giros innecesarios a cada prueba**, ni afirmar que las tres permanecieron completamente dentro del dohyō. Los **36 avisos** son detecciones emitidas por el programa, no 36 evasiones exitosas.
 
-**Evidencia:** [registro completo del Monitor Serie](../../datos/e4_monitor_serie_29oct.txt) y [análisis de las pruebas](../../datos/observaciones-dia-04.md). Las filas 4 y 5 no son resultados del 29 de octubre y se mantienen pendientes.
+**Evidencia:** [registro del Monitor Serie PWM 145](../../datos/e4_monitor_serie_29oct.txt), [análisis de la primera tanda](../../datos/observaciones-dia-04.md) y [resultados PWM 105](../../datos/e4_pruebas_pwm105_29oct.md). Las filas 4 y 5 corresponden a pruebas realmente ejecutadas.
 
 ### Detalle de las tres ejecuciones en el Monitor Serie
 
@@ -137,6 +137,30 @@ Los avisos de borde son **eventos impresos por el programa**, no el número de v
 **Observación importante para mejorar:** el sensor izquierdo tiene poco contraste entre negro y blanco (**1022 vs. 956**, diferencia 66), mientras que el derecho muestra una separación mucho mayor (**821 vs. 34**, diferencia 787). Las manchas blancas explican parte de las detecciones repentinas; aún conviene revisar la altura y calibración de ambos QTR. Para evitar que el robot se salga, la siguiente prueba deberá hacerse a menor velocidad, observando si retrocede y gira con suficiente anticipación. **El código de las tres pruebas se conserva sin modificaciones.**
 
 **Evidencia del Día 4:** [log completo del Monitor Serie](../../datos/e4_monitor_serie_29oct.txt) · [análisis de resultados](../../datos/observaciones-dia-04.md) · [código ejecutado](../../codigo/mini-sumo/prueba_evasion_borde/prueba_evasion_borde.ino).
+
+### Comparación de las seis pruebas de evasión del Día 4
+
+| Ejecución | PWM avance | Avisos izquierda | Avisos derecha | Total de avisos | Salidas observadas |
+|---:|---:|---:|---:|---:|---|
+| 1 | 145 | 9 | 3 | 12 | La tanda presentó salidas; sin conteo por ejecución |
+| 2 | 145 | 5 | 7 | 12 | Sin desglose por ejecución |
+| 3 | 145 | 6 | 6 | 12 | Sin desglose por ejecución |
+| 4 | 105 | 7 | 4 | 11 | 0 |
+| 5 | 105 | 8 | 5 | 13 | 0 |
+| 6 | 105 | 9 | 2 | 11 | 0 |
+
+Las tres pruebas de **PWM 105 terminaron por tiempo y no presentaron salidas del dohyō**, según la observación del equipo. El robot siguió reaccionando ante blanco. Hubo **35 avisos de borde** (24 izquierda y 11 derecha); estos mensajes no son un conteo de salidas evitadas.
+
+| Calibración de QTR | Negro izquierdo | Blanco izquierdo | Umbral izquierdo | Negro derecho | Blanco derecho | Umbral derecho |
+|---|---:|---:|---:|---:|---:|---:|
+| Primera tanda, PWM 145 | 1022 | 956 | 989 | 821 | 34 | 427 |
+| Segunda tanda, PWM 105 | 749 | 31 | 390 | 873 | 39 | 456 |
+
+### Prueba adicional de ataque con teléfono
+
+Después de cargar el programa de competencia sin control remoto en **una tarjeta de reemplazo**, Joel realizó una prueba con un teléfono dentro del dohyō. **Resultado observado:** Tormenta Negra empujó el teléfono fuera y permaneció dentro de la superficie negra. No se informó el tiempo, número de intentos ni video de esta prueba. **No se considera combate oficial**, pues el objeto no era otro robot; sirve como comprobación inicial del comportamiento de búsqueda y ataque. El archivo exacto de ese programa está pendiente de incorporarse al repositorio.
+
+La tarjeta anterior **se dañó** y fue reemplazada. No hay diagnóstico confirmado de la causa de la avería. Antes de alimentar de nuevo una placa, verificar polaridad, voltaje y compatibilidad entre USB y batería; no conectar ambas fuentes simultáneamente sin confirmar que el diseño lo permite.
 
 ## 4 · Robustez y seguridad
 
