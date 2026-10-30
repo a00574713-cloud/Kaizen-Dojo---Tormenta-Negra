@@ -197,7 +197,7 @@ La tarjeta anterior **se dañó** y fue reemplazada. No hay diagnóstico confirm
 Antes de probar el robot en movimiento, revisar que la carcasa no toque ni provoque cortocircuitos en la placa, que los motores estén bien sujetos y que la batería esté segura. Hacer primero la prueba con ruedas levantadas y mantener despejado el dohyō. **Los programas de prueba E4 se detenían a los 15 s; el programa posterior de competencia arranca automáticamente tras una espera de 5 s y no tiene ese paro por tiempo.** Debe comprobarse su seguridad y compatibilidad con el reglamento antes de competir.
 
 **Dimensiones reportadas:** 10 × 10 cm.  
-**Peso:** por medir; el reglamento limita el conjunto a 500 g.  
+**Peso:** no medido: **no había báscula disponible**. El reglamento citado limita el conjunto a 500 g; falta comprobar que el montaje final cumpla.  
 **Arranque y paro remoto:** receptor conectado a D12, **no integrado al programa de competencia**. El código cargado actualmente arranca solo tras unos 5 s con la batería; revisar si la competencia exige control remoto u otro tipo de autorización de inicio.
 
 ## 5 · Preparación de la demostración
@@ -208,16 +208,16 @@ La demostración prevista consistirá en enseñar el robot montado, explicar có
 
 | Segmento | Qué se demostrará | Integrante responsable | Versión o código | Material requerido | Plan B ante fallo |
 |---|---|---|---|---|---|
-| Inicio / contexto | Mostrar el robot armado, la carcasa y el objetivo de evitar el borde | Pendiente de asignar | Prototipo E4 | Robot ensamblado | Mostrar fotos y explicar el montaje |
+| Inicio / contexto | Mostrar el montaje, el diseño de la carcasa enviado a impresión por Claudio y la navaja ajustada por Sara y Max | Pendiente de asignar | Prototipo E4 | Robot y evidencia del diseño; instalación final de carcasa por confirmar | Mostrar fotos o diseño si no está listo el montaje |
 | Prueba principal | Avanzar sobre negro, evadir el blanco y demostrar ataque sobre un objeto | Pendiente de asignar | [PWM 105 probado](../../codigo/mini-sumo/prueba_evasion_borde_lenta/prueba_evasion_borde_lenta.ino) y código de competencia cargado en tarjeta de reemplazo (archivo por incorporar) | Dohyō, batería y objeto de prueba seguro; supervisión | Mostrar registros del Monitor Serie si no es seguro moverlo |
 | Evidencia de mejora | Explicar V1–K1–K2 y las seis pruebas de evasión, más la expulsión de un teléfono | Pendiente de asignar | [Comparación del E4](../../datos/e4_pruebas_pwm105_29oct.md) | Tabla y registros | Explicar limitaciones sin inventar un porcentaje de mejora |
-| Defensa de fronteras | Cada integrante explica su aportación y aprendizaje | Pendiente de confirmar aportaciones E4 | Documentos individuales | Bitácoras E4 personales | Explicar qué falta validar |
+| Defensa de fronteras | Cada integrante explica su aportación: Joel (código/pruebas), Sara y Max (navaja/pruebas) y Claudio (carcasa) | Pendiente de asignar quién presenta cada parte | [E4 de Joel](../../participantes/A00574713/dias/E4.md) y E4 individuales por completar | Bitácoras y evidencias del equipo | Explicar qué falta validar |
 
 **¿RoboLympics es un evento externo posterior?** Por confirmar. No se registra ninguna participación en una competencia externa como realizada. La demostración prevista para D5 es interna.
 
 **Responsables, tiempos y ensayo general:** propuesta de guion documentada; quedan pendientes la asignación y la ejecución real.
 
-**Evidencias disponibles:** [fotografías del E3](../../evidencias/dia-03/README.md), [PWM 145](../../codigo/mini-sumo/prueba_evasion_borde/prueba_evasion_borde.ino), [PWM 105](../../codigo/mini-sumo/prueba_evasion_borde_lenta/prueba_evasion_borde_lenta.ino), [log de la primera tanda](../../datos/e4_monitor_serie_29oct.txt) y [comparación de las seis pruebas](../../datos/e4_pruebas_pwm105_29oct.md). La prueba de ataque contra un teléfono está confirmada por el equipo, **pero aún no tiene fotografía o video enlazado**. Las fotografías del montaje E4 también están pendientes.
+**Evidencias disponibles en GitHub:** [fotografías del E3](../../evidencias/dia-03/README.md), [código PWM 145](../../codigo/mini-sumo/prueba_evasion_borde/prueba_evasion_borde.ino), [código PWM 105](../../codigo/mini-sumo/prueba_evasion_borde_lenta/prueba_evasion_borde_lenta.ino), [log de la primera tanda](../../datos/e4_monitor_serie_29oct.txt) y [comparación de las seis pruebas](../../datos/e4_pruebas_pwm105_29oct.md). **El equipo confirmó que tiene dos videos del E4** (movimiento en la pista y expulsión del teléfono), pero faltan sus enlaces o archivos. Tampoco se han compartido fotografías de la navaja y la carcasa.
 
 ## 6 · Gate de preparación E4
 
@@ -229,12 +229,13 @@ Esta lista conserva los cinco criterios de cierre del entregable original:
 - [ ] **Demostración D5:** guion propuesto, pero faltan responsables, contingencia acordada y ensayo.
 - [ ] **E4 personales:** [Joel ya tiene su E4 personal redactado](../../participantes/A00574713/dias/E4.md). Faltan completar y revisar los de Sara, Max y Claudio.
 
-**Decisión de preparación:** CON RESTRICCIONES. **Verificado por el equipo:** seis pruebas de evasión, tres a PWM 105 sin salidas, y una prueba adicional de ataque con teléfono sin salida del robot. **Pendientes:** revisión por pares, roles y ensayo de demostración, aportaciones personales de Sara/Max/Claudio, peso, evidencia fotográfica del montaje E4, incorporar código final al repositorio y validación docente. **Control remoto:** todavía no integrado; comprobar si se exige para competencia. **Revisión docente:** sin aceptación confirmada.
+**Decisión de preparación:** CON RESTRICCIONES. **Verificado por el equipo:** seis pruebas de evasión, tres a PWM 105 sin salidas, expulsión del teléfono al **primer intento**, distribución de tareas y revisión informal de Artemis. **Pendientes:** contenido específico de los consejos de Artemis, asignación de intervenciones y ensayo general de demostración, E4 personales de Sara/Max/Claudio, **peso (sin báscula)**, enlaces a los **dos videos**, evidencia del montaje E4, instalación final de la carcasa por confirmar, archivo exacto del código final en GitHub y validación docente. **Control remoto:** aún no integrado; comprobar si lo exige el reglamento. **Revisión docente:** sin aceptación confirmada.
 
 ## 7 · Estado de E4
 
-- [x] Carcasa construida y cableado acomodado, según el equipo.
-- [x] Motores mejor fijados al chasis.
+- [x] **Claudio diseñó y mandó a imprimir la carcasa**; el cableado se reacomodó al sustituir la placa.
+- [ ] Confirmar que la carcasa ya está instalada.
+- [x] Se trabajó en la fijación de los motores y **Sara y Max ajustaron la navaja para pegarla al chasis**.
 - [x] Receptor para el control remoto conectado.
 - [x] Programa de prueba conjunta cargado y ejecutado en el dohyō.
 - [x] Registradas **seis ejecuciones** de evasión, en dos tandas de 15 s, con lecturas de QTR, IR y avisos de borde.
@@ -244,7 +245,10 @@ Esta lista conserva los cinco criterios de cierre del entregable original:
 - [ ] Medir giros innecesarios y realizar pruebas controladas con idéntica calibración.
 - [ ] Verificar arranque y paro mediante el control remoto.
 - [x] Documentar robustez observada y la prueba adicional que expulsó un teléfono sin salida del robot.
-- [ ] Completar E4 personales de Sara, Max y Claudio y registrar revisión por pares.
-- [ ] Pesar el robot y recibir revisión del profesor.
+- [x] Recibir observaciones de algunos compañeros del **equipo Artemis**.
+- [ ] Anotar las recomendaciones concretas de Artemis y la decisión tomada.
+- [ ] Completar E4 personales de Sara, Max y Claudio.
+- [ ] Pesar el robot cuando haya báscula y recibir revisión del profesor.
+- [ ] Enlazar los dos videos y el código de competencia cargado en la tarjeta de reemplazo.
 
-**Estado E4:** en proceso. Montaje mejorado, seis pruebas integradas de evasión registradas (tres a PWM 105 sin salidas) y prueba inicial de ataque exitosa con teléfono. Quedan pendientes evidencias, aportaciones individuales, ensayo general y revisión docente.
+**Estado E4:** documentación técnica y de colaboración avanzada. Se registraron seis ejecuciones de evasión (tres a PWM 105 sin salidas), la prueba de ataque exitosa **en el primer intento**, la propuesta de Joel para bajar la velocidad, el trabajo de Sara y Max en la navaja, el diseño de carcasa de Claudio, la sustitución de tarjeta entre Joel/Max/Claudio y la revisión informal de Artemis. Se mantienen pendientes los dos videos por enlazar, el peso, los E4 individuales restantes, el ensayo general y la revisión docente.
