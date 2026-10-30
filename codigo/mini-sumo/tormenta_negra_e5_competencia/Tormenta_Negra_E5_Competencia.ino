@@ -76,7 +76,8 @@ const unsigned long RETROCESO_MS = 350UL;
 const unsigned long GIRO_BORDE_MS = 380UL;
 const unsigned long RECUERDO_RIVAL_MS = 280UL;
 const unsigned long CAMBIO_BUSQUEDA_MS = 1000UL;
-const unsigned long ESTABILIDAD_START_MS = 70UL;
+// Filtrar pulsos espurios del pin D12; STOP sigue siendo inmediato.
+const unsigned long ESTABILIDAD_START_MS = 500UL;
 const unsigned long ESPERA_TRAS_START_MS = 0UL; // modulo arbitral da la orden
 const bool DIAGNOSTICO_SIN_MOTORES = false; // true para ver sensores y mando
 
