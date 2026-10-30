@@ -87,6 +87,8 @@ enum Estado {
 Estado estado = DETENIDO;
 
 bool permisoCombate = false;
+// Al recibir STOP, impedir rearmado accidental hasta reiniciar la alimentacion.
+bool paroEnclavado = false;
 unsigned long inicioOrden = 0;
 unsigned long inicioEstado = 0;
 unsigned long ultimoRival = 0;
@@ -136,11 +138,13 @@ void ponerEstado(Estado nuevo, unsigned long ahora) {
 void detenerCombate(unsigned long ahora) {
   (void)ahora;
   permisoCombate = false;
+  paroEnclavado = true;
   estado = DETENIDO;
   pararMotores();
 }
 
 void iniciarCombate(unsigned long ahora) {
+  if (paroEnclavado) return;
   permisoCombate = true;
   inicioOrden = ahora;
   inicioBarrido = ahora;
@@ -153,6 +157,8 @@ void iniciarCombate(unsigned long ahora) {
 // El modulo arbitral entrega una salida digital: LOW=paro; HIGH=inicio.
 #if TIPO_CONTROL == 1
 void revisarControl(unsigned long ahora) {
+  // MicroStart puede hacer parpadear LEDs en STOP; jamas reiniciar motores.
+  if (paroEnclavado) return;
   bool alto = (digitalRead(PIN_CONTROL) == HIGH);
   if (!alto) {
     desdeAlto = 0;
@@ -175,6 +181,7 @@ void revisarControl(unsigned long ahora) {
 }
 #elif TIPO_CONTROL == 2
 void revisarControl(unsigned long ahora) {
+  if (paroEnclavado) return;
   if (!TinyIRReceiverDecode()) return;
   uint16_t direccion = TinyIRReceiverData.Address;
   uint8_t comando = TinyIRReceiverData.Command;
@@ -249,6 +256,7 @@ void setup() {
   Serial.println(F("E5: TinyIRReceiver NEC D12, configurar botones"));
 #endif
   Serial.println(F("TORMENTA NEGRA: ESPERANDO CONTROL REMOTO"));
+  Serial.println(F("BOTON 1=DESBLOQUEO, 2=START, 3=STOP. REINICIA AL TERMINAR"));
 }
 
 void loop() {
