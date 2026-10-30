@@ -1,6 +1,6 @@
 # Tormenta Negra — E5: firmware experimental de competencia
 
-**Estado: candidato NO VALIDADO físicamente.** Este trabajo se preparó para probarlo el 30/10/2026. No sustituye automáticamente el [programa E4](../tormenta_negra_final/Tormenta_Negra_Final.ino), que permanece intacto. **No se ha confirmado el modelo de módulo receptor del control remoto.**
+**Estado: candidato NO VALIDADO físicamente.** Este trabajo se preparó para probarlo el 30/10/2026. No sustituye automáticamente el [programa E4](../tormenta_negra_final/Tormenta_Negra_Final.ino), que permanece intacto. **Identificación visual del 30/10:** el control coincide con el **Steren RM-260**, y la placa roja con botón y receptor coincide con el diseño **JSumo MicroStart**. La marca/modelo físico de la placa no puede certificarse sin revisar sus inscripciones; **verificar su pinout y salida digital antes de alimentar**.
 
 ## Archivos
 
@@ -20,6 +20,19 @@
 | Control IR | No había | Opción de módulo START digital u opción NEC con TinyIRReceiver |
 
 **No interpretar PWM 165 como fuerza medida ni como garantía de ganar.** Las tres pruebas a PWM 105 son la base que funcionó ayer; los PWM mayores son nuevos. Un golpe prolongado con motores bloqueados puede dañar el driver o los motores.
+
+## Confirmación visual: Steren RM-260 y módulo tipo MicroStart
+
+Las fotografías compartidas por el equipo coinciden con el [dibujo del Steren RM-260](https://descargas.steren.com.mx/RM-260-instr.pdf) y el [MicroStart de JSumo (manual oficial)](https://jsumo.com/Data/EditorFiles/additional/microstart-eng.pdf). **Elige la opción A de abajo, TIPO_CONTROL 1**: el módulo aprende los códigos del control y proporciona `LOW` en STOP y `HIGH` en START. El Arduino **no descodifica Sony ni NEC** cuando utiliza este módulo.
+
+**Programación para este control:**
+1. En el Steren, **presionar TV + 2 simultáneamente** para seleccionar la marca Sony (manual RM-260, pág. 2).
+2. Alimentar el MicroStart **a 3.3 o 5 V según su pinout**, nunca a 7.4 V. Confirmar en la placa qué terminal es `SIGNAL`, `GND` y `+5V`, sin asumir el orden según cómo esté girada la pieza. Conectar `SIGNAL` al pin **D12** del microcontrolador y masa común.
+3. Mantener el botón pequeño del MicroStart cerca de **1 s** hasta que los LED parpadeen **3 veces**.
+4. Apuntar el Steren y pulsar **1 para desbloquear**, esperar **1–2 s**; pulsar **2 para arrancar**, esperar **1–2 s**; pulsar **3 para detener**. El módulo debe terminar con **4 parpadeos rápidos**.
+5. Comprobar los LED y la señal D12 con el **sketch Prueba_Control_E5** antes de cargar el código de combate: **1 = desbloqueo, 2 = salida HIGH e inicio, 3 = LOW y paro**. **Después de STOP el MicroStart oficial exige reiniciar su alimentación** para otra ronda. No alterar el cableado con la batería conectada.
+
+**Aún sin verificar físicamente:** que la tarjeta Azimov envía el `SIGNAL` del módulo a **D12**, que el receptor no esté conectado a otro pin, que los botones guardados sean aceptados y que el STOP sea efectivo durante el movimiento. No dar por completada la función remota hasta probarla.
 
 ## 1. Identificar el receptor del control antes de cargar
 
