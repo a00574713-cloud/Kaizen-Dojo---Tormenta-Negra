@@ -11,7 +11,7 @@ revision_docente: "PENDIENTE"
 
 # E4 · Día 4 — ITERAR | Mejoras al montaje y preparación de prueba integrada
 
-El 29 de octubre continuamos con el mini-sumo **Tormenta Negra**. Claudio diseñó la carcasa en CAD y **la mandó a imprimir**; **el 29 de octubre todavía no se había ensamblado ni colocado en el robot**. El equipo compartió dos imágenes del diseño CAD como evidencia. Sara hizo ajustes para fijar la navaja al chasis, con apoyo de Max, y continuamos acomodando el montaje. El receptor del control remoto sigue conectado a D12, pero aún no se utiliza en el programa. Probamos la evasión del borde con PWM 145 y 105; más tarde, tras sustituir una tarjeta que se dañó, Joel se encargó del código y cargó el programa de búsqueda y ataque en la tarjeta nueva. **En el primer intento el robot detectó un teléfono, lo empujó fuera del dohyō y permaneció en la zona negra.** El equipo tiene dos videos de E4, todavía sin enlaces en el repositorio. Fue una prueba con un objeto, no un combate oficial.
+El 29 de octubre continuamos con el mini-sumo **Tormenta Negra**. Claudio diseñó la carcasa en CAD y **la mandó a imprimir**; **el 29 de octubre todavía no se había ensamblado ni colocado en el robot**. El equipo compartió dos imágenes del diseño CAD como evidencia. Sara, con ayuda de Max, **pegó la navaja al chasis** y continuamos acomodando el montaje. El receptor del control remoto sigue conectado a D12, pero aún no se utiliza en el programa. Probamos la evasión del borde con PWM 145 y 105; más tarde, tras sustituir una tarjeta que se dañó, Joel se encargó del código y cargó el programa de búsqueda y ataque en la tarjeta nueva. **En el primer intento el robot detectó un teléfono, lo empujó fuera del dohyō y permaneció en la zona negra.** El equipo tiene dos videos de E4, todavía sin enlaces en el repositorio. Fue una prueba con un objeto, no un combate oficial.
 
 ## 0 · Contexto
 
@@ -25,12 +25,12 @@ La guía propone seis bloques de trabajo. **Los minutos indican la distribución
 
 | Bloque de la guía | Minutos previstos | Registro del equipo |
 |---|---:|---|
-| Revisión por pares y retroalimentación | 0–20 | Algunos compañeros del **equipo Artemis** vieron nuestro mini-sumo y nos dieron consejos. Se confirmó que hubo retroalimentación; **falta anotar los consejos concretos**, qué cambio aceptamos y si se aplicó. |
-| Diseño y ejecución del Kaizen 2 | 20–70 | **Claudio diseñó y mandó a imprimir la carcasa**; Sara trabajó en fijar la navaja al chasis con ayuda de Max. Joel programó el movimiento y evasión, y Joel, Sara y Max realizaron pruebas. Receptor D12 conectado sin integrar al código. |
+| Revisión por pares y retroalimentación | 0–20 | Compañeros del **equipo Artemis** aconsejaron **utilizar motores de mayor rendimiento** y **agregar sensores de detección de rivales** para identificarlos más rápido. Son propuestas para evaluar; no se cambiaron motores ni se instalaron sensores extra durante E4. |
+| Diseño y ejecución del Kaizen 2 | 20–70 | **Claudio diseñó y mandó a imprimir la carcasa** (sin ensamblarla en E4); **Sara pegó la navaja al chasis con ayuda de Max**. Joel programó el movimiento y evasión, y Joel, Sara y Max realizaron pruebas. Receptor D12 conectado sin integrar al código. |
 | Comparación V1–K1–K2 | 70–115 | Documentamos las etapas V1 (montaje), K1 (componentes funcionales) y K2 (evasión). En K2 se realizaron tres pruebas con PWM 145 y tres con PWM 105; falta comparación estricta con las etapas V1 y K1, que no midieron lo mismo. |
 | Ensayo de robustez | 115–145 | Realizamos seis ejecuciones de 15 s: tres con PWM 145 (salidas ocasionales) y tres con PWM 105 (**ninguna salida observada**, según el equipo). Después se probó la búsqueda y ataque contra un teléfono, que salió de la pista mientras el robot se mantuvo dentro. |
-| Preparación de la demostración | 145–165 | El equipo cuenta con **dos videos**: uno del robot desplazándose sobre el dohyō y otro de la expulsión del teléfono. **Falta subir los videos, asignar quién presenta cada parte y realizar el ensayo general.** |
-| Gate de preparación | 165–180 | Se confirmó la revisión informal de Artemis, la mejora a PWM 105 y el primer intento de ataque exitoso. Quedan pendientes los **consejos específicos de Artemis**, enlaces a dos videos, peso (no hubo báscula), ensamblaje de la carcasa pendiente (no realizado en E4), código final en GitHub, roles de demostración y revisión docente. |
+| Preparación de la demostración | 145–165 | Hay **dos videos** pendientes de enlazar. Se preparó una **distribución de cuatro intervenciones para D5**: Claudio (contexto y CAD), Joel (código y demostración), Max (comparación de pruebas) y Sara (navaja, aprendizaje y límites). **Todavía falta ensayar realmente la presentación.** |
+| Gate de preparación | 165–180 | Se registraron **dos recomendaciones de Artemis**, el pegado de la navaja, las pruebas PWM 105 y el ataque exitoso. Ya hay **roles propuestos para D5**, sin ensayo realizado. Pendientes: enlaces a dos videos, peso (sin báscula), carcasa impresa por ensamblar, código final en GitHub, E4 individuales restantes y revisión docente. |
 
 ## 1A · Actividades realizadas en el Día 4
 
@@ -38,19 +38,19 @@ La guía propone seis bloques de trabajo. **Los minutos indican la distribución
 |---|---|
 | Carcasa y estructura | **Claudio diseñó la carcasa en CAD y la mandó a imprimir.** El equipo compartió **dos vistas del modelo**. **No se instaló ni ensambló con el robot durante E4**; falta recibir la pieza impresa y documentar su montaje posterior. |
 | Organización de componentes | Se continuó organizando el cableado y **Joel, Max y Claudio trasladaron las conexiones y componentes a una tarjeta de reemplazo**, después de que la anterior se dañó. No se conoce la causa exacta de la avería. |
-| Fijación de motores | Se mantuvo el trabajo de fijación de motores y **Sara realizó ajustes para pegar la navaja al chasis, con ayuda de Max**. No se registró una medición de fuerza de adhesión. |
+| Fijación de motores | Se mantuvo la fijación de los motores. **Sara, con ayuda de Max, logró pegar la navaja al chasis**. El pegado quedó realizado, aunque no se registró una prueba cuantitativa de resistencia de la unión. |
 | Control remoto | Conectamos al **pin D12** de la tarjeta el receptor infrarrojo destinado al arranque y paro mediante control remoto. Por ahora, el código de movimiento no utiliza este receptor. |
 | Integración del control | **Joel se encargó de todo el código**. Las pruebas de evasión las realizaron Joel, Max y Sara: tres ejecuciones a PWM 145 y tres a PWM 105 ([registro](../../datos/e4_pruebas_pwm105_29oct.md)). Joel propuso **reducir la velocidad** porque el robot se salía. Tras cambiar de tarjeta con Max y Claudio, Joel cargó el programa de ataque sin control remoto: **al primer intento detectó y sacó un teléfono del dohyō sin salir**. Falta subir ese último sketch y enlazar los videos. |
 
 ## 1B · Revisión por pares y retroalimentación
 
-La guía solicita registrar quién revisó el trabajo del equipo y qué recomendó. **Ya se confirmó una revisión informal:** algunos compañeros del equipo **Artemis** observaron el mini-sumo y compartieron consejos. No tenemos anotado qué recomendaron exactamente ni la decisión tomada frente a cada recomendación, así que esos campos permanecen pendientes.
+La guía solicita registrar quién revisó el trabajo del equipo y qué recomendó. Compañeros del **equipo Artemis** observaron el mini-sumo y recomendaron **motores más potentes** y **sensores adicionales de detección de oponentes** para identificarlos con mayor rapidez. Se registran como recomendaciones recibidas, no como modificaciones realizadas. Los nombres de quienes las dieron aún no están documentados.
 
 | Persona o equipo observador (alias) | Evidencia revisada | Observación útil o pregunta | Respuesta técnica y decisión | Cambio aceptado o descartado |
 |---|---|---|---|---|
-| Compañeros del equipo **Artemis** (nombres/alias pendientes) | Vieron el mini-sumo físico y su funcionamiento; material específico revisado por confirmar | **Nos dieron algunos consejos**, pero su contenido exacto todavía no fue reportado | Pendiente de precisar qué consejo recibió el equipo y cómo respondió | Pendiente de confirmar qué sugerencias se aplicaron o descartaron |
+| Compañeros del **equipo Artemis** (nombres/alias pendientes) | Robot físico y su desempeño en las pruebas | **Cambiar por motores mejores para la competencia** y **agregar sensores para detectar rivales más rápidamente** | Registrar ambas ideas para revisar su factibilidad y compatibilidad con el diseño actual | **No se implementaron en E4**; evaluación para futuras iteraciones pendiente |
 
-**Acuerdo de colaboración:** el equipo recibió comentarios de compañeros de Artemis. Falta registrar sus recomendaciones concretas y cómo se decidió responder a ellas; no atribuimos a Artemis la iniciativa de reducir la velocidad, porque **Joel confirmó que él la propuso** al observar que el robot se salía.
+**Acuerdo de colaboración:** recibimos las sugerencias de Artemis y las dejamos para evaluación posterior, pues no se hicieron esos cambios durante E4. **Joel propuso por iniciativa propia reducir la velocidad PWM 145 → 105** al observar que el robot se salía; no se atribuye esa decisión a Artemis.
 
 ## 2 · Segundo Kaizen: una mejora para proteger el robot en el dohyō
 
@@ -59,7 +59,7 @@ El siguiente objetivo es que el robot pueda desplazarse sobre la superficie negr
 | Campo | Registro |
 |---|---|
 | Situación inicial | En E3 funcionaban los sensores y motores por separado. |
-| Mejoras físicas de E4 | Claudio diseñó y mandó a imprimir la carcasa; Sara preparó el pegado de la navaja con apoyo de Max. Joel, Max y Claudio trasladaron el cableado y componentes a la nueva tarjeta después del daño de la anterior. El receptor D12 permanece conectado pero sin programa. |
+| Mejoras físicas de E4 | Claudio diseñó y mandó a imprimir la carcasa (sin colocarla en E4); **Sara y Max pegaron la navaja al chasis**. Joel, Max y Claudio trasladaron conexiones y componentes a una nueva tarjeta tras dañarse la anterior. El receptor D12 permanece conectado, pero no se utiliza en el programa. |
 | Hipótesis de control | Si el programa vigila los QTR y reduce la velocidad de avance de 145 a 105, habrá más oportunidad para retroceder y girar antes de salir de la pista. **Joel propuso la reducción de velocidad** al observar las salidas. La calibración también se cambió, así que las pruebas no aíslan una sola causa. |
 | Cambio de programa propuesto | Leer A2/A3, recalibrar negro/blanco, priorizar evasión y cambiar `V_AVANCE` de 145 a **105**; la reducción de velocidad fue propuesta por Joel. Posteriormente incorporó búsqueda y ataque en un sketch de competencia aún por enlazar en GitHub. |
 | Código | [Prueba integrada E4](../../codigo/mini-sumo/prueba_evasion_borde/prueba_evasion_borde.ino) · [instrucciones](../../codigo/mini-sumo/prueba_evasion_borde/README.md). |
@@ -75,7 +75,7 @@ El siguiente objetivo es que el robot pueda desplazarse sobre la superficie negr
 | Variable modificada | Integramos QTR y motores; después redujimos `V_AVANCE` de 145 a **105** y realizamos otras tres pruebas. También se recalibraron ambos QTR, por lo que no se aisló exclusivamente el efecto de la velocidad. |
 | Condiciones y controles | Dos tandas de tres ejecuciones de 15 s sobre el dohyō. Las versiones diferían en PWM de avance y calibración de QTR; no se verificó igualdad exacta de las condiciones de la pista. |
 | Seguridad antes del cambio | Revisar alimentación, polaridad, motores fijados, carcasa, aislamiento de la tarjeta y acceso al paro. |
-| Personas responsables y alcances | **Joel:** código completo, propuesta PWM 105, pruebas con Sara y Max, cambio de placa con Max y Claudio. **Sara:** ajustes para pegar la navaja al chasis, apoyo de Max y pruebas. **Max:** apoyo a la navaja, otras tareas de montaje, pruebas y cambio de placa. **Claudio:** diseño y envío a impresión de la carcasa y cambio de placa. Alcances: estructura, sensores, motores y software. |
+| Personas responsables y alcances | **Joel:** todo el código, propuesta PWM 105, pruebas con Sara y Max, cambio de placa con Max y Claudio. **Sara:** pegó la navaja al chasis con ayuda de Max y participó en las pruebas. **Max:** ayudó a pegar la navaja, otras tareas, pruebas y cambio de placa. **Claudio:** diseñó y mandó a imprimir la carcasa (aún no ensamblada) y ayudó con la nueva placa. |
 | Código y versión K2 | [Programa PWM 145 ejecutado](../../codigo/mini-sumo/prueba_evasion_borde/prueba_evasion_borde.ino) y [versión PWM 105 ejecutada](../../codigo/mini-sumo/prueba_evasion_borde_lenta/prueba_evasion_borde_lenta.ino), conservados por separado. El programa posterior de búsqueda y ataque probado contra teléfono todavía no está en GitHub. |
 | Referencia de cambio | Archivos anteriores disponibles en el repositorio; asociación de una versión validada a un identificador específico de revisión: pendiente. |
 | Métrica y criterio de éxito | Permanencia en la pista por prueba (sí/no), avisos impresos por el programa y detección del borde. En la tanda PWM 105 hubo **0 salidas observadas en 3 pruebas**; en la tanda PWM 145 hubo algunas salidas sin desglose exacto. La prueba adicional de ataque consiguió expulsar un teléfono sin salida del robot; los giros innecesarios siguen sin contarse individualmente. |
@@ -85,11 +85,11 @@ El siguiente objetivo es que el robot pueda desplazarse sobre la superficie negr
 | Integrante | Aportación específica |
 |---|---|
 | [Joel](../../participantes/A00574713/dias/E4.md) | Se encargó de **todo el código**, propuso bajar la velocidad PWM 145 → 105 porque el robot se salía, realizó pruebas junto con Sara y Max y ayudó con Max y Claudio a trasladar componentes a la nueva tarjeta. |
-| [Sara](../../participantes/saragdr/dias/E4.md) | Trabajó en los ajustes para pegar la navaja al chasis, con ayuda de Max, y participó en las pruebas. |
-| [Max](../../participantes/MaxAmCam/dias/E4.md) | Ayudó a Sara con la navaja y con algunas otras tareas de montaje; participó en las pruebas y en el traslado de componentes a la tarjeta nueva. |
+| [Sara](../../participantes/saragdr/dias/E4.md) | **Pegó la navaja al chasis con apoyo de Max** y participó en las pruebas del robot. |
+| [Max](../../participantes/MaxAmCam/dias/E4.md) | **Ayudó a Sara a pegar la navaja**, apoyó en otras tareas, participó en las pruebas y ayudó a trasladar componentes a la tarjeta nueva. |
 | [Claudio](../../participantes/A00574802/dias/E4.md) | **Diseñó la carcasa y la mandó a imprimir**, y participó con Joel y Max en la sustitución de la tarjeta. |
 
-**Equipo externo observador:** compañeros de Artemis. Dieron consejos, pero falta confirmar el contenido de los comentarios para cerrar la trazabilidad de la revisión por pares.
+**Equipo externo observador:** Artemis. Recomendó motores de mayor rendimiento y sensores adicionales para detectar oponentes con más rapidez. **Son mejoras sugeridas, pendientes de evaluar; no se realizaron en E4.**
 
 **Evidencia audiovisual disponible (pendiente de enlazar):** 1) video del mini-sumo desplazándose en el dohyō; 2) video de la prueba en la que detectó y expulsó un teléfono **al primer intento** sin salirse. El archivo o URL de cada video aún no se ha recibido.
 
@@ -101,7 +101,7 @@ El siguiente objetivo es que el robot pueda desplazarse sobre la superficie negr
 |---|---|
 | Día 2: primera integración | Cables y conexiones físicas preparados. |
 | Día 3: primera mejora Kaizen | Motores y sensores probados; batería conectada y polaridad corregida. |
-| Día 4: segundo Kaizen en prueba | **Carcasa diseñada y enviada a impresión, no ensamblada en E4**; trabajo en fijación de la navaja y cambio de tarjeta; receptor D12 conectado pero no programado. **Seis pruebas de evasión**: tres a PWM 145 y tres a PWM 105, estas últimas sin salidas observadas. Luego, con tarjeta de reemplazo y código de búsqueda/ataque, una prueba con teléfono resultó exitosa. |
+| Día 4: segundo Kaizen en prueba | **Carcasa diseñada y enviada a impresión, no ensamblada en E4**; **navaja pegada al chasis por Sara con apoyo de Max** y tarjeta reemplazada; receptor D12 no programado. Seis pruebas de evasión (3 a PWM 145 y 3 a 105, sin salidas en la segunda tanda). Ataque a teléfono exitoso al primer intento. |
 
 ### Tabla de ensayos comparables que pide la guía
 
