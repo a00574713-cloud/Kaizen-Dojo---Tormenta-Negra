@@ -105,5 +105,5 @@ Las pruebas comenzaron el **28 de octubre**, como se registra en el [E3](dia-03.
 - [x] Se enlazó el protocolo y la continuación del trabajo en E3.
 - [ ] Revisión del profesor Camilo René Duque.
 
-**Gate E2:** REPLANIFICAR, según el estado registrado al cierre de la jornada. **Revisión docente:** pendiente.  
+**Gate E2:** decisión formal del equipo no registrada; el trabajo continuó en E3. **Revisión docente:** pendiente hasta después de la entrega.  
 **Siguiente avance:** [E3 · Día 3 — Montaje y pruebas iniciales](dia-03.md).  
