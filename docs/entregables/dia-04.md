@@ -44,13 +44,13 @@ La guía propone seis bloques de trabajo. **Los minutos indican la distribución
 
 ## 1B · Revisión por pares y retroalimentación
 
-La guía solicita registrar quién revisó el trabajo del equipo y qué recomendó. **Todavía no tenemos confirmado que haya ocurrido una revisión por pares**; dejamos sus campos pendientes para no inventar observaciones.
+La guía solicita registrar quién revisó el trabajo del equipo y qué recomendó. **Ya se confirmó una revisión informal:** algunos compañeros del equipo **Artemis** observaron el mini-sumo y compartieron consejos. No tenemos anotado qué recomendaron exactamente ni la decisión tomada frente a cada recomendación, así que esos campos permanecen pendientes.
 
 | Persona o equipo observador (alias) | Evidencia revisada | Observación útil o pregunta | Respuesta técnica y decisión | Cambio aceptado o descartado |
 |---|---|---|---|---|
-| Pendiente de confirmar | Pendiente | Pendiente | Pendiente | Pendiente |
+| Compañeros del equipo **Artemis** (nombres/alias pendientes) | Vieron el mini-sumo físico y su funcionamiento; material específico revisado por confirmar | **Nos dieron algunos consejos**, pero su contenido exacto todavía no fue reportado | Pendiente de precisar qué consejo recibió el equipo y cómo respondió | Pendiente de confirmar qué sugerencias se aplicaron o descartaron |
 
-**Acuerdo de colaboración:** pendiente de registrar cómo escuchamos las observaciones y cómo repartimos las oportunidades para explicar las decisiones.
+**Acuerdo de colaboración:** el equipo recibió comentarios de compañeros de Artemis. Falta registrar sus recomendaciones concretas y cómo se decidió responder a ellas; no atribuimos a Artemis la iniciativa de reducir la velocidad, porque **Joel confirmó que él la propuso** al observar que el robot se salía.
 
 ## 2 · Segundo Kaizen: una mejora para proteger el robot en el dohyō
 
@@ -59,9 +59,9 @@ El siguiente objetivo es que el robot pueda desplazarse sobre la superficie negr
 | Campo | Registro |
 |---|---|
 | Situación inicial | En E3 funcionaban los sensores y motores por separado. |
-| Mejoras físicas de E4 | Carcasa para los cables, organización del montaje, fijación de motores y conexión del receptor del control remoto. |
-| Hipótesis de control | Si el programa vigila los dos QTR mientras el robot avanza, al detectar el borde blanco podrá retroceder y girar hacia el interior. |
-| Cambio de programa propuesto | Leer A2 y A3, calibrar negro y blanco, y dar prioridad a la maniobra de evasión antes de continuar avanzando. |
+| Mejoras físicas de E4 | Claudio diseñó y mandó a imprimir la carcasa; Sara preparó el pegado de la navaja con apoyo de Max. Joel, Max y Claudio trasladaron el cableado y componentes a la nueva tarjeta después del daño de la anterior. El receptor D12 permanece conectado pero sin programa. |
+| Hipótesis de control | Si el programa vigila los QTR y reduce la velocidad de avance de 145 a 105, habrá más oportunidad para retroceder y girar antes de salir de la pista. **Joel propuso la reducción de velocidad** al observar las salidas. La calibración también se cambió, así que las pruebas no aíslan una sola causa. |
+| Cambio de programa propuesto | Leer A2/A3, recalibrar negro/blanco, priorizar evasión y cambiar `V_AVANCE` de 145 a **105**; la reducción de velocidad fue propuesta por Joel. Posteriormente incorporó búsqueda y ataque en un sketch de competencia aún por enlazar en GitHub. |
 | Código | [Prueba integrada E4](../../codigo/mini-sumo/prueba_evasion_borde/prueba_evasion_borde.ino) · [instrucciones](../../codigo/mini-sumo/prueba_evasion_borde/README.md). |
 | Cómo comprobarlo | Calibrar los QTR, comprobar el sentido de los motores con las ruedas levantadas y probar el comportamiento sobre el dohyō. |
 | Resultado | Realizamos **seis pruebas de 15 s**. Con PWM 145 hubo giros inesperados y algunas salidas. Con PWM 105 **ninguna de las tres pruebas registró salidas observadas** y los QTR se recalibraron. En una prueba adicional de la versión de competencia, el robot sacó un teléfono del dohyō mientras permaneció dentro de la zona negra. No se midió duración de ese intento. |
@@ -75,10 +75,25 @@ El siguiente objetivo es que el robot pueda desplazarse sobre la superficie negr
 | Variable modificada | Integramos QTR y motores; después redujimos `V_AVANCE` de 145 a **105** y realizamos otras tres pruebas. También se recalibraron ambos QTR, por lo que no se aisló exclusivamente el efecto de la velocidad. |
 | Condiciones y controles | Dos tandas de tres ejecuciones de 15 s sobre el dohyō. Las versiones diferían en PWM de avance y calibración de QTR; no se verificó igualdad exacta de las condiciones de la pista. |
 | Seguridad antes del cambio | Revisar alimentación, polaridad, motores fijados, carcasa, aislamiento de la tarjeta y acceso al paro. |
-| Personas responsables y alcances | Participación específica de cada integrante en E4: **pendiente de confirmar**. Alcances involucrados: sensores, motores e integración. |
+| Personas responsables y alcances | **Joel:** código completo, propuesta PWM 105, pruebas con Sara y Max, cambio de placa con Max y Claudio. **Sara:** ajustes para pegar la navaja al chasis, apoyo de Max y pruebas. **Max:** apoyo a la navaja, otras tareas de montaje, pruebas y cambio de placa. **Claudio:** diseño y envío a impresión de la carcasa y cambio de placa. Alcances: estructura, sensores, motores y software. |
 | Código y versión K2 | [Programa PWM 145 ejecutado](../../codigo/mini-sumo/prueba_evasion_borde/prueba_evasion_borde.ino) y [versión PWM 105 ejecutada](../../codigo/mini-sumo/prueba_evasion_borde_lenta/prueba_evasion_borde_lenta.ino), conservados por separado. El programa posterior de búsqueda y ataque probado contra teléfono todavía no está en GitHub. |
 | Referencia de cambio | Archivos anteriores disponibles en el repositorio; asociación de una versión validada a un identificador específico de revisión: pendiente. |
 | Métrica y criterio de éxito | Permanencia en la pista por prueba (sí/no), avisos impresos por el programa y detección del borde. En la tanda PWM 105 hubo **0 salidas observadas en 3 pruebas**; en la tanda PWM 145 hubo algunas salidas sin desglose exacto. La prueba adicional de ataque consiguió expulsar un teléfono sin salida del robot; los giros innecesarios siguen sin contarse individualmente. |
+
+### Participación confirmada del equipo en el Día 4
+
+| Integrante | Aportación específica |
+|---|---|
+| [Joel](../../participantes/A00574713/dias/E4.md) | Se encargó de **todo el código**, propuso bajar la velocidad PWM 145 → 105 porque el robot se salía, realizó pruebas junto con Sara y Max y ayudó con Max y Claudio a trasladar componentes a la nueva tarjeta. |
+| [Sara](../../participantes/saragdr/dias/E4.md) | Trabajó en los ajustes para pegar la navaja al chasis, con ayuda de Max, y participó en las pruebas. |
+| [Max](../../participantes/MaxAmCam/dias/E4.md) | Ayudó a Sara con la navaja y con algunas otras tareas de montaje; participó en las pruebas y en el traslado de componentes a la tarjeta nueva. |
+| [Claudio](../../participantes/A00574802/dias/E4.md) | **Diseñó la carcasa y la mandó a imprimir**, y participó con Joel y Max en la sustitución de la tarjeta. |
+
+**Equipo externo observador:** compañeros de Artemis. Dieron consejos, pero falta confirmar el contenido de los comentarios para cerrar la trazabilidad de la revisión por pares.
+
+**Evidencia audiovisual disponible (pendiente de enlazar):** 1) video del mini-sumo desplazándose en el dohyō; 2) video de la prueba en la que detectó y expulsó un teléfono **al primer intento** sin salirse. El archivo o URL de cada video aún no se ha recibido.
+
+**Peso:** pendiente de medir porque el equipo **no contó con una báscula**. El límite del reglamento citado en E4 es de 500 g; no se afirma cumplimiento hasta pesar el robot.
 
 ## 3 · Comparación de versiones
 
@@ -158,7 +173,7 @@ Las tres pruebas de **PWM 105 terminaron por tiempo y no presentaron salidas del
 
 ### Prueba adicional de ataque con teléfono
 
-Después de cargar el programa de competencia sin control remoto en **una tarjeta de reemplazo**, Joel realizó una prueba con un teléfono dentro del dohyō. **Resultado observado:** Tormenta Negra empujó el teléfono fuera y permaneció dentro de la superficie negra. No se informó el tiempo, número de intentos ni video de esta prueba. **No se considera combate oficial**, pues el objeto no era otro robot; sirve como comprobación inicial del comportamiento de búsqueda y ataque. El archivo exacto de ese programa está pendiente de incorporarse al repositorio.
+Después de cargar el programa de competencia sin control remoto en **una tarjeta de reemplazo**, Joel y el equipo probaron un teléfono dentro del dohyō. **Resultado observado:** en el **primer intento**, Tormenta Negra detectó y empujó el teléfono fuera, permaneciendo dentro de la superficie negra. No se informó el tiempo medido. El equipo tiene **dos videos**, uno del robot moviéndose sobre la pista y otro de esta prueba de ataque; todavía falta subirlos o proporcionar sus enlaces. **No se considera combate oficial**, pues el objeto no era otro robot; sirve como comprobación inicial del comportamiento de búsqueda y ataque. El archivo exacto de ese programa está pendiente de incorporarse al repositorio.
 
 La tarjeta anterior **se dañó** y fue reemplazada. No hay diagnóstico confirmado de la causa de la avería. Antes de alimentar de nuevo una placa, verificar polaridad, voltaje y compatibilidad entre USB y batería; no conectar ambas fuentes simultáneamente sin confirmar que el diseño lo permite.
 
