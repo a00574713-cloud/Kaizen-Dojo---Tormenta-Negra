@@ -4,7 +4,7 @@
 
 ## Diseño CAD de la carcasa
 
-**Responsable:** Claudio (`A00574802`). El Día 4 **diseñó y mandó a imprimir** la carcasa del mini-sumo. **No se imprimió, instaló ni ensambló en el robot durante la sesión documentada**; el montaje es trabajo posterior.
+**Responsable:** Claudio (`A00574802`). El Día 4 **diseñó y mandó a imprimir** la carcasa del mini-sumo. **No se instaló ni ensambló en el robot durante la sesión documentada**. La impresión se solicitó, pero no se ha confirmado su estado; el montaje es trabajo posterior.
 
 Las dos vistas se comparten como capturas CAD **optimizadas a WebP para su visualización** (archivos originales conservados por el equipo). Son evidencia del **diseño**, no fotografías de una pieza física.
 
