@@ -9,7 +9,7 @@
 
 ## Mi kit de compromisos
 
-[Documento original exportado desde Mission Forge C2](compromiso.md) · **Estado de validación docente:** PENDIENTE. No se modificaron sus elecciones de katas y alcances.
+[Compromiso de Mission Forge C2](compromiso.md) · **Bitácora de D1–D5 y reflexión final registradas.** Conservé las elecciones originales de alcances y katas. **Validación docente:** PENDIENTE.
 
 ## Mis cinco evidencias personales
 

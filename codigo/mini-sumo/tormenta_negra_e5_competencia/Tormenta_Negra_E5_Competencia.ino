@@ -1,5 +1,5 @@
 /*
- TORMENTA NEGRA | E5 - CANDIDATO DE COMPETENCIA (SIN VALIDAR EN PISTA)
+ TORMENTA NEGRA | E5 V1 - USADO EN 3 PRUEBAS DEL 30-OCT
  Estrategia: mando remoto START/STOP, prioridad borde, busqueda, persecucion
  y ataque progresivo. Preserva intacto el firmware E4 ya probado.
 

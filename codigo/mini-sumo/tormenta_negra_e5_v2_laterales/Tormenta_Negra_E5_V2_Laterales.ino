@@ -1,6 +1,6 @@
 /*
   TORMENTA NEGRA — E5 V2 (PRUEBA DE PERSECUCION LATERAL)
-  NO VALIDADO AUN CON RIVALES. Conserva las conexiones E4.
+  USADO EN DOS PELEAS E5 (1 VICTORIA Y 1 DERROTA). Requiere corregir START/STOP.
   - JS40F lateral: giro sobre el eje hacia el oponente.
   - JS40F central: ataque de frente.
   - Borde QTR: prioridad sobre todo ataque.
