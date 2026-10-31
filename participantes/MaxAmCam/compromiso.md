@@ -57,9 +57,9 @@ Esta es mi propuesta individual dentro de una misión colaborativa. Cada alcance
 - [ ] Medir componentes y dibujar envolvente con restricciones.
 - [ ] Fabricar/ensamblar una versión y validar ajuste, rigidez y acceso a mantenimiento.
 
-**Mi evidencia final:** _Completar al avanzar el proyecto_
+**Mi evidencia final:** Participé en la preparación de conexiones, el montaje del robot y la colocación de la carcasa 3D en E5. La carcasa la diseñó Claudio; no registré CAD personal ni comprobación cuantitativa de rigidez.
 
-**Enlaces a código/CAD/pruebas:** _Agregar enlaces relativos al repositorio_
+**Enlaces a código/CAD/pruebas:** [Fotografías del montaje E3](../../evidencias/dia-03/README.md) · [Fotos finales E5](../../evidencias/dia-05/README.md) · [Mi E5](dias/E5.md)
 
 ### 2. MS03 · Integrar y verificar motorización y tracción
 
@@ -76,9 +76,9 @@ Esta es mi propuesta individual dentro de una misión colaborativa. Cada alcance
 - [ ] Montar motor y rueda; probar sentido de giro con comandos breves.
 - [ ] Comparar deslizamiento y respuesta en tres maniobras repetidas.
 
-**Mi evidencia final:** _Completar al avanzar el proyecto_
+**Mi evidencia final:** Apoyé a Sara en conexiones y soldaduras y participé en las pruebas de giro de motores. Vimos cómo influía la polaridad; no anoté tres maniobras repetidas con medidas de deslizamiento.
 
-**Enlaces a código/CAD/pruebas:** _Agregar enlaces relativos al repositorio_
+**Enlaces a código/CAD/pruebas:** [Prueba de motores E3](../../codigo/pruebas-dia-03/prueba_motores/prueba_motores.ino) · [Observaciones E3](../../datos/observaciones-dia-03.md) · [Mi E4](dias/E4.md)
 
 ## 3. Planeación y viabilidad
 
@@ -92,37 +92,37 @@ Esta es mi propuesta individual dentro de una misión colaborativa. Cada alcance
 
 | Día | Evidencia que registraré | Estado |
 |---|---|---|
-| D1 · Atreverse | Diagnóstico y pacto de frontera | [ ] |
-| D2 · Hacer | Prototipo / primera integración V1 | [ ] |
-| D3 · Medir | Ensayo base y ciclo Kaizen 1 | [ ] |
-| D4 · Iterar | Ciclo Kaizen 2 y comparación V1–Vn | [ ] |
-| D5 · Demostrar | Desafío, evidencia y reflexión | [ ] |
+| D1 · Atreverse | Diagnóstico y pacto de frontera | [x] [Mi E1](dias/E1.md): diagnóstico y pacto |
+| D2 · Hacer | Prototipo / primera integración V1 | [x] [Mi E2](dias/E2.md): preparación de conexiones |
+| D3 · Medir | Ensayo base y ciclo Kaizen 1 | [x] [Mi E3](dias/E3.md): corrección de sentido de giro |
+| D4 · Iterar | Ciclo Kaizen 2 y comparación V1–Vn | [x] [Mi E4](dias/E4.md): nueva PCB y QTR |
+| D5 · Demostrar | Desafío, evidencia y reflexión | [x] [Mi E5](dias/E5.md): demostración y reflexión |
 
 ## 5. Mi protocolo de mejora
 
 ### Ciclo Kaizen 1
 
-- **Hipótesis:** _Por documentar_
-- **Cambio implementado:** _Por documentar_
-- **Métrica base:** _Por documentar_
-- **Resultado:** _Por documentar_
+- **Hipótesis:** Si corregíamos la polaridad del motor que giraba al revés, podríamos conseguir el movimiento esperado.
+- **Cambio implementado:** Apoyé en conexiones, resoldadura de un cable y pruebas de motores durante E3.
+- **Métrica base:** Sentido de giro observado (correcto/incorrecto). No anotamos mediciones numéricas ni intentos equivalentes.
+- **Resultado:** Los motores giraron en el sentido esperado después de las correcciones. No hay una comparación cuantitativa de tracción. [Mi E3](dias/E3.md).
 
 ### Ciclo Kaizen 2
 
-- **Hipótesis:** _Por documentar_
-- **Cambio implementado:** _Por documentar_
-- **Comparación con V1:** _Por documentar_
-- **Aprendizaje:** _Por documentar_
+- **Hipótesis:** Si revisábamos alimentación y cableado antes de probar, podríamos continuar la integración con menor riesgo de dañar otra tarjeta.
+- **Cambio implementado:** Ayudé a reconectar componentes a la PCB de reemplazo y apoyé la calibración QTR. No se confirmó la causa exacta de la primera falla.
+- **Comparación con V1:** En E2 estábamos preparando conexiones; en E3 corregimos giros y en E4 pudimos continuar tras reemplazar la placa. No medí condiciones equivalentes entre versiones.
+- **Aprendizaje:** Aprendí a no asumir la causa de una falla eléctrica sin comprobarla y a revisar la alimentación antes de hacer pruebas. [Mi E4](dias/E4.md).
 
 ## 6. Cierre y reflexión
 
-**Antes no podía:** _Por completar_
+**Antes no podía:** No había participado antes en la construcción completa de un mini-sumo autónomo.
 
-**Ahora puedo:** _Por completar_
+**Ahora puedo:** Puedo apoyar en el montaje mecánico, revisar conexiones, comprobar motores e identificar problemas de los sensores. Todavía necesito practicar pruebas cuantitativas de tracción y cableado.
 
-**Cómo lo demostré:** _Por completar_
+**Cómo lo demostré:** Participé en conexiones y soldaduras, pruebas de giro y calibración QTR; en E5 ayudé a colocar la carcasa y comenté las fallas laterales con Joel. [Cinco videos](../../evidencias/dia-05/README.md) · [Mi E5](dias/E5.md).
 
-**Qué intentaría mejorar después:** _Por completar_
+**Qué intentaría mejorar después:** Mejoraría la detección lateral, la navaja y tracción de las llantas, y comprobaría el efecto de la carga de batería en pruebas repetidas.
 
 ---
 
