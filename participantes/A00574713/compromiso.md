@@ -57,9 +57,9 @@ Esta es mi propuesta individual dentro de una misión colaborativa. Cada alcance
 - [ ] Medir componentes y dibujar envolvente con restricciones.
 - [ ] Fabricar/ensamblar una versión y validar ajuste, rigidez y acceso a mantenimiento.
 
-**Mi evidencia final:** _Completar al avanzar el proyecto_
+**Mi evidencia final:** Participé en el montaje y las conexiones del mini-sumo y en las pruebas de integración. El robot quedó ensamblado con una estructura de 10 × 10 cm. No elaboré un CAD propio ni registré todas las medidas o una prueba de rigidez, así que no marco los katas completos de MS01 como acreditados.
 
-**Enlaces a código/CAD/pruebas:** _Agregar enlaces relativos al repositorio_
+**Enlaces a código/CAD/pruebas:** [Fotos de montaje E3](../../evidencias/dia-03/README.md) · [Fotos finales E5](../../evidencias/dia-05/README.md) · [Alcance MS01](../../alcances/MS01-estructura/README.md)
 
 ### 2. MS06 · Integrar sensores de detección del oponente
 
@@ -76,9 +76,9 @@ Esta es mi propuesta individual dentro de una misión colaborativa. Cada alcance
 - [ ] Medir rango efectivo en distancias y ángulos conocidos.
 - [ ] Ensayar cinco encuentros y documentar errores de percepción.
 
-**Mi evidencia final:** _Completar al avanzar el proyecto_
+**Mi evidencia final:** Probé sensores y participé en su integración con Arduino. En E5 registramos cinco intentos contra otro mini-sumo, incluidos problemas de respuesta lateral. Esos intentos no sustituyen un mapa de distancias y ángulos ni cinco evaluaciones controladas de percepción.
 
-**Enlaces a código/CAD/pruebas:** _Agregar enlaces relativos al repositorio_
+**Enlaces a código/CAD/pruebas:** [Prueba de sensores E3](../../codigo/pruebas-dia-03/prueba_sensores/prueba_sensores.ino) · [Código E5 V2](../../codigo/mini-sumo/tormenta_negra_e5_v2_laterales/Tormenta_Negra_E5_V2_Laterales.ino) · [Cinco videos E5](../../evidencias/dia-05/README.md) · [Alcance MS06](../../alcances/MS06-deteccion-oponente/README.md)
 
 ## 3. Planeación y viabilidad
 
@@ -92,37 +92,37 @@ Esta es mi propuesta individual dentro de una misión colaborativa. Cada alcance
 
 | Día | Evidencia que registraré | Estado |
 |---|---|---|
-| D1 · Atreverse | Diagnóstico y pacto de frontera | [ ] |
-| D2 · Hacer | Prototipo / primera integración V1 | [ ] |
-| D3 · Medir | Ensayo base y ciclo Kaizen 1 | [ ] |
-| D4 · Iterar | Ciclo Kaizen 2 y comparación V1–Vn | [ ] |
-| D5 · Demostrar | Desafío, evidencia y reflexión | [ ] |
+| D1 · Atreverse | Diagnóstico y pacto de frontera | [x] [Mi E1](dias/E1.md): diagnóstico y pacto |
+| D2 · Hacer | Prototipo / primera integración V1 | [x] [Mi E2](dias/E2.md): conexiones iniciales, sin pruebas funcionales |
+| D3 · Medir | Ensayo base y ciclo Kaizen 1 | [x] [Mi E3](dias/E3.md): alimentación y polaridad de motores |
+| D4 · Iterar | Ciclo Kaizen 2 y comparación V1–Vn | [x] [Mi E4](dias/E4.md): PWM y calibración QTR |
+| D5 · Demostrar | Desafío, evidencia y reflexión | [x] [Mi E5](dias/E5.md): cinco intentos y reflexión |
 
 ## 5. Mi protocolo de mejora
 
 ### Ciclo Kaizen 1
 
-- **Hipótesis:** _Por documentar_
-- **Cambio implementado:** _Por documentar_
-- **Métrica base:** _Por documentar_
-- **Resultado:** _Por documentar_
+- **Hipótesis:** Si revisábamos la alimentación y polaridad de los motores, conseguiríamos que respondieran y giraran en el sentido esperado.
+- **Cambio implementado:** En E3 trabajé con Sara para conectar correctamente la batería y corregir la polaridad de un motor. Después repetimos las pruebas.
+- **Métrica base:** Respuesta y sentido de giro (sí/no). Recordamos dos problemas iniciales distintos y aproximadamente diez intentos de motores en total, sin datos por intento.
+- **Resultado:** Después de las correcciones, ambos motores respondieron correctamente. No registramos cinco pares equivalentes V1–K1 ni una mejora cuantitativa. [E3](../../docs/entregables/dia-03.md).
 
 ### Ciclo Kaizen 2
 
-- **Hipótesis:** _Por documentar_
-- **Cambio implementado:** _Por documentar_
-- **Comparación con V1:** _Por documentar_
-- **Aprendizaje:** _Por documentar_
+- **Hipótesis:** Al bajar la velocidad PWM, el robot podría reaccionar al borde antes de salir del dohyō.
+- **Cambio implementado:** Propuse disminuir PWM de 145 a 105 y ajusté el programa. También recalibramos los QTR, por lo que cambiaron dos condiciones entre tandas.
+- **Comparación con V1:** En E2 no hubo prueba funcional. En E4 hicimos tres ejecuciones de 15 s con PWM 145 (36 avisos de borde y salidas no contadas por intento) y otras tres con PWM 105 (35 avisos y ninguna salida observada). No hubo un experimento controlado de V1–K1–K2. [Resultados E4](../../datos/e4_pruebas_pwm105_29oct.md).
+- **Aprendizaje:** Un sensor que responde por separado no garantiza que el robot gire bien. En E5 la detección lateral todavía provocó salidas y tuve que revisar la estrategia de persecución. [Mi E5](dias/E5.md).
 
 ## 6. Cierre y reflexión
 
-**Antes no podía:** _Por completar_
+**Antes no podía:** No sabía construir ni programar un mini-sumo. Aunque conocía algo de Python y electrónica, no sabía cómo integrar sus componentes.
 
-**Ahora puedo:** _Por completar_
+**Ahora puedo:** Integrar motores y sensores, trabajar el programa Arduino y hacer pruebas para encontrar fallas. Todavía necesito medir mejor los rangos de detección.
 
-**Cómo lo demostré:** _Por completar_
+**Cómo lo demostré:** Conseguí, adapté y cargué programas; probé sensores y motores; propuse la reducción de PWM y ajusté la respuesta lateral de E5 V1 a E5 V2. El robot realizó cinco intentos: tres pruebas y dos peleas, con una victoria y una derrota en las peleas. [Videos finales](../../evidencias/dia-05/README.md) · [Mi E5](dias/E5.md).
 
-**Qué intentaría mejorar después:** _Por completar_
+**Qué intentaría mejorar después:** Mediría distancias y ángulos de detección, mejoraría el giro ante rivales laterales y corregiría el control MicroStart (botón 1 arrancaba, 2 detenía y 3 no respondía). Antes de otra competencia también verificaría un paro seguro.
 
 ---
 
