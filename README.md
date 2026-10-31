@@ -82,6 +82,8 @@ Nuestro avance fue conseguir que partes que inicialmente probamos por separado t
 
 Las reflexiones individuales explican cómo aplicaríamos este aprendizaje a otros proyectos de Mecatrónica: verificar subsistemas antes de integrarlos, revisar alimentación y fijaciones y medir los resultados después de cada cambio.
 
+**Propuesta para una siguiente iteración:** [Ideación SCAMPER y evaluación crítica de alternativas con IA](docs/ideacion-scamper-ia.md). Son ideas por probar, no mejoras ya validadas.
+
 **Trabajo por mejorar:** la respuesta lateral y el arranque/paro remoto. El Día 5, el botón 1 arrancaba, el 2 detenía y el 3 no respondió. No se documentó un procedimiento formal de emergencia ni una medición final de peso. Las comparaciones de ciertos katas tampoco fueron controladas. Estas limitaciones no se presentan como pruebas aprobadas.
 
 ## 6. Archivos del proyecto

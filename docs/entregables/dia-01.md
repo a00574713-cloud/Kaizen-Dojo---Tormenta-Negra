@@ -331,7 +331,7 @@ Antes de energizar el robot confirmaremos la autorización del laboratorio, las 
 
 **Revisor docente:** Camilo René Duque — revisión pendiente.
 
-**Repositorio:** [Kaizen-Dojo---Tormenta-Negra](https://github.com/a00574713-cloud/Kaizen-Dojo---Tormenta-Negra). **Enlace a commit/PR de E1:** pendiente de agregar después de subir esta versión.
+**Repositorio:** [Kaizen-Dojo---Tormenta-Negra](https://github.com/a00574713-cloud/Kaizen-Dojo---Tormenta-Negra). **Commit del E1 del 26 de octubre:** [b5ea58d](https://github.com/a00574713-cloud/Kaizen-Dojo---Tormenta-Negra/commit/b5ea58dea1f2e93ab4a48c1a004822817c3520c9).
 
 **Criterio mínimo E1:** existe un contrato de misión y frontera individual, hay evidencia del punto de partida, un inventario verificable y un espacio de trabajo autorizado. La ausencia de algún material crítico NO debe esconderse.
 
